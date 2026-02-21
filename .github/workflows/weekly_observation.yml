@@ -1,0 +1,38 @@
+name: weekly-observation
+
+on:
+  schedule:
+    - cron: "0 1 * * 6"  # Sat 01:00 UTC = Sat 10:00 JST
+  workflow_dispatch: {}
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install openai pandas python-dateutil
+
+      - name: Run weekly batch
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          N_RUNS: "20"
+          TEMPERATURE: "0.2"
+          MODEL: "gpt-4.1-mini"
+        run: |
+          python scripts/run_weekly.py
+          python scripts/score_outputs.py
+
+      - name: Upload outputs as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: outputs
+          path: outputs/
