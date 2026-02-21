@@ -1,38 +1,20 @@
-name: weekly-observation
+import os
+import json
+from datetime import datetime
 
-on:
-  schedule:
-    - cron: "0 1 * * 6"  # Sat 01:00 UTC = Sat 10:00 JST
-  workflow_dispatch: {}
+os.makedirs("outputs", exist_ok=True)
 
-jobs:
-  run:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+data = {
+    "timestamp": timestamp,
+    "structural_score": 0.0,
+    "note": "Weekly structural observation seed"
+}
 
-      - name: Install deps
-        run: |
-          python -m pip install --upgrade pip
-          pip install openai pandas python-dateutil
+filename = f"outputs/observation_{timestamp}.json"
 
-      - name: Run weekly batch
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          N_RUNS: "20"
-          TEMPERATURE: "0.2"
-          MODEL: "gpt-4.1-mini"
-        run: |
-          python scripts/run_weekly.py
-          python scripts/score_outputs.py
+with open(filename, "w") as f:
+    json.dump(data, f, indent=2)
 
-      - name: Upload outputs as artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: outputs
-          path: outputs/
+print(f"Created {filename}")
