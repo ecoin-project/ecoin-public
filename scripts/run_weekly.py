@@ -5,7 +5,7 @@ from datetime import datetime
 # 出力フォルダ作成
 os.makedirs("outputs", exist_ok=True)
 
-timestamp = datetime.utcnow().isoformat()
+timestamp = datetime.utcnow().strftime("%Y%m%d_%H%M%S")
 
 data = {
     "timestamp": timestamp,
