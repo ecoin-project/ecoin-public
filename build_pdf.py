@@ -1,7 +1,9 @@
+import os
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, PageBreak
 from reportlab.lib.styles import getSampleStyleSheet
 
-file_path = "/mnt/data/ECOIN_Core_Proposal_L2.pdf"
+os.makedirs("output", exist_ok=True)
+file_path = "output/ECOIN_Core_Proposal_L2.pdf"
 
 doc = SimpleDocTemplate(file_path)
 styles = getSampleStyleSheet()
@@ -37,40 +39,3 @@ for text, is_title in content:
 doc.build(story)
 
 file_path
-
-.github/workflows/build-pdf.yml
-
-name: Build PDF
-
-on:
-  push:
-    branches:
-      - main
-
-jobs:
-  build-pdf:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install reportlab
-
-      - name: Build PDF
-        run: |
-          python build_pdf.py
-
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ECOIN_PDF
-          path: output/
