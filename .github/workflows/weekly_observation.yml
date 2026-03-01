@@ -9,26 +9,26 @@ jobs:
   run:
     runs-on: ubuntu-latest
 
-    steps:
-      - uses: actions/checkout@v4
+steps:
+  - uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.11"
+  - name: Setup Python
+    uses: actions/setup-python@v5
+    with:
+      python-version: "3.11"
 
-      - name: Install deps
-  run: |
-    python -m pip install --upgrade pip
-    pip install openai pandas python-dateutil
-    
-      - name: Run weekly batch
-  env:
-    OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-  run: python scripts/run_weekly.py
+  - name: Install deps
+    run: |
+      python -m pip install --upgrade pip
+      pip install openai pandas python-dateutil
 
-      - name: Upload outputs
-        uses: actions/upload-artifact@v4
-        with:
-          name: outputs
-          path: outputs/
+  - name: Run weekly batch
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+    run: python scripts/run_weekly.py
+
+  - name: Upload outputs
+    uses: actions/upload-artifact@v4
+    with:
+      name: outputs
+      path: outputs/
