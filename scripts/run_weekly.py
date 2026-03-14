@@ -120,6 +120,8 @@ def main():
 
         except Exception as e:
             latency = time.time() - t0
+            err_text = str(e)
+
             rows.append({
                 "run_id": run_id,
                 "batch_id": batch_id,
@@ -127,8 +129,12 @@ def main():
                 "model": MODEL,
                 "temperature": TEMPERATURE,
                 "latency_sec": latency,
-                "error": str(e),
+                "error": err_text,
             })
+
+            if "insufficient_quota" in err_text:
+                print("Quota exceeded. Stopping remaining runs.")
+                break
 
         time.sleep(0.4)
 
