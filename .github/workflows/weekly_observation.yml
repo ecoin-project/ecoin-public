@@ -27,6 +27,9 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: python scripts/run_weekly.py
 
+      - name: Score outputs
+        run: python scripts/score_outputs.py
+
       - name: Upload outputs
         uses: actions/upload-artifact@v4
         with:
