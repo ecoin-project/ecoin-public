@@ -28,6 +28,8 @@ jobs:
         run: python scripts/run_weekly.py
 
       - name: Score outputs
+        env:
+          USE_MANUAL_SAMPLE: "1"
         run: python scripts/score_outputs.py
 
       - name: Upload outputs
