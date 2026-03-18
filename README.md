@@ -37,3 +37,4 @@ This repository is intended for structural observation and hypothesis generation
 See also:
 - [SCORING.md](SCORING.md)
 - [HOOK_MAP.md](HOOK_MAP.md)
+- [ARCHITECTURE.md](ARCHITECTURE.md)
