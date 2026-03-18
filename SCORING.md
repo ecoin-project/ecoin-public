@@ -261,7 +261,35 @@ This scoring system is designed for:
 
 It is **not yet a validated psychometric instrument**.
 
+
 ---
+## Methodological bridge
+
+This scoring framework can be understood as a simplified observational layer within a broader ECOIN-style measurement logic.
+
+In that broader logic:
+
+- **resonance-like conditions** correspond to exploratory openness, structural compatibility, and recoverable interpretive space
+- **autonomy-related conditions** correspond to retained human judgment and non-outsourced interpretive capacity
+- **lock-in tendencies** correspond to fixation, closure, dependency pressure, and reduced interpretive reversibility
+- **pressure-like conditions** may later be modeled as composite discourse states rather than single isolated variables
+
+Within the current weekly observation pipeline, these ideas are used in a deliberately simplified form.
+
+The present system does **not** implement a full state-space, phase-dynamic, or continuous-time formalization.  
+Instead, it uses repeatable heuristic score dimensions as a lightweight observational approximation.
+
+This means:
+
+- `exploration` and `expansion` function as partial observational proxies for open and recoverable discourse conditions
+- `delegated_agency` functions as a partial proxy for reduced autonomy in interpretive or decision structure
+- `fixation_score` and `fixation_proxy` function as partial proxies for lock-in, narrowing, and closure pressure
+- future composite measures may extend this logic into more explicit pressure- or circulation-oriented indicators
+
+The purpose of this bridge is not to overclaim formal equivalence, but to clarify that the current scoring system belongs to the same methodological family as broader ECOIN measurement concepts.
+
+In other words, the weekly scoring framework should be read as a **discrete observational approximation**, not as the final formal model.
+
 
 ## Future extensions
 
