@@ -182,8 +182,12 @@ def main():
     all_failed = len(success_rows) == 0
 
     summary = {
-        "week_id": rows[0]["batch_id"][:8] if rows and rows[0].get("batch_id") else None,
-        "source_batch_id": rows[0]["batch_id"] if rows and rows[0].get("batch_id") else None,
+        "week_id": (
+            rows[0]["batch_id"].split("_")[-1]
+            if rows and rows[0].get("batch_id", "").startswith("manualsample_")
+            else rows[0]["batch_id"][:8] if rows and rows[0].get("batch_id") else None
+        ),
+        "source_batch_id": rows[0]["batch_id"] if rows and rows[0].get("batch_id") else None,,
         "n_runs_total": len(rows),
         "n_runs_success": len(success_rows),
         "n_runs_error": len(error_rows),
