@@ -33,3 +33,7 @@ Typical outputs include:
 ## Notes
 
 This repository is intended for structural observation and hypothesis generation, not direct corpus measurement or performance benchmarking.
+
+See also:
+- [SCORING.md](SCORING.md)
+- [HOOK_MAP.md](HOOK_MAP.md)
