@@ -275,3 +275,9 @@ Possible future additions:
 - coercive_closure_score
 
 These should only be added when their definitions can be stated clearly enough for repeated use.
+
+
+## Related documents
+
+See also:
+- [HOOK_MAP.md](HOOK_MAP.md)
