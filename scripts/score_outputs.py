@@ -6,6 +6,8 @@ from statistics import mean
 
 ROOT = os.path.dirname(os.path.dirname(__file__))
 OUT_DIR = os.path.join(ROOT, "outputs")
+SAMPLES_DIR = os.path.join(ROOT, "samples")
+MANUAL_SAMPLE_PATH = os.path.join(SAMPLES_DIR, "manual_output_sample.json")
 
 
 def latest_raw_file():
@@ -41,17 +43,37 @@ def classify_error(err_text):
         return "timeout"
     return "other"
 
+def load_manual_sample_as_rows():
+    if not os.path.exists(MANUAL_SAMPLE_PATH):
+        return None
+
+    with open(MANUAL_SAMPLE_PATH, "r", encoding="utf-8") as f:
+        obj = json.load(f)
+
+    rows = [{
+        "run_id": "manual_sample_001",
+        "batch_id": "manualsample_20260318",
+        "ts_utc": "2026-03-18T00:00:00+00:00",
+        "model": "manual_chat_sample",
+        "temperature": 0.2,
+        "output_text": json.dumps(obj, ensure_ascii=False)
+    }]
+
+    return rows
 
 def main():
     raw_path = latest_raw_file()
-    if not raw_path:
-        print("No raw file found.")
-        return
 
-    rows = load_jsonl(raw_path)
-    if not rows:
-        print("Raw file is empty.")
-        return
+    if raw_path:
+        rows = load_jsonl(raw_path)
+        if not rows:
+            print("Raw file is empty.")
+            return
+    else:
+        rows = load_manual_sample_as_rows()
+        if not rows:
+            print("No raw file found, and no manual sample found.")
+            return
 
     success_rows = [r for r in rows if "error" not in r]
     error_rows = [r for r in rows if "error" in r]
@@ -205,3 +227,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+ありがとう。お願いしたいです。
