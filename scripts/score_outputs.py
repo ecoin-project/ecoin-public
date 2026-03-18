@@ -8,7 +8,7 @@ ROOT = os.path.dirname(os.path.dirname(__file__))
 OUT_DIR = os.path.join(ROOT, "outputs")
 SAMPLES_DIR = os.path.join(ROOT, "samples")
 MANUAL_SAMPLE_PATH = os.path.join(SAMPLES_DIR, "manual_output_sample.json")
-
+USE_MANUAL_SAMPLE = os.getenv("USE_MANUAL_SAMPLE", "0") == "1"
 
 def latest_raw_file():
     files = sorted(glob.glob(os.path.join(OUT_DIR, "raw_*.jsonl")))
@@ -62,18 +62,24 @@ def load_manual_sample_as_rows():
     return rows
 
 def main():
-    raw_path = latest_raw_file()
-
-    if raw_path:
-        rows = load_jsonl(raw_path)
-        if not rows:
-            print("Raw file is empty.")
-            return
-    else:
+    if USE_MANUAL_SAMPLE:
         rows = load_manual_sample_as_rows()
         if not rows:
-            print("No raw file found, and no manual sample found.")
+            print("USE_MANUAL_SAMPLE=1 but no manual sample found.")
             return
+    else:
+        raw_path = latest_raw_file()
+
+        if raw_path:
+            rows = load_jsonl(raw_path)
+            if not rows:
+                print("Raw file is empty.")
+                return
+        else:
+            rows = load_manual_sample_as_rows()
+            if not rows:
+                print("No raw file found, and no manual sample found.")
+                return
 
     success_rows = [r for r in rows if "error" not in r]
     error_rows = [r for r in rows if "error" in r]
