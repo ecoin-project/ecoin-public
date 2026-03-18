@@ -231,13 +231,12 @@ fixation_proxy
 + (100 - exploration_mean) * 0.10
 ```
 
-Interpretation:
-	-	higher values suggest stronger closure, dependency, and narrowing pressure
-	-	lower values suggest more exploratory and less coercively fixed discourse conditions
+**Interpretation:**
+- higher values suggest stronger closure, dependency, and narrowing pressure
+- lower values suggest more exploratory and less coercively fixed discourse conditions
 
 This is a working heuristic and may be revised later.
 
-⸻
 
 ## Interpretation caution
 
