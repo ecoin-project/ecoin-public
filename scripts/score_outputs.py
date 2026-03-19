@@ -10,6 +10,7 @@ OUT_DIR = os.path.join(ROOT, "outputs")
 SAMPLES_DIR = os.path.join(ROOT, "samples")
 
 USE_MANUAL_SAMPLE = os.getenv("USE_MANUAL_SAMPLE", "0") == "1"
+MANUAL_BATCH_ID = os.getenv("MANUAL_BATCH_ID", "manual_batch_001")
 MASTER_SUMMARY_PATH = os.path.join(OUT_DIR, "master_summary.csv")
 
 
@@ -61,7 +62,7 @@ def load_manual_samples_as_rows():
 
         rows.append({
             "run_id": f"manual_sample_{i:03d}",
-            "batch_id": "manual_batch_001",
+            "batch_id": MANUAL_BATCH_ID,
             "ts_utc": f"2026-03-18T00:00:{i:02d}+00:00",
             "model": "manual_chat_sample",
             "temperature": 0.2,
@@ -165,14 +166,12 @@ def append_to_master_summary(summary):
         "dominant_mode": summary.get("run_diagnostics", {}).get("dominant_mode", "")
     }
 
-    existing_rows = []
     existing_batch_ids = set()
 
     if os.path.exists(MASTER_SUMMARY_PATH):
         with open(MASTER_SUMMARY_PATH, "r", encoding="utf-8", newline="") as f:
             reader = csv.DictReader(f)
             for existing in reader:
-                existing_rows.append(existing)
                 existing_batch_ids.add(existing.get("batch_id", ""))
 
     if row["batch_id"] in existing_batch_ids:
