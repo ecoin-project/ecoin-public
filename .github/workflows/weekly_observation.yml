@@ -30,7 +30,7 @@ jobs:
       - name: Score outputs
         env:
           USE_MANUAL_SAMPLE: "1"
-          MANUAL_BATCH_ID: "manual_batch_002"
+          MANUAL_BATCH_ID: "manual_batch_001"
         run: python scripts/score_outputs.py
 
       - name: Plot trends
