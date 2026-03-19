@@ -7,7 +7,7 @@ from statistics import mean
 ROOT = os.path.dirname(os.path.dirname(__file__))
 OUT_DIR = os.path.join(ROOT, "outputs")
 SAMPLES_DIR = os.path.join(ROOT, "samples")
-MANUAL_SAMPLE_PATH = os.path.join(SAMPLES_DIR, "manual_output_sample.json")
+
 USE_MANUAL_SAMPLE = os.getenv("USE_MANUAL_SAMPLE", "0") == "1"
 
 
@@ -32,6 +32,8 @@ def safe_mean(values):
 
 def classify_error(err_text):
     err_text = err_text or ""
+    lower = err_text.lower()
+
     if "insufficient_quota" in err_text:
         return "insufficient_quota"
     if "rate_limit" in err_text:
@@ -40,65 +42,92 @@ def classify_error(err_text):
         return "http_429_other"
     if "401" in err_text:
         return "auth_error"
-    if "timeout" in err_text.lower():
+    if "timeout" in lower:
         return "timeout"
     return "other"
 
 
-def load_manual_sample_as_rows():
-    if not os.path.exists(MANUAL_SAMPLE_PATH):
+def load_manual_samples_as_rows():
+    paths = sorted(glob.glob(os.path.join(SAMPLES_DIR, "sample_*.json")))
+    if not paths:
         return None
 
-    with open(MANUAL_SAMPLE_PATH, "r", encoding="utf-8") as f:
-        obj = json.load(f)
+    rows = []
+    for i, path in enumerate(paths, start=1):
+        with open(path, "r", encoding="utf-8") as f:
+            obj = json.load(f)
 
-    rows = [{
-        "run_id": "manual_sample_001",
-        "batch_id": "manualsample_20260318",
-        "ts_utc": "2026-03-18T00:00:00+00:00",
-        "model": "manual_chat_sample",
-        "temperature": 0.2,
-        "output_text": json.dumps(obj, ensure_ascii=False)
-    }]
+        rows.append({
+            "run_id": f"manual_sample_{i:03d}",
+            "batch_id": "manual_batch_001",
+            "ts_utc": f"2026-03-18T00:00:{i:02d}+00:00",
+            "model": "manual_chat_sample",
+            "temperature": 0.2,
+            "output_text": json.dumps(obj, ensure_ascii=False),
+            "source_file": os.path.basename(path)
+        })
+
     return rows
 
 
 def extract_solution_modes(items):
     counter = Counter()
+
     for item in items:
         for s in item.get("solutions_sought", []):
             text = (s or "").lower()
 
-            if any(word in text for word in ["app", "dashboard", "tool", "tracker", "copilot", "assistant", "map", "calculator"]):
+            if any(word in text for word in [
+                "app", "dashboard", "tool", "tracker", "copilot",
+                "assistant", "map", "calculator", "filter", "monitoring"
+            ]):
                 counter["automation/monitoring"] += 1
-            if any(word in text for word in ["course", "training", "coach", "framework", "tutorial", "literacy", "guide"]):
+
+            if any(word in text for word in [
+                "course", "training", "coach", "framework", "tutorial",
+                "literacy", "guide", "audit", "script", "checklist"
+            ]):
                 counter["outsourced expertise"] += 1
-            if any(word in text for word in ["community", "identity", "early adopter", "builder", "operator"]):
+
+            if any(word in text for word in [
+                "community", "identity", "early adopter", "builder",
+                "operator", "intentional", "strategic"
+            ]):
                 counter["identity signaling"] += 1
-            if any(word in text for word in ["event", "meetup", "offline", "club", "community-oriented"]):
+
+            if any(word in text for word in [
+                "event", "meetup", "offline", "club", "hobby",
+                "community-oriented", "singles"
+            ]):
                 counter["offline/community"] += 1
-            if any(word in text for word in ["planning", "preparedness", "continuity", "resilience"]):
+
+            if any(word in text for word in [
+                "planning", "preparedness", "continuity", "resilience",
+                "backup", "hardening", "relocation"
+            ]):
                 counter["resilience planning"] += 1
+
     return counter
 
 
 def main():
     if USE_MANUAL_SAMPLE:
-        rows = load_manual_sample_as_rows()
+        rows = load_manual_samples_as_rows()
         if not rows:
-            print("USE_MANUAL_SAMPLE=1 but no manual sample found.")
+            print("USE_MANUAL_SAMPLE=1 but no manual samples found.")
             return
     else:
         raw_path = latest_raw_file()
+
         if raw_path:
             rows = load_jsonl(raw_path)
             if not rows:
                 print("Raw file is empty.")
                 return
         else:
-            rows = load_manual_sample_as_rows()
+            rows = load_manual_samples_as_rows()
             if not rows:
-                print("No raw file found, and no manual sample found.")
+                print("No raw file found, and no manual samples found.")
                 return
 
     success_rows = [r for r in rows if "error" not in r]
@@ -198,21 +227,13 @@ def main():
 
     all_failed = len(success_rows) == 0
 
-    source_batch_id = rows[0]["batch_id"] if rows and rows[0].get("batch_id") else None
+    batch_id = rows[0]["batch_id"] if rows and rows[0].get("batch_id") else "unknown_batch"
 
     summary = {
-        "week_id": (
-            source_batch_id.split("_")[-1]
-            if source_batch_id and source_batch_id.startswith("manualsample_")
-            else source_batch_id[:8] if source_batch_id else None
-        ),
-        "source_batch_id": source_batch_id,
-        "n_runs_total": len(rows),
-        "n_runs_success": len(success_rows),
-        "n_runs_error": len(error_rows),
-        "n_files": len(success_rows),
+        "batch_id": batch_id,
+        "time_window_assumed": "last_3_to_12_months",
+        "n_files": len([r for r in rows if r.get("source_file")]),
         "n_items_total": len(all_items),
-
         "mean_fear_intensity": fear_mean,
         "mean_superiority_intensity": superiority_mean,
         "mean_delegated_agency": delegated_mean,
@@ -220,35 +241,17 @@ def main():
         "mean_exploration": exploration_mean,
         "mean_expansion": expansion_mean,
         "mean_fixation_proxy": fixation_proxy,
-
         "top_anxiety_labels": [label for label, _ in anxiety_counter.most_common(5)],
         "top_solution_modes": [label for label, _ in solution_mode_counter.most_common(5)],
-        "source_files": [],
-
-        "error_types": dict(error_counter),
-
-        "item_level_summary": {
-            "n_items_total": len(all_items),
-            "anxiety_labels_top": anxiety_counter.most_common(5),
-            "solutions_sought_top": solution_mode_counter.most_common(5),
-            "delegated_agency_hooks_top": delegated_hook_counter.most_common(5),
-        },
-
-        "score_summary": {
-            "delegated_agency_mean": delegated_mean,
-            "fear_intensity_mean": fear_mean,
-            "superiority_intensity_mean": superiority_mean,
-            "polarization_risk_mean": polarization_mean,
-            "exploration_mean": exploration_mean,
-            "expansion_mean": expansion_mean,
-        },
-
-        "phase_estimate": {
+        "source_files": [r["source_file"] for r in rows if r.get("source_file")],
+        "run_diagnostics": {
+            "n_runs_total": len(rows),
+            "n_runs_success": len(success_rows),
+            "n_runs_error": len(error_rows),
+            "error_types": dict(error_counter),
             "dominant_mode": dominant_mode,
-            "fixation_proxy": fixation_proxy,
             "notes": phase_notes,
         },
-
         "method_notes": (
             ["Summary unavailable because all runs failed."]
             if all_failed else
@@ -259,7 +262,7 @@ def main():
         ),
     }
 
-    summary_path = os.path.join(OUT_DIR, f"weekly_summary_{source_batch_id or 'unknown_batch'}.json")
+    summary_path = os.path.join(OUT_DIR, f"weekly_summary_{batch_id}.json")
     latest_summary_path = os.path.join(OUT_DIR, "latest_summary.json")
 
     with open(summary_path, "w", encoding="utf-8") as f:
