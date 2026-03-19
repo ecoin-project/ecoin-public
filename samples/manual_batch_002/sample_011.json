@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Aging parents, eldercare strain, and family dependency pressure",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the growing burden of caring for aging parents while maintaining employment, finances, and one's own health. The concern is often framed not only as practical caregiving load, but as fear of being structurally squeezed between older dependents, unstable care systems, and limited personal bandwidth.",
+      "signals_observed": [
+        "Common phrases include \"sandwich generation,\" \"I can't do this alone,\" \"care is too expensive,\" \"aging parent crisis,\" and \"there is no support system.\"",
+        "Online discourse increasingly links eldercare to burnout, lost work flexibility, debt pressure, and family conflict over responsibility.",
+        "Commentary often frames care as both morally unavoidable and logistically unsustainable, producing a persistent sense of trapped obligation."
+      ],
+      "solutions_sought": [
+        "Care coordination services, eldercare planning checklists, legal and financial preparation guides, and benefit navigation tools.",
+        "Respite care options, home support services, and scheduling systems designed to reduce day-to-day overload.",
+        "Communities, forums, and advisory content focused on caregiving scripts, family negotiation, and anticipatory planning."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to manage care before it becomes unmanageable\" framing, where caregiving judgment is partially transferred to planning tools, service providers, and structured guides.",
+        "\"Follow this checklist and stay ahead of the crisis\" framing, where family uncertainty is translated into workflow, coordination, and managed dependency."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without preparation and support, you may be overwhelmed by escalating care demands, financial strain, and irreversible family stress.",
+        "superiority": "Prepared caregivers are portrayed as more responsible, more organized, and better able to protect both parents and themselves than families who stay reactive.",
+        "paired_mechanism": "Fear of collapse under care burden is paired with the superiority promise of anticipatory competence, making preparation feel like both protection and moral adequacy."
+      },
+      "scores": {
+        "delegated_agency": 78,
+        "fear_intensity": 85,
+        "superiority_intensity": 63,
+        "polarization_risk": 54
+      }
+    },
+    {
+      "anxiety_label": "Retirement insecurity and future dependency risk",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the belief that old age may arrive without sufficient savings, institutional support, or economic dignity. The concern is often framed not only as fear of insufficient retirement funds, but as fear of becoming dependent, medically vulnerable, and unable to maintain a stable self-directed life later on.",
+      "signals_observed": [
+        "Common phrases include \"I will never retire,\" \"not enough saved,\" \"working forever,\" \"aging broke,\" and \"future burden.\"",
+        "Personal finance discourse increasingly treats retirement not as a distant life stage but as an approaching structural threat tied to inflation, health costs, and family instability.",
+        "Online commentary often links retirement anxiety to a broader fear that ordinary discipline may still be insufficient under current conditions."
+      ],
+      "solutions_sought": [
+        "Retirement calculators, future-expense planners, income stacking strategies, and long-horizon saving systems.",
+        "Financial coaching, withdrawal frameworks, and guidance on reducing future dependency risk.",
+        "Communities and advice channels centered on late-start recovery, frugal retirement planning, and resilience under uncertain systems."
+      ],
+      "delegated_agency_hooks": [
+        "\"See your retirement gap now\" framing, where uncertainty is translated into calculators, dashboards, and future-risk planning tools.",
+        "\"Use this framework to avoid becoming dependent\" framing, where long-term judgment is partially outsourced to structured saving systems and advisory routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger preparation, you may enter old age with too little control, too much dependency, and too much exposure to rising costs.",
+        "superiority": "People who plan early and structure aggressively are portrayed as more prudent, more autonomous, and less likely to become burdensome later.",
+        "paired_mechanism": "Fear of future dependency is paired with the superiority image of disciplined foresight, making retirement planning feel like both defense and self-respect."
+      },
+      "scores": {
+        "delegated_agency": 76,
+        "fear_intensity": 83,
+        "superiority_intensity": 66,
+        "polarization_risk": 48
+      }
+    },
+    {
+      "anxiety_label": "Cognitive overload and inability to sustain attention",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that attention, memory, and focus are degrading under conditions of information excess, multitasking, and constant interruption. The concern is often framed not only as distraction, but as fear that one's cognitive sharpness and capacity for serious work are being permanently eroded.",
+      "signals_observed": [
+        "Common phrases include \"I can't focus anymore,\" \"brain fog,\" \"too much information,\" \"my attention span is gone,\" and \"dopamine detox.\"",
+        "Online discourse often links concentration problems to platform design, screen habits, overload, burnout, and the feeling of living in permanently fragmented time.",
+        "Commentary increasingly treats attention as a finite survival resource that must be defended or rebuilt through deliberate system design."
+      ],
+      "solutions_sought": [
+        "Focus apps, digital detox plans, blocked-work systems, and interruption-reduction tools.",
+        "Supplements, routines, productivity frameworks, and cognitive reset strategies.",
+        "Coaches, guides, and communities focused on rebuilding concentration and resisting informational excess."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to get your brain back\" framing, where attention repair is partially handed to apps, trackers, structured routines, and external accountability systems.",
+        "\"Follow this protocol and stay sharp\" framing, where cognitive self-trust is translated into optimization stacks, blocking tools, and guided productivity methods."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without intervention, you may become increasingly scattered, cognitively dulled, and unable to keep up with environments that reward sustained sharpness.",
+        "superiority": "People with stronger attention systems are portrayed as more disciplined, more competitive, and less mentally degraded than those who remain digitally porous.",
+        "paired_mechanism": "Fear of cognitive decline is paired with the superiority promise of regained sharpness, making concentration management feel like both repair and competitive advantage."
+      },
+      "scores": {
+        "delegated_agency": 85,
+        "fear_intensity": 81,
+        "superiority_intensity": 74,
+        "polarization_risk": 59
+      }
+    },
+    {
+      "anxiety_label": "Public disorder, safety uncertainty, and everyday vigilance",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the perception that public spaces are becoming less orderly, less predictable, and more demanding of personal vigilance. The concern is often framed not only as fear of crime, but as exhaustion from navigating environments that feel less governed by shared norms and more shaped by unpredictability, confrontation, and erosion of ordinary trust.",
+      "signals_observed": [
+        "Common phrases include \"I don't feel safe,\" \"public spaces feel different now,\" \"no one enforces anything,\" and \"you have to stay alert.\"",
+        "Online discourse often packages local incidents, transit complaints, retail disorder, and visible instability into a broader narrative of declining everyday order.",
+        "Commentary frequently shifts from single events to a generalized expectation that normal public life now requires constant scanning and self-protection."
+      ],
+      "solutions_sought": [
+        "Neighborhood alert systems, safety apps, route planning tools, and personal protection routines.",
+        "Advice content about situational awareness, de-escalation, and risk avoidance in ordinary public settings.",
+        "Community-level organizing, mutual warning networks, and localized information channels."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this alert system to stay ahead of risk\" framing, where situational judgment is partially transferred to neighborhood feeds, safety apps, and warning networks.",
+        "\"Follow these safety protocols everywhere\" framing, where public uncertainty is managed through routinized vigilance systems and structured behavioral rules."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger vigilance, you may be caught unprepared in spaces that no longer feel reliably governed by predictable norms.",
+        "superiority": "Prepared people are portrayed as more aware, more realistic, and less naive than those who still move through public space casually.",
+        "paired_mechanism": "Fear of public unpredictability is paired with the superiority identity of situational awareness, making vigilance feel like both protection and competence."
+      },
+      "scores": {
+        "delegated_agency": 72,
+        "fear_intensity": 84,
+        "superiority_intensity": 68,
+        "polarization_risk": 82
+      }
+    },
+    {
+      "anxiety_label": "Masculinity, femininity, and identity-role instability",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that gendered roles, expectations, and relational identities are unstable, conflict-ridden, and increasingly scrutinized. The concern is often framed not only as disagreement over norms, but as fear of being socially misread, morally judged, or left without a stable script for how to act, relate, or present oneself.",
+      "signals_observed": [
+        "Common phrases include \"what does it even mean now,\" \"masculinity crisis,\" \"performing femininity,\" \"toxic,\" \"traditional,\" and \"no one knows the rules anymore.\"",
+        "Online discourse often packages gendered identity questions as both moral conflict and strategic adaptation problem, especially in relation to dating, work, family, and social status.",
+        "Commentary frequently treats identity-role instability as a source of confusion, resentment, and continuous self-monitoring."
+      ],
+      "solutions_sought": [
+        "Role frameworks, identity communities, explanatory content, and value-based guides for self-presentation and conduct.",
+        "Influencers, coaches, and ideological subcultures offering clearer scripts for masculinity, femininity, or rejection of both.",
+        "Communities that provide language, belonging, and interpretive certainty around contested identity norms."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to know how to show up\" framing, where identity judgment is partially handed to communities, influencers, and role scripts.",
+        "\"Join people who still understand the rules\" framing, where ambiguity is reduced through group belonging and externally supplied interpretive order."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without clearer norms or communities, you may be misread, judged, or left navigating unstable roles without protection or belonging.",
+        "superiority": "People with a stronger script or identity framework are portrayed as more grounded, more coherent, and less manipulable than those still drifting in ambiguity.",
+        "paired_mechanism": "Fear of role confusion is paired with the superiority promise of identity certainty, making belonging feel like both safety and interpretive advantage."
+      },
+      "scores": {
+        "delegated_agency": 79,
+        "fear_intensity": 78,
+        "superiority_intensity": 82,
+        "polarization_risk": 90
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 73,
+    "expansion": 86
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence in the total population.",
+    "Care, attention, safety, and identity anxieties are frequently packaged as system-manageable problems with purchasable frameworks attached.",
+    "Role uncertainty and public disorder themes can carry especially high moral sorting and polarization pressure."
+  ]
+}
