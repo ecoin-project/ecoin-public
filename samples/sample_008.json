@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Education competition and child future-readiness anxiety",
+      "anxiety_description": "A recurring anxiety in online discourse concerns whether children are being prepared well enough for a future shaped by academic competition, technological change, unstable labor markets, and shifting social expectations. The concern is often framed not only as school performance, but as fear that small parenting or education decisions may permanently affect a child's long-term position.",
+      "signals_observed": [
+        "Common phrases include \"falling behind,\" \"future-proof your child,\" \"screen time is ruining focus,\" \"the competition starts early,\" and \"what schools won't teach.\"",
+        "Education discourse increasingly links grades, enrichment, emotional regulation, attention, and digital habits into one continuous pressure field.",
+        "Parents are often told that ordinary decisions about learning, devices, scheduling, and extracurriculars now carry high-stakes developmental consequences."
+      ],
+      "solutions_sought": [
+        "Learning platforms, tutoring systems, developmental frameworks, and structured educational roadmaps.",
+        "Screen-management routines, focus-building systems, and home learning protocols.",
+        "Parent communities, expert explainers, and child future-readiness guidance that promise earlier and clearer direction."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to prepare your child for the future\" framing, where parental judgment is partially transferred to expert frameworks, apps, and milestone systems.",
+        "\"Track the right signals early\" framing, where uncertainty is translated into developmental dashboards, structured routines, and curated guidance."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without early and deliberate preparation, your child may become less capable, less competitive, or less future-ready than peers.",
+        "superiority": "Prepared families are portrayed as more informed, more strategic, and better able to position children for an unstable future than passive households.",
+        "paired_mechanism": "Fear of irreversible developmental disadvantage is paired with a superiority identity of intentional parenting, making preparation feel like both protection and competence."
+      },
+      "scores": {
+        "delegated_agency": 79,
+        "fear_intensity": 85,
+        "superiority_intensity": 68,
+        "polarization_risk": 58
+      }
+    },
+    {
+      "anxiety_label": "Career stagnation and invisible underperformance",
+      "anxiety_description": "Another visible anxiety in online discourse is that people may not be failing dramatically, but are instead becoming quietly average, structurally bypassed, and increasingly invisible inside competitive systems. The concern is often framed as fear of plateau, irrelevance, and being replaceable without ever receiving clear feedback.",
+      "signals_observed": [
+        "Common phrases include \"stuck,\" \"plateaued,\" \"not standing out,\" \"coasting is dangerous,\" and \"quietly replaceable.\"",
+        "Advice content often treats ordinary stability as hidden decline, implying that lack of acceleration is itself a risk.",
+        "Career discourse increasingly merges visibility, momentum, self-worth, and economic survival into one continuous performance pressure."
+      ],
+      "solutions_sought": [
+        "Career strategy systems, re-skilling plans, performance diagnostics, and structured growth frameworks.",
+        "Personal branding routines, networking playbooks, and visibility-building systems.",
+        "Coaching, accountability structures, and strategic feedback environments."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to stop being invisible\" framing, where self-evaluation is shifted toward external systems and templates.",
+        "\"Let the system reveal your blind spots\" framing, where progress judgment is partially delegated to coaches, diagnostics, and structured review tools."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "If you remain passive, you may become professionally invisible and structurally easy to bypass.",
+        "superiority": "Strategic users are portrayed as more legible, more intentional, and more upwardly mobile than those who merely keep up.",
+        "paired_mechanism": "Fear of quiet irrelevance is paired with the promise of controlled visibility, making self-management feel like both defense and elevation."
+      },
+      "scores": {
+        "delegated_agency": 77,
+        "fear_intensity": 79,
+        "superiority_intensity": 75,
+        "polarization_risk": 59
+      }
+    },
+    {
+      "anxiety_label": "Friendship erosion and weak belonging",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the sense that people are surrounded by communication but not meaningfully held by stable friendship or dependable community. The concern is often framed not simply as loneliness, but as weak reciprocity, fading rituals, and the difficulty of sustaining belonging outside transactional or algorithmic environments.",
+      "signals_observed": [
+        "Common phrases include \"making friends as an adult,\" \"no one shows up,\" \"surface-level connection,\" \"everyone is isolated,\" and \"community is gone.\"",
+        "Posts increasingly distinguish between visibility and actual support, suggesting that constant contact does not reliably produce care.",
+        "Advice discourse often treats friendship as something that now requires intentional design, recurring rituals, and environment engineering."
+      ],
+      "solutions_sought": [
+        "Interest-based clubs, recurring meetups, neighborhood groups, and low-friction social rituals.",
+        "Friendship frameworks, social-skills explainers, and reciprocity guidance.",
+        "Platforms and systems that help people find aligned groups and coordinate repeated interaction."
+      ],
+      "delegated_agency_hooks": [
+        "\"Join the right community and belonging will follow\" framing, where uncertainty is partly transferred to curated groups and matching systems.",
+        "\"Use this framework for better relationships\" framing, where judgment about closeness and reciprocity is partially outsourced to typologies and communication protocols."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without deliberate effort, you may remain socially visible but structurally unsupported, with no dependable circle when you need one.",
+        "superiority": "People who build intentional community are portrayed as more mature, more relationally skilled, and less vulnerable to isolation than those who drift socially.",
+        "paired_mechanism": "Fear of isolation is paired with an identity reward for becoming someone who knows how to build stronger forms of belonging."
+      },
+      "scores": {
+        "delegated_agency": 67,
+        "fear_intensity": 73,
+        "superiority_intensity": 54,
+        "polarization_risk": 47
+      }
+    },
+    {
+      "anxiety_label": "Concentration loss and cognitive overload",
+      "anxiety_description": "Another visible anxiety concerns the belief that constant information exposure, short-form media, optimization pressure, and always-on digital life are degrading attention, motivation, and sustained thought. The concern is often framed not only as distraction, but as loss of cognitive sharpness and inability to think deeply or complete demanding work.",
+      "signals_observed": [
+        "Frequent phrases include \"can't focus,\" \"brain rot,\" \"dopamine detox,\" \"too much information,\" and \"burned out.\"",
+        "Online conversation often links digital overload with fragmented attention, fatigue, sleep disruption, and diminished capacity for deep work.",
+        "Short-form advice content increasingly packages ordinary distraction as a larger attention crisis requiring active management."
+      ],
+      "solutions_sought": [
+        "Focus apps, distraction blockers, productivity systems, and structured attention routines.",
+        "Digital detox plans, screen-time reduction frameworks, and minimalist information diets.",
+        "Supplements, coaches, and optimization stacks aimed at restoring clarity, discipline, and sustained effort."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to get your focus back\" framing, where attention is partially managed through trackers, protocols, and routines.",
+        "\"Let the stack keep you sharp\" framing, where cognitive maintenance is outsourced to apps, supplements, coaches, and optimization systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without intervention, your attention, discipline, and mental clarity may keep degrading in an overstimulating environment.",
+        "superiority": "Disciplined and optimized people are portrayed as able to stay sharp, focused, and cognitively ahead of the distracted majority.",
+        "paired_mechanism": "Fear of cognitive decline is paired with an identity of disciplined sharpness, making focus itself feel like both protection and status."
+      },
+      "scores": {
+        "delegated_agency": 79,
+        "fear_intensity": 82,
+        "superiority_intensity": 67,
+        "polarization_risk": 53
+      }
+    },
+    {
+      "anxiety_label": "Public disorder and ambient social distrust",
+      "anxiety_description": "A further recurring anxiety in online discourse concerns the feeling that public space is becoming less predictable, less orderly, and harder to trust. The concern is often expressed not only as fear of crime or specific incidents, but as a broader sense that strangers, institutions, and everyday environments can no longer be assumed to be stable or benign.",
+      "signals_observed": [
+        "Common phrases include \"not safe anymore,\" \"always stay alert,\" \"public space feels different,\" \"people are unpredictable,\" and \"something is off.\"",
+        "Local incident clips, neighborhood apps, and warning-heavy feeds make scattered events feel ambient and continuous.",
+        "Commentary often blends concrete safety concerns with broader mistrust, creating a generalized vigilance mindset."
+      ],
+      "solutions_sought": [
+        "Neighborhood alert systems, safety apps, route-planning tools, and monitoring-based risk systems.",
+        "Personal safety routines, preparedness content, and defensive protocols.",
+        "Local information networks and community reporting structures that reduce uncertainty."
+      ],
+      "delegated_agency_hooks": [
+        "\"Let the system warn you before something happens\" framing, where vigilance is partly transferred to apps, alerts, and reporting systems.",
+        "\"Use the right protocol to stay safe\" framing, where situational judgment is partially handed to templates, safety systems, and updated precaution rules."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without vigilance, you may be exposed to unpredictable events or environments you cannot read in time.",
+        "superiority": "Prepared users are portrayed as more aware, more realistic, and less naive than people who still move casually through public life.",
+        "paired_mechanism": "Fear of exposure is paired with an identity of alert competence, making vigilance feel like both protection and superior realism."
+      },
+      "scores": {
+        "delegated_agency": 72,
+        "fear_intensity": 84,
+        "superiority_intensity": 63,
+        "polarization_risk": 78
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 79,
+    "expansion": 88
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns and do not represent direct prevalence in the total population.",
+    "Educational, cognitive, and public-order anxieties are often packaged as systems problems with purchasable guidance attached.",
+    "The same discourse may function simultaneously as warning, coping language, identity signaling, and commercial funnel."
+  ]
+}
