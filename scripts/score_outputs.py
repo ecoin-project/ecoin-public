@@ -51,7 +51,8 @@ def classify_error(err_text):
 
 
 def load_manual_samples_as_rows():
-    paths = sorted(glob.glob(os.path.join(SAMPLES_DIR, "sample_*.json")))
+    batch_samples_dir = os.path.join(SAMPLES_DIR, MANUAL_BATCH_ID)
+    paths = sorted(glob.glob(os.path.join(batch_samples_dir, "sample_*.json")))
     if not paths:
         return None
 
