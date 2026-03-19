@@ -1,0 +1,20 @@
+{
+  "batch_id": "manual_batch_001",
+  "time_window_assumed": "last_3_to_12_months",
+  "n_files": 3,
+  "n_items_total": 15,
+  "mean_fear_intensity": 0.0,
+  "mean_superiority_intensity": 0.0,
+  "mean_delegated_agency": 0.0,
+  "mean_polarization_risk": 0.0,
+  "mean_exploration": 0.0,
+  "mean_expansion": 0.0,
+  "mean_fixation_proxy": 0.0,
+  "top_anxiety_labels": [],
+  "top_solution_modes": [],
+  "source_files": [
+    "sample_001.json",
+    "sample_002.json",
+    "sample_003.json"
+  ]
+}
