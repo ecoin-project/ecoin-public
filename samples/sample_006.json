@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Aging, eldercare, and future dependency anxiety",
+      "anxiety_description": "A recurring anxiety in online discourse concerns aging, family care burden, and the possibility of becoming financially, physically, or cognitively dependent later in life. The concern is often framed not only as fear of decline, but as fear of burdening others, losing autonomy, and failing to prepare early enough for long-term instability.",
+      "signals_observed": [
+        "Common phrases include \"aging parents,\" \"care burden,\" \"retirement isn't enough,\" \"I don't want to be a burden,\" and \"who will take care of me?\"",
+        "Discussion increasingly links eldercare, retirement planning, cognitive decline, and housing instability into one continuous long-horizon anxiety.",
+        "Online advice often reframes aging as a systems problem requiring early coordination, optimization, and preventive planning."
+      ],
+      "solutions_sought": [
+        "Retirement planning systems, eldercare checklists, long-term budgeting tools, and dependency-risk planning frameworks.",
+        "Preventive health routines, cognitive-maintenance programs, and lifestyle systems aimed at preserving autonomy.",
+        "Guidance on multigenerational housing, care coordination, legal preparation, and family role planning."
+      ],
+      "delegated_agency_hooks": [
+        "\"Plan now before decline begins\" framing, where uncertainty is transferred to planners, checklists, care systems, and structured long-term guidance.",
+        "\"Use the right framework to stay independent longer\" framing, where autonomy maintenance is partially outsourced to routines, experts, trackers, and financial systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without early preparation, you may lose independence, become a burden, or face aging-related instability with too little support.",
+        "superiority": "Prepared individuals and families are portrayed as more responsible, more realistic, and better able to preserve dignity and autonomy than those who delay planning.",
+        "paired_mechanism": "Fear of future dependency is paired with an identity of disciplined foresight, making preparation feel like both protection and moral competence."
+      },
+      "scores": {
+        "delegated_agency": 74,
+        "fear_intensity": 84,
+        "superiority_intensity": 59,
+        "polarization_risk": 46
+      }
+    },
+    {
+      "anxiety_label": "Health anxiety and wellness optimization pressure",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the sense that ordinary health is fragile, poorly monitored, and always one missed signal away from decline. The concern is often framed not only as fear of illness, but as fear of failing to optimize sleep, hormones, inflammation, nutrition, energy, and long-term vitality in time.",
+      "signals_observed": [
+        "Frequent phrases include \"inflammation,\" \"gut health,\" \"hormone imbalance,\" \"biohacking,\" \"low energy,\" and \"silent decline.\"",
+        "Health content often packages ordinary fatigue or discomfort as evidence that the body is already off track and requires intervention.",
+        "Wellness discourse increasingly mixes self-observation, prevention, pseudo-clinical language, and optimization culture."
+      ],
+      "solutions_sought": [
+        "Supplements, monitoring devices, sleep systems, glucose-style tracking, and wellness dashboards.",
+        "Protocols for diet, fasting, recovery, hormone support, and anti-inflammatory routines.",
+        "Coaches, experts, and personalized plans promising better energy, longevity, and self-regulation."
+      ],
+      "delegated_agency_hooks": [
+        "\"Track what your body is really doing\" framing, where bodily judgment is handed to devices, dashboards, and biomarkers.",
+        "\"Follow this protocol exactly\" framing, where personal interpretation is partially replaced by structured optimization systems and experts."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "If you ignore subtle signals, your health, energy, and future resilience may quietly deteriorate before you notice.",
+        "superiority": "Optimized users are portrayed as more disciplined, more informed, and biologically ahead of people who live reactively.",
+        "paired_mechanism": "Fear of hidden decline is paired with a status identity of advanced self-monitoring, making wellness feel like both protection and competitive edge."
+      },
+      "scores": {
+        "delegated_agency": 82,
+        "fear_intensity": 80,
+        "superiority_intensity": 71,
+        "polarization_risk": 49
+      }
+    },
+    {
+      "anxiety_label": "Career stagnation and invisible underperformance",
+      "anxiety_description": "A recurring anxiety in online discourse is that people may not be failing dramatically, but are instead becoming quietly average, unremarkable, and increasingly invisible inside competitive systems. The concern is often framed as fear of plateau, irrelevance, and being structurally bypassed without clear feedback.",
+      "signals_observed": [
+        "Common phrases include \"stuck,\" \"plateaued,\" \"not standing out,\" \"quietly replaceable,\" and \"coasting is dangerous.\"",
+        "Advice content often presents ordinary stability as a hidden risk, suggesting that lack of acceleration is itself a form of decline.",
+        "Career discourse increasingly merges self-worth, visibility, and performance into one continuous pressure field."
+      ],
+      "solutions_sought": [
+        "Career strategy frameworks, productivity systems, re-skilling plans, and visibility-building routines.",
+        "Personal branding systems, networking playbooks, and audience-building strategies.",
+        "Coaching, accountability systems, and structured performance diagnostics."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to stop being invisible\" framing, where self-evaluation is shifted toward external systems and strategic templates.",
+        "\"Let the system identify your blind spots\" framing, where progress judgment is partially delegated to diagnostics, coaches, and tracking structures."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "If you stay passive, you may become professionally invisible and structurally easy to bypass.",
+        "superiority": "Strategic users are portrayed as more legible, more intentional, and more upwardly mobile than those who merely keep up.",
+        "paired_mechanism": "Fear of quiet irrelevance is paired with the promise of controlled visibility, turning self-management into both defense and status elevation."
+      },
+      "scores": {
+        "delegated_agency": 76,
+        "fear_intensity": 78,
+        "superiority_intensity": 74,
+        "polarization_risk": 58
+      }
+    },
+    {
+      "anxiety_label": "Institutional distrust and expert dependence",
+      "anxiety_description": "Another visible anxiety concerns the belief that large institutions are less trustworthy, less responsive, and harder to navigate than they appear. At the same time, people are pushed toward ever more specialized guidance, producing a tension between distrust of institutions and dependence on expert-mediated interpretation.",
+      "signals_observed": [
+        "Common phrases include \"you can't trust the system,\" \"do your own research,\" \"the experts won't tell you,\" and \"the process is broken.\"",
+        "Online discourse often frames ordinary administrative systems as opaque, adversarial, and navigable only through insider knowledge.",
+        "Suspicion of institutions frequently coexists with rising consumption of expert explainers, consultants, and intermediary guidance."
+      ],
+      "solutions_sought": [
+        "Independent explainers, paid newsletters, consultants, process navigators, and specialized expert communities.",
+        "Alternative media, insider guides, and procedural literacy frameworks.",
+        "Templates and step-by-step systems designed to reduce dependence on opaque institutions while still relying on mediated expertise."
+      ],
+      "delegated_agency_hooks": [
+        "\"Don't trust the system, trust this guide\" framing, where distrust is redirected into dependence on alternative interpreters and curated expertise.",
+        "\"You need insider help to navigate this\" framing, where agency is partially handed to intermediaries who claim process fluency."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "If you rely on official simplicity, you may be misled, ignored, or structurally disadvantaged by systems you do not really understand.",
+        "superiority": "Users with insider guidance are portrayed as less naive, more informed, and better able to protect themselves than the uninstructed public.",
+        "paired_mechanism": "Fear of institutional opacity is paired with a superiority reward for becoming one of the people who supposedly sees how the system really works."
+      },
+      "scores": {
+        "delegated_agency": 83,
+        "fear_intensity": 79,
+        "superiority_intensity": 76,
+        "polarization_risk": 81
+      }
+    },
+    {
+      "anxiety_label": "Masculinity, femininity, and identity-role instability",
+      "anxiety_description": "A further recurring anxiety concerns whether older role expectations around masculinity, femininity, attractiveness, care, provision, and social worth are collapsing without being replaced by stable alternatives. The concern is often expressed as confusion, resentment, or pressure around how to perform identity legibly in changing social environments.",
+      "signals_observed": [
+        "Common phrases include \"modern masculinity,\" \"feminine energy,\" \"high-value,\" \"provider,\" \"soft life,\" and \"what women or men really want.\"",
+        "Online discourse often turns identity into a strategic performance problem, with competing scripts about strength, softness, desirability, and status.",
+        "Advice content frequently links gender-role uncertainty to social failure, dating failure, or loss of self-respect."
+      ],
+      "solutions_sought": [
+        "Role-based coaching, dating frameworks, masculinity or femininity guides, and identity-positioning content.",
+        "Communities organized around shared scripts of discipline, desirability, provision, softness, or self-respect.",
+        "Self-presentation systems that promise coherence, attractiveness, and restored identity clarity."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to reclaim your role\" framing, where self-interpretation is guided by identity coaches, archetypes, and scripted role systems.",
+        "\"Follow the right masculine or feminine code\" framing, where uncertainty is handed to simplified typologies and role-performance rules."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without a stable role script, you may become socially illegible, undesirable, or stripped of dignity and direction.",
+        "superiority": "People who master a clear role identity are portrayed as more grounded, more attractive, and more respected than those who remain ambiguous or confused.",
+        "paired_mechanism": "Fear of identity instability is paired with a superiority promise of restored coherence, turning role performance into both protection and rank."
+      },
+      "scores": {
+        "delegated_agency": 72,
+        "fear_intensity": 77,
+        "superiority_intensity": 78,
+        "polarization_risk": 84
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 76,
+    "expansion": 88
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns and do not represent direct prevalence in the total population.",
+    "Identity, health, and institutional anxieties are often packaged as systems problems with purchasable guidance attached.",
+    "The same discourse can operate at once as warning, self-explanation, identity signaling, and commercial funnel."
+  ]
+}
