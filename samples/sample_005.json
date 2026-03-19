@@ -1,0 +1,42 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Information overload, concentration loss, and burnout",
+      "anxiety_description": "A recurring anxiety in online discourse is that constant information exposure, short-form media, optimization pressure, and always-on digital environments are degrading attention, focus, and mental stamina. The concern is often framed not only as distraction, but as cognitive decline, motivational depletion, and loss of the ability to think clearly or sustain effort.",
+      "signals_observed": [
+        "Common phrases include \"brain rot,\" \"dopamine detox,\" \"can't focus,\" \"too much information,\" and \"burned out.\"",
+        "Online discussion often links digital overload with scattered attention, mental fatigue, sleep disruption, and inability to complete deep work.",
+        "Short-form advice content frequently reframes ordinary distraction as a broader attention crisis requiring active self-management."
+      ],
+      "solutions_sought": [
+        "Focus apps, productivity systems, attention-management routines, and distraction blockers.",
+        "Digital detox plans, screen-time reduction frameworks, and minimalist media diets.",
+        "Supplements, coaching, habit stacks, and self-optimization programs aimed at restoring clarity and mental sharpness."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to get your focus back\" framing, where attention is partially managed through trackers, routines, and structured protocols.",
+        "\"Let the stack keep you sharp\" framing, where cognitive maintenance is outsourced to apps, coaches, supplements, and optimization systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without intervention, your attention, discipline, and mental clarity may keep degrading in an overstimulating environment.",
+        "superiority": "Disciplined and optimized people are portrayed as able to stay sharp, focused, and cognitively ahead of the distracted majority.",
+        "paired_mechanism": "Messaging often amplifies fear of cognitive decline first, then offers an identity of disciplined sharpness, making focus itself feel like both protection and status."
+      },
+      "scores": {
+        "delegated_agency": 78,
+        "fear_intensity": 81,
+        "superiority_intensity": 66,
+        "polarization_risk": 52
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 0,
+    "expansion": 0
+  },
+  "notes": [
+    "string"
+  ]
+}
