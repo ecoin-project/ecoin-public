@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Media trust collapse and information environment instability",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that information environments are becoming harder to trust, harder to verify, and increasingly shaped by conflicting incentives, selective framing, and algorithmic amplification. The concern is often framed not only as confusion about facts, but as exhaustion from having to constantly decide which sources, narrators, and interpretations are safe enough to rely on.",
+      "signals_observed": [
+        "Common phrases include \"you can't trust the news,\" \"everyone has an agenda,\" \"who do I even believe,\" \"misinformation everywhere,\" and \"narrative control.\"",
+        "Online discourse increasingly treats information consumption as a vigilance task in which every source may be biased, manipulated, incomplete, or strategically framed.",
+        "Commentary often shifts from debating individual claims to doubting the surrounding media system itself, including platforms, journalists, experts, and influencers."
+      ],
+      "solutions_sought": [
+        "Curated source lists, trust frameworks, media-literacy systems, and verification checklists.",
+        "Independent explainers, alternative analysts, paid newsletters, and smaller trusted interpretation communities.",
+        "Apps, tools, and routines designed to cross-check claims, compare sources, and reduce dependence on any single feed."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to know what is credible\" framing, where judgment is partially transferred to trust systems, curators, and source-evaluation templates.",
+        "\"Follow this analyst instead of the noise\" framing, where distrust of the wider information environment is redirected into dependence on chosen interpreters."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger filtering and verification, you may become confused, manipulated, or structurally misled by unstable information environments.",
+        "superiority": "People with better media filters are portrayed as less naive, more reality-based, and more capable of seeing through distortion than the uninstructed public.",
+        "paired_mechanism": "Fear of manipulation is paired with the superiority promise of epistemic sharpness, making media discernment feel like both protection and intellectual status."
+      },
+      "scores": {
+        "delegated_agency": 81,
+        "fear_intensity": 82,
+        "superiority_intensity": 77,
+        "polarization_risk": 86
+      }
+    },
+    {
+      "anxiety_label": "Status anxiety and class signaling pressure",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that status markers are unstable, increasingly performative, and harder to secure without constant signaling. The concern is often framed not only as envy or aspiration, but as fear of being read as low-value, unsuccessful, or socially behind in environments where consumption, taste, and self-presentation are continuously interpreted.",
+      "signals_observed": [
+        "Common phrases include \"behind in life,\" \"low value,\" \"upgrade your life,\" \"aesthetic status,\" and \"people can tell.\"",
+        "Social media discourse often turns ordinary lifestyle choices into public indicators of discipline, taste, desirability, or class belonging.",
+        "Advice content increasingly treats status not as background context but as something that must be actively curated through visible self-management."
+      ],
+      "solutions_sought": [
+        "Personal branding systems, aesthetic routines, financial signaling strategies, and taste frameworks.",
+        "Styling guidance, life-upgrade content, and systems for organizing visible competence and refinement.",
+        "Communities that reinforce aspirational codes around discipline, polish, curation, and upward mobility."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to upgrade how people read you\" framing, where self-presentation is partially outsourced to templates, experts, and aspirational routines.",
+        "\"Follow these signals and stop looking behind\" framing, where status judgment is translated into reproducible external codes."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without active curation, you may be read as less desirable, less disciplined, or socially behind even if you are functioning well enough.",
+        "superiority": "Strategic users are portrayed as more refined, more legible, and more upwardly mobile than people who rely on ordinary presentation alone.",
+        "paired_mechanism": "Fear of social downgrade is paired with the promise of visible elevation, making self-curation feel like both defense and rank management."
+      },
+      "scores": {
+        "delegated_agency": 73,
+        "fear_intensity": 74,
+        "superiority_intensity": 80,
+        "polarization_risk": 69
+      }
+    },
+    {
+      "anxiety_label": "Romantic market value and desirability instability",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that romantic attention, commitment potential, and long-term desirability are increasingly unstable and market-like. The concern is often framed not only as fear of rejection, but as fear that one is being continuously evaluated against shifting standards of value, scarcity, and replaceability.",
+      "signals_observed": [
+        "Common phrases include \"high-value,\" \"dating market,\" \"replaceable,\" \"options,\" and \"people are always comparing.\"",
+        "Relationship discourse often merges intimacy with ranking language, making attraction feel like a competitive visibility problem.",
+        "Advice content increasingly frames commitment difficulty as a signaling mismatch rather than a purely interpersonal issue."
+      ],
+      "solutions_sought": [
+        "Dating strategy frameworks, desirability optimization routines, and relational positioning advice.",
+        "Identity and style systems designed to increase romantic visibility and perceived value.",
+        "Communities that provide scripts for attraction, standards, and market-like interpretation of relationships."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to raise your value\" framing, where relational self-interpretation is guided by external ranking concepts and scripted systems.",
+        "\"Follow these standards and stop being overlooked\" framing, where uncertainty is translated into strategy, filters, and market-aware behavioral rules."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without deliberate positioning, you may become easy to overlook, easy to replace, or unable to secure stable commitment.",
+        "superiority": "People who understand desirability mechanics are portrayed as more strategically attractive, more selective, and less vulnerable to relational drift.",
+        "paired_mechanism": "Fear of romantic disposability is paired with the superiority promise of higher perceived value, making self-optimization feel like both protection and leverage."
+      },
+      "scores": {
+        "delegated_agency": 76,
+        "fear_intensity": 77,
+        "superiority_intensity": 81,
+        "polarization_risk": 73
+      }
+    },
+    {
+      "anxiety_label": "Body surveillance and self-quantification fatigue",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that the body is now something to be constantly measured, corrected, and interpreted through data, routines, and visible performance. The concern is often framed not only as desire for health, but as exhaustion from endless self-monitoring and fear of missing the signals that supposedly determine future wellbeing.",
+      "signals_observed": [
+        "Common phrases include \"track everything,\" \"my numbers are off,\" \"I need to optimize,\" \"listen to your body,\" and \"I don't know what baseline is normal anymore.\"",
+        "Wellness discourse often combines empowerment language with subtle pressure to monitor recovery, stress, sleep, food, and hormonal states continuously.",
+        "Online discussion increasingly treats the body as a dashboard, making ordinary variation feel like something that should always be interpreted."
+      ],
+      "solutions_sought": [
+        "Wearables, tracking systems, optimization dashboards, and quantified-self routines.",
+        "Coaching, protocol-based health systems, and interpretation guidance for body data.",
+        "Recovery routines and anti-overwhelm frameworks that promise to turn noisy self-monitoring into stable self-control."
+      ],
+      "delegated_agency_hooks": [
+        "\"Track the right signals and you'll stay ahead\" framing, where embodied judgment is partially transferred to metrics, dashboards, and optimization systems.",
+        "\"Use this interpretation framework\" framing, where uncertainty about bodily signals is outsourced to coaches, protocols, and data-driven routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without enough measurement and interpretation, you may miss early signs of decline and lose control over your own body trajectory.",
+        "superiority": "Quantified users are portrayed as more informed, more responsible, and more biologically prepared than people who still rely on vague intuition.",
+        "paired_mechanism": "Fear of unnoticed decline is paired with the superiority identity of advanced self-monitoring, making bodily attention feel like both protection and sophistication."
+      },
+      "scores": {
+        "delegated_agency": 84,
+        "fear_intensity": 79,
+        "superiority_intensity": 71,
+        "polarization_risk": 55
+      }
+    },
+    {
+      "anxiety_label": "Migration pressure and leaving one's place behind",
+      "anxiety_description": "A further recurring anxiety in online discourse concerns the belief that people may have to move away from familiar places, family structures, or identity anchors in order to remain economically viable, socially mobile, or physically safe. The concern is often framed not only as relocation logistics, but as fear of becoming uprooted from the place where life was supposed to happen.",
+      "signals_observed": [
+        "Common phrases include \"I can't afford to stay,\" \"everyone is leaving,\" \"there is no future here,\" \"I have to move farther out,\" and \"starting over somewhere else.\"",
+        "Online discourse increasingly links housing, work, safety, climate, and family strain into one relocation pressure narrative.",
+        "Commentary often frames staying in place as emotionally desirable but structurally irrational, producing a conflict between attachment and survival."
+      ],
+      "solutions_sought": [
+        "Relocation guides, cost-of-living tools, migration planning systems, and remote-work adjustment strategies.",
+        "Communities sharing departure scripts, comparison frameworks, and advice about where to restart more safely or affordably.",
+        "Planning tools that help people model trade-offs between belonging, opportunity, affordability, and distance."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this guide to know where your future still works\" framing, where life-direction judgment is shifted toward relocation maps, comparison tools, and decision systems.",
+        "\"Model your move before it becomes urgent\" framing, where attachment is translated into planning frameworks and strategic trade-off analysis."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without timely adaptation, you may remain attached to a place that no longer supports your safety, affordability, or future viability.",
+        "superiority": "Strategic movers are portrayed as more realistic, more adaptable, and less trapped by sentiment than people who remain passively rooted.",
+        "paired_mechanism": "Fear of being structurally stranded is paired with the superiority promise of adaptive realism, making relocation feel like both survival and competence."
+      },
+      "scores": {
+        "delegated_agency": 71,
+        "fear_intensity": 81,
+        "superiority_intensity": 62,
+        "polarization_risk": 58
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 77,
+    "expansion": 88
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence in the total population.",
+    "Media, status, and quantified-self anxieties are often packaged as systems problems with purchasable filters, frameworks, and interpreters attached.",
+    "The same discourse may function simultaneously as warning, identity management, moral sorting, and commercial funnel."
+  ]
+}
