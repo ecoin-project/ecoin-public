@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Romantic instability and fear of low-commitment futures",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that modern relationships are increasingly unstable, low-commitment, and structurally difficult to secure. The concern is often framed not only as fear of rejection, but as fear that romantic life now rewards ambiguity, optionality, and constant comparison over durable partnership.",
+      "signals_observed": [
+        "Common phrases include \"no one wants anything real,\" \"situationship,\" \"ghosted again,\" \"too many options,\" and \"everyone is replaceable now.\"",
+        "Online discourse often links dating apps, image pressure, emotional burnout, and commitment avoidance into one broader narrative of relational instability.",
+        "Advice content increasingly treats partnership as something that must be strategically filtered, optimized, and defended against low-investment dynamics."
+      ],
+      "solutions_sought": [
+        "Dating frameworks, communication scripts, standards-based filtering systems, and commitment-oriented matching strategies.",
+        "Coaching, profile optimization, and routines for identifying high-intent partners earlier.",
+        "Communities and explainers focused on emotional discernment, boundaries, and avoiding low-commitment loops."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to stop wasting time\" framing, where relational judgment is partially transferred to standards systems, scripts, and filtering rules.",
+        "\"Follow these signals to identify serious people\" framing, where ambiguity is managed through externally supplied heuristics and pattern-recognition templates."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger filters and clearer standards, you may remain stuck in unstable, low-investment relationships that consume time and emotional energy.",
+        "superiority": "People with sharper standards are portrayed as more discerning, more self-respecting, and less vulnerable to casual instability than those who remain romantically porous.",
+        "paired_mechanism": "Fear of relational drift is paired with the superiority promise of strategic discernment, making selectivity feel like both protection and emotional intelligence."
+      },
+      "scores": {
+        "delegated_agency": 74,
+        "fear_intensity": 79,
+        "superiority_intensity": 73,
+        "polarization_risk": 71
+      }
+    },
+    {
+      "anxiety_label": "Aging visibility, facial decline, and appearance-based social sorting",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the belief that aging is becoming more publicly legible, more socially penalized, and more difficult to conceal without active intervention. The concern is often framed not only as beauty pressure, but as fear that the face and body are being continuously read as indicators of decline, discipline, and social value.",
+      "signals_observed": [
+        "Common phrases include \"you can see the stress,\" \"aging fast,\" \"preventative everything,\" \"your face shows it,\" and \"maintenance is non-negotiable.\"",
+        "Online discourse increasingly links aging to work stress, relationship status, class signaling, and visible self-regulation rather than biology alone.",
+        "Advice content often treats appearance management as an early and ongoing requirement rather than a later-life correction."
+      ],
+      "solutions_sought": [
+        "Preventive routines, skin-care systems, injectables discourse, supplements, and appearance-maintenance frameworks.",
+        "Facial analysis tools, image coaching, and aesthetic planning systems.",
+        "Communities focused on high-maintenance discipline, glow-up culture, and anti-decline presentation strategies."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this routine before decline shows\" framing, where self-perception is partially handed to maintenance systems, experts, and facial optimization templates.",
+        "\"Let the analysis tell you what you need\" framing, where appearance judgment is translated into diagnostic aesthetics and externally guided correction."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without earlier and more disciplined intervention, visible aging may reduce desirability, confidence, and how competently others read you.",
+        "superiority": "People with stronger maintenance routines are portrayed as more controlled, more refined, and less visibly affected by stress or time than others.",
+        "paired_mechanism": "Fear of visible decline is paired with the superiority promise of disciplined preservation, making upkeep feel like both defense and rank maintenance."
+      },
+      "scores": {
+        "delegated_agency": 78,
+        "fear_intensity": 76,
+        "superiority_intensity": 83,
+        "polarization_risk": 69
+      }
+    },
+    {
+      "anxiety_label": "Expert dependence under collapsing trust",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the contradiction between distrusting institutions, experts, and official systems while still feeling unable to navigate complexity without some kind of interpreter. The concern is often framed not only as skepticism, but as dependence without confidence: people feel they must rely on guidance they do not fully trust.",
+      "signals_observed": [
+        "Common phrases include \"I don't know who to trust,\" \"everyone is selling something,\" \"official advice feels incomplete,\" and \"I need someone who actually explains it.\"",
+        "Online discourse increasingly treats expertise as both necessary and compromised, producing a market for smaller interpreters, consultants, and niche authorities.",
+        "Commentary often frames ordinary decision-making as impossible without mediation, while simultaneously warning that mediation itself may be biased."
+      ],
+      "solutions_sought": [
+        "Independent newsletters, smaller expert communities, explainers, and paid interpreters who promise clearer translation of complex systems.",
+        "Trust frameworks, comparison routines, and source-triangulation habits designed to reduce overreliance on any one authority.",
+        "Guides and communities focused on learning how to navigate expert dependency more defensively."
+      ],
+      "delegated_agency_hooks": [
+        "\"Don't trust blindly, trust selectively\" framing, where dependence is redistributed from large institutions to curated interpreters and trust systems.",
+        "\"Use this framework to know whose advice matters\" framing, where uncertainty is managed through external credibility filters and guided source selection."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger filtering, you may become dependent on guidance that is incomplete, self-interested, or structurally misleading.",
+        "superiority": "People with better expert filters are portrayed as more discerning, less naive, and less manipulable than those who still trust at scale.",
+        "paired_mechanism": "Fear of compromised dependence is paired with the superiority promise of selective trust literacy, making curation feel like both protection and epistemic competence."
+      },
+      "scores": {
+        "delegated_agency": 86,
+        "fear_intensity": 78,
+        "superiority_intensity": 75,
+        "polarization_risk": 85
+      }
+    },
+    {
+      "anxiety_label": "Climate exposure, infrastructure fragility, and household resilience pressure",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the sense that everyday households are increasingly exposed to weather volatility, heat, fire, flood, outage risk, and fragile local infrastructure. The concern is often framed not only as climate concern in the abstract, but as fear that home life itself is becoming more interruption-prone, more expensive, and more dependent on private resilience measures.",
+      "signals_observed": [
+        "Common phrases include \"too hot to live,\" \"the grid can't handle it,\" \"fire season,\" \"storm prep,\" and \"you have to be ready now.\"",
+        "Online discourse often links climate anxiety to practical household concerns such as backup power, insurance costs, air quality, water security, and evacuation readiness.",
+        "Advice content increasingly treats resilience as a personal responsibility rather than something reliably guaranteed by public infrastructure."
+      ],
+      "solutions_sought": [
+        "Preparedness checklists, backup power plans, filtration systems, emergency kits, and home-hardening routines.",
+        "Risk maps, neighborhood climate guidance, and household continuity planning tools.",
+        "Communities and explainers focused on practical resilience, local adaptation, and protecting family life under environmental strain."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to protect your home before disruption hits\" framing, where household preparedness is partially handed to checklists, monitoring tools, and resilience protocols.",
+        "\"Know your risk and plan around it\" framing, where uncertainty is translated into dashboards, alerts, and adaptation frameworks."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger household preparation, ordinary disruptions may become more frequent, more expensive, and harder to absorb safely.",
+        "superiority": "Prepared households are portrayed as more realistic, more resilient, and less fragile than those who continue relying on ambient stability.",
+        "paired_mechanism": "Fear of environmental interruption is paired with the superiority image of resilient preparedness, making planning feel like both protection and practical adulthood."
+      },
+      "scores": {
+        "delegated_agency": 77,
+        "fear_intensity": 84,
+        "superiority_intensity": 68,
+        "polarization_risk": 57
+      }
+    },
+    {
+      "anxiety_label": "Future-of-work instability and ambient professional obsolescence",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that work is becoming more unstable not only because of layoffs or automation, but because standards, tools, and role definitions shift faster than individuals can comfortably adapt. The concern is often framed as ambient obsolescence: even while still employed, people feel their current competence may already be decaying in value.",
+      "signals_observed": [
+        "Common phrases include \"already outdated,\" \"the role changed,\" \"keep up or disappear,\" \"everyone is upskilling,\" and \"I don't know what's stable anymore.\"",
+        "Online discourse increasingly treats careers as unstable moving targets requiring constant updating, rebranding, and translation across tool ecosystems.",
+        "Advice content often frames professional survival as a matter of maintaining continuous adaptability under uncertain conditions."
+      ],
+      "solutions_sought": [
+        "Upskilling systems, curated learning paths, second-brain tools, and career-adaptation roadmaps.",
+        "Coaches, update feeds, and community-based learning spaces that compress change into manageable routines.",
+        "Frameworks for monitoring shifts in tools, standards, and market expectations without burning out."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to stay relevant\" framing, where professional self-judgment is partially transferred to roadmaps, update curators, and external skill frameworks.",
+        "\"Don't track everything alone\" framing, where adaptation pressure is managed by outsourcing prioritization and change detection."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger adaptation systems, your skills and role may become less legible before you notice the decline in value.",
+        "superiority": "People with better learning and monitoring systems are portrayed as more adaptive, more antifragile, and less likely to be left behind than those who update reactively.",
+        "paired_mechanism": "Fear of ambient obsolescence is paired with the superiority promise of continuous relevance, making structured adaptation feel like both defense and professional edge."
+      },
+      "scores": {
+        "delegated_agency": 84,
+        "fear_intensity": 83,
+        "superiority_intensity": 78,
+        "polarization_risk": 56
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 74,
+    "expansion": 86
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "Romantic, aesthetic, climate, and work-future anxieties are often reframed as system-manageable problems with purchasable guidance attached.",
+    "Trust collapse themes frequently intensify selective reliance, moral sorting, and demand for smaller interpreters."
+  ]
+}
