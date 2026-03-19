@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Friendship erosion and fear of socially thinning lives",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that adult friendships are becoming harder to initiate, sustain, and deepen under conditions of busyness, mobility, and emotional caution. The concern is often framed not only as loneliness, but as fear that ordinary life is slowly losing its layer of dependable informal support.",
+      "signals_observed": [
+        "Common phrases include \"it's so hard to make friends,\" \"everyone is busy,\" \"no one reaches out,\" \"surface-level only,\" and \"I miss having real people around.\"",
+        "Online discourse increasingly treats friendship decline as a structural condition tied to work schedules, relocation, digital substitution, and lower tolerance for inconvenience.",
+        "Advice content often frames friendship not as something that naturally persists, but as something that must now be deliberately engineered."
+      ],
+      "solutions_sought": [
+        "Recurring meetup formats, hobby groups, structured social rituals, and friendship-maintenance routines.",
+        "Guides for initiating plans, maintaining reciprocity, and building low-friction community habits.",
+        "Communities and platforms that help users find aligned groups and reduce the awkwardness of adult reconnection."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this structure to rebuild your social life\" framing, where social initiative is partially transferred to scheduled formats, groups, and community systems.",
+        "\"Follow this method to make adult friendship easier\" framing, where uncertainty about closeness is managed through scripts, rituals, and guided social routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without more intentional effort, your life may become socially thinner, less supported, and more fragile in moments of stress.",
+        "superiority": "People who build intentional friendship systems are portrayed as more relationally mature, more emotionally resourced, and less isolated than those who keep drifting.",
+        "paired_mechanism": "Fear of slow social erosion is paired with the superiority promise of deliberate belonging, making community-building feel like both rescue and interpersonal competence."
+      },
+      "scores": {
+        "delegated_agency": 69,
+        "fear_intensity": 74,
+        "superiority_intensity": 62,
+        "polarization_risk": 45
+      }
+    },
+    {
+      "anxiety_label": "Concentration loss and fear of permanent mental fragmentation",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the belief that digital life, multitasking, and perpetual interruption are degrading the ability to think steadily, read deeply, and complete demanding work. The concern is often framed not only as distraction, but as fear that sustained attention itself is becoming inaccessible or culturally abnormal.",
+      "signals_observed": [
+        "Common phrases include \"my attention span is gone,\" \"brain rot,\" \"I can't read anymore,\" \"too scattered,\" and \"I forgot how to focus.\"",
+        "Online discourse often links attention decline to short-form media, notifications, burnout, and the pressure to remain continuously available across platforms.",
+        "Advice content increasingly presents concentration as a damaged capacity that must be rehabilitated rather than a natural baseline."
+      ],
+      "solutions_sought": [
+        "Focus timers, distraction blockers, deep-work systems, and device-reduction routines.",
+        "Dopamine-detox plans, digital-minimalism frameworks, and structured concentration training.",
+        "Communities and guides devoted to attention recovery, reading restoration, and resisting mental fragmentation."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to train your focus back\" framing, where cognitive repair is partially transferred to timers, blockers, and externally structured routines.",
+        "\"Let the stack protect your attention\" framing, where willpower is supplemented by apps, rituals, and design constraints."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger intervention, your mind may become increasingly fragmented, reactive, and unable to sustain the kinds of thought that deeper work requires.",
+        "superiority": "People with stronger attention systems are portrayed as sharper, more disciplined, and less mentally diluted than the always-distracted majority.",
+        "paired_mechanism": "Fear of cognitive fragmentation is paired with the superiority promise of regained depth, making focus training feel like both repair and competitive distinction."
+      },
+      "scores": {
+        "delegated_agency": 84,
+        "fear_intensity": 83,
+        "superiority_intensity": 76,
+        "polarization_risk": 58
+      }
+    },
+    {
+      "anxiety_label": "Digital overload and signal-to-noise exhaustion",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the sense that too much information now arrives too quickly to sort meaningfully, turning everyday media consumption into a continual burden of filtering, reacting, and losing track. The concern is often framed not only as busyness, but as fear that important signals are being buried under volume, repetition, and low-quality urgency.",
+      "signals_observed": [
+        "Common phrases include \"too much information,\" \"I can't keep up,\" \"noise everywhere,\" \"overwhelmed by inputs,\" and \"I don't know what matters anymore.\"",
+        "Online discourse increasingly describes feeds, newsletters, updates, and message streams as environments that erode judgment through excess rather than absence.",
+        "Advice content often treats informational overload as a systems problem requiring aggressive curation and threshold-setting."
+      ],
+      "solutions_sought": [
+        "Curated feeds, limited-input routines, newsletter triage systems, and notification-reduction protocols.",
+        "Information diets, intentional media windows, and structured signal-filtering practices.",
+        "Tools and communities focused on selective intake, slower interpretation, and protecting cognitive bandwidth."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this filter to cut the noise\" framing, where relevance judgment is partially transferred to curators, systems, and structured media habits.",
+        "\"Stop deciding every time\" framing, where informational overwhelm is managed through externalized intake rules and prebuilt curation routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger filtering, you may become overwhelmed, less discerning, and increasingly unable to separate what matters from what merely demands attention.",
+        "superiority": "People with better signal filters are portrayed as calmer, sharper, and less manipulable than those still absorbing everything by default.",
+        "paired_mechanism": "Fear of drowning in noise is paired with the superiority promise of selective clarity, making curation feel like both protection and epistemic refinement."
+      },
+      "scores": {
+        "delegated_agency": 82,
+        "fear_intensity": 77,
+        "superiority_intensity": 73,
+        "polarization_risk": 52
+      }
+    },
+    {
+      "anxiety_label": "Therapy-language diffusion and fear of relational miscalibration",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that therapeutic vocabulary has become widespread enough to shape ordinary relationships, but unevenly enough to create confusion, overinterpretation, and self-monitoring. The concern is often framed not only as emotional literacy, but as fear of using the wrong language, misunderstanding boundaries, or pathologizing normal conflict.",
+      "signals_observed": [
+        "Common phrases include \"boundaries,\" \"triggered,\" \"attachment style,\" \"emotionally unavailable,\" and \"that's not healthy.\"",
+        "Online discourse often blends clinical-adjacent terms with ordinary disagreement, making everyday interaction feel more interpretively loaded.",
+        "Advice content increasingly treats relationships as spaces that require conceptual fluency in emotional categories, self-description, and relational frameworks."
+      ],
+      "solutions_sought": [
+        "Attachment explainers, boundary frameworks, communication guides, and emotional-literacy content.",
+        "Therapy-adjacent communities and educational materials that teach concepts for interpreting conflict and needs.",
+        "Scripts and frameworks for saying difficult things more correctly and avoiding interpersonal misreading."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this language to communicate better\" framing, where relational judgment is partially transferred to therapeutic terminology, scripts, and interpretive systems.",
+        "\"Learn the framework so you stop repeating unhealthy patterns\" framing, where ambiguity is managed through externally supplied emotional categories."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger emotional frameworks, you may keep repeating misattuned patterns, misreading others, or mishandling conflict in ways that damage relationships.",
+        "superiority": "People fluent in therapeutic language are portrayed as more self-aware, more emotionally intelligent, and less chaotic than those who still navigate by instinct alone.",
+        "paired_mechanism": "Fear of relational miscalibration is paired with the superiority promise of conceptual fluency, making framework adoption feel like both protection and interpersonal advancement."
+      },
+      "scores": {
+        "delegated_agency": 80,
+        "fear_intensity": 72,
+        "superiority_intensity": 79,
+        "polarization_risk": 76
+      }
+    },
+    {
+      "anxiety_label": "Identity fatigue and the burden of continuous self-definition",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that people are expected to continuously define, explain, optimize, and present who they are across social, professional, and relational environments. The concern is often framed not only as self-discovery, but as exhaustion from never being able to remain undefined, provisional, or private for long.",
+      "signals_observed": [
+        "Common phrases include \"figuring myself out,\" \"who am I supposed to be,\" \"curate yourself,\" \"be authentic,\" and \"I am tired of branding myself.\"",
+        "Online discourse increasingly links identity to performance, legibility, and coherence across platforms and social settings.",
+        "Advice content often treats selfhood as a project that must be managed through language, values, narrative consistency, and external presentation."
+      ],
+      "solutions_sought": [
+        "Identity frameworks, values exercises, narrative coaching, and self-positioning guides.",
+        "Communities organized around archetypes, personality systems, and shared scripts for self-understanding.",
+        "Tools and content focused on simplifying self-definition and reducing existential ambiguity."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to understand yourself\" framing, where self-interpretation is partially handed to typologies, identity systems, and narrative templates.",
+        "\"Clarify your personal brand\" framing, where ambiguity is reduced through structured self-description and externally legible positioning."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without a clearer sense of self, you may remain misread, internally fragmented, or unable to present yourself effectively in demanding environments.",
+        "superiority": "People with stronger identity frameworks are portrayed as more coherent, more intentional, and less vulnerable to drift than those who remain undefined.",
+        "paired_mechanism": "Fear of diffuse selfhood is paired with the superiority promise of coherent identity, making self-definition feel like both stabilization and social leverage."
+      },
+      "scores": {
+        "delegated_agency": 77,
+        "fear_intensity": 71,
+        "superiority_intensity": 81,
+        "polarization_risk": 70
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 72,
+    "expansion": 85
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "Attention, information, relational, and identity themes are often reframed as system-manageable problems with frameworks, scripts, and curation tools attached.",
+    "Therapy-language and identity-framework discourse can increase both emotional clarity and interpretive overreach."
+  ]
+}
