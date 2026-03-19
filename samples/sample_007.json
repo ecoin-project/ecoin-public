@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Housing insecurity and homeownership exclusion",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the sense that stable housing is becoming structurally harder to secure, not only for low-income people but also for working adults who expected to move gradually toward ownership or long-term stability. The concern is often framed as being priced out of ordinary adulthood, with rent consuming mobility, savings, and future planning.",
+      "signals_observed": [
+        "Common phrases include \"priced out,\" \"rent trap,\" \"locked out of homeownership,\" \"starter home is dead,\" and \"I did everything right and still can't buy.\"",
+        "Housing discourse increasingly links rent burden, down payment difficulty, mortgage rates, and delayed adulthood into a single narrative of blocked progression.",
+        "Online discussion often treats housing not as one expense among many, but as the central bottleneck that distorts family planning, location choice, and long-term security."
+      ],
+      "solutions_sought": [
+        "Affordability calculators, rent-versus-buy tools, relocation strategies, and long-term savings frameworks.",
+        "Shared housing, co-living, remote-work relocation, and alternative housing pathways presented as adaptive responses.",
+        "Guides, agents, newsletters, and expert explainers that promise to decode the housing market and reveal hidden options."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this calculator to know what is still possible\" framing, where housing judgment is partly transferred to affordability models, dashboards, and scenario tools.",
+        "\"Follow this strategy to escape the rent trap\" framing, where people are encouraged to rely on market interpreters, relocation systems, and financial planning templates."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without an active plan, you may remain permanently locked into unstable housing, shrinking savings, and delayed life transitions.",
+        "superiority": "Strategic and informed households are portrayed as more realistic, more mobile, and better able to secure housing than people who continue to wait passively.",
+        "paired_mechanism": "Fear of exclusion from stable adulthood is paired with the status reward of becoming financially strategic, so housing planning feels like both defense and competence."
+      },
+      "scores": {
+        "delegated_agency": 76,
+        "fear_intensity": 86,
+        "superiority_intensity": 63,
+        "polarization_risk": 57
+      }
+    },
+    {
+      "anxiety_label": "Health anxiety and wellness optimization pressure",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the belief that ordinary health is fragile, under-monitored, and always one missed signal away from decline. The concern is often framed not only as fear of illness, but as fear of failing to optimize sleep, hormones, inflammation, nutrition, recovery, and long-term vitality in time.",
+      "signals_observed": [
+        "Frequent phrases include \"inflammation,\" \"gut health,\" \"biohacking,\" \"hormone imbalance,\" \"low energy,\" and \"fix your cortisol.\"",
+        "Wellness discourse often packages common fatigue or discomfort as evidence that the body is already drifting into dysfunction.",
+        "Online advice increasingly mixes self-observation, protocol culture, pseudo-clinical language, and optimization pressure into one continuous stream."
+      ],
+      "solutions_sought": [
+        "Supplements, wearable tracking, sleep systems, recovery protocols, and biomarker-style dashboards.",
+        "Diet plans, fasting routines, anti-inflammatory systems, and personalized health frameworks.",
+        "Coaches, clinicians, and optimization communities promising better energy, resilience, and long-term functioning."
+      ],
+      "delegated_agency_hooks": [
+        "\"Track what your body is really doing\" framing, where personal judgment is handed to devices, dashboards, and metrics.",
+        "\"Follow this protocol exactly\" framing, where interpretation is partially outsourced to structured regimens, experts, and wellness systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "If you ignore subtle signals, your body may quietly deteriorate before you have enough leverage to reverse it.",
+        "superiority": "Optimized users are portrayed as more informed, more disciplined, and biologically ahead of people who rely on ordinary intuition.",
+        "paired_mechanism": "Fear of hidden decline is paired with a superiority identity of advanced self-monitoring, making health maintenance feel like both protection and advantage."
+      },
+      "scores": {
+        "delegated_agency": 83,
+        "fear_intensity": 80,
+        "superiority_intensity": 72,
+        "polarization_risk": 48
+      }
+    },
+    {
+      "anxiety_label": "Institutional distrust and procedural dependence",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that institutions remain unavoidable while also becoming less trustworthy, less transparent, and harder to navigate without mediation. The concern is often framed as procedural helplessness: people feel they must deal with large systems they do not understand, while also suspecting those systems do not operate in their interest.",
+      "signals_observed": [
+        "Common phrases include \"the system is broken,\" \"you need insider help,\" \"do your own research,\" and \"nobody explains how this really works.\"",
+        "People increasingly describe administrative, legal, medical, and bureaucratic processes as opaque environments that require translation.",
+        "Distrust of official simplicity often coexists with rising demand for expert interpreters, consultants, and unofficial guidance channels."
+      ],
+      "solutions_sought": [
+        "Independent explainers, consultant guidance, paid newsletters, and system-navigation communities.",
+        "Step-by-step procedural checklists, templates, and insider-style breakdowns.",
+        "Alternative interpreters who promise to decode institutional complexity in plain language."
+      ],
+      "delegated_agency_hooks": [
+        "\"Don't trust the surface, trust this interpreter\" framing, where distrust is redirected into dependency on alternative guides.",
+        "\"You need a system for navigating the system\" framing, where agency is partially handed to frameworks, templates, and expert mediators."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "If you rely on official simplicity, you may be misled, delayed, or structurally disadvantaged by processes you do not really understand.",
+        "superiority": "People with insider guidance are portrayed as less naive, better protected, and more structurally aware than the uninstructed public.",
+        "paired_mechanism": "Fear of procedural disadvantage is paired with the status reward of seeing through the system, making mediated literacy feel like both defense and elevation."
+      },
+      "scores": {
+        "delegated_agency": 84,
+        "fear_intensity": 78,
+        "superiority_intensity": 77,
+        "polarization_risk": 82
+      }
+    },
+    {
+      "anxiety_label": "Aging, eldercare, and future dependency anxiety",
+      "anxiety_description": "Another visible anxiety concerns aging, family care burden, and the possibility of becoming financially, physically, or cognitively dependent later in life. The concern is often framed not only as fear of decline, but as fear of burdening others, losing autonomy, and reaching later life without enough structure in place.",
+      "signals_observed": [
+        "Common phrases include \"aging parents,\" \"care burden,\" \"I don't want to be a burden,\" \"retirement won't be enough,\" and \"who will take care of me later?\"",
+        "Discussion increasingly links eldercare, cognitive decline, retirement anxiety, and housing instability into one long-horizon pressure field.",
+        "Online advice often reframes aging as something that must be managed now through planning, prevention, and coordination."
+      ],
+      "solutions_sought": [
+        "Retirement planning systems, eldercare checklists, dependency-risk planning, and family logistics frameworks.",
+        "Preventive routines, cognitive-maintenance programs, and health systems aimed at prolonging independence.",
+        "Legal preparation, care coordination guidance, and multigenerational housing strategies."
+      ],
+      "delegated_agency_hooks": [
+        "\"Plan now before decline begins\" framing, where uncertainty is transferred to planners, systems, and structured future-facing guidance.",
+        "\"Use the right framework to stay independent longer\" framing, where autonomy maintenance is partially outsourced to experts, routines, and planning tools."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without early preparation, you may lose autonomy, become a burden, or face aging-related instability with too little support.",
+        "superiority": "Prepared individuals and families are portrayed as more responsible, more realistic, and more dignified than those who delay planning.",
+        "paired_mechanism": "Fear of future dependency is paired with an identity of disciplined foresight, making long-term preparation feel like both protection and moral competence."
+      },
+      "scores": {
+        "delegated_agency": 75,
+        "fear_intensity": 85,
+        "superiority_intensity": 58,
+        "polarization_risk": 45
+      }
+    },
+    {
+      "anxiety_label": "Masculinity, femininity, and role identity instability",
+      "anxiety_description": "A further recurring anxiety in online discourse concerns whether older scripts around masculinity, femininity, attractiveness, provision, care, and social worth are dissolving without being replaced by stable alternatives. The concern is often expressed as confusion, resentment, or pressure around how to perform identity legibly in rapidly shifting social environments.",
+      "signals_observed": [
+        "Common phrases include \"modern masculinity,\" \"feminine energy,\" \"provider,\" \"soft life,\" \"high-value,\" and \"what men or women really want.\"",
+        "Role discourse increasingly turns identity into a strategic performance problem, with competing rules for strength, softness, desirability, and status.",
+        "Advice content often links role uncertainty to dating failure, lack of respect, or collapse of self-worth."
+      ],
+      "solutions_sought": [
+        "Identity coaching, masculinity or femininity guides, dating frameworks, and role-based self-presentation systems.",
+        "Communities centered on discipline, desirability, provision, softness, or self-respect as stabilizing identity codes.",
+        "Structured scripts that promise clearer positioning in relationships and public life."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to reclaim your role\" framing, where self-interpretation is guided by archetypes, coaches, and scripted identity systems.",
+        "\"Follow the right masculine or feminine code\" framing, where uncertainty is handed to simplified role typologies and performance rules."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without a stable role script, you may become socially illegible, less respected, or stripped of direction and attractiveness.",
+        "superiority": "People who master a clear role identity are portrayed as more grounded, more desirable, and more respected than those who remain confused or unstable.",
+        "paired_mechanism": "Fear of identity ambiguity is paired with the superiority promise of restored coherence, turning role performance into both protection and rank."
+      },
+      "scores": {
+        "delegated_agency": 73,
+        "fear_intensity": 78,
+        "superiority_intensity": 79,
+        "polarization_risk": 85
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 77,
+    "expansion": 88
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than prevalence in the total population.",
+    "Institutional, health, and identity anxieties are often packaged as systems problems with purchasable guidance attached.",
+    "The same discourse may function simultaneously as warning, coping language, identity signaling, and commercial funnel."
+  ]
+}
