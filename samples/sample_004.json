@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Burnout, attention collapse, and nervous-system overload",
+      "anxiety_description": "A recurring anxiety in online discourse is that people no longer feel merely busy, but cognitively fragmented, overstimulated, and unable to sustain attention or recover properly. The concern is often framed as a loss of mental clarity, reduced tolerance for ordinary demands, and a sense that modern life is dysregulating the body and mind at the same time.",
+      "signals_observed": [
+        "Frequent phrases include \"burned out,\" \"brain fog,\" \"overstimulated,\" \"attention span is gone,\" \"nervous system,\" and \"dysregulated.\"",
+        "Short-form discourse often links productivity pressure, doomscrolling, sleep disruption, and emotional exhaustion into a single overload narrative.",
+        "Wellness, self-help, and creator content increasingly package ordinary fatigue as evidence that the body and mind are no longer functioning under current social conditions."
+      ],
+      "solutions_sought": [
+        "Sleep tracking, focus apps, digital detox plans, and routines designed to reduce overstimulation.",
+        "Therapy-adjacent regulation practices such as breathwork, somatic exercises, meditation, journaling, and recovery protocols.",
+        "Supplements, wearable devices, coaching systems, and structured reset programs promising calmer and more sustainable functioning."
+      ],
+      "delegated_agency_hooks": [
+        "\"Let the app regulate your habits\" framing, where recovery and attention management are partially handed to trackers, reminders, and guided systems.",
+        "\"Follow this protocol to reset yourself\" framing, where users outsource self-interpretation to nervous-system frameworks, coaches, and optimization routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without intervention, you may remain mentally scattered, emotionally depleted, and unable to function at the pace modern life demands.",
+        "superiority": "Regulated and optimized users are portrayed as calmer, clearer, more self-aware, and better protected from collapse than people still living reactively.",
+        "paired_mechanism": "Messaging often intensifies fear of breakdown first, then offers a status-restoring identity through regulation mastery, making recovery feel like both survival and personal advancement."
+      },
+      "scores": {
+        "delegated_agency": 78,
+        "fear_intensity": 84,
+        "superiority_intensity": 59,
+        "polarization_risk": 46
+      }
+    },
+    {
+      "anxiety_label": "Beauty pressure, aging anxiety, and appearance optimization",
+      "anxiety_description": "Another visible anxiety concerns the sense that appearance is becoming continuously improvable, continuously judged, and increasingly tied to social and economic value. Online discourse often frames aging, skin, body shape, and facial presentation as problems that must be managed early and strategically rather than accepted gradually.",
+      "signals_observed": [
+        "Frequent wording includes \"prevent aging,\" \"glow-up,\" \"face card,\" \"maintenance,\" \"low visual effort,\" and \"optimize your look.\"",
+        "Beauty content increasingly mixes insecurity, pseudo-clinical language, and consumer guidance, making ordinary appearance concerns feel urgent and technical.",
+        "Before-and-after culture, product layering, and routine discourse amplify the idea that visible selfhood should always be under revision."
+      ],
+      "solutions_sought": [
+        "Skin-care systems, beauty routines, body-shaping plans, and appearance-focused supplements or devices.",
+        "Aesthetic consultations, facial analysis tools, styling frameworks, and image-coaching content.",
+        "Identity-building communities centered on becoming polished, desirable, high-value, or visually disciplined."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this exact routine\" framing, where self-presentation is outsourced to highly structured regimens and expert scripts.",
+        "\"Let the analysis tell you what suits your face/body\" framing, where judgment shifts toward diagnostic tools, consultants, and optimization templates."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "If you do not maintain your appearance strategically, you may become less visible, less desirable, or less socially valued over time.",
+        "superiority": "Users who optimize early are framed as more refined, more legible, and more socially advantaged than those who remain uncurated.",
+        "paired_mechanism": "Fear of decline or invisibility is paired with the promise of becoming visibly higher-status through disciplined self-maintenance."
+      },
+      "scores": {
+        "delegated_agency": 74,
+        "fear_intensity": 79,
+        "superiority_intensity": 72,
+        "polarization_risk": 61
+      }
+    },
+    {
+      "anxiety_label": "Friendship erosion and community fragmentation",
+      "anxiety_description": "A recurring anxiety in online discourse is that people are surrounded by communication but are not meaningfully held by stable friendship or community. The concern is often framed not as dramatic loneliness alone, but as weak ties, inconsistent reciprocity, fading social rituals, and difficulty sustaining real belonging outside transactional or algorithmic environments.",
+      "signals_observed": [
+        "Common phrases include \"making friends as an adult,\" \"no one shows up,\" \"surface-level connection,\" \"community is gone,\" and \"everyone is isolated.\"",
+        "Posts about loneliness increasingly distinguish between visibility and actual support, suggesting that constant contact does not reliably produce care.",
+        "Advice content often reframes friendship as something that now requires deliberate design, scheduled rituals, and environment engineering."
+      ],
+      "solutions_sought": [
+        "Interest-based clubs, recurring meetups, neighborhood events, and community spaces that create repeat contact.",
+        "Friendship frameworks, social-skills explainers, boundary-setting content, and emotional reciprocity guidance.",
+        "Platforms or systems that help people find aligned groups, coordinate attendance, and reduce social friction."
+      ],
+      "delegated_agency_hooks": [
+        "\"Join the right community and belonging will follow\" framing, where social uncertainty is handed to curated groups and matching systems.",
+        "\"Use this framework for better relationships\" framing, where judgment about closeness and reciprocity is partially outsourced to typologies and communication protocols."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without deliberate effort, you may remain socially visible but structurally unsupported, with no dependable circle when you actually need one.",
+        "superiority": "People who build intentional community are portrayed as more emotionally mature, more relationally skilled, and less dependent on fragile social drift.",
+        "paired_mechanism": "Fear of isolation is paired with an identity reward for becoming someone who knows how to build and maintain stronger forms of belonging."
+      },
+      "scores": {
+        "delegated_agency": 65,
+        "fear_intensity": 73,
+        "superiority_intensity": 54,
+        "polarization_risk": 52
+      }
+    },
+    {
+      "anxiety_label": "Masculinity, femininity, and role instability",
+      "anxiety_description": "Online discourse also shows persistent anxiety that gendered expectations, attraction norms, and role scripts are unstable, contested, and increasingly hard to navigate without backlash. The concern is often expressed as confusion about what counts as desirable, respectable, safe, strong, nurturing, or legitimate under rapidly shifting social norms.",
+      "signals_observed": [
+        "Repeated phrases include \"modern masculinity,\" \"feminine energy,\" \"high-value,\" \"soft life,\" \"provider,\" and \"what women/men really want.\"",
+        "Advice content often packages identity confusion into role-performance frameworks that promise clarity through simplified scripts.",
+        "Commentary increasingly turns relational and gender tension into audience-building discourse, where insecurity and certainty are monetized together."
+      ],
+      "solutions_sought": [
+        "Gender-role coaching, attraction frameworks, dating philosophies, and highly simplified behavioral scripts.",
+        "Identity communities organized around traditionalism, self-mastery, femininity training, or role restoration.",
+        "Content explaining boundaries, mutual expectations, and how to navigate changing norms without total confusion."
+      ],
+      "delegated_agency_hooks": [
+        "\"Follow this model of masculinity/femininity\" framing, where users hand role interpretation to influencers, doctrine-like frameworks, and identity systems.",
+        "\"Use these rules and you will stop being confused\" framing, where uncertainty is reduced through externally supplied scripts."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without a stable model, you may be misread, rejected, disrespected, or trapped in permanent confusion about how to relate.",
+        "superiority": "Those who adopt the right role framework are portrayed as more grounded, more attractive, and more socially coherent than people still improvising.",
+        "paired_mechanism": "Fear of social and relational ambiguity is paired with the promise of role certainty, making identity adoption feel like both protection and elevation."
+      },
+      "scores": {
+        "delegated_agency": 82,
+        "fear_intensity": 75,
+        "superiority_intensity": 78,
+        "polarization_risk": 81
+      }
+    },
+    {
+      "anxiety_label": "Parenting pressure and future-readiness of children",
+      "anxiety_description": "Another visible anxiety concerns whether children are being prepared well enough for an unstable future shaped by technology, competition, safety concerns, and institutional mistrust. Online discourse often frames parenting as a high-stakes optimization task in which small choices may have outsized long-term consequences.",
+      "signals_observed": [
+        "Common wording includes \"screen time,\" \"future-proof your child,\" \"falling behind,\" \"protect their brain,\" and \"what no one tells parents.\"",
+        "Parenting discourse frequently merges developmental concern, moral pressure, educational competition, and consumer guidance into one stream.",
+        "Ordinary family decisions are increasingly framed as technically consequential, from nutrition and learning style to device exposure and emotional regulation."
+      ],
+      "solutions_sought": [
+        "Parenting courses, developmental checklists, family systems, and educational enrichment plans.",
+        "Tracking tools, curated learning platforms, home routines, and screen-management systems.",
+        "Communities offering reassurance, comparison points, and practical scripts for safer or more future-ready parenting."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to raise a resilient child\" framing, where parental judgment is partially transferred to experts, apps, and developmental frameworks.",
+        "\"Track the right signals early\" framing, where uncertainty is converted into dashboards, milestone systems, and expert-led guidance."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "If you make the wrong choices too often, your child may become less capable, less regulated, or less prepared for the future.",
+        "superiority": "Prepared parents are portrayed as more informed, more intentional, and better able to protect and position their children than passive families.",
+        "paired_mechanism": "Fear of irreversible developmental disadvantage is paired with a competence identity, turning parenting into both protective labor and status performance."
+      },
+      "scores": {
+        "delegated_agency": 77,
+        "fear_intensity": 82,
+        "superiority_intensity": 66,
+        "polarization_risk": 55
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 79,
+    "expansion": 88
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than prevalence in the total population.",
+    "Highly marketable anxieties are often overrepresented because they are easier to package into purchasable routines, tools, and identities.",
+    "The same discourse may function simultaneously as observation, coping language, self-branding, and commercial persuasion."
+  ]
+}
