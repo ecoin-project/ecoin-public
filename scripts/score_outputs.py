@@ -1,6 +1,7 @@
 import os
 import json
 import glob
+import csv
 from collections import Counter
 from statistics import mean
 
@@ -9,6 +10,7 @@ OUT_DIR = os.path.join(ROOT, "outputs")
 SAMPLES_DIR = os.path.join(ROOT, "samples")
 
 USE_MANUAL_SAMPLE = os.getenv("USE_MANUAL_SAMPLE", "0") == "1"
+MASTER_SUMMARY_PATH = os.path.join(OUT_DIR, "master_summary.csv")
 
 
 def latest_raw_file():
@@ -72,42 +74,120 @@ def load_manual_samples_as_rows():
 
 def extract_solution_modes(items):
     counter = Counter()
-
     for item in items:
         for s in item.get("solutions_sought", []):
             text = (s or "").lower()
 
             if any(word in text for word in [
                 "app", "dashboard", "tool", "tracker", "copilot",
-                "assistant", "map", "calculator", "filter", "monitoring"
+                "assistant", "map", "calculator", "platform", "filter"
             ]):
                 counter["automation/monitoring"] += 1
 
             if any(word in text for word in [
                 "course", "training", "coach", "framework", "tutorial",
-                "literacy", "guide", "audit", "script", "checklist"
+                "literacy", "guide", "explainer", "newsletter"
             ]):
                 counter["outsourced expertise"] += 1
 
             if any(word in text for word in [
                 "community", "identity", "early adopter", "builder",
-                "operator", "intentional", "strategic"
+                "operator", "aspirational"
             ]):
                 counter["identity signaling"] += 1
 
             if any(word in text for word in [
-                "event", "meetup", "offline", "club", "hobby",
-                "community-oriented", "singles"
+                "event", "meetup", "offline", "club", "neighborhood", "group"
             ]):
                 counter["offline/community"] += 1
 
             if any(word in text for word in [
                 "planning", "preparedness", "continuity", "resilience",
-                "backup", "hardening", "relocation"
+                "relocation", "retirement"
             ]):
                 counter["resilience planning"] += 1
 
     return counter
+
+
+def top_n_or_blank(values, n=3):
+    result = list(values)[:n]
+    while len(result) < n:
+        result.append("")
+    return result
+
+
+def append_to_master_summary(summary):
+    os.makedirs(OUT_DIR, exist_ok=True)
+
+    headers = [
+        "batch_id",
+        "time_window_assumed",
+        "n_files",
+        "n_items_total",
+        "mean_fear_intensity",
+        "mean_superiority_intensity",
+        "mean_delegated_agency",
+        "mean_polarization_risk",
+        "mean_exploration",
+        "mean_expansion",
+        "mean_fixation_proxy",
+        "top_anxiety_label_1",
+        "top_anxiety_label_2",
+        "top_anxiety_label_3",
+        "top_solution_mode_1",
+        "top_solution_mode_2",
+        "top_solution_mode_3",
+        "dominant_mode"
+    ]
+
+    top_anxieties = top_n_or_blank(summary.get("top_anxiety_labels", []), 3)
+    top_solutions = top_n_or_blank(summary.get("top_solution_modes", []), 3)
+
+    row = {
+        "batch_id": summary.get("batch_id", ""),
+        "time_window_assumed": summary.get("time_window_assumed", ""),
+        "n_files": summary.get("n_files", ""),
+        "n_items_total": summary.get("n_items_total", ""),
+        "mean_fear_intensity": summary.get("mean_fear_intensity", ""),
+        "mean_superiority_intensity": summary.get("mean_superiority_intensity", ""),
+        "mean_delegated_agency": summary.get("mean_delegated_agency", ""),
+        "mean_polarization_risk": summary.get("mean_polarization_risk", ""),
+        "mean_exploration": summary.get("mean_exploration", ""),
+        "mean_expansion": summary.get("mean_expansion", ""),
+        "mean_fixation_proxy": summary.get("mean_fixation_proxy", ""),
+        "top_anxiety_label_1": top_anxieties[0],
+        "top_anxiety_label_2": top_anxieties[1],
+        "top_anxiety_label_3": top_anxieties[2],
+        "top_solution_mode_1": top_solutions[0],
+        "top_solution_mode_2": top_solutions[1],
+        "top_solution_mode_3": top_solutions[2],
+        "dominant_mode": summary.get("run_diagnostics", {}).get("dominant_mode", "")
+    }
+
+    existing_rows = []
+    existing_batch_ids = set()
+
+    if os.path.exists(MASTER_SUMMARY_PATH):
+        with open(MASTER_SUMMARY_PATH, "r", encoding="utf-8", newline="") as f:
+            reader = csv.DictReader(f)
+            for existing in reader:
+                existing_rows.append(existing)
+                existing_batch_ids.add(existing.get("batch_id", ""))
+
+    if row["batch_id"] in existing_batch_ids:
+        print(f"master_summary.csv already contains batch_id={row['batch_id']}; skip append.")
+        return
+
+    write_header = not os.path.exists(MASTER_SUMMARY_PATH)
+
+    with open(MASTER_SUMMARY_PATH, "a", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=headers)
+        if write_header:
+            writer.writeheader()
+        writer.writerow(row)
+
+    print(f"Updated: {MASTER_SUMMARY_PATH}")
 
 
 def main():
@@ -226,7 +306,6 @@ def main():
         dominant_mode = "exploratory leaning"
 
     all_failed = len(success_rows) == 0
-
     batch_id = rows[0]["batch_id"] if rows and rows[0].get("batch_id") else "unknown_batch"
 
     summary = {
@@ -270,6 +349,8 @@ def main():
 
     with open(latest_summary_path, "w", encoding="utf-8") as f:
         json.dump(summary, f, ensure_ascii=False, indent=2)
+
+    append_to_master_summary(summary)
 
     print(f"Wrote: {summary_path}")
     print(f"Wrote: {latest_summary_path}")
