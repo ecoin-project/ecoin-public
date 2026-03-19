@@ -39,18 +39,18 @@ def main():
 
     x = list(range(len(batch_ids)))
 
-    plt.figure(figsize=(10, 6))
-    plt.plot(x, fear, marker="o", label="mean_fear_intensity")
-    plt.plot(x, delegated, marker="o", label="mean_delegated_agency")
-    plt.plot(x, exploration, marker="o", label="mean_exploration")
-    plt.plot(x, fixation, marker="o", label="mean_fixation_proxy")
+    plt.figure(figsize=(11, 6))
+    plt.plot(x, fear, marker="o", linewidth=2, label="fear")
+    plt.plot(x, delegated, marker="o", linewidth=2, label="delegated")
+    plt.plot(x, exploration, marker="o", linewidth=2, label="exploration")
+    plt.plot(x, fixation, marker="o", linewidth=2, label="fixation")
 
-    plt.xticks(x, batch_ids, rotation=45, ha="right")
+    plt.xticks(x, batch_ids, rotation=30, ha="right")
     plt.ylim(0, 100)
     plt.xlabel("batch_id")
     plt.ylabel("score")
-    plt.title("ECOIN Weekly Observation Trends")
-    plt.legend()
+    plt.title("Weekly observation trends")
+    plt.legend(loc="best")
     plt.tight_layout()
 
     plt.savefig(PLOT_PATH, dpi=150)
