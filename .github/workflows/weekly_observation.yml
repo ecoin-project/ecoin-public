@@ -32,6 +32,9 @@ jobs:
           USE_MANUAL_SAMPLE: "1"
         run: python scripts/score_outputs.py
 
+      - name: Plot trends
+        run: python scripts/plot_master_summary.py
+
       - name: Upload outputs
         uses: actions/upload-artifact@v4
         with:
