@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Debt fatigue and the feeling of never catching up",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that debt repayment has become a continuous drag on the future, making progress feel cosmetic rather than real. The concern is often framed not only as fear of owing money, but as fear that interest, minimum payments, and rising costs turn adulthood into a long-term state of controlled financial exhaustion.",
+      "signals_observed": [
+        "Common phrases include \"I pay and it never moves,\" \"minimum payment trap,\" \"still underwater,\" \"debt spiral,\" and \"I can't get ahead.\"",
+        "Online discourse increasingly links credit cards, student debt, medical bills, and buy-now-pay-later balances into a single narrative of chronic repayment fatigue.",
+        "Advice content often frames debt not as an isolated mistake but as a structural condition requiring strict systems, emotional restraint, and ongoing vigilance."
+      ],
+      "solutions_sought": [
+        "Debt payoff calculators, snowball or avalanche templates, and automated repayment dashboards.",
+        "Budget restructuring frameworks, consolidation explainers, and coaching focused on reducing interest drag.",
+        "Communities and accountability spaces centered on slow recovery, payoff milestones, and anti-debt discipline."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to finally make progress\" framing, where repayment judgment is partially transferred to calculators, payoff plans, and automation rules.",
+        "\"Stop guessing and follow the plan\" framing, where emotional overwhelm is reduced through externally structured debt routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without a stronger repayment system, debt may continue to absorb future income, limit options, and create chronic instability.",
+        "superiority": "People with disciplined payoff systems are portrayed as more serious, more mature, and more financially capable than those who keep drifting under compounding balances.",
+        "paired_mechanism": "Fear of endless repayment is paired with the superiority promise of disciplined recovery, making debt strategy feel like both rescue and moral competence."
+      },
+      "scores": {
+        "delegated_agency": 82,
+        "fear_intensity": 85,
+        "superiority_intensity": 68,
+        "polarization_risk": 51
+      }
+    },
+    {
+      "anxiety_label": "Subscription creep and invisible monthly leakage",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the sense that small recurring payments quietly accumulate until ordinary income feels perforated by invisible drains. The concern is often framed not only as overspending, but as fear that digital life now defaults to background extraction through memberships, fees, renewals, and low-attention monthly commitments.",
+      "signals_observed": [
+        "Common phrases include \"death by subscriptions,\" \"where is my money going,\" \"I forgot I was paying for that,\" and \"everything is monthly now.\"",
+        "Online discourse often packages streaming, software, delivery, storage, and premium memberships into one narrative of ambient financial leakage.",
+        "Advice content increasingly treats recurring charges as a hidden systems problem rather than a series of isolated purchases."
+      ],
+      "solutions_sought": [
+        "Subscription trackers, renewal alerts, cancellation tools, and spending-audit dashboards.",
+        "Low-overhead budgeting routines and monthly financial reset systems.",
+        "Content and communities focused on reducing invisible expenses and restoring control over recurring outflows."
+      ],
+      "delegated_agency_hooks": [
+        "\"Let the app find the leaks\" framing, where spending awareness is partially handed to trackers, alerts, and auto-categorization tools.",
+        "\"Use this reset routine every month\" framing, where financial attention is externalized into recurring audits and structured cancellation habits."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without active monitoring, small recurring charges may quietly undermine savings, flexibility, and your sense of control.",
+        "superiority": "People who track every subscription are portrayed as sharper, less careless, and less extractable than passive consumers.",
+        "paired_mechanism": "Fear of invisible leakage is paired with the superiority image of total awareness, making tracking feel like both protection and financial intelligence."
+      },
+      "scores": {
+        "delegated_agency": 87,
+        "fear_intensity": 74,
+        "superiority_intensity": 72,
+        "polarization_risk": 43
+      }
+    },
+    {
+      "anxiety_label": "Side-income pressure and monetization of spare capacity",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that one salary or one primary role is no longer enough to feel secure, making every spare skill, hour, platform account, or hobby appear as potential income infrastructure. The concern is often framed not only as ambition, but as fear that unmonetized capacity now looks irresponsible under conditions of rising precarity.",
+      "signals_observed": [
+        "Common phrases include \"multiple income streams,\" \"my salary isn't enough,\" \"monetize your skills,\" \"everyone needs a side hustle,\" and \"don't rely on one source.\"",
+        "Online discourse increasingly links inflation, layoffs, creator tools, and platform selling into a wider expectation that spare effort should be economically activated.",
+        "Advice content often reframes rest, hobbies, and identity as underused assets awaiting conversion into revenue."
+      ],
+      "solutions_sought": [
+        "Side-hustle frameworks, monetization roadmaps, platform selling systems, and creator-income playbooks.",
+        "Templates, courses, and niche communities focused on packaging skills into repeatable offers.",
+        "Automation tools and lightweight business systems designed to turn spare time into structured micro-income."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to monetize what you already have\" framing, where business judgment is partially transferred to templates, funnels, and income systems.",
+        "\"Don't build from scratch\" framing, where uncertainty about earning is managed through pre-made monetization models and platform guides."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without additional income channels, you may remain too exposed to job instability, inflation, and one-source fragility.",
+        "superiority": "People with multiple monetized channels are portrayed as more adaptive, more serious, and less economically naive than those relying on one stream.",
+        "paired_mechanism": "Fear of one-source exposure is paired with the superiority promise of income multiplicity, making monetization feel like both protection and strategic maturity."
+      },
+      "scores": {
+        "delegated_agency": 84,
+        "fear_intensity": 80,
+        "superiority_intensity": 79,
+        "polarization_risk": 64
+      }
+    },
+    {
+      "anxiety_label": "Emergency fragility and fear of one bad event",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that many lives remain structurally stable only until one shock occurs: illness, job loss, accident, family crisis, or sudden repair cost. The concern is often framed not only as lack of savings, but as fear that the margin between ordinary functioning and destabilization has become too thin.",
+      "signals_observed": [
+        "Common phrases include \"one emergency away,\" \"one bad month,\" \"hanging by a thread,\" and \"there is no cushion.\"",
+        "Online discourse often packages emergency costs, fragile savings, and interrupted income into a single narrative of compressed resilience.",
+        "Advice content increasingly treats basic stability as something that must be engineered proactively because ambient systems no longer provide enough buffer."
+      ],
+      "solutions_sought": [
+        "Emergency-fund calculators, buffer-building systems, and staged savings plans.",
+        "Expense triage routines, fallback planning frameworks, and short-term resilience guides.",
+        "Communities and financial explainers focused on creating minimal safety margins under constrained conditions."
+      ],
+      "delegated_agency_hooks": [
+        "\"Build your cushion step by step\" framing, where survival planning is partially handed to calculators, milestone systems, and savings protocols.",
+        "\"Use this resilience plan before life hits\" framing, where uncertainty is converted into staged defensive routines and quantified buffer targets."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without even a modest buffer, a single unexpected event may trigger debt, disruption, and long recovery cycles.",
+        "superiority": "People with emergency systems are portrayed as more responsible, more protected, and less brittle than those living without margin.",
+        "paired_mechanism": "Fear of sudden collapse is paired with the superiority image of buffered preparedness, making saving feel like both protection and adult competence."
+      },
+      "scores": {
+        "delegated_agency": 79,
+        "fear_intensity": 86,
+        "superiority_intensity": 65,
+        "polarization_risk": 49
+      }
+    },
+    {
+      "anxiety_label": "Financial vigilance as a permanent lifestyle",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the sense that money management is no longer a periodic task but a constant state of monitoring, comparison, and behavioral correction. The concern is often framed not only as budgeting, but as fear that one lapse in vigilance can undo progress in environments shaped by price volatility, hidden costs, and unstable income expectations.",
+      "signals_observed": [
+        "Common phrases include \"stay on top of everything,\" \"check constantly,\" \"slip once and it adds up,\" and \"you can't be casual with money anymore.\"",
+        "Online discourse increasingly presents financial life as a continuous operational problem rather than a monthly review process.",
+        "Advice content often valorizes perpetual attention, behavioral restraint, and systemized self-correction as the new normal for ordinary stability."
+      ],
+      "solutions_sought": [
+        "Spending dashboards, weekly money check-ins, and financial operating systems.",
+        "Habit trackers, low-buy or no-buy routines, and structured review practices.",
+        "Communities and guides that normalize ongoing vigilance, tracking, and behavioral tightening."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to stay financially awake\" framing, where self-monitoring is partially outsourced to dashboards, recurring check-ins, and habit frameworks.",
+        "\"Make vigilance automatic\" framing, where discipline is translated into repeatable routines, trackers, and behavioral systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without ongoing vigilance, small lapses may accumulate into larger instability before you notice the shift.",
+        "superiority": "Highly attentive people are portrayed as more disciplined, more realistic, and less financially porous than those who still manage money casually.",
+        "paired_mechanism": "Fear of drift is paired with the superiority promise of permanent alertness, making vigilance feel like both protection and evidence of seriousness."
+      },
+      "scores": {
+        "delegated_agency": 88,
+        "fear_intensity": 78,
+        "superiority_intensity": 74,
+        "polarization_risk": 46
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 71,
+    "expansion": 84
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "Debt, subscriptions, side-income pressure, and emergency planning are often translated into system-manageable problems with purchasable tools attached.",
+    "Financial discourse frequently reframes vigilance and self-correction as permanent behavioral requirements rather than occasional maintenance."
+  ]
+}
