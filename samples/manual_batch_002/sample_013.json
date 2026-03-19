@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Housing lock-in, relocation paralysis, and fear of getting stuck",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that housing choices have become increasingly irreversible, expensive, and structurally constraining. The concern is often framed not only as affordability pressure, but as fear that a wrong decision about rent, mortgage, city, or household structure may lock a person into years of financial and emotional instability.",
+      "signals_observed": [
+        "Common phrases include \"priced out,\" \"stuck where I am,\" \"can't move,\" \"locked in,\" and \"one bad housing decision ruins everything.\"",
+        "Online discourse increasingly links rent, mortgage rates, deposits, commuting costs, and household fragmentation into a single feeling of constrained mobility.",
+        "Advice content often treats housing as a high-stakes strategic problem rather than an ordinary living arrangement, amplifying the sense that flexibility is disappearing."
+      ],
+      "solutions_sought": [
+        "Relocation calculators, rent-versus-buy tools, co-living models, and city comparison dashboards.",
+        "Housing strategy guides, lease negotiation advice, and content on minimizing lock-in risk.",
+        "Communities and planning frameworks focused on staged moves, flexible living, and preserving optionality."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this tool before you get trapped\" framing, where housing judgment is partially transferred to calculators, scoring systems, and relocation frameworks.",
+        "\"Follow this housing strategy to preserve freedom\" framing, where uncertainty is managed through structured comparison, optimization, and external planning systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without better planning, you may get locked into housing costs, locations, or commitments that become difficult to reverse.",
+        "superiority": "People who manage housing strategically are portrayed as more flexible, more realistic, and less likely to be trapped than those who drift into expensive commitments.",
+        "paired_mechanism": "Fear of being stuck is paired with the superiority promise of preserved optionality, making housing strategy feel like both protection and foresight."
+      },
+      "scores": {
+        "delegated_agency": 79,
+        "fear_intensity": 83,
+        "superiority_intensity": 69,
+        "polarization_risk": 52
+      }
+    },
+    {
+      "anxiety_label": "Job market opacity and algorithmic hiring uncertainty",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the sense that hiring has become harder to read, less human-scaled, and more dependent on opaque screening systems. The concern is often framed not only as difficulty finding work, but as fear of being filtered out by applicant tracking systems, AI review layers, and unstable evaluation criteria before any meaningful human consideration occurs.",
+      "signals_observed": [
+        "Common phrases include \"black hole applications,\" \"ATS,\" \"ghost jobs,\" \"auto-rejected,\" and \"I never even reached a person.\"",
+        "Online discourse increasingly treats job search as a game of formatting, keyword matching, and invisible machine thresholds rather than direct qualification assessment.",
+        "Commentary often links hiring opacity to self-doubt, resume inflation, and a generalized feeling that effort no longer maps cleanly onto outcomes."
+      ],
+      "solutions_sought": [
+        "Resume optimization tools, ATS checkers, application templates, and keyword-tuning systems.",
+        "Career coaches, mock interview services, and frameworks for navigating algorithmic hiring.",
+        "Communities focused on insider tactics, hiring workarounds, and referral-based escape routes."
+      ],
+      "delegated_agency_hooks": [
+        "\"Let this system beat their system\" framing, where job-seeking judgment is partially outsourced to optimizers, scanners, and external hiring frameworks.",
+        "\"Use the right format or never get seen\" framing, where uncertainty is converted into tool-mediated compliance with machine-readable expectations."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without optimization, qualified applicants may remain invisible inside opaque systems that reject before human review.",
+        "superiority": "Candidates using stronger optimization tools are portrayed as more strategic, more machine-legible, and more likely to get through than naive applicants.",
+        "paired_mechanism": "Fear of invisible rejection is paired with the superiority promise of system fluency, making optimization feel like both survival and competitive literacy."
+      },
+      "scores": {
+        "delegated_agency": 87,
+        "fear_intensity": 84,
+        "superiority_intensity": 78,
+        "polarization_risk": 60
+      }
+    },
+    {
+      "anxiety_label": "Administrative overload, paperwork fatigue, and life-management exhaustion",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that ordinary life now requires too much administrative coordination across bills, forms, subscriptions, records, insurance, taxes, appointments, and compliance tasks. The concern is often framed not only as annoyance, but as fear that missing one document, deadline, or process step may trigger cascading penalties, financial losses, or identity disruption.",
+      "signals_observed": [
+        "Common phrases include \"too many forms,\" \"I can't keep up,\" \"missed the deadline,\" \"admin exhaustion,\" and \"life feels like paperwork.\"",
+        "Online commentary often bundles taxes, renewals, health paperwork, school forms, and digital account maintenance into a single narrative of invisible labor overload.",
+        "Advice discourse increasingly treats adult life as a coordination problem requiring systemization, reminders, and external management aids."
+      ],
+      "solutions_sought": [
+        "Calendars, reminder systems, subscription trackers, document vaults, and life-admin dashboards.",
+        "Templates, checklists, and operational routines for recurring paperwork and deadline management.",
+        "Professional help, concierge services, and advisory content for reducing cognitive load around recurring bureaucracy."
+      ],
+      "delegated_agency_hooks": [
+        "\"Put your life admin on autopilot\" framing, where memory and coordination are partially handed to trackers, dashboards, and reminder systems.",
+        "\"Never miss another deadline\" framing, where self-trust is replaced with procedural scaffolding, document systems, and managed routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger systems, small administrative failures may cascade into avoidable penalties, stress, and instability.",
+        "superiority": "Organized people with robust admin systems are portrayed as more functional, more adult, and less vulnerable to preventable breakdowns.",
+        "paired_mechanism": "Fear of procedural failure is paired with the superiority image of operational control, making organization feel like both defense and competence."
+      },
+      "scores": {
+        "delegated_agency": 90,
+        "fear_intensity": 77,
+        "superiority_intensity": 67,
+        "polarization_risk": 44
+      }
+    },
+    {
+      "anxiety_label": "Reputation fragility and fear of being publicly misread",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the belief that reputation has become unusually fragile under conditions of screenshot culture, context collapse, and rapid moral interpretation. The concern is often framed not only as fear of public criticism, but as fear that one ambiguous remark, old post, or clipped interaction may be reframed in ways that are difficult to correct once circulated.",
+      "signals_observed": [
+        "Common phrases include \"taken out of context,\" \"screenshotted,\" \"dogpiled,\" \"one wrong thing,\" and \"people decide instantly who you are.\"",
+        "Online discourse often treats communication as permanently archivable and continuously vulnerable to reinterpretation across audiences.",
+        "Commentary increasingly links self-presentation, platform participation, and career safety to the management of reputational exposure."
+      ],
+      "solutions_sought": [
+        "Posting frameworks, reputation-management advice, privacy routines, and account-cleanup strategies.",
+        "Media training, communication coaches, and scripts for apology, clarification, or de-escalation.",
+        "Communities and guides focused on digital boundaries, defensive posting habits, and narrative control."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework before you post\" framing, where expressive judgment is partially transferred to communication rules, risk filters, and brand-safety advice.",
+        "\"Protect your reputation proactively\" framing, where identity management is outsourced to cleanup practices, templates, and defensive social-media systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger guardrails, ordinary expression may be reinterpreted in ways that damage trust, status, or opportunity.",
+        "superiority": "People with tighter communication discipline are portrayed as more sophisticated, more reputationally resilient, and less exposed than those who post casually.",
+        "paired_mechanism": "Fear of public misreading is paired with the superiority image of disciplined self-management, making caution feel like both protection and social intelligence."
+      },
+      "scores": {
+        "delegated_agency": 74,
+        "fear_intensity": 80,
+        "superiority_intensity": 73,
+        "polarization_risk": 88
+      }
+    },
+    {
+      "anxiety_label": "Skill obsolescence under accelerating tools and standards",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the sense that tools, norms, and productivity expectations are changing faster than people can update themselves. The concern is often framed not only as learning pressure, but as fear that hard-won competence may decay into irrelevance as platforms, models, and workflows shift before individuals can stabilize a working practice.",
+      "signals_observed": [
+        "Common phrases include \"moving too fast,\" \"obsolete already,\" \"I can't keep up,\" \"new stack every week,\" and \"everything changed again.\"",
+        "Commentary increasingly treats competence as temporary, requiring continuous re-learning just to remain legible in work and creator ecosystems.",
+        "Online discourse often links acceleration itself to exhaustion, identity instability, and the feeling that mastery is constantly deferred."
+      ],
+      "solutions_sought": [
+        "Continuous learning systems, newsletters, update trackers, and skill roadmaps.",
+        "Curated learning paths, coaches, and communities that compress change into manageable weekly routines.",
+        "Second-brain tools, note systems, and workflow scaffolds designed to preserve adaptiveness under rapid change."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to keep up automatically\" framing, where learning judgment is partially transferred to curated feeds, frameworks, and external roadmaps.",
+        "\"Don't track everything yourself\" framing, where acceleration is made tolerable by outsourcing prioritization and update filtering."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger adaptation systems, your skills may become less legible or less valuable before you can update them.",
+        "superiority": "People with better learning systems are portrayed as more current, more antifragile, and less likely to be left behind by rapid change.",
+        "paired_mechanism": "Fear of obsolescence is paired with the superiority promise of continuous adaptiveness, making systemized learning feel like both defense and advantage."
+      },
+      "scores": {
+        "delegated_agency": 83,
+        "fear_intensity": 82,
+        "superiority_intensity": 77,
+        "polarization_risk": 57
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 74,
+    "expansion": 85
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct population-level measurement.",
+    "Housing, hiring, bureaucracy, and skill-change themes are often translated into system-manageable problems with tools and frameworks attached.",
+    "Reputation fragility carries especially high risks of moral sorting and rapid escalation in public discourse."
+  ]
+}
