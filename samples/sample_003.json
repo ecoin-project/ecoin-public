@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "AI job displacement and skill erosion",
+      "anxiety_description": "A recurring anxiety in recent online discourse is that generative AI may compress white-collar work, reduce the value of accumulated expertise, and make workers feel replaceable before formal replacement occurs. Recent reporting and survey language emphasizes growing worker pessimism, fear of job disruption, and concern that AI may erode human skills at work.",
+      "signals_observed": [
+        "Repeated phrases such as \"left behind,\" \"replace,\" \"obsolete,\" \"AI-first,\" \"future-proof,\" and \"10x\" appear across workplace discussion and product marketing.",
+        "Layoff reporting and AI capability showcases are often circulated together, amplifying the sense that adaptation is mandatory rather than optional.",
+        "Online commentary often pairs efficiency language with fear of skill atrophy, oversight burden, and loss of human distinctiveness."
+      ],
+      "solutions_sought": [
+        "AI upskilling courses, prompt training, certification programs, and automation tutorials.",
+        "Copilots, personal knowledge systems, and agent-style assistants framed as cognitive extensions.",
+        "Identity-based communities organized around becoming an \"early adopter,\" \"builder,\" or \"operator.\""
+      ],
+      "delegated_agency_hooks": [
+        "\"Let the system think faster than you\" framing, where drafting, summarizing, sorting, and planning are offloaded to AI.",
+        "\"Use this stack or fall behind\" framing, where agency is partially transferred to bundled tools, templates, and training systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "You may lose relevance, income stability, and professional identity if you do not adapt quickly enough.",
+        "superiority": "You can become faster, more strategic, and harder to replace than slower adopters.",
+        "paired_mechanism": "Messaging often heightens fear of downward mobility first, then offers status restoration through tool mastery, so adoption feels like both protection and rank gain."
+      },
+      "scores": {
+        "delegated_agency": 92,
+        "fear_intensity": 89,
+        "superiority_intensity": 83,
+        "polarization_risk": 76
+      }
+    },
+    {
+      "anxiety_label": "Affordability squeeze and everyday precarity",
+      "anxiety_description": "Another visible anxiety concerns the cost of ordinary life: rent, groceries, utilities, debt, and housing access. Recent polling and reporting continue to frame the economy and cost of living as dominant public worries, while online discussion turns structural pressure into an ongoing personal optimization problem.",
+      "signals_observed": [
+        "Common phrases include \"can't get ahead,\" \"one emergency away,\" \"just getting by,\" and \"everything costs more now.\"",
+        "High-engagement posts frequently feature grocery receipts, rent comparisons, budget screenshots, and debt breakdowns, making affordability pressure highly legible and shareable.",
+        "The discourse often reframes inflationary and housing stress as a personal systems problem: cut, stack, optimize, relocate, monetize."
+      ],
+      "solutions_sought": [
+        "Budgeting apps, cashback systems, expense dashboards, and debt-management templates.",
+        "Side-hustle playbooks, creator monetization strategies, and passive-income narratives.",
+        "Housing calculators, downsizing content, relocation strategies, and affordability trackers."
+      ],
+      "delegated_agency_hooks": [
+        "\"This app saves money while you sleep\" framing, where spending control is shifted to automated trackers and alerts.",
+        "\"Follow this exact system\" framing, where financial judgment is partially outsourced to scripts, dashboards, and monetization funnels."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Even disciplined people may become unstable because essentials keep rising faster than their cushion.",
+        "superiority": "Optimized users are portrayed as more disciplined, more informed, and less financially blind than average consumers.",
+        "paired_mechanism": "Fear of falling behind materially is paired with identity rewards for being hyper-efficient and data-driven, turning economic stress into a competitive optimization project."
+      },
+      "scores": {
+        "delegated_agency": 80,
+        "fear_intensity": 91,
+        "superiority_intensity": 64,
+        "polarization_risk": 57
+      }
+    },
+    {
+      "anxiety_label": "Scams, impersonation, and collapse of everyday trust signals",
+      "anxiety_description": "Recent discourse shows strong anxiety that texts, calls, invoices, sellers, and even familiar voices are becoming harder to authenticate. Coverage increasingly emphasizes AI-enabled impersonation, deepfake voices, identity fraud, and large-scale scam infrastructure, reinforcing the sense that ordinary digital contact must now be treated as potentially adversarial.",
+      "signals_observed": [
+        "Warning language such as \"don't click,\" \"spoofed,\" \"AI voice,\" \"looks real,\" and \"verify everything\" appears repeatedly in alerts and user discussions.",
+        "Deepfake voice-call reporting and AI-scam coverage amplify the perception that familiar trust cues are no longer reliable.",
+        "Online conversation increasingly treats digital communication as a verification problem rather than a convenience layer."
+      ],
+      "solutions_sought": [
+        "Password managers, two-factor authentication, call screening, scam filters, credit locks, and identity monitoring.",
+        "Verification checklists, family safe-word routines, and fraud-awareness education.",
+        "Platform-mediated trust products such as buyer protection, monitored payments, and stronger identity checks."
+      ],
+      "delegated_agency_hooks": [
+        "\"Our system catches the scam before you do\" framing, where vigilance is handed to monitoring and anomaly-detection tools.",
+        "\"Continuous protection\" framing, where users are encouraged to subscribe to ongoing defensive infrastructure rather than rely on situational judgment."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Anyone can be fooled because deception now imitates familiar people, institutions, and ordinary transaction flows.",
+        "superiority": "Protected users are framed as harder to exploit, more sophisticated, and backed by institutional-grade defenses.",
+        "paired_mechanism": "Messaging broadens the threat field first, then restores control by promising membership in a better-defended class of users."
+      },
+      "scores": {
+        "delegated_agency": 88,
+        "fear_intensity": 93,
+        "superiority_intensity": 70,
+        "polarization_risk": 48
+      }
+    },
+    {
+      "anxiety_label": "Dating fatigue, ghosting, and relational uncertainty",
+      "anxiety_description": "A further pattern in online discourse is anxiety that connection has become procedural, exhausting, and difficult to interpret. Recent coverage highlights dating-app burnout, ghosting, dishonesty, safety concerns, scam overlap, and a market shift toward offline events or AI-assisted matchmaking as platforms react to changing user sentiment.",
+      "signals_observed": [
+        "Common wording includes \"dating burnout,\" \"ghosted,\" \"no one wants anything real,\" and \"swipe fatigue.\"",
+        "Advice content increasingly treats dating as a funnel problem involving profile assets, message timing, screening, and compatibility filters.",
+        "Fraud and catfishing warnings overlap with ordinary dating discourse, making romance and risk management rhetorically adjacent."
+      ],
+      "solutions_sought": [
+        "Profile audits, texting scripts, dating coaches, and compatibility frameworks.",
+        "Offline singles events, hobby-based meetups, and community-oriented alternatives to app-first matching.",
+        "AI matchmaking features, safety checks, and relational literacy content."
+      ],
+      "delegated_agency_hooks": [
+        "\"Let us optimize your match outcomes\" framing, where platforms and consultants promise to improve visibility and conversion.",
+        "\"Use the right framework\" framing, where relational judgment is partially transferred to typologies, filters, scripts, and matching systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without optimization, people may remain invisible, misread, or trapped in low-commitment loops.",
+        "superiority": "Those who master the signals, filters, and scripts are portrayed as more legible, more intentional, and less likely to waste time.",
+        "paired_mechanism": "Fear of romantic stagnation is paired with the promise of becoming strategically selectable in a crowded and ambiguous matching environment."
+      },
+      "scores": {
+        "delegated_agency": 73,
+        "fear_intensity": 77,
+        "superiority_intensity": 62,
+        "polarization_risk": 67
+      }
+    },
+    {
+      "anxiety_label": "Climate exposure, insurance fragility, and place-based instability",
+      "anxiety_description": "Another recurring anxiety concerns the material consequences of climate-related risk: extreme weather, rising premiums, coverage withdrawal, and the prospect that familiar places may become harder to insure or finance. Recent reporting and institutional analysis emphasize uninsurability risk, protection gaps, and the possibility that insurance can amplify financial stress when climate risk becomes unaffordable.",
+      "signals_observed": [
+        "Phrases such as \"uninsurable,\" \"risk map,\" \"protection gap,\" and \"climate migration\" circulate more widely beyond specialist policy discussion.",
+        "Coverage about premium spikes, hazard maps, and insurer retreat makes climate risk feel personal, local, and continuous rather than distant.",
+        "The discourse increasingly links homeownership, insurance, and geography into a single stability question: not just whether a place is desirable, but whether it remains insurable and financeable."
+      ],
+      "solutions_sought": [
+        "Insurance comparison tools, home-hardening guidance, preparedness kits, and backup infrastructure products.",
+        "Risk dashboards, flood and wildfire maps, and property-level climate scoring services.",
+        "Relocation planning, resilience consulting, and household continuity systems."
+      ],
+      "delegated_agency_hooks": [
+        "\"See your risk score now\" framing, where uncertainty is translated into dashboards, maps, and scoring tools.",
+        "\"Protect your home automatically\" framing, where monitoring systems, insurers, and preparedness subscriptions are positioned as ongoing risk managers."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "A home or region that once seemed stable may become physically exposed and financially difficult to insure.",
+        "superiority": "Prepared, data-informed households are framed as more resilient, more foresighted, and less exposed than passive neighbors.",
+        "paired_mechanism": "Diffuse environmental fear is converted into a resilience identity, where preparedness and risk literacy function as both protection and status signal."
+      },
+      "scores": {
+        "delegated_agency": 76,
+        "fear_intensity": 85,
+        "superiority_intensity": 58,
+        "polarization_risk": 63
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 82,
+    "expansion": 87
+  },
+  "notes": [
+    "These items summarize recurring public framings visible in recent online discourse and reporting, not clinical states or a ranked census of all concerns.",
+    "High-engagement platforms tend to overrepresent anxieties that are visually legible, narratively sharp, and easily attached to purchasable solutions.",
+    "The same discourse stream often blends observation, marketing, identity formation, and threat amplification, so boundaries between coping language and commercial persuasion are frequently blurred."
+  ]
+}
