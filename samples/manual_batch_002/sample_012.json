@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Parenting competition and child-development optimization pressure",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that raising a child now requires constant optimization across education, nutrition, emotional support, safety, and future competitiveness. The concern is often framed not only as ordinary parental care, but as fear that missing the right timing, tools, or developmental inputs may disadvantage a child permanently.",
+      "signals_observed": [
+        "Common phrases include \"behind already,\" \"giving them the best start,\" \"screen damage,\" \"brain development,\" and \"every choice matters.\"",
+        "Online parenting discourse increasingly treats child development as a high-stakes accumulation problem involving language exposure, extracurriculars, sleep, food quality, and emotional regulation.",
+        "Advice content often turns parenting into a continuous comparison field, where family routines are measured against expert guidance, peer benchmarks, and competitive future outcomes."
+      ],
+      "solutions_sought": [
+        "Parenting frameworks, developmental checklists, educational planning guides, and milestone tracking systems.",
+        "Courses, coaching, enrichment programs, and family routines designed to improve cognitive, emotional, and academic outcomes.",
+        "Communities and advisory content focused on better scheduling, better stimulation, and reduced parenting uncertainty."
+      ],
+      "delegated_agency_hooks": [
+        "\"Follow this system to avoid falling behind\" framing, where parental judgment is partially transferred to developmental frameworks, planners, and expert-created routines.",
+        "\"Use the right tools during the right window\" framing, where uncertainty is reduced through milestone systems, checklists, and guided optimization."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger structure and earlier intervention, your child may lose ground in environments that increasingly reward optimized development.",
+        "superiority": "Prepared parents are portrayed as more informed, more intentional, and more future-protective than families who rely on instinct alone.",
+        "paired_mechanism": "Fear of irreversible developmental disadvantage is paired with the superiority promise of proactive parenting, making optimization feel like both love and strategic competence."
+      },
+      "scores": {
+        "delegated_agency": 84,
+        "fear_intensity": 82,
+        "superiority_intensity": 76,
+        "polarization_risk": 62
+      }
+    },
+    {
+      "anxiety_label": "Education competition and fear of academic sorting",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the belief that schooling and skill acquisition have become harsher sorting systems, where small differences in preparation can cascade into large differences in life chances. The concern is often framed not only as pressure to achieve, but as fear that educational pathways are narrowing while competition intensifies.",
+      "signals_observed": [
+        "Common phrases include \"too competitive,\" \"everyone is doing more,\" \"falling behind,\" \"you need a plan early,\" and \"there is no margin anymore.\"",
+        "Commentary increasingly treats school choice, tutoring, language acquisition, exams, and extracurriculars as interlocking strategic decisions rather than separate developmental experiences.",
+        "Online discourse often links academic pressure to class anxiety, parental sacrifice, and fear that institutions reward those who optimize earliest and most aggressively."
+      ],
+      "solutions_sought": [
+        "Tutoring systems, application roadmaps, test-prep ecosystems, and educational planning services.",
+        "Structured study frameworks, productivity routines, and skill-acceleration content.",
+        "Peer groups and advisory communities focused on navigating school, ranking, and future credential competition."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this roadmap to stay competitive\" framing, where educational judgment is partially handed to tutors, strategists, and application systems.",
+        "\"Start now and trust the process\" framing, where academic uncertainty is turned into long-range planning routines and external guidance."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without better planning and earlier preparation, students may be sorted downward in systems perceived as increasingly unforgiving.",
+        "superiority": "Families and students with stronger strategies are portrayed as more disciplined, more realistic, and more likely to secure scarce opportunities.",
+        "paired_mechanism": "Fear of being sorted out is paired with the superiority identity of strategic educational foresight, making planning feel like both defense and status preservation."
+      },
+      "scores": {
+        "delegated_agency": 81,
+        "fear_intensity": 84,
+        "superiority_intensity": 79,
+        "polarization_risk": 66
+      }
+    },
+    {
+      "anxiety_label": "Health uncertainty and wellness optimization pressure",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that ordinary fatigue, inflammation, hormonal instability, and low-grade physical symptoms may signal broader health decline that standard routines are failing to address. The concern is often framed not only as fear of illness, but as pressure to continuously optimize sleep, food, supplements, exercise, and biomarkers in order to remain functional.",
+      "signals_observed": [
+        "Common phrases include \"something feels off,\" \"inflammation,\" \"hormones,\" \"gut health,\" \"biohacking,\" and \"I need to fix my body.\"",
+        "Online discourse often packages vague discomfort into optimization narratives involving labs, trackers, supplements, and anti-decline routines.",
+        "Commentary increasingly treats health not as periodic care but as a full-time management problem requiring continuous interpretation and adjustment."
+      ],
+      "solutions_sought": [
+        "Wearables, trackers, supplement stacks, meal systems, and recovery protocols.",
+        "Wellness coaching, bloodwork explainers, symptom frameworks, and individualized health routines.",
+        "Communities centered on anti-fatigue, anti-aging, metabolic health, and structured self-monitoring."
+      ],
+      "delegated_agency_hooks": [
+        "\"Track everything and catch decline early\" framing, where bodily self-trust is partially transferred to devices, dashboards, and biomarkers.",
+        "\"Use this protocol to get your energy back\" framing, where health uncertainty is managed through supplement stacks, routines, and expert-curated systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger optimization, subtle symptoms may accumulate into larger dysfunction, reduced energy, and loss of control over daily life.",
+        "superiority": "Optimized individuals are portrayed as more disciplined, more informed, and less physically degraded than people still living reactively.",
+        "paired_mechanism": "Fear of bodily decline is paired with the superiority image of physiological control, making wellness optimization feel like both protection and self-mastery."
+      },
+      "scores": {
+        "delegated_agency": 88,
+        "fear_intensity": 79,
+        "superiority_intensity": 75,
+        "polarization_risk": 55
+      }
+    },
+    {
+      "anxiety_label": "Loneliness, male isolation, and erosion of close friendship",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the sense that friendship networks have thinned, routine companionship has weakened, and many adults—especially men in some discussions—are left with too little emotional infrastructure outside work or romantic life. The concern is often framed not only as loneliness, but as fear of becoming socially unreachable, unsupported, and structurally alone during crisis.",
+      "signals_observed": [
+        "Common phrases include \"no real friends,\" \"everyone disappeared,\" \"no one checks in,\" \"male loneliness,\" and \"I only talk to people online.\"",
+        "Commentary often links isolation to remote work, urban transience, dating instability, weakened institutions, and discomfort with emotional openness.",
+        "Online discourse increasingly treats friendship decay as both a mental-health problem and a civic-social erosion problem."
+      ],
+      "solutions_sought": [
+        "Men's groups, community meetups, hobby clubs, accountability circles, and friendship-building programs.",
+        "Content on how to maintain adult friendships, initiate plans, and create recurring social rituals.",
+        "Guided communities, support forums, and structured belonging spaces designed to reduce social drift."
+      ],
+      "delegated_agency_hooks": [
+        "\"Join this group and rebuild connection\" framing, where belonging is partially outsourced to curated communities and recurring group formats.",
+        "\"Use this framework to make real friends\" framing, where social spontaneity is replaced by scripts, routines, and structured community entry points."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without active reconstruction of social ties, you may become increasingly isolated, unsupported, and fragile under stress.",
+        "superiority": "People with stronger friendship systems are portrayed as more grounded, more emotionally capable, and less socially disposable than those who remain isolated.",
+        "paired_mechanism": "Fear of social abandonment is paired with the superiority image of restored belonging, making intentional friendship-building feel like both rescue and human competence."
+      },
+      "scores": {
+        "delegated_agency": 70,
+        "fear_intensity": 76,
+        "superiority_intensity": 64,
+        "polarization_risk": 58
+      }
+    },
+    {
+      "anxiety_label": "Fertility timing, family formation delay, and life-sequence instability",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the fear that economic instability, relationship uncertainty, and bodily timelines are making family formation feel increasingly precarious. The concern is often framed not only as concern about fertility itself, but as fear of missing the right sequence for partnership, housing, income, and reproduction before options narrow.",
+      "signals_observed": [
+        "Common phrases include \"running out of time,\" \"not ready yet,\" \"can't afford a family,\" \"fertility decline,\" and \"wrong timing.\"",
+        "Online commentary often links delayed partnership, unstable work, high housing costs, and biological urgency into a single compressed life-planning anxiety.",
+        "Advice discourse increasingly treats family formation as a coordinated timing problem requiring strategic sequencing rather than gradual life unfolding."
+      ],
+      "solutions_sought": [
+        "Fertility education content, planning tools, egg freezing discourse, financial preparation guides, and relationship-timeline frameworks.",
+        "Communities and explainers focused on reproductive timelines, partnership decision-making, and future family planning.",
+        "Structured planning systems that align income, housing, health, and partnership decisions with family goals."
+      ],
+      "delegated_agency_hooks": [
+        "\"Plan now before options narrow\" framing, where life-sequence uncertainty is handed to fertility content, planners, and timing frameworks.",
+        "\"Use this framework to stay ahead of the window\" framing, where family formation becomes a managed timeline rather than an emergent process."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without earlier planning, you may lose flexibility across partnership, fertility, and family formation before conditions feel stable enough.",
+        "superiority": "People who anticipate constraints earlier are portrayed as more realistic, more self-protective, and less likely to be trapped by delay.",
+        "paired_mechanism": "Fear of missed timing is paired with the superiority image of strategic life-sequencing, making preparation feel like both emotional prudence and temporal control."
+      },
+      "scores": {
+        "delegated_agency": 77,
+        "fear_intensity": 80,
+        "superiority_intensity": 71,
+        "polarization_risk": 61
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 75,
+    "expansion": 87
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the whole population.",
+    "Parenting, education, health, and relationship timing themes are often reframed as continuous optimization problems with guided systems attached.",
+    "Isolation and family-formation anxieties frequently mix structural pressure with self-management language."
+  ]
+}
