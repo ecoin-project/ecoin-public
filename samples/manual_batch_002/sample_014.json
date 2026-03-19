@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Food distrust, hidden contamination, and everyday consumption anxiety",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that ordinary food, water, packaging, and consumer staples may contain hidden risks that are difficult to detect without specialized attention. The concern is often framed not only as fear of poor nutrition, but as fear that everyday consumption has become quietly contaminated, industrially compromised, or structurally untrustworthy.",
+      "signals_observed": [
+        "Common phrases include \"what are we really eating,\" \"toxins everywhere,\" \"processed beyond recognition,\" \"I don't trust labels,\" and \"everything feels contaminated.\"",
+        "Online discourse increasingly links food quality, packaging, additives, environmental exposure, and chronic symptoms into a single low-grade threat narrative.",
+        "Advice content often treats grocery shopping and meal planning as defensive acts requiring constant vigilance, decoding, and ingredient-level suspicion."
+      ],
+      "solutions_sought": [
+        "Ingredient-scanning apps, clean-food shopping lists, label-decoding frameworks, and restrictive sourcing guides.",
+        "Meal systems, elimination routines, filtered-water setups, and anti-contamination home practices.",
+        "Communities, explainers, and curators who promise to separate safer products from silently harmful everyday defaults."
+      ],
+      "delegated_agency_hooks": [
+        "\"Scan before you trust\" framing, where ordinary food judgment is partially handed to apps, ingredient databases, and curated risk filters.",
+        "\"Follow this clean-living system\" framing, where uncertainty about daily consumption is managed through rigid lists, protocols, and expert-curated routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger filtering and vigilance, you may be consuming products that quietly undermine health and accumulate long-term harm.",
+        "superiority": "Disciplined consumers are portrayed as more aware, more purified, and less easily manipulated than people who still eat and shop casually.",
+        "paired_mechanism": "Fear of invisible contamination is paired with the superiority promise of elevated discernment, making food restriction feel like both protection and refinement."
+      },
+      "scores": {
+        "delegated_agency": 78,
+        "fear_intensity": 82,
+        "superiority_intensity": 72,
+        "polarization_risk": 74
+      }
+    },
+    {
+      "anxiety_label": "Public-health ambiguity and preventive self-protection pressure",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that public-health guidance is often too unstable, too generalized, or too delayed to provide full reassurance in everyday life. The concern is often framed not only as fear of disease, but as pressure to personally manage air, surfaces, exposure, immunity, and recovery under conditions of partial trust and incomplete certainty.",
+      "signals_observed": [
+        "Common phrases include \"I can't rely on the system,\" \"protect yourself,\" \"air quality,\" \"immune support,\" and \"no one is looking out for you.\"",
+        "Online discourse increasingly blends illness prevention, environmental exposure, and distrust of generalized public messaging into a continuous self-protection mindset.",
+        "Advice content often presents ordinary participation in public life as requiring invisible layers of risk management that others may not be taking seriously."
+      ],
+      "solutions_sought": [
+        "Air filters, masks, supplements, exposure-reduction routines, and home-health control systems.",
+        "Personal prevention frameworks, symptom tracking, and layered self-protection habits for crowded or uncertain environments.",
+        "Communities and explainers focused on practical self-protection, indoor-air awareness, and autonomous risk reduction."
+      ],
+      "delegated_agency_hooks": [
+        "\"Build your own protection layer\" framing, where safety judgment is partially transferred to devices, routines, and preventive systems rather than public defaults.",
+        "\"Use this protocol to reduce your risk\" framing, where uncertainty is translated into personal monitoring, environmental control, and structured self-management."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger personal precautions, you may be exposed in environments where broader systems feel inconsistent or insufficiently protective.",
+        "superiority": "Prepared individuals are portrayed as more realistic, more informed, and less vulnerable than people who simply follow ambient norms.",
+        "paired_mechanism": "Fear of under-protection is paired with the superiority promise of autonomous vigilance, making prevention feel like both defense and evidence of sharper judgment."
+      },
+      "scores": {
+        "delegated_agency": 81,
+        "fear_intensity": 79,
+        "superiority_intensity": 70,
+        "polarization_risk": 68
+      }
+    },
+    {
+      "anxiety_label": "Social withdrawal, overstimulation, and self-protective retreat",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that ordinary social participation has become too noisy, too performative, or too draining to sustain without strategic retreat. The concern is often framed not only as introversion or tiredness, but as fear that open social contact now carries too much unpredictability, emotional labor, and overstimulation to feel restorative.",
+      "signals_observed": [
+        "Common phrases include \"I just want peace,\" \"people are exhausting,\" \"too much stimulation,\" \"I stay home now,\" and \"protect your energy.\"",
+        "Online discourse increasingly links noise, crowds, social obligation, conflict risk, and constant interpretation into one withdrawal-leaning pattern.",
+        "Advice content often reframes retreat, cancellation, and smaller social circles as necessary infrastructure for remaining functional."
+      ],
+      "solutions_sought": [
+        "Boundary frameworks, low-stimulation routines, smaller-circle philosophies, and social-energy management systems.",
+        "Home-centered lifestyles, scheduling control, sensory reduction practices, and curated interaction habits.",
+        "Communities and explainers focused on burnout-sensitive living, peace protection, and lower-friction belonging."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to protect your energy\" framing, where social judgment is partially handed to boundary systems, typologies, and protective scripts.",
+        "\"Design a life with less noise\" framing, where withdrawal is systematized through routines, environmental filtering, and externally supplied peace-preserving rules."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger limits, you may be repeatedly overstimulated, emotionally depleted, and unable to recover from ordinary social life.",
+        "superiority": "People who curate their social environment are portrayed as more self-aware, more regulated, and less disposable than those who remain overexposed.",
+        "paired_mechanism": "Fear of depletion is paired with the superiority image of selective self-protection, making retreat feel like both restoration and disciplined discernment."
+      },
+      "scores": {
+        "delegated_agency": 72,
+        "fear_intensity": 75,
+        "superiority_intensity": 67,
+        "polarization_risk": 63
+      }
+    },
+    {
+      "anxiety_label": "Class-coded self-maintenance and aesthetic labor pressure",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the sense that grooming, organization, posture, health practices, and visible self-maintenance are increasingly read as signals of class position, discipline, and legitimacy. The concern is often framed not only as beauty pressure, but as fear that failing to maintain certain standards makes a person appear disordered, low-status, or socially careless.",
+      "signals_observed": [
+        "Common phrases include \"looking put together,\" \"maintenance matters,\" \"you can tell who takes care of themselves,\" and \"presentation is everything.\"",
+        "Online discourse often links visible routine, body management, clothing, skin, home order, and diet into one unified image of respectable self-governance.",
+        "Advice content increasingly treats self-maintenance as a moral-aesthetic signal rather than a private preference."
+      ],
+      "solutions_sought": [
+        "Routine systems for grooming, clothing, skin care, home order, and visible consistency.",
+        "Image coaching, presentation frameworks, and lifestyle-aesthetic guides tied to discipline and class readability.",
+        "Communities centered on polish, refinement, reset routines, and structured self-upkeep."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this routine to look more put together\" framing, where visible self-maintenance is partially outsourced to scripts, aesthetic systems, and expert guidance.",
+        "\"Follow these standards and people will read you differently\" framing, where class-coded presentation anxiety is translated into reproducible external routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without more disciplined self-maintenance, you may be read as lower-status, less competent, or less self-respecting than you intend.",
+        "superiority": "People with stronger visible upkeep are portrayed as more refined, more credible, and more socially legible than those who remain unstructured.",
+        "paired_mechanism": "Fear of disordered presentation is paired with the superiority promise of aesthetic self-command, making routine feel like both protection and status performance."
+      },
+      "scores": {
+        "delegated_agency": 76,
+        "fear_intensity": 74,
+        "superiority_intensity": 81,
+        "polarization_risk": 71
+      }
+    },
+    {
+      "anxiety_label": "Local instability, neighborhood decline, and loss of everyday trust",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that the immediate local environment—streets, shops, transit, schools, and neighborhood routines—has become less stable, less predictable, and less trustworthy. The concern is often framed not only as fear of isolated incidents, but as a cumulative erosion of ordinary confidence in the places where daily life is supposed to happen.",
+      "signals_observed": [
+        "Common phrases include \"the neighborhood changed,\" \"it doesn't feel the same,\" \"I don't trust the area anymore,\" and \"normal life feels more fragile now.\"",
+        "Online discourse often aggregates visible disorder, small crime, vacant storefronts, school uncertainty, and service decline into one narrative of local unraveling.",
+        "Commentary increasingly treats daily trust as place-dependent and reversible, rather than something that can be assumed indefinitely."
+      ],
+      "solutions_sought": [
+        "Neighborhood watch systems, local information channels, move-or-stay planning, and micro-safety routines.",
+        "Community groups, local mutual aid, and practical scripts for reducing exposure to neighborhood instability.",
+        "Tools and advice for evaluating whether to adapt, organize locally, or quietly exit deteriorating environments."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use local intelligence before it gets worse\" framing, where place judgment is partially transferred to neighborhood feeds, watch systems, and localized risk channels.",
+        "\"Follow these routines to stay safe where you are\" framing, where declining everyday trust is managed through structured vigilance and hyperlocal systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without closer local awareness, you may remain exposed in environments that are gradually becoming less orderly and less reliable.",
+        "superiority": "People who read neighborhood risk earlier are portrayed as more grounded, more realistic, and less likely to be surprised by decline than passive residents.",
+        "paired_mechanism": "Fear of local unraveling is paired with the superiority image of early detection, making neighborhood vigilance feel like both protection and practical wisdom."
+      },
+      "scores": {
+        "delegated_agency": 73,
+        "fear_intensity": 81,
+        "superiority_intensity": 69,
+        "polarization_risk": 80
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 72,
+    "expansion": 84
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "Consumption, public-health, neighborhood, and self-maintenance anxieties are frequently translated into system-manageable problems with purchasable routines attached.",
+    "Local decline and contamination narratives often intensify vigilance, moral sorting, and strong in-group trust preferences."
+  ]
+}
