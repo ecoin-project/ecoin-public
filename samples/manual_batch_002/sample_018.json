@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Careless spending shame and fear of being financially unserious",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the fear that small spending mistakes, impulse purchases, and inconsistent habits reveal deeper irresponsibility in a high-pressure financial environment. The concern is often framed not only as overspending, but as fear that ordinary lapses now carry moral weight and signal a failure of adult seriousness.",
+      "signals_observed": [
+        "Common phrases include \"I wasted money again,\" \"I need to get serious,\" \"small purchases add up,\" \"I was careless,\" and \"I sabotage myself.\"",
+        "Online discourse increasingly treats ordinary spending as evidence of discipline or lack of discipline rather than mere preference.",
+        "Advice content often links budgeting to self-respect, maturity, and long-term credibility, intensifying shame around inconsistency."
+      ],
+      "solutions_sought": [
+        "No-buy plans, low-buy routines, budgeting resets, and anti-impulse spending systems.",
+        "Weekly spending reviews, accountability frameworks, and habit trackers for financial discipline.",
+        "Communities and guides centered on reducing self-sabotage and building visible consistency with money."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to stop sabotaging yourself\" framing, where financial self-trust is partially transferred to spending rules, trackers, and accountability routines.",
+        "\"Remove the decision fatigue\" framing, where shame is managed through externally structured limits and repetitive financial rituals."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger structure, small spending lapses may keep compounding into instability, regret, and a damaged sense of self-control.",
+        "superiority": "People with tighter money systems are portrayed as more disciplined, more adult, and less self-defeating than those who continue spending reactively.",
+        "paired_mechanism": "Fear of careless drift is paired with the superiority promise of visible discipline, making spending control feel like both protection and character repair."
+      },
+      "scores": {
+        "delegated_agency": 83,
+        "fear_intensity": 76,
+        "superiority_intensity": 72,
+        "polarization_risk": 47
+      }
+    },
+    {
+      "anxiety_label": "Masculine role pressure and fear of functional inadequacy",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the belief that men are still expected to provide stability, competence, protection, and direction even as the economic and cultural conditions for doing so feel less stable. The concern is often framed not only as identity confusion, but as fear of becoming functionally inadequate in roles that remain socially charged.",
+      "signals_observed": [
+        "Common phrases include \"what am I supposed to be,\" \"provider pressure,\" \"not enough,\" \"men are struggling,\" and \"you still have to perform.\"",
+        "Online discourse increasingly links masculinity to work instability, dating pressures, emotional restraint, and expectations of reliability under stress.",
+        "Advice content often presents male role anxiety as something to be corrected through discipline, physique, earning power, and psychological hardening."
+      ],
+      "solutions_sought": [
+        "Role frameworks, masculine self-improvement systems, and routines centered on competence, discipline, and emotional control.",
+        "Communities, coaches, and content offering clearer scripts for direction, responsibility, and male self-respect.",
+        "Fitness, work, and behavioral systems designed to restore a sense of adequacy and role stability."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to become reliable again\" framing, where masculine uncertainty is partially handed to role systems, coaches, and discipline routines.",
+        "\"Follow the structure and stop drifting\" framing, where anxiety about inadequacy is managed through externally supplied scripts and performance systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger structure and discipline, you may remain uncertain, less respected, and less able to meet socially charged expectations of competence and reliability.",
+        "superiority": "Men with clearer systems are portrayed as more grounded, more capable, and less dependent on external validation than those who remain unstructured.",
+        "paired_mechanism": "Fear of inadequacy is paired with the superiority promise of restored function, making self-discipline feel like both protection and role legitimacy."
+      },
+      "scores": {
+        "delegated_agency": 78,
+        "fear_intensity": 79,
+        "superiority_intensity": 84,
+        "polarization_risk": 88
+      }
+    },
+    {
+      "anxiety_label": "Personal safety vigilance and fear of being unprepared in ordinary life",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the sense that routine environments such as transit, shops, parking lots, and late-night streets now require more personal vigilance than before. The concern is often framed not only as fear of crime, but as fear of being caught off guard in ordinary moments where readiness was once assumed unnecessary.",
+      "signals_observed": [
+        "Common phrases include \"stay alert,\" \"never let your guard down,\" \"trust your instincts,\" \"be aware of your surroundings,\" and \"ordinary places don't feel ordinary anymore.\"",
+        "Online discourse increasingly links small incidents, cautionary clips, and local anecdotes into a broader vigilance narrative about everyday exposure.",
+        "Advice content often reframes normal routines as risk environments requiring scripts, tools, and anticipatory habits."
+      ],
+      "solutions_sought": [
+        "Safety routines, route selection systems, alert apps, and situational-awareness guidance.",
+        "Personal safety tools, preparedness habits, and behavioral scripts for reducing exposure in everyday settings.",
+        "Communities and explainers focused on defensive awareness, local information, and practical risk reduction."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this routine so you are never caught off guard\" framing, where situational confidence is partially transferred to checklists, alert systems, and defensive habits.",
+        "\"Follow these signals and protocols\" framing, where uncertainty is managed through externally structured vigilance rules."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger vigilance, you may remain vulnerable in spaces that increasingly feel unpredictable or under-governed.",
+        "superiority": "Prepared people are portrayed as more aware, more realistic, and less naive than those who continue moving casually through daily life.",
+        "paired_mechanism": "Fear of being unprepared is paired with the superiority image of alert competence, making vigilance feel like both protection and practical intelligence."
+      },
+      "scores": {
+        "delegated_agency": 74,
+        "fear_intensity": 83,
+        "superiority_intensity": 70,
+        "polarization_risk": 81
+      }
+    },
+    {
+      "anxiety_label": "Health-anxiety loops and fear of missing the real problem",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that ordinary symptoms, low-grade discomfort, and intermittent bodily changes may indicate a deeper problem that remains uncaught. The concern is often framed not only as illness fear, but as fear of false reassurance, delayed recognition, and endless uncertainty about whether something serious is being overlooked.",
+      "signals_observed": [
+        "Common phrases include \"what if it's something serious,\" \"doctors missed it,\" \"I knew something was wrong,\" \"I keep checking,\" and \"I can't tell what's normal anymore.\"",
+        "Online discourse often links vague symptoms, self-tracking, online research, and distrust of dismissal into repeating cycles of concern and temporary relief.",
+        "Advice content increasingly treats symptom interpretation as a vigilance task requiring more tracking, more information, and more persistent self-advocacy."
+      ],
+      "solutions_sought": [
+        "Symptom trackers, self-advocacy guides, testing frameworks, and body-monitoring routines.",
+        "Communities and explainers focused on interpreting overlooked symptoms and navigating dismissal.",
+        "Structured personal health logs and systems for organizing questions, timelines, and escalation decisions."
+      ],
+      "delegated_agency_hooks": [
+        "\"Track the pattern before it gets missed\" framing, where uncertainty is partially handed to logs, trackers, and self-advocacy systems.",
+        "\"Use this framework to ask better questions\" framing, where fear of overlooked illness is managed through structured interpretation and escalation routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger vigilance, something important may remain unnoticed until it becomes harder to address or explain.",
+        "superiority": "People who monitor more carefully are portrayed as more informed, more self-protective, and less likely to be passively reassured into inaction.",
+        "paired_mechanism": "Fear of missing the real problem is paired with the superiority image of alert self-advocacy, making monitoring feel like both protection and bodily intelligence."
+      },
+      "scores": {
+        "delegated_agency": 81,
+        "fear_intensity": 84,
+        "superiority_intensity": 68,
+        "polarization_risk": 62
+      }
+    },
+    {
+      "anxiety_label": "Burnout normalization and fear of becoming permanently depleted",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that chronic exhaustion is becoming so common that people no longer know when tiredness has crossed into something more serious. The concern is often framed not only as burnout, but as fear that depletion has become the default operating condition of modern life, making recovery feel both urgent and strangely inaccessible.",
+      "signals_observed": [
+        "Common phrases include \"everyone is burned out,\" \"I am exhausted all the time,\" \"I don't bounce back anymore,\" \"this can't be normal,\" and \"rest doesn't fix it.\"",
+        "Online discourse increasingly treats fatigue, overstimulation, and emotional thinning as ambient background conditions rather than isolated episodes.",
+        "Advice content often presents recovery as requiring deliberate systems because ordinary rest is no longer assumed to be enough."
+      ],
+      "solutions_sought": [
+        "Recovery protocols, burnout checklists, nervous-system regulation routines, and workload-reduction frameworks.",
+        "Rest systems, anti-overload schedules, and communities focused on restoring margin and reducing depletion.",
+        "Tools and guidance for identifying burnout earlier and distinguishing it from ordinary tiredness."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this recovery system before you break down\" framing, where self-assessment is partially transferred to protocols, checklists, and regulated routines.",
+        "\"Stop guessing and follow the recovery plan\" framing, where depletion is managed through externally structured rest and reduction systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger recovery systems, chronic depletion may quietly become your normal condition and reduce your capacity to function, care, and decide.",
+        "superiority": "People who take recovery seriously are portrayed as more self-aware, more sustainable, and less trapped in normalized exhaustion than those who keep pushing blindly.",
+        "paired_mechanism": "Fear of permanent depletion is paired with the superiority promise of sustainable self-management, making recovery planning feel like both protection and deeper maturity."
+      },
+      "scores": {
+        "delegated_agency": 80,
+        "fear_intensity": 82,
+        "superiority_intensity": 66,
+        "polarization_risk": 50
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 73,
+    "expansion": 85
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "Safety, health, role-pressure, and burnout themes are often translated into system-manageable problems with scripts, communities, and purchasable guidance attached.",
+    "Role and safety discourse can intensify vigilance, moral sorting, and narrowed expectations about competence."
+  ]
+}
