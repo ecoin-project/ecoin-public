@@ -30,6 +30,8 @@ Typical outputs include:
 - `weekly_summary_<batch_id>.json`
 - `latest_summary.json`
 
+This repository currently includes manual sample outputs and a validated aggregation step for generating weekly summary JSON files before live API use.
+
 ## Notes
 
 This repository is intended for structural observation and hypothesis generation, not direct corpus measurement or performance benchmarking.
