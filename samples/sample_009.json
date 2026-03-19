@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Retirement insecurity and long-horizon financial precarity",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that long-term financial stability is becoming harder to build even for people who work, save, and behave responsibly. The concern is often framed not only as fear of poverty in old age, but as fear that ordinary planning assumptions no longer hold, making retirement, savings, and future independence feel structurally uncertain.",
+      "signals_observed": [
+        "Common phrases include \"I'll never retire,\" \"it still isn't enough,\" \"the numbers don't work,\" \"I did everything right,\" and \"future me is screwed.\"",
+        "Retirement discourse increasingly links inflation, debt, housing costs, health costs, and unstable labor markets into one long-range insecurity narrative.",
+        "Online discussion often frames long-term planning as a moving target, where responsible behavior still may not produce the expected safety."
+      ],
+      "solutions_sought": [
+        "Retirement calculators, long-horizon planning tools, debt-reduction systems, and compound-growth dashboards.",
+        "Financial coaching, budgeting frameworks, and future-scenario planning guides.",
+        "Communities and newsletters focused on frugality, strategic saving, and preserving independence under instability."
+      ],
+      "delegated_agency_hooks": [
+        "\"Run your numbers now\" framing, where judgment about long-term survival is shifted toward calculators, scenarios, and automated models.",
+        "\"Follow this system to retire with dignity\" framing, where personal uncertainty is partially handed to experts, planning frameworks, and structured financial routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without aggressive long-term planning, you may reach later life with too little security, too much dependence, and too little room to recover.",
+        "superiority": "Prepared planners are portrayed as more realistic, more disciplined, and more future-proof than people still relying on vague hope.",
+        "paired_mechanism": "Fear of future collapse is paired with an identity of disciplined foresight, making financial planning feel like both protection and evidence of maturity."
+      },
+      "scores": {
+        "delegated_agency": 79,
+        "fear_intensity": 86,
+        "superiority_intensity": 64,
+        "polarization_risk": 51
+      }
+    },
+    {
+      "anxiety_label": "Debt pressure and invisible financial suffocation",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that debt does not always look dramatic from the outside, but steadily narrows life options, increases emotional strain, and erodes the ability to plan. The concern is often framed as suffocation rather than crisis: people feel they are functioning, but under constant invisible compression.",
+      "signals_observed": [
+        "Common phrases include \"drowning slowly,\" \"minimum payments forever,\" \"can't get ahead,\" \"everything goes to bills,\" and \"I'm functioning but trapped.\"",
+        "Debt discourse increasingly blends emotional exhaustion with spreadsheet logic, turning ordinary life into an ongoing repayment environment.",
+        "Online commentary often frames debt not just as numbers, but as a structural force reshaping identity, relationships, and future imagination."
+      ],
+      "solutions_sought": [
+        "Debt snowball systems, repayment trackers, budgeting templates, and financial triage routines.",
+        "Refinancing explainers, consolidation guides, and step-by-step recovery frameworks.",
+        "Supportive communities, debt diaries, and accountability systems that make financial distress more trackable and less isolating."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this plan to escape debt\" framing, where financial judgment is partially transferred to repayment systems, apps, and rigid frameworks.",
+        "\"Let the dashboard show your real progress\" framing, where emotional interpretation is handed to visual tracking and structured milestones."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without a strict repayment strategy, debt may quietly consume your options, dignity, and future flexibility.",
+        "superiority": "Disciplined users are portrayed as more serious, more financially literate, and more capable of escape than people still dealing with debt reactively.",
+        "paired_mechanism": "Fear of quiet suffocation is paired with a superiority identity of disciplined recovery, making repayment feel like both rescue and proof of character."
+      },
+      "scores": {
+        "delegated_agency": 77,
+        "fear_intensity": 84,
+        "superiority_intensity": 61,
+        "polarization_risk": 46
+      }
+    },
+    {
+      "anxiety_label": "Job market opacity and application futility",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that the job market has become opaque, performative, and difficult to read even for qualified applicants. The concern is often framed not only as unemployment risk, but as repeated effort without legible feedback, producing a sense that hiring systems are detached from merit in any straightforward sense.",
+      "signals_observed": [
+        "Common phrases include \"ghost jobs,\" \"hundreds of applications,\" \"no response,\" \"the market is brutal,\" and \"I can't tell what's real anymore.\"",
+        "Application discourse increasingly mixes exhaustion, algorithmic filtering, AI screening, and identity doubt into one single experience of procedural futility.",
+        "Online advice often treats hiring as a hidden system with rules that must be decoded rather than a transparent matching process."
+      ],
+      "solutions_sought": [
+        "Resume optimization systems, job-search trackers, application templates, and interview coaching.",
+        "Networking frameworks, recruiter explainers, and insider guidance on how hiring pipelines actually behave.",
+        "Communities for job-seekers that provide scripts, emotional validation, and tactical process advice."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this exact job-search system\" framing, where applicants hand process judgment to templates, coaches, and optimization stacks.",
+        "\"Beat the filter\" framing, where agency is partially transferred to ATS tools, resume analyzers, and strategic experts."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without decoding the hidden rules of hiring, you may remain invisible despite strong qualifications and effort.",
+        "superiority": "Strategic candidates are portrayed as more legible, more adaptive, and more likely to survive a distorted market than those still applying naively.",
+        "paired_mechanism": "Fear of procedural invisibility is paired with the superiority promise of insider fluency, turning job search into both protection and competitive self-positioning."
+      },
+      "scores": {
+        "delegated_agency": 82,
+        "fear_intensity": 80,
+        "superiority_intensity": 74,
+        "polarization_risk": 63
+      }
+    },
+    {
+      "anxiety_label": "Food quality distrust and everyday contamination concern",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the belief that everyday food is increasingly artificial, contaminated, nutritionally degraded, or hard to trust without specialized knowledge. The concern is often framed not only as health risk, but as loss of confidence in ordinary consumption itself.",
+      "signals_observed": [
+        "Common phrases include \"what are we really eating,\" \"everything is processed,\" \"seed oils,\" \"chemicals in food,\" and \"I don't trust labels anymore.\"",
+        "Food discourse increasingly mixes nutrition, contamination anxiety, ingredient suspicion, and institutional distrust into one everyday vigilance pattern.",
+        "Online commentary often treats ordinary grocery decisions as hidden-risk choices requiring specialized decoding."
+      ],
+      "solutions_sought": [
+        "Ingredient-scanning apps, label guides, shopping systems, and restrictive food frameworks.",
+        "Clean eating protocols, elimination routines, and food-preparation systems framed as protective habits.",
+        "Alternative sourcing communities, local food guidance, and trusted-brand curation."
+      ],
+      "delegated_agency_hooks": [
+        "\"Scan before you buy\" framing, where trust in food is shifted toward apps, labels, and external scoring systems.",
+        "\"Follow this clean-food system\" framing, where ordinary judgment is partially replaced by curated lists, experts, and rigid shopping routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without constant vigilance, you may be eating in ways that quietly damage your health without your knowledge.",
+        "superiority": "Disciplined shoppers are portrayed as more aware, more purified, and less manipulated than people still eating casually.",
+        "paired_mechanism": "Fear of hidden contamination is paired with an identity of elevated discernment, making consumption restraint feel like both protection and refinement."
+      },
+      "scores": {
+        "delegated_agency": 75,
+        "fear_intensity": 78,
+        "superiority_intensity": 69,
+        "polarization_risk": 72
+      }
+    },
+    {
+      "anxiety_label": "Relational exhaustion and conflict-avoidant detachment",
+      "anxiety_description": "A further recurring anxiety in online discourse concerns the belief that modern relationships are emotionally draining, fragile, and increasingly hard to maintain without strategic distance. The concern is often framed not as dramatic heartbreak alone, but as cumulative exhaustion from unclear expectations, emotional labor, conflict avoidance, and low trust.",
+      "signals_observed": [
+        "Common phrases include \"I'm tired of people,\" \"protect your peace,\" \"low-maintenance relationships only,\" \"I can't do drama,\" and \"everyone is emotionally unavailable.\"",
+        "Interpersonal discourse increasingly frames ordinary relational strain as evidence that self-protection should override openness by default.",
+        "Advice content often presents emotional boundaries not just as healthy limits, but as systems for reducing human unpredictability."
+      ],
+      "solutions_sought": [
+        "Boundary frameworks, communication scripts, emotional-regulation systems, and relationship triage rules.",
+        "Therapy-adjacent explainers, attachment-style content, and conflict-navigation guidance.",
+        "Curated social standards and minimalist relationship philosophies designed to lower emotional volatility."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to protect your peace\" framing, where interpersonal judgment is partially handed to scripts, typologies, and rule-based filtering.",
+        "\"Follow these standards and stop wasting energy\" framing, where uncertainty is managed through structured self-protection systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger filters and boundaries, you may be repeatedly drained by unstable, confusing, or one-sided relationships.",
+        "superiority": "People who manage relationships strategically are portrayed as more self-aware, more emotionally intelligent, and less exploitable than those who remain too open.",
+        "paired_mechanism": "Fear of emotional depletion is paired with the superiority promise of selective detachment, making guardedness feel like both protection and advancement."
+      },
+      "scores": {
+        "delegated_agency": 70,
+        "fear_intensity": 76,
+        "superiority_intensity": 68,
+        "polarization_risk": 66
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 78,
+    "expansion": 87
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence in the total population.",
+    "Financial, procedural, and food-related anxieties are often packaged as systems problems with purchasable guidance attached.",
+    "The same discourse may function simultaneously as warning, coping language, moral sorting, and commercial persuasion."
+  ]
+}
