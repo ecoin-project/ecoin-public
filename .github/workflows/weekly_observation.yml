@@ -1,5 +1,8 @@
 name: Weekly Observation
 
+permissions:
+  contents: write
+
 on:
   schedule:
     - cron: "0 1 * * 6"
@@ -39,9 +42,17 @@ jobs:
       - name: Fetch market reference
         run: python scripts/fetch_market_reference.py
 
+      - name: Commit market reference update
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/market_reference.csv
+          git diff --cached --quiet || git commit -m "Update market reference CSV"
+          git push
+
       - name: Plot market reference
         run: python scripts/plot_market_reference.py
-  
+
       - name: Upload outputs
         uses: actions/upload-artifact@v4
         with:
