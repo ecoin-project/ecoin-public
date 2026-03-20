@@ -63,6 +63,8 @@ This repository currently includes manual sample outputs and a validated aggrega
 This repository is intended for structural observation and hypothesis generation, not direct corpus measurement or performance benchmarking.
 
 See also:
+
 - [SCORING.md](SCORING.md)
 - [HOOK_MAP.md](HOOK_MAP.md)
 - [ARCHITECTURE.md](ARCHITECTURE.md)
+- [BATCH_COMPARISON.md](BATCH_COMPARISON.md)
