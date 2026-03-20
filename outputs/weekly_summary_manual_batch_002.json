@@ -1,0 +1,54 @@
+{
+  "batch_id": "manual_batch_002",
+  "time_window_assumed": "last_3_to_12_months",
+  "n_files": 10,
+  "n_items_total": 50,
+  "mean_fear_intensity": 80.1,
+  "mean_superiority_intensity": 73.02,
+  "mean_delegated_agency": 79.84,
+  "mean_polarization_risk": 63.52,
+  "mean_exploration": 72.9,
+  "mean_expansion": 85.4,
+  "mean_fixation_proxy": 71.39,
+  "top_anxiety_labels": [
+    "Aging parents, eldercare strain, and family dependency pressure",
+    "Retirement insecurity and future dependency risk",
+    "Cognitive overload and inability to sustain attention",
+    "Public disorder, safety uncertainty, and everyday vigilance",
+    "Masculinity, femininity, and identity-role instability"
+  ],
+  "top_solution_modes": [
+    "outsourced expertise",
+    "automation/monitoring",
+    "resilience planning",
+    "offline/community",
+    "identity signaling"
+  ],
+  "source_files": [
+    "sample_011.json",
+    "sample_012.json",
+    "sample_013.json",
+    "sample_014.json",
+    "sample_015.json",
+    "sample_016.json",
+    "sample_017.json",
+    "sample_018.json",
+    "sample_019.json",
+    "sample_020.json"
+  ],
+  "run_diagnostics": {
+    "n_runs_total": 10,
+    "n_runs_success": 10,
+    "n_runs_error": 0,
+    "error_types": {},
+    "dominant_mode": "fixation leaning",
+    "notes": [
+      "Fear exceeds exploration.",
+      "Delegated agency remains elevated."
+    ]
+  },
+  "method_notes": [
+    "Counts are derived from model-generated observations.",
+    "This is not a direct corpus frequency measurement."
+  ]
+}
