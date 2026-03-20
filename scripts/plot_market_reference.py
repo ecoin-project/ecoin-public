@@ -36,7 +36,7 @@ def main():
     for row in rows:
         asset = row.get("asset", "").strip()
         date = row.get("date", "").strip()
-        price = to_float(row.get("price_usd"))
+        price = to_float(row.get("value"))
 
         if not asset or not date or price is None:
             continue
@@ -57,7 +57,7 @@ def main():
 
     plt.title("Market reference trends")
     plt.xlabel("date")
-    plt.ylabel("price_usd")
+    plt.ylabel("value")
     plt.xticks(rotation=45, ha="right")
     plt.legend()
     plt.tight_layout()
