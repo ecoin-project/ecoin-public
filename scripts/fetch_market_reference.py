@@ -16,7 +16,7 @@ def ensure_csv_exists():
     if not os.path.exists(DATA_PATH):
         with open(DATA_PATH, "w", encoding="utf-8", newline="") as f:
             writer = csv.writer(f)
-            writer.writerow(["date", "asset", "price_usd", "source_note"])
+            writer.writerow(["date", "asset", "price_usd", "source_note", "fetched_at_utc"])
 
 
 def read_existing_rows():
@@ -46,7 +46,7 @@ def fetch_btc_price():
     return float(data[COIN_ID][VS_CURRENCY])
 
 
-def append_row_if_new(date_str: str, price: float):
+def append_row_if_new(date_str: str, price: float, fetched_at_utc: str):
     rows = read_existing_rows()
     for row in rows:
         if row.get("date") == date_str and row.get("asset") == "BTC":
@@ -55,7 +55,7 @@ def append_row_if_new(date_str: str, price: float):
 
     with open(DATA_PATH, "a", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow([date_str, "BTC", price, "coingecko_demo_or_public"])
+        writer.writerow([date_str, "BTC", price, "coingecko_demo_or_public", fetched_at_utc])
 
     print(f"Appended BTC price for {date_str}: {price}")
 
@@ -63,9 +63,12 @@ def append_row_if_new(date_str: str, price: float):
 def main():
     ensure_csv_exists()
 
-    today = datetime.now(timezone.utc).date().isoformat()
+    now_utc = datetime.now(timezone.utc).replace(microsecond=0)
+    today = now_utc.date().isoformat()
+    fetched_at_utc = now_utc.isoformat().replace("+00:00", "Z")
+
     price = fetch_btc_price()
-    append_row_if_new(today, price)
+    append_row_if_new(today, price, fetched_at_utc)
 
 
 if __name__ == "__main__":
