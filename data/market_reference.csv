@@ -6,4 +6,3 @@ date,asset,value,unit,source_note,fetched_at_utc
 2026-03-01,GOLD,2867.4,usd_per_oz,manual backfill,
 2026-03-08,GOLD,2910.2,usd_per_oz,manual backfill,
 2026-03-15,GOLD,2984.1,usd_per_oz,manual backfill,
-2026-03-20,GOLD,3043.8,usd_per_oz,manual backfill,
