@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Attention scarcity and fear that life is being spent in fragments",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that modern life is consuming attention in such small and scattered pieces that people can no longer inhabit their own time coherently. The concern is often framed not only as distraction, but as fear that one's life is being lived in interruptions rather than in meaningful stretches of presence, depth, or sustained experience.",
+      "signals_observed": [
+        "Common phrases include \"my attention is gone,\" \"everything is fragmented,\" \"I can't stay with anything,\" \"my day disappears,\" and \"I never feel fully present.\"",
+        "Online discourse increasingly links notifications, short-form media, multitasking, work spillover, and ambient digital noise into a broader narrative of fractured time.",
+        "Advice content often reframes attention as a scarce resource under active extraction, requiring stronger defenses and intentional recovery structures."
+      ],
+      "solutions_sought": [
+        "Focus routines, notification-reduction systems, monotasking frameworks, and device-boundary practices.",
+        "Time-blocking systems, slower-media habits, and daily structures designed to restore continuity of thought and experience.",
+        "Communities and guides devoted to reclaiming deep attention and reducing the sense of life being consumed in fragments."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to get your attention back\" framing, where attentional self-trust is partially transferred to blockers, routines, and structured time environments.",
+        "\"Stop leaking your life away\" framing, where fear of fragmentation is managed through externally scaffolded attention protection systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger attention defenses, more of life may continue dissolving into interruption, reactivity, and diminished presence.",
+        "superiority": "People with stronger attention systems are portrayed as more grounded, more cognitively intact, and less captured by extractive environments than those who remain perpetually interrupted.",
+        "paired_mechanism": "Fear of a fragmented life is paired with the superiority promise of reclaimed presence, making attention protection feel like both rescue and higher-order self-command."
+      },
+      "scores": {
+        "delegated_agency": 84,
+        "fear_intensity": 81,
+        "superiority_intensity": 74,
+        "polarization_risk": 50
+      }
+    },
+    {
+      "anxiety_label": "Parental adequacy fear and the burden of getting childhood right",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the fear that parenting errors now feel more consequential, more publicly judged, and less reversible than before. The concern is often framed not only as wanting to do well, but as fear that ordinary parental uncertainty may quietly shape long-term emotional, behavioral, or developmental outcomes in ways that feel morally weighty.",
+      "signals_observed": [
+        "Common phrases include \"am I messing them up,\" \"everything matters,\" \"I don't want to get this wrong,\" \"you only get one childhood,\" and \"good parenting feels impossibly high-stakes now.\"",
+        "Online discourse increasingly links screen use, food, emotional tone, schooling, routines, and parental mental state into a broader anxiety about developmental influence.",
+        "Advice content often treats parenting not as improvisational care but as a high-stakes system requiring more knowledge, structure, and early calibration."
+      ],
+      "solutions_sought": [
+        "Parenting frameworks, developmental checklists, family-routine systems, and emotional-regulation guides for caregivers.",
+        "Courses, explainers, and communities focused on reducing avoidable developmental harm and improving everyday parenting consistency.",
+        "Tools and guidance for structuring sleep, meals, behavior, learning, and relational climate in more intentional ways."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system so you do not get the important things wrong\" framing, where parental judgment is partially transferred to frameworks, milestones, and expert-created routines.",
+        "\"Don't leave it to instinct alone\" framing, where fear of parental inadequacy is managed through structured guidance and developmental systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger structure and better information, ordinary parenting uncertainty may become a source of preventable long-term harm or regret.",
+        "superiority": "Parents using stronger systems are portrayed as more informed, more intentional, and more protective than those still relying on improvisation alone.",
+        "paired_mechanism": "Fear of getting childhood wrong is paired with the superiority promise of informed caregiving, making structured parenting feel like both protection and parental legitimacy."
+      },
+      "scores": {
+        "delegated_agency": 82,
+        "fear_intensity": 84,
+        "superiority_intensity": 76,
+        "polarization_risk": 65
+      }
+    },
+    {
+      "anxiety_label": "Local disorder and fear that ordinary public life is thinning out",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that ordinary public environments such as transit, shops, sidewalks, parks, and neighborhood services are becoming less predictable, less orderly, and less buffered by shared norms. The concern is often framed not only as safety concern, but as fear that the everyday social fabric supporting ordinary public life is weakening.",
+      "signals_observed": [
+        "Common phrases include \"it doesn't feel normal anymore,\" \"the area changed,\" \"everyone is on edge,\" \"public life feels frayed,\" and \"you have to stay alert all the time.\"",
+        "Online discourse increasingly links visible disorder, service decline, low-level confrontation, and norm erosion into a broader story of everyday civic thinning.",
+        "Advice content often presents ordinary public life as requiring more vigilance, route planning, and local knowledge than before."
+      ],
+      "solutions_sought": [
+        "Neighborhood information networks, safety routines, route-planning habits, and local alert systems.",
+        "Guides for reducing exposure, reading public environments more defensively, and identifying safer patterns of movement.",
+        "Communities and channels focused on local adaptation, practical vigilance, and rebuilding smaller pockets of public trust."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to move through public life more safely\" framing, where situational judgment is partially transferred to alerts, local feeds, and vigilance routines.",
+        "\"Know the pattern before you step into it\" framing, where fear of civic thinning is managed through structured local awareness systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger vigilance and local awareness, ordinary public environments may feel increasingly unpredictable and harder to navigate safely or comfortably.",
+        "superiority": "People who read local conditions earlier are portrayed as more realistic, more adaptive, and less naive than those still moving through public space casually.",
+        "paired_mechanism": "Fear of fraying public life is paired with the superiority promise of practical awareness, making vigilance feel like both protection and grounded competence."
+      },
+      "scores": {
+        "delegated_agency": 75,
+        "fear_intensity": 82,
+        "superiority_intensity": 69,
+        "polarization_risk": 79
+      }
+    },
+    {
+      "anxiety_label": "Self-optimization fatigue and fear that improvement has become endless labor",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that the demand to optimize body, work, money, relationships, home, and mindset has become so constant that self-improvement itself now feels exhausting. The concern is often framed not only as burnout, but as fear that there is no stable point at which one is allowed to stop managing and simply exist.",
+      "signals_observed": [
+        "Common phrases include \"I am tired of optimizing,\" \"everything is a project,\" \"I can't keep improving forever,\" \"there is always another system,\" and \"even rest becomes performance.\"",
+        "Online discourse increasingly treats self-optimization as both necessary and fatiguing, producing a tension between ambition and psychic overload.",
+        "Advice content often responds by offering gentler optimization, sustainable systems, or lower-friction self-management rather than rejecting improvement pressure entirely."
+      ],
+      "solutions_sought": [
+        "Simplified routines, sustainable improvement systems, and lower-friction frameworks that promise progress without total exhaustion.",
+        "Guides for reducing self-management overhead while retaining a sense of growth, order, or personal traction.",
+        "Communities and content focused on slower improvement, selective optimization, and reducing the burden of total life management."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this simpler system so growth stops exhausting you\" framing, where optimization fatigue is managed through externally designed low-friction routines.",
+        "\"You do not need to optimize everything\" framing, where burnout is reduced by handing prioritization and simplification to a framework."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without better simplification, continuous self-improvement pressure may turn life into endless management and leave little room for recovery or ease.",
+        "superiority": "People with cleaner, more selective systems are portrayed as more refined, more sustainable, and less trapped in frantic over-optimization than those still trying to improve everything at once.",
+        "paired_mechanism": "Fear of endless self-management is paired with the superiority promise of elegant simplification, making selective optimization feel like both protection and maturity."
+      },
+      "scores": {
+        "delegated_agency": 81,
+        "fear_intensity": 76,
+        "superiority_intensity": 73,
+        "polarization_risk": 45
+      }
+    },
+    {
+      "anxiety_label": "Long-horizon instability and fear that planning keeps expiring",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the sense that longer-term planning around work, housing, family, savings, and place becomes harder when conditions keep changing faster than plans can stabilize. The concern is often framed not only as uncertainty, but as fear that the future has become too unstable for ordinary long-horizon confidence.",
+      "signals_observed": [
+        "Common phrases include \"I can't plan that far ahead,\" \"everything changes too fast,\" \"the plan expires,\" \"I don't trust long-term assumptions,\" and \"it is hard to build on shifting ground.\"",
+        "Online discourse increasingly links economic shifts, technological acceleration, climate concerns, family instability, and institutional unreliability into one broader long-horizon unease.",
+        "Advice content often turns toward optionality, shorter planning cycles, and scenario-based decision-making rather than firm long-term certainty."
+      ],
+      "solutions_sought": [
+        "Scenario planning tools, shorter-cycle planning systems, and optionality-preserving frameworks.",
+        "Contingency routines, layered backup plans, and guides for maintaining flexibility under changing long-horizon conditions.",
+        "Communities and content focused on planning without overcommitting to assumptions that may become obsolete quickly."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework when the future won't stay still\" framing, where long-term uncertainty is partially managed through scenarios, contingencies, and shorter planning cycles.",
+        "\"Build flexibility instead of certainty\" framing, where fear of expiring plans is converted into externally scaffolded optionality systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without more flexible planning, assumptions about work, money, family, or place may expire faster than expected and leave you overcommitted to unstable paths.",
+        "superiority": "People who plan for optionality are portrayed as more adaptive, more realistic, and less brittle than those still depending on fixed long-horizon certainty.",
+        "paired_mechanism": "Fear of expiring plans is paired with the superiority promise of flexible foresight, making optionality feel like both protection and advanced realism."
+      },
+      "scores": {
+        "delegated_agency": 86,
+        "fear_intensity": 83,
+        "superiority_intensity": 75,
+        "polarization_risk": 48
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 75,
+    "expansion": 86
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "A notable pattern is the movement from broad instability toward smaller systems of defense, guidance, and manageability.",
+    "Parenting, attention, civic life, and future-planning themes often intensify the sense that ordinary life now requires more active management than before."
+  ]
+}
