@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Economic fragility and fear of losing basic stability quickly",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that ordinary financial stability is more reversible than it appears, and that one disruption can rapidly convert a functioning life into a precarious one. The concern is often framed not only as money stress, but as fear that stability itself has become thin, conditional, and harder to rebuild once interrupted.",
+      "signals_observed": [
+        "Common phrases include \"one bad month,\" \"hanging on,\" \"it could unravel fast,\" \"barely stable,\" and \"there is no real cushion.\"",
+        "Online discourse increasingly links rent, food, transport, debt, and irregular costs into a broader sense that basic life infrastructure has become more fragile.",
+        "Advice content often treats household stability as something that must be actively defended because passive normalcy no longer feels trustworthy."
+      ],
+      "solutions_sought": [
+        "Emergency-buffer plans, expense triage systems, and staged financial stabilization frameworks.",
+        "Budget routines, fallback planning tools, and practical guides for protecting minimum viability under pressure.",
+        "Communities and explainers centered on holding basic stability together during periods of compression and risk."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system before things unravel\" framing, where ordinary financial judgment is partially transferred to defensive plans, templates, and stabilization routines.",
+        "\"Protect the floor first\" framing, where diffuse money fear is managed through structured prioritization and externally guided triage."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger defensive systems, ordinary disruptions may escalate faster than expected and erode the basic structure of daily life.",
+        "superiority": "People who protect their minimum stability proactively are portrayed as more realistic, more resilient, and less fragile than those living without a defensive plan.",
+        "paired_mechanism": "Fear of rapid unraveling is paired with the superiority promise of financial defensiveness, making stabilization feel like both protection and practical maturity."
+      },
+      "scores": {
+        "delegated_agency": 81,
+        "fear_intensity": 84,
+        "superiority_intensity": 66,
+        "polarization_risk": 47
+      }
+    },
+    {
+      "anxiety_label": "Sleep disruption and fear that recovery capacity is being damaged",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the belief that poor sleep is no longer just an inconvenience but a core failure point that affects mood, cognition, metabolism, appearance, and long-term functioning. The concern is often framed not only as tiredness, but as fear that chronic sleep disruption is quietly degrading the ability to recover from life at all.",
+      "signals_observed": [
+        "Common phrases include \"I wake up tired,\" \"my sleep is broken,\" \"nothing works if I don't sleep,\" \"revenge bedtime procrastination,\" and \"I never feel restored.\"",
+        "Online discourse increasingly links sleep to mental sharpness, hormones, emotional regulation, aging, and general life stability.",
+        "Advice content often presents sleep as an operational foundation requiring active intervention, measurement, and environmental control."
+      ],
+      "solutions_sought": [
+        "Sleep protocols, evening routines, device boundaries, and bedroom-environment optimization systems.",
+        "Wearables, trackers, supplementation routines, and behavioral frameworks for stabilizing circadian patterns.",
+        "Communities and explainers focused on rebuilding restorative sleep and reducing chronic nighttime disruption."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this protocol to fix your sleep\" framing, where recovery judgment is partially handed to trackers, routines, and optimization systems.",
+        "\"Stop guessing why you are tired\" framing, where sleep uncertainty is translated into measurable patterns and structured corrective habits."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger sleep systems, chronic disruption may quietly reduce energy, cognition, emotional regulation, and long-term resilience.",
+        "superiority": "People with stable sleep routines are portrayed as more functional, more recovered, and less physiologically degraded than those still living in irregular exhaustion.",
+        "paired_mechanism": "Fear of damaged recovery is paired with the superiority promise of restored physiological order, making sleep optimization feel like both protection and self-mastery."
+      },
+      "scores": {
+        "delegated_agency": 86,
+        "fear_intensity": 78,
+        "superiority_intensity": 71,
+        "polarization_risk": 44
+      }
+    },
+    {
+      "anxiety_label": "Social withdrawal and fear of becoming unreachable to others",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that prolonged stress, overstimulation, and disappointment can gradually push people into lower-contact lifestyles that become harder to reverse. The concern is often framed not only as needing space, but as fear that self-protective withdrawal may slowly turn into disconnection that others stop trying to cross.",
+      "signals_observed": [
+        "Common phrases include \"I don't have the energy,\" \"I keep disappearing,\" \"it is easier not to reply,\" \"I don't know how to come back,\" and \"I am getting used to being alone.\"",
+        "Online discourse increasingly treats low-contact living as both a relief strategy and a risk factor for thinning relational life.",
+        "Advice content often frames reconnection as something that now requires deliberate systems rather than spontaneous emotional return."
+      ],
+      "solutions_sought": [
+        "Low-pressure reconnection routines, message scripts, scheduled check-ins, and softer social re-entry systems.",
+        "Guides for maintaining contact with less energy drain and for preventing total relational drift.",
+        "Communities and frameworks designed to make social return feel manageable rather than overwhelming."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this method to come back slowly\" framing, where social re-entry is partially transferred to scripts, routines, and structured low-pressure contact systems.",
+        "\"Don't wait until it feels natural\" framing, where withdrawal is managed through external prompts and recurring reconnection rituals."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without gentler reconnection systems, protective withdrawal may harden into disconnection and make relational return more difficult over time.",
+        "superiority": "People who maintain low-friction relational structures are portrayed as more emotionally intelligent and less likely to disappear into avoidant isolation than those who rely only on mood.",
+        "paired_mechanism": "Fear of becoming unreachable is paired with the superiority promise of intentional connectedness, making structured contact feel like both protection and interpersonal competence."
+      },
+      "scores": {
+        "delegated_agency": 72,
+        "fear_intensity": 73,
+        "superiority_intensity": 64,
+        "polarization_risk": 41
+      }
+    },
+    {
+      "anxiety_label": "Competence display pressure and fear that quiet skill is not enough",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the belief that competence must now be actively displayed, narrated, and socially legible in order to count. The concern is often framed not only as professional pressure, but as fear that quiet, steady, or internally validated skill may no longer survive in environments dominated by visible signaling and rapid evaluation.",
+      "signals_observed": [
+        "Common phrases include \"you have to show it,\" \"quiet competence gets ignored,\" \"document everything,\" \"visibility is part of the job,\" and \"if you don't present it, it doesn't exist.\"",
+        "Online discourse increasingly links work survival to self-narration, documentation, and visible proof rather than output alone.",
+        "Advice content often reframes competence as incomplete unless it is packaged into socially readable evidence."
+      ],
+      "solutions_sought": [
+        "Self-advocacy frameworks, portfolio systems, and routines for documenting and signaling work more clearly.",
+        "Coaching on professional visibility, narrative framing, and value communication.",
+        "Communities and guides focused on making quiet skill legible without total self-branding collapse."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to make your competence visible\" framing, where self-presentation judgment is partially handed to templates, frameworks, and documentation routines.",
+        "\"Don't let good work disappear\" framing, where fear of invisibility is managed through externally structured signaling habits."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without clearer competence display, meaningful work may remain undervalued because it is not translated into visible, legible evidence.",
+        "superiority": "People who narrate and display value more effectively are portrayed as more strategic and less professionally naive than those still relying on quiet quality alone.",
+        "paired_mechanism": "Fear of invisible competence is paired with the superiority promise of legible value, making self-presentation feel like both protection and strategic intelligence."
+      },
+      "scores": {
+        "delegated_agency": 79,
+        "fear_intensity": 77,
+        "superiority_intensity": 82,
+        "polarization_risk": 55
+      }
+    },
+    {
+      "anxiety_label": "Platform-mediated uncertainty and dependence on opaque systems",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the sense that more of life now runs through platforms whose rankings, visibility rules, pricing, moderation, and access conditions are difficult to predict. The concern is often framed not only as inconvenience, but as fear of having livelihood, discovery, or ordinary coordination mediated by systems that cannot be fully seen or appealed to.",
+      "signals_observed": [
+        "Common phrases include \"the algorithm changed,\" \"suddenly invisible,\" \"platform risk,\" \"you don't control the channel,\" and \"everything depends on systems you can't see.\"",
+        "Online discourse increasingly links work, audience reach, communication, and discovery to opaque platform infrastructures.",
+        "Advice content often presents platform dependence as unavoidable but survivable through hedging, diversification, and better systems awareness."
+      ],
+      "solutions_sought": [
+        "Diversification frameworks, backup-channel strategies, and systems for reducing dependence on any single platform.",
+        "Analytics routines, visibility-monitoring habits, and operational playbooks for handling platform shifts.",
+        "Communities and guides focused on navigating opaque systems with less fragility and more redundancy."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework so the platform cannot wipe you out\" framing, where uncertainty is managed through hedging systems, monitoring routines, and redundancy strategies.",
+        "\"Stop depending on one opaque channel\" framing, where platform anxiety is translated into structured diversification and backup planning."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger redundancy, a single platform shift may reduce visibility, income, reach, or coordination in ways that are hard to predict or reverse.",
+        "superiority": "People who diversify and monitor platform exposure are portrayed as more antifragile and less dependent than those still trusting one opaque system.",
+        "paired_mechanism": "Fear of invisible system shifts is paired with the superiority promise of diversified resilience, making redundancy feel like both protection and strategic realism."
+      },
+      "scores": {
+        "delegated_agency": 84,
+        "fear_intensity": 81,
+        "superiority_intensity": 75,
+        "polarization_risk": 62
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 73,
+    "expansion": 85
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "Economic, sleep, social, competence, and platform themes are often translated into structure-heavy solution systems that promise local control under wider uncertainty.",
+    "A notable pattern is the movement from diffuse vulnerability toward externally scaffolded routines that make instability feel more governable."
+  ]
+}
