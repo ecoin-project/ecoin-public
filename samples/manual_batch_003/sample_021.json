@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Status anxiety and fear of downward social readability",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the fear that one's life is becoming legible to others as stalled, diminished, or less respectable than it should be. The concern is often framed not only as economic pressure, but as fear that housing, clothing, routine, speech, and visible life structure are all being read as status signals that can move downward as easily as upward.",
+      "signals_observed": [
+        "Common phrases include \"I feel behind,\" \"it shows,\" \"people can tell,\" \"I don't look like I have it together,\" and \"everything signals where you are now.\"",
+        "Online discourse increasingly links visible self-maintenance, housing quality, work coherence, and lifestyle order into a wider anxiety about social legibility and rank.",
+        "Advice content often treats ordinary presentation as a strategic defense against being read as unstable, slipping, or less credible."
+      ],
+      "solutions_sought": [
+        "Lifestyle reset systems, visible-order routines, personal presentation frameworks, and reputation-maintenance habits.",
+        "Budgeted image-management plans, home-order systems, and self-governance routines meant to stabilize external signals.",
+        "Communities and guides focused on rebuilding legibility, restoring life structure, and avoiding visible downward drift."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system so your life reads differently\" framing, where status anxiety is partially handed to routines, aesthetic frameworks, and external self-ordering scripts.",
+        "\"Signal stability before people decide for you\" framing, where fear of social readability is managed through visible behavioral systems and presentation control."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger external order, others may increasingly read you as unstable, less credible, or socially downward-moving in ways that affect opportunity and self-worth.",
+        "superiority": "People with clearer visible structure are portrayed as more composed, more respectable, and less vulnerable to downward status interpretation than those who remain diffuse.",
+        "paired_mechanism": "Fear of downward readability is paired with the superiority promise of visible coherence, making self-ordering feel like both protection and rank stabilization."
+      },
+      "scores": {
+        "delegated_agency": 76,
+        "fear_intensity": 79,
+        "superiority_intensity": 81,
+        "polarization_risk": 58
+      }
+    },
+    {
+      "anxiety_label": "Class signaling pressure and fear of choosing the wrong markers",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the sense that consumption, taste, health habits, parenting styles, speech, and even moral language now function as class-coded markers that are easy to display incorrectly. The concern is often framed not only as wanting better things, but as fear of signaling the wrong background, wrong priorities, or wrong degree of refinement in increasingly coded environments.",
+      "signals_observed": [
+        "Common phrases include \"you can tell,\" \"wrong crowd,\" \"cheap-looking,\" \"not the right kind of polished,\" and \"everything is coded.\"",
+        "Online discourse often links aesthetics, language, food choices, schooling, and neighborhood decisions into a broader concern about class legibility.",
+        "Advice content increasingly frames everyday choices as social markers requiring more interpretive care and calibration."
+      ],
+      "solutions_sought": [
+        "Taste guides, style frameworks, etiquette explainers, and class-readable lifestyle systems.",
+        "Curation routines for clothing, home aesthetics, food, and communication styles designed to reduce signaling mistakes.",
+        "Communities and content focused on refinement, calibration, and avoiding visibly mismatched presentation."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this guide to read the room correctly\" framing, where class anxiety is partially outsourced to curators, taste frameworks, and external style standards.",
+        "\"Follow these signals and stop giving off the wrong impression\" framing, where ambiguity about class coding is managed through scripts and calibrated presentation systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger calibration, you may signal the wrong background, the wrong priorities, or the wrong degree of competence in ways that quietly lower social acceptance.",
+        "superiority": "People with better taste systems are portrayed as more refined, more socially fluent, and less likely to mis-signal than those still improvising.",
+        "paired_mechanism": "Fear of mis-signaling class position is paired with the superiority promise of calibrated refinement, making curation feel like both protection and social intelligence."
+      },
+      "scores": {
+        "delegated_agency": 74,
+        "fear_intensity": 73,
+        "superiority_intensity": 84,
+        "polarization_risk": 77
+      }
+    },
+    {
+      "anxiety_label": "Domestic instability and fear that home is no longer restorative",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that home life is becoming less restful, less orderly, and less able to function as a stable recovery environment. The concern is often framed not only as clutter or stress, but as fear that domestic space is being overtaken by logistics, noise, devices, care demands, and unresolved tension, leaving no reliable place for restoration.",
+      "signals_observed": [
+        "Common phrases include \"my home doesn't feel peaceful,\" \"I can't recover here,\" \"too much chaos,\" \"it never resets,\" and \"home feels like another task zone.\"",
+        "Online discourse increasingly links household disorder, emotional tension, device overflow, and administrative spillover into one domestic instability narrative.",
+        "Advice content often treats restoration as something that must be engineered through environment design, rituals, and stricter spatial rules."
+      ],
+      "solutions_sought": [
+        "Home reset routines, environmental design systems, device boundaries, and household calming protocols.",
+        "Decluttering frameworks, room-by-room stabilization plans, and domestic rituals for making space feel restorative again.",
+        "Communities and content focused on low-chaos living, peaceful home systems, and recovery-oriented domestic structure."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this reset system to make home feel safe again\" framing, where restoration is partially transferred to routines, design rules, and environmental control systems.",
+        "\"Don't wait to feel better naturally\" framing, where domestic instability is managed through structured resets and externally guided home-order practices."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger household systems, home may continue to amplify depletion instead of offering recovery, making daily functioning harder to sustain.",
+        "superiority": "People with calmer domestic systems are portrayed as more intentional, more regulated, and less consumed by chaos than those whose homes remain reactive.",
+        "paired_mechanism": "Fear of non-restorative home life is paired with the superiority promise of calm environmental control, making domestic structure feel like both protection and self-command."
+      },
+      "scores": {
+        "delegated_agency": 80,
+        "fear_intensity": 78,
+        "superiority_intensity": 69,
+        "polarization_risk": 46
+      }
+    },
+    {
+      "anxiety_label": "Erosion of self-trust and reliance on external structure",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that internal judgment—about priorities, capacity, desire, or timing—has become harder to trust without external confirmation. The concern is often framed not only as confusion, but as fear that instinct, memory, and self-direction may be too unstable to rely on under contemporary levels of complexity and noise.",
+      "signals_observed": [
+        "Common phrases include \"I don't trust myself,\" \"I need a system,\" \"I second-guess everything,\" \"I need outside structure,\" and \"left alone, I drift.\"",
+        "Online discourse increasingly normalizes the idea that self-governance requires tools, routines, coaches, or external accountability layers.",
+        "Advice content often treats internal uncertainty as something best corrected through external scaffolding rather than introspection alone."
+      ],
+      "solutions_sought": [
+        "Accountability systems, routines, trackers, coaches, and frameworks for reducing drift and indecision.",
+        "Decision templates, check-in rituals, and externally visible commitments designed to stabilize follow-through.",
+        "Communities and guidance built around structure, consistency, and reducing dependence on fluctuating inner states."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system because your feelings are not enough\" framing, where self-trust is partially handed to trackers, coaches, and external structures.",
+        "\"Let the framework hold you steady\" framing, where uncertainty about self-direction is managed through scaffolding, ritual, and externally imposed rhythm."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger external support, indecision, drift, and self-doubt may keep undermining progress and make life feel less governable from within.",
+        "superiority": "People with better structure are portrayed as more reliable, more adult, and less captive to unstable internal states than those still improvising.",
+        "paired_mechanism": "Fear of unreliable self-direction is paired with the superiority promise of externally stabilized consistency, making structure feel like both protection and maturity."
+      },
+      "scores": {
+        "delegated_agency": 89,
+        "fear_intensity": 77,
+        "superiority_intensity": 71,
+        "polarization_risk": 48
+      }
+    },
+    {
+      "anxiety_label": "Future uncertainty packaging and the need to make instability feel manageable",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the need to repackage large-scale uncertainty into smaller, manageable systems so that it feels actionable rather than paralyzing. The concern is often framed not only as fear of the future, but as pressure to compress diffuse instability into plans, dashboards, routines, and scenarios that preserve a sense of agency.",
+      "signals_observed": [
+        "Common phrases include \"I need a plan,\" \"make it manageable,\" \"break it down,\" \"I just need something actionable,\" and \"uncertainty is the worst part.\"",
+        "Online discourse increasingly translates broad instability—economic, relational, technological, civic—into smaller operational units that feel more tolerable to act on.",
+        "Advice content often succeeds by packaging uncertainty into steps, categories, and progress markers rather than resolving the underlying instability itself."
+      ],
+      "solutions_sought": [
+        "Scenario plans, risk maps, dashboards, checklists, and stepwise action frameworks.",
+        "Progress tracking systems and operational routines that convert ambiguity into manageable sequences.",
+        "Communities and guides focused on reducing paralysis by making uncertainty feel segmented and actionable."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to make uncertainty manageable\" framing, where diffuse fear is partially handed to scenario systems, trackers, and operational plans.",
+        "\"Stop spiraling and start structuring\" framing, where future anxiety is managed through external packaging rather than direct resolution."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger packaging and structure, uncertainty may remain diffuse enough to paralyze attention, energy, and decision-making.",
+        "superiority": "People who operationalize uncertainty are portrayed as more capable, more resilient, and less mentally overwhelmed than those who remain absorbed by amorphous fear.",
+        "paired_mechanism": "Fear of diffuse instability is paired with the superiority promise of structured manageability, making planning feel like both protection and proof of competence."
+      },
+      "scores": {
+        "delegated_agency": 85,
+        "fear_intensity": 80,
+        "superiority_intensity": 70,
+        "polarization_risk": 42
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 74,
+    "expansion": 86
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "Status, class, domestic, and self-trust themes are often translated into externally managed routines and frameworks.",
+    "A large share of contemporary solution-seeking appears to involve packaging diffuse instability into smaller units that feel governable."
+  ]
+}
