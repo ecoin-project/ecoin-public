@@ -53,6 +53,9 @@ jobs:
       - name: Plot market reference
         run: python scripts/plot_market_reference.py
 
+      - name: Plot market reference normalized
+        run: python scripts/plot_market_reference_normalized.py
+
       - name: Upload outputs
         uses: actions/upload-artifact@v4
         with:
