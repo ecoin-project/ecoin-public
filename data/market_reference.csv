@@ -3,7 +3,7 @@ date,asset,value,unit,source_note,fetched_at_utc
 2026-03-08,BTC,67197.23,usd,manual backfill from coingecko chart,
 2026-03-15,BTC,71019.86,usd,manual backfill from coingecko chart,
 2026-03-20,BTC,70786.0,usd,coingecko_demo_or_public,2026-03-20T03:45:12Z
-2026-03-01,GOLD,2867.4,usd_per_oz,manual backfill,
-2026-03-08,GOLD,2910.2,usd_per_oz,manual backfill,
-2026-03-15,GOLD,2984.1,usd_per_oz,manual backfill,
+2026-03-01,GOLD,5187.3,usd_per_oz,manual approximate from tradingeconomics chart,
+2026-03-08,GOLD,5144.3,usd_per_oz,manual approximate from tradingeconomics chart,
+2026-03-15,GOLD,5019.0,usd_per_oz,manual approximate from tradingeconomics chart,
 2026-03-20,GOLD,4723.700195,usd_per_oz,gold_api_free,2026-03-20T08:19:51Z
