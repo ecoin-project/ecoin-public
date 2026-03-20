@@ -1,0 +1,54 @@
+{
+  "batch_id": "manual_batch_003",
+  "time_window_assumed": "last_3_to_12_months",
+  "n_files": 10,
+  "n_items_total": 50,
+  "mean_fear_intensity": 78.86,
+  "mean_superiority_intensity": 73.74,
+  "mean_delegated_agency": 81.16,
+  "mean_polarization_risk": 55.46,
+  "mean_exploration": 73.8,
+  "mean_expansion": 85.6,
+  "mean_fixation_proxy": 69.72,
+  "top_anxiety_labels": [
+    "Status anxiety and fear of downward social readability",
+    "Class signaling pressure and fear of choosing the wrong markers",
+    "Domestic instability and fear that home is no longer restorative",
+    "Erosion of self-trust and reliance on external structure",
+    "Future uncertainty packaging and the need to make instability feel manageable"
+  ],
+  "top_solution_modes": [
+    "outsourced expertise",
+    "automation/monitoring",
+    "resilience planning",
+    "offline/community",
+    "identity signaling"
+  ],
+  "source_files": [
+    "sample_021.json",
+    "sample_022.json",
+    "sample_023.json",
+    "sample_024.json",
+    "sample_025.json",
+    "sample_026.json",
+    "sample_027.json",
+    "sample_028.json",
+    "sample_029.json",
+    "sample_030.json"
+  ],
+  "run_diagnostics": {
+    "n_runs_total": 10,
+    "n_runs_success": 10,
+    "n_runs_error": 0,
+    "error_types": {},
+    "dominant_mode": "fixation leaning",
+    "notes": [
+      "Fear exceeds exploration.",
+      "Delegated agency remains elevated."
+    ]
+  },
+  "method_notes": [
+    "Counts are derived from model-generated observations.",
+    "This is not a direct corpus frequency measurement."
+  ]
+}
