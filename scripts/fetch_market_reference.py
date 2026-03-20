@@ -1,0 +1,72 @@
+import os
+import csv
+import requests
+from datetime import datetime, timezone
+
+ROOT = os.path.dirname(os.path.dirname(__file__))
+DATA_PATH = os.path.join(ROOT, "data", "market_reference.csv")
+
+COINGECKO_URL = "https://api.coingecko.com/api/v3/simple/price"
+COIN_ID = "bitcoin"
+VS_CURRENCY = "usd"
+
+
+def ensure_csv_exists():
+    os.makedirs(os.path.dirname(DATA_PATH), exist_ok=True)
+    if not os.path.exists(DATA_PATH):
+        with open(DATA_PATH, "w", encoding="utf-8", newline="") as f:
+            writer = csv.writer(f)
+            writer.writerow(["date", "asset", "price_usd", "source_note"])
+
+
+def read_existing_rows():
+    if not os.path.exists(DATA_PATH):
+        return []
+
+    with open(DATA_PATH, "r", encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        return list(reader)
+
+
+def fetch_btc_price():
+    response = requests.get(
+        COINGECKO_URL,
+        params={
+            "ids": COIN_ID,
+            "vs_currencies": VS_CURRENCY,
+        },
+        timeout=20,
+    )
+    response.raise_for_status()
+    data = response.json()
+
+    if COIN_ID not in data or VS_CURRENCY not in data[COIN_ID]:
+        raise ValueError("BTC price not found in API response")
+
+    return float(data[COIN_ID][VS_CURRENCY])
+
+
+def append_row_if_new(date_str: str, price: float):
+    rows = read_existing_rows()
+    for row in rows:
+        if row.get("date") == date_str and row.get("asset") == "BTC":
+            print(f"Row already exists for {date_str} / BTC. Skip append.")
+            return
+
+    with open(DATA_PATH, "a", encoding="utf-8", newline="") as f:
+        writer = csv.writer(f)
+        writer.writerow([date_str, "BTC", price, "coingecko_demo_or_public"])
+
+    print(f"Appended BTC price for {date_str}: {price}")
+
+
+def main():
+    ensure_csv_exists()
+
+    today = datetime.now(timezone.utc).date().isoformat()
+    price = fetch_btc_price()
+    append_row_if_new(today, price)
+
+
+if __name__ == "__main__":
+    main()
