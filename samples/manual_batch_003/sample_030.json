@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Administrative overload and fear of life being lost to management",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that more and more of adult life is being consumed by managing accounts, forms, appointments, renewals, messages, and recurring tasks that generate little meaning but high friction. The concern is often framed not only as busyness, but as fear that life itself is increasingly being spent on maintenance rather than on anything that feels alive, chosen, or substantial.",
+      "signals_observed": [
+        "Common phrases include \"my life is admin,\" \"everything is a task,\" \"I am drowning in little things,\" \"it is all upkeep,\" and \"I spend all day managing.\"",
+        "Online discourse increasingly links life-admin to emotional depletion, loss of creative time, and the sense that adulthood has become structurally clogged with invisible labor.",
+        "Advice content often reframes this burden as a systems problem requiring centralization, automation, and stricter recurring routines."
+      ],
+      "solutions_sought": [
+        "Life-admin dashboards, recurring checklists, calendar systems, and centralized organizational frameworks.",
+        "Automation tools, reminder structures, and templates for reducing the cognitive drag of repetitive obligations.",
+        "Communities and guides focused on reclaiming time by compressing maintenance tasks into more manageable systems."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system so admin stops eating your life\" framing, where practical burden is partially transferred to dashboards, reminders, and recurring process structures.",
+        "\"Stop carrying everything manually\" framing, where the fear of management overload is handled through externally scaffolded coordination tools."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger systems, the hidden burden of adult maintenance may keep consuming attention, energy, and time that never returns.",
+        "superiority": "People with tighter admin systems are portrayed as more organized, more sovereign, and less swallowed by invisible obligations than those who remain reactive.",
+        "paired_mechanism": "Fear of life dissolving into upkeep is paired with the superiority promise of operational control, making systemization feel like both protection and regained authorship."
+      },
+      "scores": {
+        "delegated_agency": 89,
+        "fear_intensity": 78,
+        "superiority_intensity": 70,
+        "polarization_risk": 42
+      }
+    },
+    {
+      "anxiety_label": "Soft collapse and fear of becoming less functional without a clear breaking point",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that decline often arrives quietly through thinning capacity, slower recovery, lower motivation, worse concentration, and reduced tolerance, rather than through one obvious crisis. The concern is often framed not only as burnout, but as fear of a soft collapse in which daily functioning becomes narrower and more effortful without any dramatic event to justify it.",
+      "signals_observed": [
+        "Common phrases include \"I am functioning less well,\" \"I did not crash, I just got smaller,\" \"I don't bounce back,\" \"I can do less than I used to,\" and \"nothing dramatic happened but I feel reduced.\"",
+        "Online discourse increasingly describes deterioration as slow, ambient, and hard to narrate, which makes it harder to validate or intervene early.",
+        "Advice content often treats soft collapse as requiring better monitoring and structured restoration because it is too easy to normalize until capacity is badly reduced."
+      ],
+      "solutions_sought": [
+        "Capacity-tracking systems, burnout markers, gradual recovery protocols, and workload-reduction frameworks.",
+        "Structured check-ins, restoration plans, and guides for noticing functional narrowing before it hardens into a new normal.",
+        "Communities and explainers focused on identifying low-grade decline and rebuilding capacity without waiting for obvious crisis."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system before decline becomes your baseline\" framing, where self-assessment is partially transferred to tracking, markers, and structured recovery routines.",
+        "\"Do not wait for a dramatic breakdown\" framing, where diffuse fear is managed through externally scaffolded early-warning systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger noticing and restoration, subtle reduction in capacity may quietly harden into a smaller, more effortful life.",
+        "superiority": "People who monitor and correct early are portrayed as more self-aware, more responsible, and less likely to normalize their own decline than those who drift into reduced functioning.",
+        "paired_mechanism": "Fear of soft collapse is paired with the superiority promise of early intervention, making structured recovery feel like both protection and mature self-command."
+      },
+      "scores": {
+        "delegated_agency": 84,
+        "fear_intensity": 82,
+        "superiority_intensity": 68,
+        "polarization_risk": 45
+      }
+    },
+    {
+      "anxiety_label": "Money shame and fear that visible financial struggle marks the self",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that financial difficulty is not experienced as purely material but as socially and morally legible. The concern is often framed not only as lacking money, but as fear that instability, bad timing, debt, or constrained choices become visible signs that one has failed to manage life correctly.",
+      "signals_observed": [
+        "Common phrases include \"I am embarrassed,\" \"it shows,\" \"I feel ashamed of where I am,\" \"money problems change how people see you,\" and \"I don't want struggle to be visible.\"",
+        "Online discourse increasingly links financial strain to self-presentation, social comparison, and the need to conceal instability through order, polish, or selective silence.",
+        "Advice content often treats money shame as requiring both emotional containment and more visible systems of discipline or recovery."
+      ],
+      "solutions_sought": [
+        "Debt-recovery systems, visible budgeting routines, no-buy structures, and financial reset frameworks.",
+        "Guides for regaining control, reducing leakage, and making progress feel visible enough to restore self-respect.",
+        "Communities and content focused on repairing the social and psychological consequences of prolonged money stress."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to stop looking out of control\" framing, where money shame is partially transferred to visible routines, trackers, and recovery systems.",
+        "\"Make your progress legible\" framing, where social fear around finances is managed through externally structured signs of discipline and rebuilding."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger financial structure, material strain may keep becoming socially visible in ways that damage self-respect and perceived competence.",
+        "superiority": "People with clearer recovery systems are portrayed as more disciplined, more redeemable, and less defined by struggle than those who remain diffuse under money stress.",
+        "paired_mechanism": "Fear of visible financial failure is paired with the superiority promise of disciplined recovery, making systemization feel like both protection and moral repair."
+      },
+      "scores": {
+        "delegated_agency": 83,
+        "fear_intensity": 80,
+        "superiority_intensity": 73,
+        "polarization_risk": 50
+      }
+    },
+    {
+      "anxiety_label": "Relational caution and fear that closeness now requires too much risk tolerance",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that trust, emotional openness, and closeness require more courage than many people feel they can afford. The concern is often framed not only as fear of betrayal, but as fear that modern relationships involve too much ambiguity, too much interpretive labor, and too much asymmetry to enter lightly.",
+      "signals_observed": [
+        "Common phrases include \"I don't open easily anymore,\" \"closeness feels risky,\" \"I need to protect my peace,\" \"I can't afford the wrong person,\" and \"trust is expensive now.\"",
+        "Online discourse increasingly frames intimacy as a domain requiring careful filtering, pacing, and selective access rather than broad openness.",
+        "Advice content often responds by offering stronger standards, staged disclosure, and more deliberate relational architecture."
+      ],
+      "solutions_sought": [
+        "Boundary systems, staged-vulnerability frameworks, communication pacing guides, and trust filters.",
+        "Rules for slowing down intimacy, reducing overexposure, and protecting emotional bandwidth under uncertainty.",
+        "Communities and explainers focused on staying sincere without becoming too relationally available too quickly."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework so closeness does not cost you too much\" framing, where intimacy judgment is partially transferred to pacing rules, filters, and boundary systems.",
+        "\"Do not trust by default\" framing, where fear of relational exposure is managed through externally supplied caution structures."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger relational filters, closeness may continue exposing you to asymmetry, regret, or destabilizing emotional cost.",
+        "superiority": "People with tighter intimacy systems are portrayed as more discerning, more self-protective, and less easily destabilized than those who still trust broadly.",
+        "paired_mechanism": "Fear of costly closeness is paired with the superiority promise of selective openness, making relational caution feel like both protection and emotional intelligence."
+      },
+      "scores": {
+        "delegated_agency": 77,
+        "fear_intensity": 76,
+        "superiority_intensity": 75,
+        "polarization_risk": 71
+      }
+    },
+    {
+      "anxiety_label": "Competence under uncertainty and fear of being exposed as less prepared than expected",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the pressure to appear competent not in stable conditions, but under uncertainty, ambiguity, and change. The concern is often framed not only as wanting to do well, but as fear that when conditions shift, one's confidence, planning, or knowledge may prove thinner than it looked under routine circumstances.",
+      "signals_observed": [
+        "Common phrases include \"I need to know what to do when it changes,\" \"I don't want to be exposed,\" \"uncertainty reveals people,\" \"I need better judgment,\" and \"routine competence isn't enough anymore.\"",
+        "Online discourse increasingly treats competence as adaptive, contingent, and tested by volatility rather than by repetition alone.",
+        "Advice content often packages uncertainty-readiness as a trainable capacity through scenarios, systems, and rehearsed responses."
+      ],
+      "solutions_sought": [
+        "Scenario planning systems, adaptive routines, judgment frameworks, and uncertainty-readiness drills.",
+        "Guides for responding better when assumptions break, conditions shift, or information remains incomplete.",
+        "Communities and content focused on strengthening decision quality and visible steadiness under unstable conditions."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system so uncertainty doesn't expose you\" framing, where adaptive competence is partially transferred to frameworks, drills, and structured response templates.",
+        "\"Train before the test arrives\" framing, where fear of exposure under change is managed through externally scaffolded readiness systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger adaptive preparation, changing conditions may expose thinner judgment or weaker readiness than stable routine ever revealed.",
+        "superiority": "People with uncertainty-trained systems are portrayed as steadier, sharper, and less likely to be exposed by volatility than those whose competence depends on predictability.",
+        "paired_mechanism": "Fear of being exposed under change is paired with the superiority promise of adaptive competence, making readiness feel like both protection and higher capability."
+      },
+      "scores": {
+        "delegated_agency": 86,
+        "fear_intensity": 81,
+        "superiority_intensity": 79,
+        "polarization_risk": 47
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 74,
+    "expansion": 85
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "A strong cross-theme pattern is the conversion of diffuse strain into systems for visibility, control, and managed readiness.",
+    "Money, intimacy, and competence themes often carry a strong undercurrent of shame avoidance and fear of social exposure."
+  ]
+}
