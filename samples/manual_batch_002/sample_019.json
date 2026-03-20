@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Aging fear and the sense of becoming harder to recover",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that aging is not only about appearance or age markers, but about reduced elasticity in work, health, sleep, attention, and recovery. The concern is often framed not only as getting older, but as fear that mistakes, stress, and bodily strain now carry longer-lasting consequences than before.",
+      "signals_observed": [
+        "Common phrases include \"I don't recover like I used to,\" \"aging hit me fast,\" \"everything takes longer now,\" \"I feel older than I should,\" and \"the bounce-back is gone.\"",
+        "Online discourse increasingly treats aging as a systems problem involving sleep, hormones, inflammation, stress load, and capacity erosion rather than a simple chronological process.",
+        "Advice content often frames midlife or early aging as a period requiring deliberate intervention to preserve resilience, mobility, and social legibility."
+      ],
+      "solutions_sought": [
+        "Recovery systems, age-management routines, mobility protocols, and preventative health frameworks.",
+        "Sleep optimization, strength training plans, supplement stacks, and longevity-oriented daily systems.",
+        "Communities and explainers focused on preserving flexibility, appearance, and long-term functional capacity."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system before decline compounds\" framing, where self-trust about aging is partially transferred to protocols, trackers, and curated anti-decline routines.",
+        "\"Don't rely on guesswork anymore\" framing, where everyday recovery judgment is handed to structured health systems and optimization plans."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger intervention, small declines may accumulate into lower resilience, lower confidence, and reduced capacity to recover from ordinary life.",
+        "superiority": "People with stronger anti-decline systems are portrayed as more disciplined, more preserved, and less visibly affected by time or stress than others.",
+        "paired_mechanism": "Fear of reduced recoverability is paired with the superiority promise of managed aging, making intervention feel like both protection and self-command."
+      },
+      "scores": {
+        "delegated_agency": 79,
+        "fear_intensity": 81,
+        "superiority_intensity": 77,
+        "polarization_risk": 54
+      }
+    },
+    {
+      "anxiety_label": "Caregiving overwhelm and role compression inside family life",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that family roles are compressing into too many simultaneous obligations: care, income, logistics, emotion management, and crisis response. The concern is often framed not only as stress, but as fear that family life now requires a level of coordination that exceeds ordinary human bandwidth.",
+      "signals_observed": [
+        "Common phrases include \"everyone needs something from me,\" \"I can't hold all of this,\" \"no margin left,\" \"care work never stops,\" and \"I'm managing too many roles at once.\"",
+        "Online discourse increasingly links child care, eldercare, household administration, emotional support, and work demands into one unified overload narrative.",
+        "Advice content often presents family stability as dependent on better systems, clearer delegation, and proactive crisis-proofing."
+      ],
+      "solutions_sought": [
+        "Household operating systems, care coordination plans, shared calendars, and family logistics dashboards.",
+        "Delegation frameworks, crisis planning tools, and routines for distributing emotional and practical labor more visibly.",
+        "Communities, guides, and scripts for reducing invisible labor and stabilizing overloaded family roles."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to hold family life together\" framing, where relational and logistical judgment is partially transferred to planners, routines, and coordination tools.",
+        "\"Stop carrying it all in your head\" framing, where overwhelm is managed through externalized family systems and task structures."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger systems, family obligations may keep expanding until exhaustion, resentment, or crisis breaks the arrangement.",
+        "superiority": "People with clearer household systems are portrayed as more capable, more responsible, and less likely to collapse under role overload than reactive families.",
+        "paired_mechanism": "Fear of family overload is paired with the superiority promise of organized care competence, making systemization feel like both protection and proof of adequacy."
+      },
+      "scores": {
+        "delegated_agency": 86,
+        "fear_intensity": 82,
+        "superiority_intensity": 65,
+        "polarization_risk": 52
+      }
+    },
+    {
+      "anxiety_label": "Focus collapse and fear of losing higher-order thinking",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that the ability to think deeply, sustain abstraction, and complete cognitively demanding work is being eroded by digital interruption and chronic fragmentation. The concern is often framed not only as distraction, but as fear that higher-order thinking itself is being crowded out by constant switching and shallow response loops.",
+      "signals_observed": [
+        "Common phrases include \"I can't think straight anymore,\" \"my brain is fried,\" \"I can't get into deep work,\" \"too many tabs open,\" and \"I feel mentally shallower.\"",
+        "Online discourse increasingly distinguishes between being busy and being cognitively intact, with many users reporting that volume and interruption are degrading thought quality itself.",
+        "Advice content often treats focus as a threatened asset that must be rebuilt through protected environments and strict anti-fragmentation systems."
+      ],
+      "solutions_sought": [
+        "Deep-work blocks, distraction blockers, monotasking systems, and focus restoration routines.",
+        "Digital minimalism plans, attention training protocols, and anti-fragmentation work structures.",
+        "Communities and explainers devoted to preserving serious thought under conditions of persistent interruption."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to protect your mind\" framing, where cognitive boundaries are partially transferred to blockers, work rituals, and environment design.",
+        "\"Let structure hold your focus\" framing, where mental integrity is defended through externally imposed routines rather than spontaneous self-regulation alone."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger protection, fragmented attention may gradually reduce your ability to think deeply, create coherently, and remain mentally sharp.",
+        "superiority": "People with stronger focus systems are portrayed as more serious, more cognitively intact, and less mentally diluted than the endlessly interrupted majority.",
+        "paired_mechanism": "Fear of cognitive flattening is paired with the superiority promise of preserved depth, making attention protection feel like both repair and intellectual distinction."
+      },
+      "scores": {
+        "delegated_agency": 83,
+        "fear_intensity": 84,
+        "superiority_intensity": 78,
+        "polarization_risk": 59
+      }
+    },
+    {
+      "anxiety_label": "Family timeline comparison and fear of being late to life",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that family formation, stability, and major milestones are happening on timelines that are increasingly difficult to match. The concern is often framed not only as envy or pressure, but as fear that one is becoming misaligned with socially legible adulthood itself.",
+      "signals_observed": [
+        "Common phrases include \"everyone else is ahead,\" \"I feel late,\" \"wrong timeline,\" \"I should have done this already,\" and \"I missed the window.\"",
+        "Online discourse often links housing, marriage, parenting, fertility, and financial readiness into one compressed sequence against which people compare themselves.",
+        "Advice content increasingly treats life sequencing as something to be actively planned or strategically repaired rather than something that unfolds organically."
+      ],
+      "solutions_sought": [
+        "Life-planning frameworks, milestone roadmaps, fertility and family-timing guides, and sequencing checklists.",
+        "Communities and content focused on late starts, nonlinear timelines, and rebuilding a sense of order under delay.",
+        "Coaching and systems that help align work, partnership, housing, and family goals into more legible timelines."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this roadmap to get back on track\" framing, where life-sequence judgment is partially transferred to planning frameworks, milestone systems, and timeline templates.",
+        "\"Stop drifting and sequence it properly\" framing, where existential uncertainty is managed through externally supplied order and staged plans."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger planning, delay may compound into lost options, increasing comparison pain, and a growing sense of misalignment with adult life.",
+        "superiority": "People who strategically sequence their lives are portrayed as more grounded, more realistic, and less vulnerable to timeline drift than those who remain unstructured.",
+        "paired_mechanism": "Fear of being late is paired with the superiority promise of regained order, making life planning feel like both rescue and legitimacy restoration."
+      },
+      "scores": {
+        "delegated_agency": 76,
+        "fear_intensity": 79,
+        "superiority_intensity": 74,
+        "polarization_risk": 63
+      }
+    },
+    {
+      "anxiety_label": "Distrust of public systems and the feeling of being on your own",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that institutions meant to provide baseline support—healthcare, schools, transit, local services, welfare systems, and public administration—are becoming less reliable, less responsive, or harder to navigate. The concern is often framed not only as disappointment, but as fear that ordinary people increasingly have to privately compensate for weakening collective infrastructure.",
+      "signals_observed": [
+        "Common phrases include \"you are on your own,\" \"the system doesn't work,\" \"no one helps,\" \"you have to figure everything out yourself,\" and \"public services are falling apart.\"",
+        "Online discourse increasingly connects bureaucratic delay, service inconsistency, affordability strain, and civic frustration into one narrative of institutional thinning.",
+        "Advice content often reframes public-system weakness as a signal that personal redundancy, private planning, and smaller trust networks are now mandatory."
+      ],
+      "solutions_sought": [
+        "Private backups, redundancy plans, local mutual-aid systems, and alternative support networks.",
+        "Navigation guides, advocacy frameworks, and practical explainers for surviving inconsistent institutions.",
+        "Communities and localized channels that help users route around failing or slow public systems."
+      ],
+      "delegated_agency_hooks": [
+        "\"Build your own safety net\" framing, where trust in public infrastructure is replaced by smaller systems, guides, and privately managed backups.",
+        "\"Use this guide because the system won't guide you\" framing, where civic uncertainty is mediated through external navigators and workaround frameworks."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without private redundancy and better navigation, you may be exposed when public systems fail to respond quickly, clearly, or sufficiently.",
+        "superiority": "People with stronger backup systems are portrayed as more realistic, more self-protective, and less dependent on failing institutions than passive citizens.",
+        "paired_mechanism": "Fear of institutional unreliability is paired with the superiority promise of private preparedness, making self-reliance feel like both protection and civic realism."
+      },
+      "scores": {
+        "delegated_agency": 82,
+        "fear_intensity": 85,
+        "superiority_intensity": 67,
+        "polarization_risk": 84
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 72,
+    "expansion": 86
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "Aging, care, attention, life-sequencing, and institutional distrust themes are often reframed as system-manageable problems with purchasable or highly structured guidance attached.",
+    "Public-system distrust tends to intensify self-reliance language, local workaround culture, and pressure for private redundancy."
+  ]
+}
