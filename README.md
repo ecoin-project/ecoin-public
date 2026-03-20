@@ -55,6 +55,7 @@ Typical outputs include:
 - `latest_output.csv`
 - `weekly_summary_<batch_id>.json`
 - `latest_summary.json`
+- `market_reference_trends.png`
 
 This repository currently includes manual sample outputs and a validated aggregation step for generating weekly summary JSON files before live API use.
 
