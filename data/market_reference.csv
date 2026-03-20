@@ -1,5 +1,5 @@
-date,asset,price_usd,source_note
-2026-03-01,BTC,66809.97,manual backfill from coingecko chart
-2026-03-08,BTC,67197.23,manual backfill from coingecko chart
-2026-03-15,BTC,71019.86,manual backfill from coingecko chart
-2026-03-20,BTC,70786.0,coingecko_demo_or_public
+date,asset,price_usd,source_note,fetched_at_utc
+2026-03-01,BTC,66809.97,manual backfill from coingecko chart,
+2026-03-08,BTC,67197.23,manual backfill from coingecko chart,
+2026-03-15,BTC,71019.86,manual backfill from coingecko chart,
+2026-03-20,BTC,70786.0,coingecko_demo_or_public,2026-03-20T03:45:12Z
