@@ -3,3 +3,4 @@ date,asset,price_usd,source_note
 2026-03-08,BTC,86150,example placeholder
 2026-03-15,BTC,82840,example placeholder
 2026-03-22,BTC,84790,example placeholder
+2026-03-20,BTC,70786.0,coingecko_demo_or_public
