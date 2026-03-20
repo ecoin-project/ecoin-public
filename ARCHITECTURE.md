@@ -91,6 +91,17 @@ Potential future directions include:
 - connection to ECOIN value-state indicators
 - connection to external weekly indicators or market data
 
+### External reference lane
+
+External time-series references such as BTC price, market volatility, or other public indicators should be stored in a separate lane rather than merged directly into the discourse observation core.
+
+Their role is comparative and hypothesis-generating, not explanatory by default.
+
+This separation helps preserve the distinction between:
+- observed discourse structure
+- internally derived comparison scores
+- external contextual reference signals
+
 These connections should be treated cautiously and as hypothesis-generating rather than as direct causal claims.
 
 ---
