@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Bureaucratic fatigue and fear of procedural failure",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that ordinary life now depends on navigating too many forms, deadlines, accounts, renewals, and procedural steps without clear support. The concern is often framed not only as annoyance, but as fear that one missed document, timing error, or forgotten requirement may trigger disproportionate penalties or instability.",
+      "signals_observed": [
+        "Common phrases include \"too many forms,\" \"I missed the deadline,\" \"I can't keep up,\" \"everything requires paperwork,\" and \"one mistake causes a chain reaction.\"",
+        "Online discourse increasingly links taxes, health forms, school administration, insurance renewals, and digital account maintenance into one broad procedural-overload narrative.",
+        "Advice content often treats bureaucracy as a permanent background hazard that must be operationalized through systems and reminders rather than handled casually."
+      ],
+      "solutions_sought": [
+        "Reminder systems, administrative dashboards, renewal trackers, and checklist-based life-admin routines.",
+        "Templates, date-based workflows, and procedural maps for reducing the risk of forgetting key obligations.",
+        "Communities and guides focused on surviving paperwork-heavy life with fewer mistakes and less cognitive drag."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system so nothing slips\" framing, where procedural memory is partially transferred to calendars, dashboards, and checklists.",
+        "\"Don't trust yourself to remember\" framing, where administrative anxiety is managed through externally structured reminders and recurring review systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger systems, a small administrative mistake may trigger avoidable losses, delays, or destabilizing complications.",
+        "superiority": "People with tighter admin systems are portrayed as more competent, more adult, and less vulnerable to procedural failure than those still improvising.",
+        "paired_mechanism": "Fear of bureaucratic failure is paired with the superiority promise of operational control, making administration feel like both protection and competence display."
+      },
+      "scores": {
+        "delegated_agency": 88,
+        "fear_intensity": 78,
+        "superiority_intensity": 69,
+        "polarization_risk": 43
+      }
+    },
+    {
+      "anxiety_label": "Trust erosion in services and fear of paying for lower-quality support",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that many services now cost more while becoming less reliable, less responsive, or less humane. The concern is often framed not only as consumer frustration, but as fear that even paid support no longer guarantees real care, competence, or follow-through.",
+      "signals_observed": [
+        "Common phrases include \"more expensive and worse,\" \"no one follows up,\" \"customer service is gone,\" \"I paid and still had to do everything myself,\" and \"support feels fake now.\"",
+        "Online discourse increasingly treats healthcare, delivery, education, utilities, and platform subscriptions as examples of declining service trust.",
+        "Advice content often reframes paid services as requiring defensive monitoring, escalation skills, and backup plans rather than passive reliance."
+      ],
+      "solutions_sought": [
+        "Comparison systems, review-based decision frameworks, escalation scripts, and backup-provider lists.",
+        "Guides for protecting oneself when services underperform or fail to respond adequately.",
+        "Communities focused on identifying trustworthy providers, spotting low-quality patterns, and routing around unreliable systems."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework before you pay\" framing, where trust decisions are partially transferred to comparison tools, vetted lists, and external reviews.",
+        "\"Protect yourself from low-quality service\" framing, where consumer anxiety is managed through defensive scripts and structured escalation routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without better filtering and stronger escalation habits, you may pay more while receiving less competent or less reliable support.",
+        "superiority": "People with better provider filters are portrayed as more discerning, less gullible, and less likely to be exploited by service decline than passive consumers.",
+        "paired_mechanism": "Fear of paying into decline is paired with the superiority promise of sharper discernment, making service skepticism feel like both protection and practical intelligence."
+      },
+      "scores": {
+        "delegated_agency": 76,
+        "fear_intensity": 77,
+        "superiority_intensity": 74,
+        "polarization_risk": 57
+      }
+    },
+    {
+      "anxiety_label": "Bodily self-monitoring and fear of subtle internal deterioration",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the sense that subtle bodily changes in energy, digestion, sleep, recovery, or mood may indicate deeper deterioration that needs earlier detection. The concern is often framed not only as health awareness, but as fear that internal decline can remain invisible until it becomes harder to reverse.",
+      "signals_observed": [
+        "Common phrases include \"something feels off,\" \"track the pattern,\" \"I need more data,\" \"I don't feel like myself,\" and \"I want to catch it early.\"",
+        "Online discourse increasingly links self-tracking, wearable data, supplements, and body literacy to the avoidance of silent decline.",
+        "Advice content often presents the body as an environment requiring continuous observation rather than occasional care."
+      ],
+      "solutions_sought": [
+        "Wearables, symptom logs, biomarker tracking, and body-data dashboards.",
+        "Structured health journaling, pattern-detection routines, and preventative self-observation practices.",
+        "Communities and explainers focused on catching subtle changes earlier and reducing uncertainty through monitoring."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use the data before the problem gets bigger\" framing, where bodily judgment is partially transferred to trackers, logs, and measurement systems.",
+        "\"Don't ignore subtle shifts\" framing, where uncertainty is managed through structured monitoring rather than subjective impression alone."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger monitoring, subtle deterioration may continue unnoticed until it affects functioning more seriously.",
+        "superiority": "People who track their bodies carefully are portrayed as more informed, more vigilant, and less passively exposed to decline than those relying on rough intuition.",
+        "paired_mechanism": "Fear of silent deterioration is paired with the superiority promise of early detection, making monitoring feel like both protection and embodied intelligence."
+      },
+      "scores": {
+        "delegated_agency": 85,
+        "fear_intensity": 79,
+        "superiority_intensity": 72,
+        "polarization_risk": 53
+      }
+    },
+    {
+      "anxiety_label": "Emotional self-regulation pressure and fear of becoming difficult to carry",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the pressure to remain emotionally regulated, contained, and minimally disruptive even under strain. The concern is often framed not only as self-improvement, but as fear that being too reactive, needy, or unstable will make a person harder to love, trust, or keep close in already overloaded environments.",
+      "signals_observed": [
+        "Common phrases include \"regulate yourself,\" \"don't dump on people,\" \"I need to be less reactive,\" \"no one can hold too much,\" and \"I don't want to be too much for others.\"",
+        "Online discourse increasingly links attachment language, nervous-system language, and boundaries discourse to pressure for constant self-management.",
+        "Advice content often treats emotional survival as dependent on building stronger private regulation systems rather than expecting much interpersonal holding."
+      ],
+      "solutions_sought": [
+        "Regulation routines, nervous-system frameworks, journaling systems, and emotional-reset practices.",
+        "Therapy-adjacent content, tracking habits, and communication scripts for staying more contained under stress.",
+        "Communities and guides focused on self-soothing, lower-reactivity habits, and becoming safer to be around."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this regulation system before you spiral\" framing, where emotional trust is partially handed to frameworks, exercises, and patterned interventions.",
+        "\"Don't make others carry what you can regulate\" framing, where fear of being burdensome is managed through externally structured emotional control routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger self-regulation, emotional volatility may strain relationships and reinforce fears of being too difficult for others to sustain.",
+        "superiority": "People with stronger regulation systems are portrayed as more mature, more self-contained, and less relationally costly than those who remain highly reactive.",
+        "paired_mechanism": "Fear of being difficult to carry is paired with the superiority promise of calm self-management, making regulation feel like both protection and relational worthiness."
+      },
+      "scores": {
+        "delegated_agency": 83,
+        "fear_intensity": 75,
+        "superiority_intensity": 78,
+        "polarization_risk": 64
+      }
+    },
+    {
+      "anxiety_label": "Domestic cost anxiety and fear that home is becoming financially unstable",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that the home itself is becoming a site of rising uncertainty through rent, utilities, food, repairs, insurance, and household overhead. The concern is often framed not only as budgeting pressure, but as fear that even staying put is becoming harder to sustain without constant vigilance and strategic adjustment.",
+      "signals_observed": [
+        "Common phrases include \"everything at home costs more,\" \"keeping the house going is exhausting,\" \"utilities keep rising,\" \"one repair can wreck the month,\" and \"just maintaining home is stressful now.\"",
+        "Online discourse increasingly links housing, energy, food storage, repairs, and domestic routines into one broader anxiety about household sustainability.",
+        "Advice content often treats home life as a financial system requiring tighter control, monitoring, and fallback planning."
+      ],
+      "solutions_sought": [
+        "Household budget systems, utility tracking, repair sinking-fund plans, and domestic cost-monitoring routines.",
+        "Preparedness-lite home strategies for reducing volatility and protecting against sudden expenses.",
+        "Communities and explainers focused on keeping home life financially viable under rising basic costs."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this home-cost system to stay ahead\" framing, where domestic money management is partially transferred to trackers, plans, and recurring review systems.",
+        "\"Stabilize the house before costs surprise you\" framing, where home-related anxiety is managed through structured monitoring and contingency planning."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger household financial control, rising baseline costs may quietly turn home into a site of recurring instability and stress.",
+        "superiority": "People who run tighter home systems are portrayed as more prepared, more steady, and less vulnerable to domestic financial shocks than those managing casually.",
+        "paired_mechanism": "Fear of home instability is paired with the superiority promise of household control, making domestic financial management feel like both protection and competent adulthood."
+      },
+      "scores": {
+        "delegated_agency": 80,
+        "fear_intensity": 82,
+        "superiority_intensity": 67,
+        "polarization_risk": 45
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 73,
+    "expansion": 84
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "Bureaucracy, services, body-monitoring, emotional regulation, and household sustainability are often reframed as system-manageable problems with routinized responses attached.",
+    "A notable pattern is the shift from ambient uncertainty toward externally scaffolded self-management in both emotional and material domains."
+  ]
+}
