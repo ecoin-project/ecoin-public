@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Decision fatigue and fear of wasting life through small wrong choices",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that too many ordinary choices now seem consequential enough to drain confidence and attention. The concern is often framed not only as indecision, but as fear that repeated small mistakes in money, health, work, relationships, or daily structure may gradually shape a worse life without any single dramatic failure.",
+      "signals_observed": [
+        "Common phrases include \"every decision feels loaded,\" \"I am tired of deciding,\" \"what if I choose wrong,\" \"small choices add up,\" and \"I don't trust my judgment anymore.\"",
+        "Online discourse increasingly links modern abundance of options to exhaustion, self-doubt, and the feeling that ordinary life has become too optimization-sensitive.",
+        "Advice content often presents daily life as something that must be simplified and systematized because open-ended choice is experienced as cognitively expensive."
+      ],
+      "solutions_sought": [
+        "Decision rules, default-setting systems, weekly planning templates, and simplified routine frameworks.",
+        "Guides for reducing option overload and creating stable defaults in recurring areas like food, work, spending, and scheduling.",
+        "Communities and content focused on lowering decision burden and making ordinary life feel less consequential at every turn."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system so you stop wasting energy on every choice\" framing, where judgment fatigue is partially transferred to defaults, templates, and prebuilt routines.",
+        "\"Decide once, benefit repeatedly\" framing, where fear of small wrong choices is managed through externalized rules and lower-variance systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger defaults, ordinary choices may continue to drain attention and quietly compound into avoidable regret or inefficiency.",
+        "superiority": "People with cleaner decision systems are portrayed as more focused, more strategic, and less vulnerable to drift than those still re-deciding everything every day.",
+        "paired_mechanism": "Fear of cumulative mischoice is paired with the superiority promise of elegant simplification, making decision systems feel like both protection and practical intelligence."
+      },
+      "scores": {
+        "delegated_agency": 85,
+        "fear_intensity": 77,
+        "superiority_intensity": 73,
+        "polarization_risk": 44
+      }
+    },
+    {
+      "anxiety_label": "Fertility timing pressure and fear of irreversible delay",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the fear that reproductive timelines, partnership uncertainty, financial readiness, and bodily timing are misaligned in ways that may not be easily corrected later. The concern is often framed not only as wanting a family, but as fear that delay can quietly harden into lost options before life ever feels properly ready.",
+      "signals_observed": [
+        "Common phrases include \"running out of time,\" \"I thought I had more time,\" \"nothing is lined up,\" \"I am not ready but the clock is moving,\" and \"delay feels expensive now.\"",
+        "Online discourse increasingly links fertility, partnership, housing, money, and emotional readiness into one compressed timeline problem.",
+        "Advice content often treats reproductive timing as something that must be managed strategically rather than left to gradual life unfolding."
+      ],
+      "solutions_sought": [
+        "Fertility planning guides, timeline frameworks, egg-freezing discourse, and family-sequencing roadmaps.",
+        "Communities and explainers focused on reproductive timing, preparation, and reducing regret under delayed partnership or unstable finances.",
+        "Planning systems that align health, income, housing, and relationship decisions with family-formation goals."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework before options narrow\" framing, where life-sequence uncertainty is partially transferred to timelines, planners, and fertility-related guidance systems.",
+        "\"Plan around the window, not around wishful thinking\" framing, where fear of irreversible delay is managed through externally structured timing strategies."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without earlier and clearer planning, important reproductive or family options may become harder to access before life feels ready enough to use them.",
+        "superiority": "People who plan around timing constraints are portrayed as more realistic, more self-protective, and less likely to be trapped by passive delay than those still waiting for ideal conditions.",
+        "paired_mechanism": "Fear of irreversible delay is paired with the superiority promise of strategic timing, making fertility planning feel like both protection and temporal intelligence."
+      },
+      "scores": {
+        "delegated_agency": 78,
+        "fear_intensity": 84,
+        "superiority_intensity": 74,
+        "polarization_risk": 66
+      }
+    },
+    {
+      "anxiety_label": "Neighborhood trust decline and fear that proximity no longer means safety",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that geographic closeness no longer reliably implies familiarity, reciprocity, or trust. The concern is often framed not only as safety concern, but as fear that nearby people and shared spaces are becoming less readable, less cooperative, and less buffered by local norms than before.",
+      "signals_observed": [
+        "Common phrases include \"I don't know my neighbors,\" \"it feels less safe close to home,\" \"people keep to themselves,\" \"there is no neighborhood feeling,\" and \"proximity doesn't mean trust anymore.\"",
+        "Online discourse increasingly links turnover, social fragmentation, visible disorder, and low everyday contact into a broader concern about weakened local cohesion.",
+        "Advice content often reframes neighborhood life as something that must be selectively rebuilt or defensively navigated rather than passively inhabited."
+      ],
+      "solutions_sought": [
+        "Neighborhood groups, hyperlocal information channels, selective trust-building routines, and localized support networks.",
+        "Guides for rebuilding small-scale familiarity while preserving caution in low-trust environments.",
+        "Communities and content focused on reading local conditions better and restoring limited forms of place-based confidence."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this network to know what is really happening nearby\" framing, where neighborhood judgment is partially transferred to local channels, group systems, and curated place-awareness routines.",
+        "\"Build trust selectively, not blindly\" framing, where weakened local cohesion is managed through external filters and narrower local connection strategies."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger local awareness, nearby spaces may remain socially unreadable and less protective than their proximity suggests.",
+        "superiority": "People who build selective local intelligence are portrayed as more grounded, more realistic, and less exposed than those still assuming neighborhood familiarity by default.",
+        "paired_mechanism": "Fear of low-trust proximity is paired with the superiority promise of informed local discernment, making neighborhood systems feel like both protection and practical realism."
+      },
+      "scores": {
+        "delegated_agency": 73,
+        "fear_intensity": 78,
+        "superiority_intensity": 67,
+        "polarization_risk": 72
+      }
+    },
+    {
+      "anxiety_label": "Self-comparison through productivity and fear of invisible underperformance",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the belief that one may be quietly underperforming relative to peers whose output, routines, and visible progress seem more organized, more intense, or more efficient. The concern is often framed not only as comparison, but as fear that invisible underperformance will eventually become socially and materially legible.",
+      "signals_observed": [
+        "Common phrases include \"everyone else is doing more,\" \"I feel slow,\" \"I am wasting time,\" \"they seem so much more consistent,\" and \"I don't know if I am falling behind quietly.\"",
+        "Online discourse increasingly links productivity visibility, routine-sharing, creator culture, and career self-monitoring into a broader anxiety about hidden inadequacy.",
+        "Advice content often turns comparison into a systems problem, offering templates, routines, and metrics that promise to reduce the gap."
+      ],
+      "solutions_sought": [
+        "Productivity dashboards, consistency routines, performance-tracking systems, and personal operating frameworks.",
+        "Guides for regaining momentum, improving visible follow-through, and lowering hidden inefficiency.",
+        "Communities and content focused on disciplined output, measurable progress, and avoiding quiet stagnation."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system so your effort becomes visible and consistent\" framing, where self-comparison anxiety is partially transferred to trackers, routines, and externalized performance structures.",
+        "\"Stop guessing whether you are doing enough\" framing, where fear of invisible underperformance is managed through metrics, review systems, and guided consistency."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger structure, underperformance may remain hard to notice until it has already reduced momentum, confidence, or opportunity.",
+        "superiority": "People with better output systems are portrayed as more serious, more disciplined, and less likely to drift into quiet underperformance than those still relying on fluctuating motivation.",
+        "paired_mechanism": "Fear of hidden inadequacy is paired with the superiority promise of visible consistency, making productivity systems feel like both protection and self-respect repair."
+      },
+      "scores": {
+        "delegated_agency": 83,
+        "fear_intensity": 79,
+        "superiority_intensity": 80,
+        "polarization_risk": 54
+      }
+    },
+    {
+      "anxiety_label": "Backup-plan culture and fear of relying on any single path",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that relying on one plan, one role, one relationship, one employer, or one system has become too risky under contemporary volatility. The concern is often framed not only as prudence, but as fear that singular commitment now looks increasingly fragile compared with layered fallback structures.",
+      "signals_observed": [
+        "Common phrases include \"always have a backup plan,\" \"don't rely on one thing,\" \"have a fallback,\" \"single points of failure are dangerous,\" and \"I need another option in my pocket.\"",
+        "Online discourse increasingly translates uncertainty into redundancy logic across work, money, relationships, housing, and digital systems.",
+        "Advice content often treats resilience as dependent on secondary paths, contingency options, and deliberate anti-fragility."
+      ],
+      "solutions_sought": [
+        "Backup-plan frameworks, redundancy maps, fallback savings, and multi-path planning systems.",
+        "Scenario planning tools and guides for reducing dependence on any single point of failure.",
+        "Communities and content focused on layered optionality, contingency thinking, and building secondary routes before crisis."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to avoid single-point collapse\" framing, where fear of overreliance is partially handed to contingency frameworks, redundancy maps, and fallback planning tools.",
+        "\"Never stand on one leg\" framing, where diffuse fragility is managed through externally structured backup systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger redundancy, a single disruption may carry more power to destabilize work, housing, relationships, or emotional safety than you can comfortably absorb.",
+        "superiority": "People with backup systems are portrayed as more antifragile, more realistic, and less exposed than those still relying on one main path.",
+        "paired_mechanism": "Fear of single-path fragility is paired with the superiority promise of layered optionality, making backup planning feel like both protection and advanced realism."
+      },
+      "scores": {
+        "delegated_agency": 88,
+        "fear_intensity": 82,
+        "superiority_intensity": 76,
+        "polarization_risk": 46
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 74,
+    "expansion": 86
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "A notable pattern is the move from passive trust toward layered backup systems, selective confidence, and more explicit contingency planning.",
+    "Productivity, timing, neighborhood, and redundancy themes often converge around the idea that ordinary life now requires more active defense against quiet failure."
+  ]
+}
