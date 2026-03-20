@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Relationship fatigue and fear that intimacy now costs too much",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that close relationships increasingly require more communication skill, emotional labor, interpretation, and boundary management than many people feel able to sustain. The concern is often framed not only as dating difficulty, but as fear that intimacy itself has become cognitively and emotionally expensive in ways that make withdrawal feel safer than closeness.",
+      "signals_observed": [
+        "Common phrases include \"I don't have the energy for this,\" \"everything is so complicated now,\" \"too much emotional labor,\" \"I can't do another talking stage,\" and \"being alone is easier.\"",
+        "Online discourse increasingly links dating burnout, attachment language, mistrust, overscheduling, and emotional depletion into a broader narrative that closeness is becoming harder to maintain.",
+        "Advice content often frames relationships as systems requiring constant calibration, raising the sense that unstructured intimacy is too risky or unstable."
+      ],
+      "solutions_sought": [
+        "Communication frameworks, standards-based dating systems, and relationship routines designed to reduce ambiguity and wasted effort.",
+        "Guides for lower-drama intimacy, emotional pacing, and compatibility filtering before deeper investment.",
+        "Communities and explainers focused on protecting energy while still pursuing some form of meaningful connection."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework so intimacy stops draining you\" framing, where relational judgment is partially transferred to scripts, filters, and compatibility systems.",
+        "\"Date more efficiently\" framing, where emotional uncertainty is managed through externally supplied rules for pacing, standards, and early screening."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger relational structure, intimacy may keep draining time, attention, and emotional reserves without producing stability or care.",
+        "superiority": "People with better relational systems are portrayed as more discerning, more regulated, and less likely to be consumed by chaotic intimacy than those who remain open-ended.",
+        "paired_mechanism": "Fear of emotionally expensive closeness is paired with the superiority promise of structured discernment, making relational systems feel like both protection and higher interpersonal intelligence."
+      },
+      "scores": {
+        "delegated_agency": 78,
+        "fear_intensity": 77,
+        "superiority_intensity": 74,
+        "polarization_risk": 68
+      }
+    },
+    {
+      "anxiety_label": "Housing insecurity and fear that home can be lost through ordinary instability",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that housing is not just expensive but structurally fragile, because ordinary disruptions in income, rates, repairs, landlords, or local conditions can destabilize the home itself. The concern is often framed not only as affordability, but as fear that even temporary setbacks can threaten the continuity of shelter, neighborhood belonging, and domestic predictability.",
+      "signals_observed": [
+        "Common phrases include \"one rent increase away,\" \"I don't feel secure here,\" \"housing is never settled,\" \"I can't plan long term,\" and \"home doesn't feel guaranteed.\"",
+        "Online discourse increasingly links rent volatility, interest-rate shifts, landlord behavior, maintenance costs, and local decline into one broader housing fragility narrative.",
+        "Advice content often presents home stability as something that must be actively defended through planning, savings, and strategic flexibility."
+      ],
+      "solutions_sought": [
+        "Housing contingency plans, emergency home-cost buffers, and relocation-readiness frameworks.",
+        "Rent negotiation guides, repair sinking-fund systems, and household financial defense routines.",
+        "Communities and explainers focused on protecting housing continuity under uncertain market and landlord conditions."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this plan so housing shocks don't take you down\" framing, where housing judgment is partially transferred to contingency tools, buffers, and structured readiness systems.",
+        "\"Protect your home before the instability arrives\" framing, where diffuse shelter anxiety is managed through external planning and staged defense routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger housing defenses, ordinary disruptions may threaten not just finances but the continuity and security of daily life itself.",
+        "superiority": "People with housing backup systems are portrayed as more stable, more strategic, and less exposed than those treating shelter as passively secure.",
+        "paired_mechanism": "Fear of losing home stability is paired with the superiority promise of defensive preparedness, making housing strategy feel like both protection and grounded adulthood."
+      },
+      "scores": {
+        "delegated_agency": 80,
+        "fear_intensity": 85,
+        "superiority_intensity": 67,
+        "polarization_risk": 50
+      }
+    },
+    {
+      "anxiety_label": "Algorithmic dependence and fear of disappearing inside systems",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the sense that visibility, opportunity, work, and social discovery are increasingly mediated by algorithmic systems whose logic remains partially opaque. The concern is often framed not only as platform frustration, but as fear that a person can become effectively invisible, undiscoverable, or economically diminished through shifts they cannot meaningfully predict or control.",
+      "signals_observed": [
+        "Common phrases include \"the algorithm buried me,\" \"I disappeared overnight,\" \"you have to feed the system,\" \"no one sees anything anymore,\" and \"everything depends on ranking now.\"",
+        "Online discourse increasingly links platform changes, recommendation systems, hiring filters, and feed volatility into a wider anxiety about becoming unreadable to machine-mediated environments.",
+        "Advice content often reframes survival as learning how to maintain legibility within shifting systems rather than expecting fair or stable visibility by default."
+      ],
+      "solutions_sought": [
+        "Analytics dashboards, algorithm guides, diversification systems, and visibility-monitoring routines.",
+        "Frameworks for multi-platform redundancy, content adaptation, and signal maintenance under changing recommendation logic.",
+        "Communities and guides focused on remaining legible and discoverable in machine-sorted environments."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to stay visible\" framing, where agency over discovery is partially transferred to dashboards, growth frameworks, and optimization routines.",
+        "\"Don't trust one channel\" framing, where fear of disappearance is managed through externally structured diversification and machine-legibility systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger visibility systems, algorithmic shifts may reduce reach, opportunity, and relevance before you can meaningfully respond.",
+        "superiority": "People who understand algorithmic environments are portrayed as more adaptive, more strategic, and less likely to vanish than those still relying on passive presence.",
+        "paired_mechanism": "Fear of disappearance is paired with the superiority promise of machine fluency, making platform strategy feel like both protection and modern competence."
+      },
+      "scores": {
+        "delegated_agency": 86,
+        "fear_intensity": 82,
+        "superiority_intensity": 79,
+        "polarization_risk": 61
+      }
+    },
+    {
+      "anxiety_label": "Self-worth tied to output and fear of being empty without performance",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that rest, softness, or unproductive time increasingly threaten identity because self-worth has become tightly linked to visible output, competence, and usefulness. The concern is often framed not only as productivity pressure, but as fear that without performance there may be too little stable internal worth left to rely on.",
+      "signals_observed": [
+        "Common phrases include \"if I'm not productive, I feel useless,\" \"I don't know who I am without work,\" \"rest makes me anxious,\" \"I need to earn my right to relax,\" and \"doing nothing feels dangerous.\"",
+        "Online discourse increasingly links burnout, ambition, self-esteem, and economic precarity into one broader performance-bound identity structure.",
+        "Advice content often treats worth repair as requiring systems that preserve output while reducing collapse, rather than decoupling worth from usefulness entirely."
+      ],
+      "solutions_sought": [
+        "Balanced productivity systems, sustainable output frameworks, and self-worth routines tied to structured rest rather than total stoppage.",
+        "Coaching and guides on maintaining performance without complete burnout or identity collapse.",
+        "Communities and content focused on sustainable ambition, protected recovery, and rebuilding worth without total disengagement."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system so you can rest without losing momentum\" framing, where self-worth pressure is partially handed to balanced productivity routines and structured recovery plans.",
+        "\"Stay valuable without burning out\" framing, where identity anxiety is managed through externally scaffolded rhythms of output and rest."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without better structure, pressure around usefulness may either drive burnout or leave you feeling empty and self-doubting when output drops.",
+        "superiority": "People with sustainable-performance systems are portrayed as more mature, more stable, and less dependent on raw overexertion than those swinging between collapse and compulsion.",
+        "paired_mechanism": "Fear of worthlessness without output is paired with the superiority promise of sustainable performance, making structure feel like both protection and identity stabilization."
+      },
+      "scores": {
+        "delegated_agency": 82,
+        "fear_intensity": 76,
+        "superiority_intensity": 77,
+        "polarization_risk": 52
+      }
+    },
+    {
+      "anxiety_label": "Community scarcity and fear that real mutual support is becoming rare",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that genuine mutual support, neighborliness, and durable community have become scarce enough that people increasingly live without trustworthy informal safety nets. The concern is often framed not only as loneliness, but as fear that in moments of practical or emotional need there may simply be too few reliable others nearby to lean on.",
+      "signals_observed": [
+        "Common phrases include \"there's no village,\" \"everyone is on their own,\" \"real community is rare,\" \"nobody has capacity,\" and \"support has to be built from scratch now.\"",
+        "Online discourse increasingly links mobility, overwork, mistrust, small households, and digital substitution into a wider sense that mutual support structures have thinned out.",
+        "Advice content often presents community as something that must be intentionally designed because ambient social infrastructure no longer reliably supplies it."
+      ],
+      "solutions_sought": [
+        "Intentional small-group communities, recurring support structures, and neighborhood-scale connection routines.",
+        "Frameworks for building mutual aid, shared care, and lower-friction reciprocity among limited trusted circles.",
+        "Communities and guides focused on reconstructing support networks in environments where broad trust feels thin."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this structure to build your own village\" framing, where belonging is partially transferred to community formats, recurring rituals, and designed support systems.",
+        "\"Don't wait for organic community\" framing, where fear of support scarcity is managed through externally supplied frameworks for deliberate mutuality."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without more intentional support structures, future strain may arrive in a context where too few reliable people are close enough to help.",
+        "superiority": "People who intentionally build support systems are portrayed as more relationally intelligent, more realistic, and less exposed than those still relying on disappearing ambient community.",
+        "paired_mechanism": "Fear of support scarcity is paired with the superiority promise of designed mutuality, making community-building feel like both protection and social competence."
+      },
+      "scores": {
+        "delegated_agency": 75,
+        "fear_intensity": 78,
+        "superiority_intensity": 69,
+        "polarization_risk": 47
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 74,
+    "expansion": 86
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "A visible cross-theme pattern is the movement from diffuse insecurity toward externally scaffolded strategies for legibility, continuity, and designed support.",
+    "Housing, platform dependence, performance-bound worth, and community scarcity often appear together as parts of a broader concern about modern life becoming harder to sustain without deliberate structure."
+  ]
+}
