@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Child safety vigilance and fear of missing hidden risks",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that children are exposed to too many invisible risks across food, screens, school environments, transport, strangers, online spaces, and developmental pressure. The concern is often framed not only as ordinary parental caution, but as fear that modern childhood requires constant scanning for hazards that previous generations did not have to monitor in the same way.",
+      "signals_observed": [
+        "Common phrases include \"you can't be too careful,\" \"there are dangers everywhere,\" \"what if I miss something,\" \"protect them early,\" and \"kids are exposed to too much now.\"",
+        "Online discourse increasingly links parenting to ambient surveillance of digital, physical, social, and developmental threats.",
+        "Advice content often reframes ordinary caregiving as a defensive coordination problem requiring layered monitoring and anticipatory protection."
+      ],
+      "solutions_sought": [
+        "Parental control systems, tracking apps, school-safety routines, and child-risk checklists.",
+        "Guides on screen limits, stranger-safety scripts, food filtering, and online protection practices.",
+        "Communities and explainers focused on identifying hidden risks early and building more controlled child environments."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to keep your child safe\" framing, where parental vigilance is partially transferred to trackers, filters, alerts, and prebuilt routines.",
+        "\"Don't rely on instinct alone\" framing, where fear of missing something is managed through checklists, settings, and layered protective systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger vigilance, important risks may go unnoticed until harm, developmental disruption, or regret has already occurred.",
+        "superiority": "Prepared parents are portrayed as more attentive, more informed, and more protective than families who remain casual about modern childhood risks.",
+        "paired_mechanism": "Fear of hidden danger is paired with the superiority promise of hyper-attentive parenting, making safety systems feel like both protection and parental adequacy."
+      },
+      "scores": {
+        "delegated_agency": 83,
+        "fear_intensity": 86,
+        "superiority_intensity": 72,
+        "polarization_risk": 60
+      }
+    },
+    {
+      "anxiety_label": "Beauty labor escalation and fear of visible neglect",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that appearance maintenance now requires escalating effort across skin, body shape, hair, grooming, clothing, and visible energy. The concern is often framed not only as beauty pressure, but as fear that looking tired, unpolished, or under-maintained will be read as neglect, decline, or lower social value.",
+      "signals_observed": [
+        "Common phrases include \"high maintenance to stay low maintenance,\" \"you can tell who invests in themselves,\" \"looking run down,\" \"glow-up,\" and \"maintenance is the standard now.\"",
+        "Online discourse increasingly treats appearance as a cumulative output of routines, products, and discipline rather than something casual or incidental.",
+        "Advice content often frames visible upkeep as a reputational necessity across dating, work, and class-coded social environments."
+      ],
+      "solutions_sought": [
+        "Beauty routines, maintenance schedules, aesthetic coaching, and product systems.",
+        "Skin-care plans, grooming frameworks, styling guides, and appearance-management checklists.",
+        "Communities centered on polish, reset routines, anti-neglect discipline, and visible self-investment."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this routine to stop looking tired\" framing, where self-perception is partially transferred to expert routines, product stacks, and maintenance scripts.",
+        "\"Follow the maintenance system\" framing, where visible self-worth is managed through repeatable aesthetic labor frameworks."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger maintenance, visible signs of stress or neglect may lower how attractive, competent, or socially credible you appear to others.",
+        "superiority": "People with stronger upkeep systems are portrayed as more refined, more self-respecting, and less visibly worn down than those who remain inconsistent.",
+        "paired_mechanism": "Fear of visible neglect is paired with the superiority promise of polished control, making beauty labor feel like both defense and status signaling."
+      },
+      "scores": {
+        "delegated_agency": 77,
+        "fear_intensity": 75,
+        "superiority_intensity": 84,
+        "polarization_risk": 73
+      }
+    },
+    {
+      "anxiety_label": "Workplace invisibility and fear of becoming professionally forgettable",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that being competent is no longer enough if work remains unseen, unbranded, or insufficiently narrated to managers, platforms, or audiences. The concern is often framed not only as under-recognition, but as fear that invisible effort is becoming professionally worthless in environments that reward legibility, performance, and narrative packaging.",
+      "signals_observed": [
+        "Common phrases include \"if no one sees it, it doesn't count,\" \"I do good work but get overlooked,\" \"visibility matters,\" \"you have to advocate for yourself,\" and \"quiet work gets ignored.\"",
+        "Online discourse increasingly links advancement to self-presentation, internal marketing, and visible signaling rather than output alone.",
+        "Advice content often reframes work quality as only one component of career survival, alongside narrative control and visible proof of relevance."
+      ],
+      "solutions_sought": [
+        "Career-branding systems, visibility routines, self-advocacy frameworks, and portfolio-building plans.",
+        "Coaching on internal communication, promotion narratives, and how to make work legible to decision-makers.",
+        "Communities and guides centered on signaling value, documenting output, and reducing professional invisibility."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to be seen properly\" framing, where career judgment is partially transferred to branding systems, advocacy templates, and visibility routines.",
+        "\"Don't let your work disappear\" framing, where fear of being overlooked is managed through structured self-presentation systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger visibility systems, meaningful work may remain professionally irrelevant because it is not being packaged or noticed correctly.",
+        "superiority": "People who make themselves legible are portrayed as more strategic, more promotable, and less expendable than those who rely on quiet competence alone.",
+        "paired_mechanism": "Fear of professional invisibility is paired with the superiority promise of strategic legibility, making self-advocacy feel like both protection and career intelligence."
+      },
+      "scores": {
+        "delegated_agency": 81,
+        "fear_intensity": 78,
+        "superiority_intensity": 80,
+        "polarization_risk": 58
+      }
+    },
+    {
+      "anxiety_label": "Low-trust social life and fear of hidden motives in ordinary interaction",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the sense that ordinary social interactions are harder to take at face value because motives, loyalties, and intentions feel less transparent than before. The concern is often framed not only as betrayal fear, but as exhaustion from trying to read whether friendliness, advice, collaboration, or intimacy is genuine or strategic.",
+      "signals_observed": [
+        "Common phrases include \"people always want something,\" \"I don't trust intentions,\" \"everyone is transactional,\" \"keep your circle small,\" and \"be careful who you let close.\"",
+        "Online discourse increasingly treats everyday social life as requiring motive analysis, selective access, and defensive relational filtering.",
+        "Advice content often presents trust as something that must be rationed and tested rather than extended gradually by default."
+      ],
+      "solutions_sought": [
+        "Boundary frameworks, trust-testing heuristics, selective friendship standards, and relational filtering systems.",
+        "Small-circle philosophies, low-exposure social habits, and scripts for preserving distance until safety is clearer.",
+        "Communities and explainers focused on reducing naïveté, spotting manipulation, and avoiding relational extraction."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to know who to trust\" framing, where relational judgment is partially handed to heuristics, standards, and defensive social rules.",
+        "\"Follow these filters and stay protected\" framing, where ambiguity about motives is managed through externally supplied trust criteria."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger filters, ordinary relationships may expose you to manipulation, disappointment, or energy-draining asymmetry.",
+        "superiority": "People with tighter trust standards are portrayed as more discerning, less gullible, and less available for exploitation than those who remain socially open by default.",
+        "paired_mechanism": "Fear of hidden motives is paired with the superiority image of selective discernment, making guardedness feel like both protection and psychological intelligence."
+      },
+      "scores": {
+        "delegated_agency": 75,
+        "fear_intensity": 77,
+        "superiority_intensity": 76,
+        "polarization_risk": 82
+      }
+    },
+    {
+      "anxiety_label": "Future-collapse preparedness and private contingency planning",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the belief that future disruptions—economic, infrastructural, ecological, political, or technological—may arrive with too little warning and too little institutional cushioning. The concern is often framed not only as generalized doom, but as pressure to privately prepare for breakdowns that public systems may not absorb well.",
+      "signals_observed": [
+        "Common phrases include \"you need a backup plan,\" \"be ready,\" \"don't assume the system will hold,\" \"quiet prepping,\" and \"have contingencies.\"",
+        "Online discourse increasingly links inflation, outages, climate stress, cyber-risk, food systems, and political volatility into one broader contingency mindset.",
+        "Advice content often presents baseline life as too exposed unless households build private redundancy, reserves, and fallback pathways."
+      ],
+      "solutions_sought": [
+        "Preparedness checklists, food and water backup plans, household resilience systems, and contingency savings frameworks.",
+        "Quiet-prepping communities, localized planning guides, and routines for building redundancy without full collapse fantasy.",
+        "Scenario-planning tools and systems for mapping fallback options across housing, income, health, and supply disruption."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to prepare before normality fails\" framing, where future uncertainty is partially handed to checklists, scenarios, and redundancy frameworks.",
+        "\"Don't improvise in a crisis\" framing, where anxiety about breakdown is managed through structured preparedness and externally guided contingency systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger private contingencies, future disruptions may hit you harder because public systems may not provide timely or sufficient protection.",
+        "superiority": "Prepared households are portrayed as more realistic, more antifragile, and less dependent on unstable normality than passive optimists.",
+        "paired_mechanism": "Fear of breakdown is paired with the superiority promise of quiet preparedness, making contingency planning feel like both protection and strategic realism."
+      },
+      "scores": {
+        "delegated_agency": 80,
+        "fear_intensity": 85,
+        "superiority_intensity": 71,
+        "polarization_risk": 79
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 73,
+    "expansion": 86
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "Parenting, beauty, work visibility, low-trust sociality, and future-collapse themes are often reframed as system-manageable problems with routines, filters, and purchasable guidance attached.",
+    "Low-trust and preparedness discourse can intensify selective belonging, private redundancy, and narrowed expectations about social openness."
+  ]
+}
