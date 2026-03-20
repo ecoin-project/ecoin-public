@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Retreat fantasies and fear that ordinary social life is no longer sustainable",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the fantasy of leaving ordinary social and economic life behind because participation increasingly feels draining, noisy, and structurally extractive. The concern is often framed not only as escapism, but as fear that conventional urban, professional, and social rhythms are becoming too intense to live inside without long-term depletion.",
+      "signals_observed": [
+        "Common phrases include \"I want to disappear,\" \"I want a simpler life,\" \"I can't do this pace anymore,\" \"I want out,\" and \"normal life feels too loud.\"",
+        "Online discourse increasingly links work intensity, digital overstimulation, social friction, and cost pressure into a broader wish to exit high-friction participation.",
+        "Advice content often reframes retreat not as collapse but as a rational redesign of life around lower stimulation and lower demand."
+      ],
+      "solutions_sought": [
+        "Simplified-living frameworks, rural or slower-life planning guides, and low-demand lifestyle systems.",
+        "Exit plans, remote-work relocation routines, and minimalist domestic structures designed to reduce daily friction.",
+        "Communities and content focused on withdrawal from intensity, deliberate reduction, and reconstructing daily life at a lower activation level."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to leave the noise behind\" framing, where retreat desire is partially transferred to lifestyle templates, relocation guides, and simplification frameworks.",
+        "\"Build a life that requires less from you\" framing, where diffuse exhaustion is managed through externally structured exit narratives and lower-friction systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without deliberate reduction, ordinary participation may continue to erode energy, clarity, and emotional tolerance over time.",
+        "superiority": "People who design lower-intensity lives are portrayed as more self-aware, more intentional, and less trapped by default social rhythms than those still enduring them passively.",
+        "paired_mechanism": "Fear of unsustainable participation is paired with the superiority promise of intentional retreat, making simplification feel like both protection and a deeper form of wisdom."
+      },
+      "scores": {
+        "delegated_agency": 74,
+        "fear_intensity": 77,
+        "superiority_intensity": 70,
+        "polarization_risk": 55
+      }
+    },
+    {
+      "anxiety_label": "Anti-social exhaustion and fear of becoming emotionally unavailable by necessity",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that repeated overstimulation, disappointment, and relational demand are pushing people toward lower empathy, lower openness, and narrower social tolerance. The concern is often framed not only as burnout, but as fear that one may become emotionally unavailable simply because remaining open feels too costly.",
+      "signals_observed": [
+        "Common phrases include \"I have no capacity for people,\" \"I don't have it in me,\" \"I used to care more,\" \"my empathy is shot,\" and \"I need distance from everyone.\"",
+        "Online discourse increasingly treats emotional withdrawal as a protective adaptation to overload rather than a purely moral or personal failing.",
+        "Advice content often frames reduced social exposure as a necessary strategy for preserving remaining bandwidth."
+      ],
+      "solutions_sought": [
+        "Energy-protection frameworks, social-exposure limits, and lower-demand relationship routines.",
+        "Boundary systems, capacity-based planning, and emotional-load reduction strategies.",
+        "Communities and guides focused on preserving human connection without requiring constant emotional availability."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to protect your capacity\" framing, where emotional openness is partially managed through boundaries, routines, and externally supplied limits.",
+        "\"Stop over-giving by default\" framing, where fear of relational depletion is organized through structured self-protection systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger limits, repeated social demand may gradually convert care into depletion and leave you less able to connect at all.",
+        "superiority": "People who guard their emotional capacity are portrayed as more self-respecting, more realistic, and less likely to be consumed by others than those who remain overavailable.",
+        "paired_mechanism": "Fear of relational depletion is paired with the superiority promise of controlled availability, making guardedness feel like both protection and emotional intelligence."
+      },
+      "scores": {
+        "delegated_agency": 78,
+        "fear_intensity": 74,
+        "superiority_intensity": 71,
+        "polarization_risk": 61
+      }
+    },
+    {
+      "anxiety_label": "Identity hardening and fear that flexibility looks like weakness",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the pressure to adopt a clearer, firmer, and more defensible identity because ambiguity increasingly seems socially expensive. The concern is often framed not only as self-definition, but as fear that flexibility, nuance, or provisionality may be read as confusion, weakness, or lack of conviction.",
+      "signals_observed": [
+        "Common phrases include \"know who you are,\" \"stand for something,\" \"stop being vague,\" \"pick a side,\" and \"people respect certainty.\"",
+        "Online discourse increasingly rewards sharper identity boundaries, clearer group affiliations, and stronger symbolic coherence.",
+        "Advice content often frames identity consolidation as a defense against social uncertainty, relational ambiguity, and interpretive drift."
+      ],
+      "solutions_sought": [
+        "Identity frameworks, values clarification systems, and stronger narrative-positioning routines.",
+        "Communities built around clearer ideology, archetype, or role coherence.",
+        "Guides and content focused on becoming more decisive, legible, and boundary-defined in public and private life."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to become more definite\" framing, where uncertainty about selfhood is partially transferred to typologies, role systems, and externally supplied narratives.",
+        "\"Stop being unreadable\" framing, where identity anxiety is managed through stronger labels, values systems, and coherence templates."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without firmer self-definition, you may remain socially harder to place, easier to misread, and less protected in environments that reward certainty.",
+        "superiority": "People with sharper identity boundaries are portrayed as more grounded, more respected, and less vulnerable to drift than those who remain fluid or diffuse.",
+        "paired_mechanism": "Fear of interpretive weakness is paired with the superiority promise of hardened coherence, making stronger identity feel like both protection and status."
+      },
+      "scores": {
+        "delegated_agency": 79,
+        "fear_intensity": 72,
+        "superiority_intensity": 83,
+        "polarization_risk": 86
+      }
+    },
+    {
+      "anxiety_label": "Selective belonging and fear of trusting the wrong social layer",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the belief that broad belonging is less safe or less meaningful than smaller, more selective forms of affiliation. The concern is often framed not only as community preference, but as fear that the wrong group, wrong network, or wrong layer of visibility can expose a person to misunderstanding, extraction, or moral volatility.",
+      "signals_observed": [
+        "Common phrases include \"keep your circle tight,\" \"not everyone deserves access,\" \"find your people,\" \"small trusted groups,\" and \"broad community is too risky now.\"",
+        "Online discourse increasingly treats belonging as something that should be narrowed, filtered, and tiered rather than assumed to be broadly available.",
+        "Advice content often frames social safety as dependent on careful selection and controlled exposure rather than openness."
+      ],
+      "solutions_sought": [
+        "Small-group structures, tiered trust systems, and selective access frameworks.",
+        "Guides for finding aligned people while limiting exposure to broader, more unstable publics.",
+        "Communities that emphasize curation, signal recognition, and belonging through stronger internal boundaries."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this filter to find your people\" framing, where belonging decisions are partially transferred to criteria, curation systems, and alignment frameworks.",
+        "\"Not everyone gets access\" framing, where social safety is organized through externally supplied rules for narrowing trust and participation."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger selectivity, broader belonging may expose you to instability, extraction, or repeated misalignment with people who do not hold you safely.",
+        "superiority": "People with tighter social filters are portrayed as more discerning, more protected, and less easily absorbed into unstable group dynamics than those who stay broadly available.",
+        "paired_mechanism": "Fear of misaligned belonging is paired with the superiority promise of curated affiliation, making selectivity feel like both protection and relational intelligence."
+      },
+      "scores": {
+        "delegated_agency": 76,
+        "fear_intensity": 75,
+        "superiority_intensity": 78,
+        "polarization_risk": 82
+      }
+    },
+    {
+      "anxiety_label": "Future-proofing pressure and fear that ordinary preparedness is no longer enough",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the sense that people must now not only cope with present conditions but constantly prepare for future shifts in work, health, family, climate, technology, and social norms. The concern is often framed not only as prudence, but as fear that ordinary preparedness has become insufficient in a world that changes faster than habits can stabilize.",
+      "signals_observed": [
+        "Common phrases include \"future-proof yourself,\" \"be ready for what's next,\" \"don't get caught flat-footed,\" \"prepare now,\" and \"baseline readiness isn't enough anymore.\"",
+        "Online discourse increasingly turns uncertainty into an optimization horizon, where individuals are expected to anticipate not one but many future disruptions.",
+        "Advice content often packages future-proofing as a continuous responsibility requiring layered plans, backup skills, and more resilient identity structures."
+      ],
+      "solutions_sought": [
+        "Future-proofing frameworks, skill redundancy plans, layered contingency systems, and long-horizon readiness routines.",
+        "Scenario planning, adaptive identity systems, and structured practices for maintaining optionality across uncertain futures.",
+        "Communities and guides focused on staying legible, useful, and protected under multiple possible shifts."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework to stay ahead of change\" framing, where future anxiety is partially managed through scenario systems, readiness templates, and backup plans.",
+        "\"Build optionality now\" framing, where fear of being underprepared is translated into externally structured resilience and anticipatory routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger future-proofing, ordinary competence and ordinary preparation may leave you exposed to shifts that arrive faster than you can adapt in real time.",
+        "superiority": "People with stronger readiness systems are portrayed as more resilient, more adaptive, and less likely to be surprised by change than those still relying on static stability.",
+        "paired_mechanism": "Fear of underpreparedness is paired with the superiority promise of anticipatory resilience, making future-proofing feel like both protection and advanced competence."
+      },
+      "scores": {
+        "delegated_agency": 87,
+        "fear_intensity": 81,
+        "superiority_intensity": 76,
+        "polarization_risk": 49
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 74,
+    "expansion": 87
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "A notable pattern is the translation of diffuse social and existential instability into narrower, more selective, more structured modes of living.",
+    "Identity hardening and selective belonging themes often intensify boundary-making, coherence pressure, and reduced tolerance for ambiguity."
+  ]
+}
