@@ -58,6 +58,10 @@ Typical outputs include:
 
 This repository currently includes manual sample outputs and a validated aggregation step for generating weekly summary JSON files before live API use.
 
+External reference series such as BTC price may be stored separately from the discourse batches and treated as contextual comparison lanes rather than direct explanatory variables.
+
+External market-reference plots should be kept separate from discourse-core trend plots to avoid mixing scales and interpretations.
+
 ## Notes
 
 This repository is intended for structural observation and hypothesis generation, not direct corpus measurement or performance benchmarking.
