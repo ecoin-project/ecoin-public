@@ -36,6 +36,9 @@ jobs:
       - name: Plot trends
         run: python scripts/plot_master_summary.py
 
+      - name: Fetch market reference
+        run: python scripts/fetch_market_reference.py
+
       - name: Plot market reference
         run: python scripts/plot_market_reference.py
   
