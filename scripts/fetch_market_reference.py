@@ -10,6 +10,8 @@ COINGECKO_URL = "https://api.coingecko.com/api/v3/simple/price"
 COIN_ID = "bitcoin"
 VS_CURRENCY = "usd"
 
+GOLD_API_URL = "https://api.gold-api.com/price/XAU"
+
 
 def ensure_csv_exists():
     os.makedirs(os.path.dirname(DATA_PATH), exist_ok=True)
@@ -41,23 +43,36 @@ def fetch_btc_price():
     data = response.json()
 
     if COIN_ID not in data or VS_CURRENCY not in data[COIN_ID]:
-        raise ValueError("BTC price not found in API response")
+        raise ValueError("BTC price not found in CoinGecko response")
 
     return float(data[COIN_ID][VS_CURRENCY])
 
 
-def append_row_if_new(date_str: str, price: float, fetched_at_utc: str):
+def fetch_gold_price():
+    response = requests.get(GOLD_API_URL, timeout=20)
+    response.raise_for_status()
+    data = response.json()
+
+    # gold-api.com commonly returns either "price" or "price_gram_24k"/other fields.
+    # We want the main XAU USD quote if present.
+    if "price" not in data:
+        raise ValueError("GOLD price not found in gold-api.com response")
+
+    return float(data["price"])
+
+
+def append_row_if_new(date_str: str, asset: str, price: float, source_note: str, fetched_at_utc: str):
     rows = read_existing_rows()
     for row in rows:
-        if row.get("date") == date_str and row.get("asset") == "BTC":
-            print(f"Row already exists for {date_str} / BTC. Skip append.")
+        if row.get("date") == date_str and row.get("asset") == asset:
+            print(f"Row already exists for {date_str} / {asset}. Skip append.")
             return
 
     with open(DATA_PATH, "a", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow([date_str, "BTC", price, "coingecko_demo_or_public", fetched_at_utc])
+        writer.writerow([date_str, asset, price, source_note, fetched_at_utc])
 
-    print(f"Appended BTC price for {date_str}: {price}")
+    print(f"Appended {asset} price for {date_str}: {price}")
 
 
 def main():
@@ -67,8 +82,23 @@ def main():
     today = now_utc.date().isoformat()
     fetched_at_utc = now_utc.isoformat().replace("+00:00", "Z")
 
-    price = fetch_btc_price()
-    append_row_if_new(today, price, fetched_at_utc)
+    btc_price = fetch_btc_price()
+    append_row_if_new(
+        date_str=today,
+        asset="BTC",
+        price=btc_price,
+        source_note="coingecko_demo_or_public",
+        fetched_at_utc=fetched_at_utc,
+    )
+
+    gold_price = fetch_gold_price()
+    append_row_if_new(
+        date_str=today,
+        asset="GOLD",
+        price=gold_price,
+        source_note="gold_api_free",
+        fetched_at_utc=fetched_at_utc,
+    )
 
 
 if __name__ == "__main__":
