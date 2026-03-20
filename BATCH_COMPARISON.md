@@ -1,6 +1,7 @@
 # Manual batch comparison notes
 
 This note summarizes the current differences across the three validated manual batches.
+This is a cross-batch comparison of manually curated thematic slices, not a longitudinal population trend.
 
 ## Batch overview
 
