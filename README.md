@@ -32,7 +32,7 @@ To switch the active manual batch in GitHub Actions, update:
 
 ```yaml
 MANUAL_BATCH_ID: "manual_batch_001"
-
+```
 in .github/workflows/weekly_observation.yml.
 
 ### Output roles
