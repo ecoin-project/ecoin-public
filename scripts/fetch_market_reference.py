@@ -18,7 +18,7 @@ def ensure_csv_exists():
     if not os.path.exists(DATA_PATH):
         with open(DATA_PATH, "w", encoding="utf-8", newline="") as f:
             writer = csv.writer(f)
-            writer.writerow(["date", "asset", "price_usd", "source_note", "fetched_at_utc"])
+            writer.writerow(["date", "asset", "value", "unit", "source_note", "fetched_at_utc"])
 
 
 def read_existing_rows():
@@ -53,15 +53,13 @@ def fetch_gold_price():
     response.raise_for_status()
     data = response.json()
 
-    # gold-api.com commonly returns either "price" or "price_gram_24k"/other fields.
-    # We want the main XAU USD quote if present.
     if "price" not in data:
         raise ValueError("GOLD price not found in gold-api.com response")
 
     return float(data["price"])
 
 
-def append_row_if_new(date_str: str, asset: str, price: float, source_note: str, fetched_at_utc: str):
+def append_row_if_new(date_str: str, asset: str, value: float, unit: str, source_note: str, fetched_at_utc: str):
     rows = read_existing_rows()
     for row in rows:
         if row.get("date") == date_str and row.get("asset") == asset:
@@ -70,9 +68,9 @@ def append_row_if_new(date_str: str, asset: str, price: float, source_note: str,
 
     with open(DATA_PATH, "a", encoding="utf-8", newline="") as f:
         writer = csv.writer(f)
-        writer.writerow([date_str, asset, price, source_note, fetched_at_utc])
+        writer.writerow([date_str, asset, value, unit, source_note, fetched_at_utc])
 
-    print(f"Appended {asset} price for {date_str}: {price}")
+    print(f"Appended {asset} value for {date_str}: {value}")
 
 
 def main():
@@ -86,7 +84,8 @@ def main():
     append_row_if_new(
         date_str=today,
         asset="BTC",
-        price=btc_price,
+        value=btc_price,
+        unit="usd",
         source_note="coingecko_demo_or_public",
         fetched_at_utc=fetched_at_utc,
     )
@@ -95,7 +94,8 @@ def main():
     append_row_if_new(
         date_str=today,
         asset="GOLD",
-        price=gold_price,
+        value=gold_price,
+        unit="usd_per_oz",
         source_note="gold_api_free",
         fetched_at_utc=fetched_at_utc,
     )
