@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Health-cost fear and the anxiety of becoming financially expensive to oneself",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the fear that illness, chronic symptoms, or even ordinary health maintenance may become financially destabilizing long before any catastrophic medical event occurs. The concern is often framed not only as fear of being sick, but as fear of becoming an increasingly expensive person to keep functioning.",
+      "signals_observed": [
+        "Common phrases include \"I can't afford to get sick,\" \"health is so expensive now,\" \"one issue becomes ten bills,\" \"I delay care because of cost,\" and \"staying functional is expensive.\"",
+        "Online discourse increasingly links co-pays, tests, medications, supplements, therapy, dental work, and insurance gaps into one broader sense of bodily cost exposure.",
+        "Advice content often treats health as something that must be financially managed in parallel with being physically managed."
+      ],
+      "solutions_sought": [
+        "Medical-cost trackers, care-priority frameworks, insurance-navigation guides, and staged treatment planning systems.",
+        "Low-cost wellness routines, preventative frameworks, and benefit-optimization strategies designed to reduce future expense.",
+        "Communities and explainers focused on surviving health-related costs without losing all financial stability."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system before care gets unaffordable\" framing, where health-cost judgment is partially transferred to trackers, navigation tools, and staged planning frameworks.",
+        "\"Don't let healthcare surprise you\" framing, where bodily uncertainty is translated into financial routines and defensive cost-management systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger planning, ordinary health needs may gradually become financially destabilizing and reduce both autonomy and peace of mind.",
+        "superiority": "People who manage health costs proactively are portrayed as more prudent, more realistic, and less vulnerable than those who wait until crisis forces decisions.",
+        "paired_mechanism": "Fear of becoming too expensive to maintain is paired with the superiority promise of anticipatory control, making health-cost planning feel like both protection and competence."
+      },
+      "scores": {
+        "delegated_agency": 82,
+        "fear_intensity": 84,
+        "superiority_intensity": 67,
+        "polarization_risk": 46
+      }
+    },
+    {
+      "anxiety_label": "Education sorting and fear of invisible early disadvantage",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the belief that educational inequality now begins earlier, hides inside seemingly ordinary choices, and compounds before children or parents fully understand the stakes. The concern is often framed not only as competition, but as fear that small early differences silently become larger life advantages or disadvantages.",
+      "signals_observed": [
+        "Common phrases include \"it starts so early now,\" \"if you don't know the game,\" \"small gaps become big gaps,\" \"everyone else seems informed,\" and \"I don't want my child quietly left behind.\"",
+        "Online discourse increasingly links preschool access, enrichment, literacy exposure, neighborhood quality, and parental knowledge into one narrative of subtle early sorting.",
+        "Advice content often frames child development and school navigation as requiring earlier strategy than many families expect."
+      ],
+      "solutions_sought": [
+        "Early-learning roadmaps, milestone systems, school-navigation guides, and enrichment-planning frameworks.",
+        "Parent communities, educational explainers, and tutoring or acceleration systems designed to reduce silent disadvantage.",
+        "Routines for managing literacy, structure, exposure, and home learning in ways that feel more competitive."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this roadmap before the gap widens\" framing, where parental educational judgment is partially transferred to planning systems, milestone tools, and external guidance.",
+        "\"Don't assume the system will tell you in time\" framing, where fear of hidden disadvantage is managed through anticipatory frameworks and earlier intervention routines."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without earlier planning, seemingly small educational gaps may quietly widen until they are harder to reverse or even notice clearly.",
+        "superiority": "Families using stronger educational systems are portrayed as more informed, more strategic, and less likely to be caught naive by invisible sorting processes.",
+        "paired_mechanism": "Fear of silent disadvantage is paired with the superiority promise of informed anticipation, making educational planning feel like both protection and parental intelligence."
+      },
+      "scores": {
+        "delegated_agency": 81,
+        "fear_intensity": 83,
+        "superiority_intensity": 78,
+        "polarization_risk": 69
+      }
+    },
+    {
+      "anxiety_label": "Domestic overload and fear that maintenance has replaced living",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that more and more of life is consumed by cleaning, organizing, scheduling, shopping, repairing, and keeping things from slipping, leaving too little psychological space for actual living. The concern is often framed not only as being busy, but as fear that maintenance itself has become the dominant structure of adulthood.",
+      "signals_observed": [
+        "Common phrases include \"my whole life is upkeep,\" \"I am always catching up,\" \"it never resets,\" \"maintenance is the full-time job,\" and \"I barely get to live in the life I maintain.\"",
+        "Online discourse increasingly links household labor, life-admin, shopping cycles, caregiving, and digital coordination into one broader maintenance-burden narrative.",
+        "Advice content often presents domestic survival as dependent on stronger systems because the ambient load is assumed to be too high for spontaneity."
+      ],
+      "solutions_sought": [
+        "Home-operating systems, reset routines, batch-task frameworks, and lower-friction domestic organization methods.",
+        "Checklists, shared household dashboards, and chore systems designed to reduce cognitive drag and recurring disorder.",
+        "Communities and guides focused on making adult maintenance feel less endless and more contained."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system so upkeep stops running your life\" framing, where domestic judgment is partially transferred to routines, checklists, and household operating frameworks.",
+        "\"Stop carrying the whole house in your head\" framing, where maintenance overload is managed through externalized structure and recurring reset systems."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger containment, the burden of upkeep may continue expanding until maintenance crowds out energy, pleasure, and emotional availability.",
+        "superiority": "People with better home systems are portrayed as more capable, more composed, and less consumed by ordinary maintenance than those still reacting day to day.",
+        "paired_mechanism": "Fear of being swallowed by upkeep is paired with the superiority promise of contained order, making household systems feel like both protection and adult competence."
+      },
+      "scores": {
+        "delegated_agency": 87,
+        "fear_intensity": 78,
+        "superiority_intensity": 70,
+        "polarization_risk": 44
+      }
+    },
+    {
+      "anxiety_label": "Emotional mistrust and fear that openness is increasingly costly",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the feeling that emotional openness can expose people to misreading, overextraction, or asymmetry in relationships where not everyone is equally careful or reciprocal. The concern is often framed not only as caution, but as fear that being emotionally sincere may now carry higher interpersonal costs than being guarded.",
+      "signals_observed": [
+        "Common phrases include \"I regret opening up,\" \"people use things against you,\" \"keep it close,\" \"I don't trust emotional intimacy easily,\" and \"vulnerability feels expensive now.\"",
+        "Online discourse increasingly treats openness as something that should be earned, filtered, and carefully rationed rather than broadly extended.",
+        "Advice content often reframes intimacy as a risk-management problem requiring stronger discernment and slower trust."
+      ],
+      "solutions_sought": [
+        "Boundary frameworks, staged-vulnerability systems, and relational pacing guides.",
+        "Communication rules, trust-building heuristics, and protective scripts for reducing emotional overexposure.",
+        "Communities and explainers focused on preserving sincerity without becoming too available or too easily read."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this framework so openness does not backfire\" framing, where emotional judgment is partially transferred to pacing systems, boundaries, and staged disclosure rules.",
+        "\"Don't give access too fast\" framing, where fear of emotional cost is managed through externally supplied trust filters and interaction scripts."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger emotional filtering, openness may continue to expose you to misattunement, asymmetry, and lingering interpersonal regret.",
+        "superiority": "People with better pacing and trust systems are portrayed as more discerning, more self-protective, and less emotionally exploitable than those who still open too quickly.",
+        "paired_mechanism": "Fear of costly openness is paired with the superiority promise of selective vulnerability, making guarded sincerity feel like both protection and relational intelligence."
+      },
+      "scores": {
+        "delegated_agency": 76,
+        "fear_intensity": 75,
+        "superiority_intensity": 77,
+        "polarization_risk": 73
+      }
+    },
+    {
+      "anxiety_label": "Resilience branding and fear of appearing too fragile for modern life",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the pressure not only to survive stress but to be seen as someone who can metabolize instability without falling apart publicly. The concern is often framed not only as personal resilience, but as fear that visible fragility now lowers social confidence, professional trust, and relational attractiveness.",
+      "signals_observed": [
+        "Common phrases include \"you have to stay strong,\" \"don't break publicly,\" \"people lose confidence fast,\" \"be resilient,\" and \"you can't look too fragile.\"",
+        "Online discourse increasingly links resilience to status, employability, attractiveness, and adult legitimacy rather than merely coping.",
+        "Advice content often frames resilience as something that can be built, displayed, and packaged through routines, mindset, and visible composure."
+      ],
+      "solutions_sought": [
+        "Resilience routines, mindset systems, recovery protocols, and self-regulation frameworks designed to maintain visible stability.",
+        "Coaching and content focused on staying functional, composed, and adaptive under pressure.",
+        "Communities that normalize strain while still rewarding signs of self-command and bounce-back."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to stay steady under pressure\" framing, where resilience is partially handed to routines, mindset frameworks, and visible stability practices.",
+        "\"Train your response, not just your feelings\" framing, where fear of fragility is managed through structured composure systems and adaptive scripts."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger resilience systems, visible strain may undermine how trustworthy, capable, or socially attractive you appear under pressure.",
+        "superiority": "People with stronger resilience practices are portrayed as more stable, more reliable, and less publicly breakable than those who remain visibly overwhelmed.",
+        "paired_mechanism": "Fear of looking too fragile is paired with the superiority promise of composed resilience, making self-regulation feel like both protection and status maintenance."
+      },
+      "scores": {
+        "delegated_agency": 84,
+        "fear_intensity": 79,
+        "superiority_intensity": 80,
+        "polarization_risk": 58
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 73,
+    "expansion": 85
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "A notable pattern is the conversion of diffuse anxiety into externally scaffolded systems for emotional, domestic, financial, and identity-level stability.",
+    "Resilience discourse often blends coping language with performance language, turning survival itself into something socially legible and rank-sensitive."
+  ]
+}
