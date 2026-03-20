@@ -1,0 +1,160 @@
+{
+  "question_id": "anxiety_solutions_v1",
+  "time_window_assumed": "last_3_to_12_months",
+  "items": [
+    {
+      "anxiety_label": "Career plateau anxiety and fear of becoming quietly non-competitive",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that one can remain functional, employed, and outwardly stable while still drifting into professional irrelevance. The concern is often framed not only as fear of job loss, but as fear that a career may flatten quietly through stalled growth, reduced visibility, and slower adaptation until one's competitiveness is harder to recover.",
+      "signals_observed": [
+        "Common phrases include \"I feel stuck,\" \"I'm not growing anymore,\" \"everyone is moving faster,\" \"I don't know if I'm still competitive,\" and \"stagnation scares me more than failure.\"",
+        "Online discourse increasingly links plateau fear to skipped upskilling, low-recognition work, AI acceleration, and uncertainty about what counts as real advancement now.",
+        "Advice content often frames professional stability as insufficient unless accompanied by visible momentum, learning, or status movement."
+      ],
+      "solutions_sought": [
+        "Career roadmaps, skill-refresh systems, visibility routines, and structured advancement frameworks.",
+        "Coaching, peer accountability groups, and guided plans for regaining momentum without abrupt burnout.",
+        "Communities and content focused on escaping plateau states, restoring upward movement, and staying legible under changing standards."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system before stagnation becomes decline\" framing, where professional self-assessment is partially transferred to roadmaps, review routines, and external advancement frameworks.",
+        "\"Don't wait until you are already behind\" framing, where plateau anxiety is managed through structured momentum systems and guided career recalibration."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger movement and refresh, quiet stagnation may gradually reduce your relevance, options, and ability to compete under newer conditions.",
+        "superiority": "People with clearer growth systems are portrayed as more proactive, more adaptive, and less likely to become professionally forgettable than those who remain comfortable but static.",
+        "paired_mechanism": "Fear of quiet decline is paired with the superiority promise of visible momentum, making career systemization feel like both protection and strategic seriousness."
+      },
+      "scores": {
+        "delegated_agency": 82,
+        "fear_intensity": 80,
+        "superiority_intensity": 78,
+        "polarization_risk": 51
+      }
+    },
+    {
+      "anxiety_label": "Care-network weakness and fear that no one can really step in",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the sense that many people have too little dependable backup when illness, exhaustion, child care, eldercare, or unexpected disruption hits. The concern is often framed not only as loneliness, but as fear that practical help networks have become too thin for real-life strain.",
+      "signals_observed": [
+        "Common phrases include \"I have no backup,\" \"there is no one to call,\" \"everyone is maxed out,\" \"support sounds good in theory,\" and \"I don't actually have a safety net.\"",
+        "Online discourse increasingly links mobility, smaller households, overwork, and weak neighborhood ties to the thinning of practical care networks.",
+        "Advice content often frames resilience as dependent on building smaller, more intentional support structures because ambient help cannot be assumed."
+      ],
+      "solutions_sought": [
+        "Mutual-aid routines, care-circle planning, and practical backup systems for emergencies and overload periods.",
+        "Guides for asking for help, formalizing reciprocal support, and building smaller dependable support loops.",
+        "Communities and frameworks focused on reconstructing practical care capacity where broad support feels unavailable."
+      ],
+      "delegated_agency_hooks": [
+        "\"Build your backup before you need it\" framing, where relational security is partially transferred to planned support structures, care circles, and reciprocal systems.",
+        "\"Don't rely on vague goodwill\" framing, where care anxiety is managed through explicit agreements, routines, and designed mutual support."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger backup structures, ordinary crises may become much harder to absorb because practical help may not arrive when needed.",
+        "superiority": "People with intentional care networks are portrayed as more prepared, more relationally realistic, and less exposed than those still assuming help will appear organically.",
+        "paired_mechanism": "Fear of unsupported crisis is paired with the superiority promise of designed backup, making support-building feel like both protection and social competence."
+      },
+      "scores": {
+        "delegated_agency": 77,
+        "fear_intensity": 81,
+        "superiority_intensity": 68,
+        "polarization_risk": 46
+      }
+    },
+    {
+      "anxiety_label": "Wellness moralization and fear that ordinary struggle looks like personal failure",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the feeling that health, energy, mood, and body management are increasingly treated as indicators of virtue, self-respect, and discipline rather than as mixed outcomes of circumstance and biology. The concern is often framed not only as wanting to feel better, but as fear that ordinary struggle now reads as evidence of neglect or low self-governance.",
+      "signals_observed": [
+        "Common phrases include \"take better care of yourself,\" \"it's all about discipline,\" \"you can tell who prioritizes health,\" \"if I were stricter I'd feel better,\" and \"feeling off makes me feel like I'm failing.\"",
+        "Online discourse increasingly links fitness, food, sleep, appearance, and mood into a moralized picture of worth, effort, and self-command.",
+        "Advice content often frames better health as both practical improvement and visible proof of disciplined adulthood."
+      ],
+      "solutions_sought": [
+        "Health routines, habit systems, food and sleep frameworks, and visible consistency practices.",
+        "Tracking tools, coaching, and structured wellness programs that promise both improved function and stronger self-command.",
+        "Communities and content focused on becoming more aligned, more regulated, and less visibly under-managed."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to become the kind of person who feels better\" framing, where bodily and emotional self-judgment is partially transferred to routines, programs, and tracking systems.",
+        "\"Stop leaving health to chance\" framing, where moralized wellness pressure is managed through structured habits and externally scaffolded discipline."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger self-management, ordinary physical or emotional struggle may increasingly feel like evidence of low discipline rather than temporary strain.",
+        "superiority": "People with tighter wellness systems are portrayed as more aligned, more disciplined, and less visibly chaotic than those still living reactively.",
+        "paired_mechanism": "Fear of reading as under-managed is paired with the superiority promise of disciplined wellness, making health systems feel like both protection and moral-legibility repair."
+      },
+      "scores": {
+        "delegated_agency": 84,
+        "fear_intensity": 76,
+        "superiority_intensity": 82,
+        "polarization_risk": 63
+      }
+    },
+    {
+      "anxiety_label": "Domestic retreat and fear that smaller life is the only survivable scale",
+      "anxiety_description": "Another visible anxiety in online discourse concerns the sense that shrinking life down to home, a few trusted people, and a narrower daily rhythm may be the only scale at which one can remain sane, solvent, and emotionally intact. The concern is often framed not only as introversion, but as fear that larger participation has become too expensive in attention, money, and stress.",
+      "signals_observed": [
+        "Common phrases include \"I just want a small quiet life,\" \"less is the only way I can function,\" \"home is all I can manage,\" \"I want to shrink my world,\" and \"big life feels too costly now.\"",
+        "Online discourse increasingly links domestic retreat to overstimulation, rising expenses, public distrust, and energy scarcity.",
+        "Advice content often frames smaller living as a strategic re-scaling rather than a failure to participate fully."
+      ],
+      "solutions_sought": [
+        "Low-demand lifestyle systems, home-centered routines, and simplification frameworks for reducing external load.",
+        "Minimalist domestic structures, slower schedules, and lower-expense everyday-life strategies.",
+        "Communities and guides focused on making smaller life feel intentional, protected, and socially defensible."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system to make smaller life work\" framing, where retreat desire is partially transferred to simplification frameworks, home routines, and lower-load templates.",
+        "\"Design for less strain\" framing, where overwhelm is managed through externally structured reduction rather than open-ended withdrawal."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger reduction, larger-scale participation may continue to exceed your energy, money, and tolerance in ways that feel unsustainable.",
+        "superiority": "People who intentionally live smaller are portrayed as more self-knowing, more resource-aware, and less trapped by social excess than those still overextending into larger-scale life.",
+        "paired_mechanism": "Fear of unsustainable scale is paired with the superiority promise of intentional reduction, making smaller life feel like both protection and refined realism."
+      },
+      "scores": {
+        "delegated_agency": 75,
+        "fear_intensity": 74,
+        "superiority_intensity": 71,
+        "polarization_risk": 49
+      }
+    },
+    {
+      "anxiety_label": "Crisis-readiness identity and fear of being the kind of person who freezes",
+      "anxiety_description": "A recurring anxiety in online discourse concerns the fear that when disruption finally arrives, one may discover too late that one lacks the habits, composure, or preparedness to respond well. The concern is often framed not only as practical readiness, but as fear of being revealed as someone who collapses, delays, or freezes under pressure.",
+      "signals_observed": [
+        "Common phrases include \"I need to be ready,\" \"I don't want to panic when it matters,\" \"I should know what to do,\" \"what if I freeze,\" and \"preparedness is a mindset.\"",
+        "Online discourse increasingly treats crises not just as external events but as tests of character, composure, and advance preparation.",
+        "Advice content often packages readiness as identity-level training, where routines, kits, and scenarios promise not only better outcomes but a stronger self-image under stress."
+      ],
+      "solutions_sought": [
+        "Preparedness routines, checklists, drills, and scenario-based planning systems.",
+        "Frameworks for building calmer response habits, clearer emergency defaults, and more practiced decision pathways.",
+        "Communities and content focused on quiet readiness, anti-panic training, and becoming more competent under pressure."
+      ],
+      "delegated_agency_hooks": [
+        "\"Use this system so you do not freeze\" framing, where crisis self-trust is partially transferred to drills, checklists, and scenario frameworks.",
+        "\"Practice before it matters\" framing, where fear of poor response is managed through externally scaffolded readiness habits."
+      ],
+      "fear_superiority_marketing": {
+        "fear": "Without stronger readiness, disruption may expose hesitation, poor coordination, or panic at the moment when steadiness matters most.",
+        "superiority": "People with practiced preparedness systems are portrayed as calmer, more competent, and less likely to fail visibly under pressure than those still unprepared.",
+        "paired_mechanism": "Fear of freezing is paired with the superiority promise of practiced composure, making preparedness feel like both protection and character proof."
+      },
+      "scores": {
+        "delegated_agency": 83,
+        "fear_intensity": 82,
+        "superiority_intensity": 77,
+        "polarization_risk": 57
+      }
+    }
+  ],
+  "mode_scores": {
+    "exploration": 74,
+    "expansion": 86
+  },
+  "notes": [
+    "These items summarize recurring discourse patterns rather than direct prevalence across the total population.",
+    "A notable pattern is the movement from generalized instability toward narrower systems of control, smaller-scale living, and more identity-linked preparedness.",
+    "Wellness, retreat, and readiness themes frequently blend coping language with moral and status-coded signals about discipline, seriousness, and adult competence."
+  ]
+}
