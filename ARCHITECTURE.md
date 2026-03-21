@@ -132,3 +132,19 @@ In that form, it may support structured observation of:
 - shifts in framing across time
 
 The most important principle is that the current fixed prompt should be treated as an observation core, not as the final form of the system.
+
+---
+
+## Non-breaking evolution of the discourse side
+
+The discourse core should remain stable enough to support week-by-week comparison.
+
+Early development should therefore focus on non-breaking expansion around the core rather than repeated schema changes.
+
+Recommended path:
+
+1. stabilize the observation core
+2. accumulate weekly interpretive memos
+3. develop provisional sidecar measurements
+4. collect lexical and framing candidates
+5. promote only stable dimensions into the formal framework
