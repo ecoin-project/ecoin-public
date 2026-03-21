@@ -21,6 +21,9 @@ The current market-reference lane includes:
   Defensive, safe-haven reference.  
   Useful as a proxy for retreat, preservation, and lower-risk positioning.
 
+- `USDJPY`
+  = macro pressure / currency stress / cost-of-living pressure reference
+
 These assets are not treated as direct explanations of discourse shifts.  
 They are used as external comparison lanes for reading possible directional or phase relationships.
 
@@ -59,6 +62,11 @@ with a recorded `fetched_at_utc` timestamp.
 This means that the current GOLD series is informative, but not yet a fully uniform single-source historical series.  
 Interpretation should therefore remain provisional until earlier rows are replaced or confirmed through a more consistent source.
 
+Current reading:
+- BTC remains relatively strong.
+- GOLD trends downward across the current window.
+- USDJPY trends upward, suggesting rising macro/currency pressure.
+- The market-reference lane currently shows divergence rather than synchronized movement.
 ## Working interpretation
 
 At the current stage, the three main outputs can be read together as follows:
