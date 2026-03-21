@@ -10,4 +10,3 @@ date,asset,value,unit,source_note,fetched_at_utc
 2026-03-01,USDJPY,149.80,jpy_per_usd,manual backfill,
 2026-03-08,USDJPY,148.20,jpy_per_usd,manual backfill,
 2026-03-15,USDJPY,150.10,jpy_per_usd,manual backfill,
-2026-03-20,USDJPY,151.40,jpy_per_usd,manual backfill,
