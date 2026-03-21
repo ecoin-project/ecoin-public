@@ -105,6 +105,12 @@ For `VIX`, weekly observation dates may be mapped to the most recent prior tradi
 
 This means that the `VIX` lane should be read as a market-stress / volatility reference aligned to the observation window, not necessarily as a same-calendar-day intraday measurement.
 
+The current `SP500` series may begin as a manual backfill and later move to a more regular public daily-close source.
+
+For `SP500`, weekly observation dates may be mapped to the most recent prior trading-day close when the exact date is not a market session.
+
+This means that the `SP500` lane should be read as a broad market baseline aligned to the observation window, not necessarily as a same-calendar-day intraday measurement.
+
 ## Current reading
 
 - BTC remains relatively strong.
@@ -138,6 +144,7 @@ A current working frame is:
 - `GOLD` = defense / retreat / safe-haven gravity
 - `USDJPY` = macro pressure / currency stress / cost-of-living pressure
 - `VIX` = fear / compression / overt market stress
+- `SP500` = broad market baseline / general risk appetite / overall equity climate
 - `discourse summary` = socially mediated middle layer between external market motion and narrative interpretation
 
 This framing remains exploratory.  
