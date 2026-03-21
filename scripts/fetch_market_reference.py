@@ -11,6 +11,7 @@ COIN_ID = "bitcoin"
 VS_CURRENCY = "usd"
 
 GOLD_API_URL = "https://api.gold-api.com/price/XAU"
+FRANKFURTER_URL = "https://api.frankfurter.dev/v1/latest"
 
 
 def ensure_csv_exists():
@@ -59,6 +60,25 @@ def fetch_gold_price():
     return float(data["price"])
 
 
+def fetch_usdjpy():
+    response = requests.get(
+        FRANKFURTER_URL,
+        params={
+            "base": "USD",
+            "symbols": "JPY",
+        },
+        timeout=20,
+    )
+    response.raise_for_status()
+    data = response.json()
+
+    rates = data.get("rates", {})
+    if "JPY" not in rates:
+        raise ValueError("JPY rate not found in Frankfurter response")
+
+    return float(rates["JPY"])
+
+
 def append_row_if_new(date_str: str, asset: str, value: float, unit: str, source_note: str, fetched_at_utc: str):
     rows = read_existing_rows()
     for row in rows:
@@ -97,6 +117,16 @@ def main():
         value=gold_price,
         unit="usd_per_oz",
         source_note="gold_api_free",
+        fetched_at_utc=fetched_at_utc,
+    )
+
+    usdjpy = fetch_usdjpy()
+    append_row_if_new(
+        date_str=today,
+        asset="USDJPY",
+        value=usdjpy,
+        unit="jpy_per_usd",
+        source_note="frankfurter_public",
         fetched_at_utc=fetched_at_utc,
     )
 
