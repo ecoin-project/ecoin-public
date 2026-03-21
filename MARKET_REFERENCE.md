@@ -24,6 +24,10 @@ The current market-reference lane includes:
 - `USDJPY`  
   Macro pressure / currency stress / cost-of-living pressure reference.
 
+- `VIX`  
+  Volatility / fear / market-stress reference.  
+  Useful as a proxy for compression, uncertainty, and overt risk-off conditions.
+
 These assets are not treated as direct explanations of discourse shifts.  
 They are used as external comparison lanes for reading possible directional or phase relationships.
 
@@ -81,13 +85,30 @@ while the latest automated row is marked as:
 
 with a recorded `fetched_at_utc` timestamp.
 
+The current `VIX` series is a mix of manual backfill and automated daily-close retrieval.
+
+Earlier rows may be marked as:
+
+- `manual backfill from ^VIX historical prices`
+
+Later automated rows may be marked as:
+
+- `cboe_daily_close_csv`
+
+with a recorded `fetched_at_utc` timestamp.
+
+For `VIX`, weekly observation dates may be mapped to the most recent prior trading-day close when the exact date is not a market session.
+
+This means that the `VIX` lane should be read as a market-stress / volatility reference aligned to the observation window, not necessarily as a same-calendar-day intraday measurement.
+
 ## Current reading
 
 - BTC remains relatively strong.
 - GOLD trends downward across the current window.
 - USDJPY trends upward, suggesting rising macro/currency pressure.
+- VIX rises sharply early and remains elevated relative to baseline, suggesting persistent market stress.
 - The market-reference lane currently shows divergence rather than synchronized movement.
-
+  
 ## Working interpretation
 
 At the current stage, the three main outputs can be read together as follows:
@@ -112,6 +133,7 @@ A current working frame is:
 - `BTC` = expectation / risk appetite / spike-sensitive movement
 - `GOLD` = defense / retreat / safe-haven gravity
 - `USDJPY` = macro pressure / currency stress / cost-of-living pressure
+- `VIX` = fear / compression / overt market stress
 - `discourse summary` = socially mediated middle layer between external market motion and narrative interpretation
 
 This framing remains exploratory.  
@@ -121,7 +143,7 @@ It should be treated as a reading scaffold rather than a final causal model.
 
 Natural next steps include:
 
-- adding additional reference assets such as `VIX` or `SP500`
+- adding additional reference assets such as `SP500`
 - creating per-asset market plots
 - backfilling GOLD and USDJPY with a more uniform historical source
 - comparing discourse shifts with normalized market movement over longer time windows
