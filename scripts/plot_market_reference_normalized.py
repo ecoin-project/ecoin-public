@@ -1,6 +1,7 @@
 import os
 import csv
 import matplotlib.pyplot as plt
+from datetime import datetime
 
 ROOT = os.path.dirname(os.path.dirname(__file__))
 DATA_PATH = os.path.join(ROOT, "data", "market_reference.csv")
@@ -11,6 +12,13 @@ PLOT_PATH = os.path.join(OUT_DIR, "market_reference_normalized_trends.png")
 def to_float(value: str):
     try:
         return float(value)
+    except (TypeError, ValueError):
+        return None
+
+
+def to_iso_date(value: str):
+    try:
+        return datetime.fromisoformat(value).date().isoformat()
     except (TypeError, ValueError):
         return None
 
@@ -35,7 +43,8 @@ def main():
     assets = {}
     for row in rows:
         asset = row.get("asset", "").strip()
-        date = row.get("date", "").strip()
+        raw_date = row.get("date", "").strip()
+        date = to_iso_date(raw_date)
         value = to_float(row.get("value"))
 
         if not asset or not date or value is None:
@@ -50,7 +59,7 @@ def main():
     plt.figure(figsize=(10, 6))
 
     for asset, points in assets.items():
-        points = sorted(points, key=lambda x: x[0])
+        points = sorted(points, key=lambda x: datetime.fromisoformat(x[0]))
 
         first_value = points[0][1]
         if first_value in (None, 0):
