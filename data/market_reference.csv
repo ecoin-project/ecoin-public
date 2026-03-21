@@ -19,3 +19,4 @@ date,asset,value,unit,source_note,fetched_at_utc
 2026-03-21,GOLD,4492.200195,usd_per_oz,gold_api_free,2026-03-21T00:18:21Z
 2026-03-21,USDJPY,158.77,jpy_per_usd,frankfurter_public,2026-03-21T00:18:21Z
 2026-03-21,VIX,26.78,index_close,manual backfill from ^VIX historical prices,
+03/20/2026,VIX,26.78,index_close,cboe_daily_close_csv,2026-03-21T04:06:09Z
