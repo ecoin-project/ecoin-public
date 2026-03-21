@@ -21,8 +21,8 @@ The current market-reference lane includes:
   Defensive, safe-haven reference.  
   Useful as a proxy for retreat, preservation, and lower-risk positioning.
 
-- `USDJPY`
-  = macro pressure / currency stress / cost-of-living pressure reference
+- `USDJPY`  
+  Macro pressure / currency stress / cost-of-living pressure reference.
 
 These assets are not treated as direct explanations of discourse shifts.  
 They are used as external comparison lanes for reading possible directional or phase relationships.
@@ -43,7 +43,9 @@ These two graphs should be read together rather than treated as interchangeable.
 
 ## Current data notes
 
-The current `GOLD` series contains mixed-source rows:
+The current `GOLD` series contains mixed-source rows.
+
+The earlier rows:
 
 - `2026-03-01`
 - `2026-03-08`
@@ -53,20 +55,39 @@ are currently marked as:
 
 - `manual approximate from tradingeconomics chart`
 
-The `2026-03-20` GOLD row is currently marked as:
+Later rows such as:
+
+- `2026-03-20`
+- `2026-03-21`
+
+are currently marked as:
 
 - `gold_api_free`
 
-with a recorded `fetched_at_utc` timestamp.
+with recorded `fetched_at_utc` timestamps.
 
 This means that the current GOLD series is informative, but not yet a fully uniform single-source historical series.  
 Interpretation should therefore remain provisional until earlier rows are replaced or confirmed through a more consistent source.
 
-Current reading:
+The current `USDJPY` series also contains mixed-source rows.
+
+Earlier rows are currently marked as:
+
+- `manual backfill`
+
+while the latest automated row is marked as:
+
+- `frankfurter_public`
+
+with a recorded `fetched_at_utc` timestamp.
+
+## Current reading
+
 - BTC remains relatively strong.
 - GOLD trends downward across the current window.
 - USDJPY trends upward, suggesting rising macro/currency pressure.
 - The market-reference lane currently shows divergence rather than synchronized movement.
+
 ## Working interpretation
 
 At the current stage, the three main outputs can be read together as follows:
@@ -80,7 +101,7 @@ At the current stage, the three main outputs can be read together as follows:
 
 - `market_reference_normalized_trends.png`  
   Shows relative change rather than absolute size.  
-  In the current sample, BTC trends upward while GOLD trends downward, suggesting that external reference lanes may move in opposite directional phases over the same interval.
+  In the current sample, BTC trends upward while GOLD trends downward, while USDJPY trends upward, suggesting that external reference lanes may move in different directional phases over the same interval.
 
 This makes the market-reference lane useful not only for comparing “high-volatility” versus “low-volatility” behavior, but also for observing cases where assets move in different phase directions during the same period.
 
@@ -90,6 +111,7 @@ A current working frame is:
 
 - `BTC` = expectation / risk appetite / spike-sensitive movement
 - `GOLD` = defense / retreat / safe-haven gravity
+- `USDJPY` = macro pressure / currency stress / cost-of-living pressure
 - `discourse summary` = socially mediated middle layer between external market motion and narrative interpretation
 
 This framing remains exploratory.  
@@ -99,7 +121,7 @@ It should be treated as a reading scaffold rather than a final causal model.
 
 Natural next steps include:
 
-- adding additional reference assets such as `USDJPY`
+- adding additional reference assets such as `VIX` or `SP500`
 - creating per-asset market plots
-- backfilling GOLD with a more uniform historical source
+- backfilling GOLD and USDJPY with a more uniform historical source
 - comparing discourse shifts with normalized market movement over longer time windows
