@@ -1,0 +1,19 @@
+# Weekly memo — 2026-03-21
+
+## Dominant anxieties
+- ...
+
+## Framing shifts from last week
+- ...
+
+## Solutions sought
+- ...
+
+## Delegated-agency pressure
+- ...
+
+## Relation to market-reference lane
+- ...
+
+## Short hypothesis
+- ...
