@@ -93,8 +93,11 @@ def fetch_latest_vix_close():
         raise ValueError("No rows found in VIX history CSV")
 
     last = rows[-1]
-    date_str = last["DATE"]
+
+    raw_date = last["DATE"].strip()
     value = float(last["CLOSE"])
+
+    date_str = datetime.strptime(raw_date, "%m/%d/%Y").date().isoformat()
 
     return date_str, value
 
