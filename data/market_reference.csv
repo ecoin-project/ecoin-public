@@ -1,18 +1,21 @@
 date,asset,value,unit,source_note,fetched_at_utc
 2026-03-01,BTC,66809.97,usd,manual backfill from coingecko chart,
-2026-03-08,BTC,67197.23,usd,manual backfill from coingecko chart,
-2026-03-15,BTC,71019.86,usd,manual backfill from coingecko chart,
-2026-03-20,BTC,70786.0,usd,coingecko_demo_or_public,2026-03-20T03:45:12Z
 2026-03-01,GOLD,5187.3,usd_per_oz,manual approximate from tradingeconomics chart,
-2026-03-08,GOLD,5144.3,usd_per_oz,manual approximate from tradingeconomics chart,
-2026-03-15,GOLD,5019.0,usd_per_oz,manual approximate from tradingeconomics chart,
-2026-03-20,GOLD,4723.700195,usd_per_oz,gold_api_free,2026-03-20T08:19:51Z
 2026-03-01,USDJPY,149.80,jpy_per_usd,manual backfill,
+2026-03-01,VIX,19.86,index_close,manual backfill from ^VIX historical prices,
+2026-03-08,BTC,67197.23,usd,manual backfill from coingecko chart,
+2026-03-08,GOLD,5144.3,usd_per_oz,manual approximate from tradingeconomics chart,
 2026-03-08,USDJPY,148.20,jpy_per_usd,manual backfill,
+2026-03-08,VIX,29.49,index_close,manual backfill from ^VIX historical prices,
+2026-03-15,BTC,71019.86,usd,manual backfill from coingecko chart,
+2026-03-15,GOLD,5019.0,usd_per_oz,manual approximate from tradingeconomics chart,
 2026-03-15,USDJPY,150.10,jpy_per_usd,manual backfill,
+2026-03-15,VIX,27.19,index_close,manual backfill from ^VIX historical prices,
+2026-03-20,BTC,70786.0,usd,coingecko_demo_or_public,2026-03-20T03:45:12Z
+2026-03-20,GOLD,4723.700195,usd_per_oz,gold_api_free,2026-03-20T08:19:51Z
+2026-03-20,USDJPY,151.40,jpy_per_usd,manual backfill,
+2026-03-20,VIX,26.78,index_close,manual backfill from ^VIX historical prices,
 2026-03-21,BTC,70615.0,usd,coingecko_demo_or_public,2026-03-21T00:18:21Z
 2026-03-21,GOLD,4492.200195,usd_per_oz,gold_api_free,2026-03-21T00:18:21Z
-2026-03-21,USDJPY,158.77,jpy_per_usd,frankfurter_public,2026-03-21T00:18:2026-03-01,VIX,__,index_close,manual backfill from cboe 2026-03-08,VIX,__,index_close,manual backfill from cboe daily close,
-2026-03-15,VIX,__,index_close,manual backfill from cboe daily close,
-2026-03-20,VIX,__,index_close,manual backfill from cboe daily close,
-2026-03-21,VIX,__,index_close,manual backfill from cboe daily close,
+2026-03-21,USDJPY,158.77,jpy_per_usd,frankfurter_public,2026-03-21T00:18:21Z
+2026-03-21,VIX,26.78,index_close,manual backfill from ^VIX historical prices,
