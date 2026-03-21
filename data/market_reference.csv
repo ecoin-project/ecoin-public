@@ -7,3 +7,7 @@ date,asset,value,unit,source_note,fetched_at_utc
 2026-03-08,GOLD,5144.3,usd_per_oz,manual approximate from tradingeconomics chart,
 2026-03-15,GOLD,5019.0,usd_per_oz,manual approximate from tradingeconomics chart,
 2026-03-20,GOLD,4723.700195,usd_per_oz,gold_api_free,2026-03-20T08:19:51Z
+2026-03-01,USDJPY,149.80,jpy_per_usd,manual backfill,
+2026-03-08,USDJPY,148.20,jpy_per_usd,manual backfill,
+2026-03-15,USDJPY,150.10,jpy_per_usd,manual backfill,
+2026-03-20,USDJPY,151.40,jpy_per_usd,manual backfill,
