@@ -28,6 +28,10 @@ The current market-reference lane includes:
   Volatility / fear / market-stress reference.  
   Useful as a proxy for compression, uncertainty, and overt risk-off conditions.
 
+- `SP500`  
+  Broad-market / general risk-appetite reference.  
+  Useful as a baseline for overall U.S. equity conditions rather than theme-specific pressure.  
+
 These assets are not treated as direct explanations of discourse shifts.  
 They are used as external comparison lanes for reading possible directional or phase relationships.
 
