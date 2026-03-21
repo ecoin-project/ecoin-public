@@ -1,5 +1,6 @@
 import os
 import csv
+import io
 import requests
 from datetime import datetime, timezone
 
@@ -12,6 +13,7 @@ VS_CURRENCY = "usd"
 
 GOLD_API_URL = "https://api.gold-api.com/price/XAU"
 FRANKFURTER_URL = "https://api.frankfurter.dev/v1/latest"
+VIX_HISTORY_URL = "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv"
 
 
 def ensure_csv_exists():
@@ -79,6 +81,24 @@ def fetch_usdjpy():
     return float(rates["JPY"])
 
 
+def fetch_latest_vix_close():
+    response = requests.get(VIX_HISTORY_URL, timeout=20)
+    response.raise_for_status()
+
+    text = response.text
+    reader = csv.DictReader(io.StringIO(text))
+
+    rows = list(reader)
+    if not rows:
+        raise ValueError("No rows found in VIX history CSV")
+
+    last = rows[-1]
+    date_str = last["DATE"]
+    value = float(last["CLOSE"])
+
+    return date_str, value
+
+
 def append_row_if_new(date_str: str, asset: str, value: float, unit: str, source_note: str, fetched_at_utc: str):
     rows = read_existing_rows()
     for row in rows:
@@ -127,6 +147,16 @@ def main():
         value=usdjpy,
         unit="jpy_per_usd",
         source_note="frankfurter_public",
+        fetched_at_utc=fetched_at_utc,
+    )
+
+    vix_date, vix_close = fetch_latest_vix_close()
+    append_row_if_new(
+        date_str=vix_date,
+        asset="VIX",
+        value=vix_close,
+        unit="index_close",
+        source_note="cboe_daily_close_csv",
         fetched_at_utc=fetched_at_utc,
     )
 
