@@ -10,12 +10,16 @@ This repository supports a weekly fixed-prompt observation workflow for analyzin
 - Saves raw outputs and lightweight text/CSV summaries
 - Builds a weekly summary JSON from collected outputs
 - Supports a manual sample fallback for testing the aggregation pipeline without live API success
+- Maintains external market-reference lanes as contextual comparison series
+- Generates normalized comparison artifacts across discourse and market-reference lanes
 
 ## Current status
 
 - Workflow structure is operational
 - Summary generation is operational
 - Manual sample aggregation has been validated
+- Market-reference lane generation is operational
+- Derived comparison artifacts are operational
 - Live API generation is currently limited by billing/quota availability
 
 ## Manual batch validation
@@ -26,7 +30,7 @@ The manual sample pipeline has been validated across three manual batches:
 - `manual_batch_002`
 - `manual_batch_003`
 
-Each batch currently contains 10 sample JSON files (50 items total after aggregation).
+Each batch currently contains 10 sample JSON files, yielding 50 item-level observations per batch after aggregation.
 
 To switch the active manual batch in GitHub Actions, update:
 
@@ -35,37 +39,48 @@ MANUAL_BATCH_ID: "manual_batch_001"
 ```
 in .github/workflows/weekly_observation.yml.
 
-### Output roles
-
-- outputs/master_summary.csv stores one aggregated comparison row per batch
-- outputs/weekly_summary_manual_batch_001.json, outputs/weekly_summary_manual_batch_002.json, and outputs/weekly_summary_manual_batch_003.json store the full summary for each validated manual batch
-- outputs/latest_summary.json stores the most recent run result and is expected to change between runs
-- outputs/summary_trends.png visualizes cross-batch trend comparisons from master_summary.csv
-
-This manual-batch setup is intended to validate scoring, aggregation, and trend visualization before live API generation is fully available.
-
 ## Output artifacts
 
 Typical outputs include:
-
-- `raw_YYYYMMDD_xxxxxx.jsonl`
-- `summary_YYYYMMDD_xxxxxx.txt`
-- `summary_YYYYMMDD_xxxxxx.csv`
-- `latest_output.txt`
-- `latest_output.csv`
-- `weekly_summary_<batch_id>.json`
-- `latest_summary.json`
-- `market_reference_trends.png`
+- outputs/raw_YYYYMMDD_xxxxxx.jsonl
+- outputs/summary_YYYYMMDD_xxxxxx.txt
+- outputs/summary_YYYYMMDD_xxxxxx.csv
+- outputs/latest_output.txt
+- outputs/latest_output.csv
+- outputs/weekly_summary_<batch_id>.json
+- outputs/latest_summary.json
+- outputs/summary_trends.png
+- outputs/market_reference_trends.png
+- outputs/market_reference_normalized_trends.png
+- outputs/combined_normalized_trends.png
+- outputs/combined_normalized_trends.csv
+- outputs/alignment_report.json
 
 This repository currently includes manual sample outputs and a validated aggregation step for generating weekly summary JSON files before live API use.
 
 External reference series such as BTC price may be stored separately from the discourse batches and treated as contextual comparison lanes rather than direct explanatory variables.
 
-External market-reference plots should be kept separate from discourse-core trend plots to avoid mixing scales and interpretations.
+External market-reference plots should generally remain separate from discourse-core trend plots in order to preserve scale and interpretive clarity.
+
+At the same time, derived comparison artifacts such as combined normalized overlays and alignment reports may be generated as exploratory cross-lane tools.
+
+These derived artifacts should be treated as provisional and hypothesis-generating rather than as evidence of causation.
 
 ## Notes
 
 This repository is intended for structural observation and hypothesis generation, not direct corpus measurement or performance benchmarking.
+
+## Additional derived comparison artifacts
+
+The repository may generate derived comparison artifacts that align external market-reference lanes with discourse-sidecar measurements.
+
+Examples include:
+- outputs/combined_normalized_trends.png
+- outputs/combined_normalized_trends.csv
+- outputs/alignment_report.json
+
+These derived artifacts are exploratory comparison tools.
+They are intended for provisional cross-lane reading, not as evidence of causation.
 
 See also:
 
