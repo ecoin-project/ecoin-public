@@ -42,19 +42,19 @@ in .github/workflows/weekly_observation.yml.
 ## Output artifacts
 
 Typical outputs include:
-- outputs/raw_YYYYMMDD_xxxxxx.jsonl
-- outputs/summary_YYYYMMDD_xxxxxx.txt
-- outputs/summary_YYYYMMDD_xxxxxx.csv
-- outputs/latest_output.txt
-- outputs/latest_output.csv
-- outputs/weekly_summary_<batch_id>.json
-- outputs/latest_summary.json
-- outputs/summary_trends.png
-- outputs/market_reference_trends.png
-- outputs/market_reference_normalized_trends.png
-- outputs/combined_normalized_trends.png
-- outputs/combined_normalized_trends.csv
-- outputs/alignment_report.json
+- `outputs/raw_YYYYMMDD_xxxxxx.jsonl`
+- `outputs/summary_YYYYMMDD_xxxxxx.txt`
+- `outputs/summary_YYYYMMDD_xxxxxx.csv`
+- `outputs/latest_output.txt`
+- `outputs/latest_output.csv`
+- `outputs/weekly_summary_<batch_id>.json`
+- `outputs/latest_summary.json`
+- `outputs/summary_trends.png`
+- `outputs/market_reference_trends.png`
+- `outputs/market_reference_normalized_trends.png`
+- `outputs/combined_normalized_trends.png`
+- `outputs/combined_normalized_trends.csv`
+- `outputs/alignment_report.json`
 
 This repository currently includes manual sample outputs and a validated aggregation step for generating weekly summary JSON files before live API use.
 
@@ -75,9 +75,9 @@ This repository is intended for structural observation and hypothesis generation
 The repository may generate derived comparison artifacts that align external market-reference lanes with discourse-sidecar measurements.
 
 Examples include:
-- outputs/combined_normalized_trends.png
-- outputs/combined_normalized_trends.csv
-- outputs/alignment_report.json
+- `outputs/combined_normalized_trends.png`
+- `outputs/combined_normalized_trends.csv`
+- `outputs/alignment_report.json`
 
 These derived artifacts are exploratory comparison tools.
 They are intended for provisional cross-lane reading, not as evidence of causation.
