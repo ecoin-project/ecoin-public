@@ -56,6 +56,12 @@ jobs:
       - name: Plot market reference normalized
         run: python scripts/plot_market_reference_normalized.py
 
+      - name: Plot combined normalized trends
+        run: python scripts/plot_combined_normalized.py
+
+      - name: Build alignment report
+        run: python scripts/build_alignment_report.py
+
       - name: Upload outputs
         uses: actions/upload-artifact@v4
         with:
