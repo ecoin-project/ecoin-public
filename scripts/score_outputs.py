@@ -311,7 +311,7 @@ def main():
     summary = {
         "batch_id": batch_id,
         "time_window_assumed": "last_3_to_12_months",
-        "n_files": len([r for r in rows if r.get("source_file")]),
+        "n_files": len([r for r in rows if r.get("source_file")]) if USE_MANUAL_SAMPLE else len(rows),
         "n_items_total": len(all_items),
         "mean_fear_intensity": fear_mean,
         "mean_superiority_intensity": superiority_mean,
