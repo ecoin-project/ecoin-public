@@ -205,10 +205,8 @@ def main():
                 print("Raw file is empty.")
                 return
         else:
-            rows = load_manual_samples_as_rows()
-            if not rows:
-                print("No raw file found, and no manual samples found.")
-                return
+            print("No raw file found.")
+            return
 
     success_rows = [r for r in rows if "error" not in r]
     error_rows = [r for r in rows if "error" in r]
