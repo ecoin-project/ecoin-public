@@ -2,6 +2,7 @@ import os
 import csv
 from datetime import datetime
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 
 ROOT = os.path.dirname(os.path.dirname(__file__))
 
@@ -20,7 +21,7 @@ def to_float(value: str):
         return None
 
 
-def to_iso_date(value: str):
+def to_dt(value: str):
     if not value:
         return None
 
@@ -29,7 +30,7 @@ def to_iso_date(value: str):
         return None
 
     try:
-        return datetime.fromisoformat(value).date().isoformat()
+        return datetime.fromisoformat(value)
     except ValueError:
         return None
 
@@ -44,14 +45,14 @@ def read_market_series():
     with open(MARKET_PATH, "r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            date = to_iso_date(row.get("date", ""))
+            dt = to_dt(row.get("date", ""))
             asset = row.get("asset", "").strip()
             value = to_float(row.get("value"))
 
-            if not date or not asset or value is None:
+            if not dt or not asset or value is None:
                 continue
 
-            series.setdefault(asset, []).append((date, value))
+            series.setdefault(asset, []).append((dt, value))
 
     return series
 
@@ -61,7 +62,6 @@ def read_discourse_series():
         print(f"discourse_sidecar.csv not found: {DISCOURSE_PATH}")
         return {}
 
-    # ここで重ねたい discourse 側の列を選ぶ
     discourse_columns = [
         "fear_intensity",
         "delegated_agency_intensity",
@@ -74,20 +74,18 @@ def read_discourse_series():
     with open(DISCOURSE_PATH, "r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
         for row in reader:
-            date = to_iso_date(row.get("week_id", ""))
+            dt = to_dt(row.get("week_id", ""))
 
-            if not date:
+            if not dt:
                 continue
 
             for col in discourse_columns:
                 value = to_float(row.get(col))
                 if value is None:
                     continue
-                series[col].append((date, value))
+                series[col].append((dt, value))
 
-    # 空の系列は落とす
-    series = {k: v for k, v in series.items() if v}
-    return series
+    return {k: v for k, v in series.items() if v}
 
 
 def normalize_series(points):
@@ -101,9 +99,9 @@ def normalize_series(points):
         return []
 
     normalized = []
-    for date, value in points:
+    for dt, value in points:
         normalized_value = (value / first_value) * 100
-        normalized.append((date, normalized_value))
+        normalized.append((dt, normalized_value))
 
     return normalized
 
@@ -111,15 +109,15 @@ def normalize_series(points):
 def write_merged_csv(normalized_series):
     all_dates = sorted(
         {
-            date
+            dt
             for points in normalized_series.values()
-            for date, _ in points
+            for dt, _ in points
         }
     )
 
     series_lookup = {}
     for name, points in normalized_series.items():
-        series_lookup[name] = {date: value for date, value in points}
+        series_lookup[name] = {dt: value for dt, value in points}
 
     fieldnames = ["date"] + list(normalized_series.keys())
 
@@ -127,10 +125,10 @@ def write_merged_csv(normalized_series):
         writer = csv.writer(f)
         writer.writerow(fieldnames)
 
-        for date in all_dates:
-            row = [date]
+        for dt in all_dates:
+            row = [dt.date().isoformat()]
             for name in normalized_series.keys():
-                value = series_lookup[name].get(date)
+                value = series_lookup[name].get(dt)
                 row.append("" if value is None else round(value, 4))
             writer.writerow(row)
 
@@ -147,7 +145,6 @@ def main():
         print("No valid market or discourse data found.")
         return
 
-    # ここで重ねたい market 側の系列を選ぶ
     selected_market_assets = ["BTC", "GOLD", "USDJPY", "VIX", "SP500"]
 
     combined = {}
@@ -168,15 +165,18 @@ def main():
         return
 
     plt.figure(figsize=(12, 7))
+    ax = plt.gca()
 
     for name, points in combined.items():
+        points = sorted(points, key=lambda x: x[0])
         dates = [p[0] for p in points]
         values = [p[1] for p in points]
-        plt.plot(dates, values, marker="o", label=name)
+        ax.plot(dates, values, marker="o", label=name)
 
-    plt.title("Combined normalized trends (market + discourse)")
-    plt.xlabel("date")
-    plt.ylabel("index (first point = 100)")
+    ax.set_title("Combined normalized trends (market + discourse)")
+    ax.set_xlabel("date")
+    ax.set_ylabel("index (first point = 100)")
+    ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
     plt.xticks(rotation=45, ha="right")
     plt.legend()
     plt.tight_layout()
