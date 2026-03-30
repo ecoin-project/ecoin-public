@@ -1,6 +1,7 @@
 import os
 import csv
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 from datetime import datetime
 
 ROOT = os.path.dirname(os.path.dirname(__file__))
@@ -16,9 +17,9 @@ def to_float(value: str):
         return None
 
 
-def to_iso_date(value: str):
+def to_dt(value: str):
     try:
-        return datetime.fromisoformat(value).date().isoformat()
+        return datetime.fromisoformat(value)
     except (TypeError, ValueError):
         return None
 
@@ -43,34 +44,36 @@ def main():
     assets = {}
     for row in rows:
         asset = row.get("asset", "").strip()
-        raw_date = row.get("date", "").strip()
-        date = to_iso_date(raw_date)
+        dt = to_dt(row.get("date", "").strip())
         value = to_float(row.get("value"))
 
-        if not asset or not date or value is None:
+        if not asset or not dt or value is None:
             continue
 
-        assets.setdefault(asset, []).append((date, value))
+        assets.setdefault(asset, []).append((dt, value))
 
     if not assets:
         print("No valid rows found in market_reference.csv.")
         return
 
     plt.figure(figsize=(10, 6))
+    ax = plt.gca()
 
     for asset, points in assets.items():
-        points = sorted(points, key=lambda x: datetime.fromisoformat(x[0]))
+        points = sorted(points, key=lambda x: x[0])
         dates = [p[0] for p in points]
         values = [p[1] for p in points]
-        plt.plot(dates, values, marker="o", label=asset)
+        ax.plot(dates, values, marker="o", label=asset)
 
-    plt.title("Market reference trends")
-    plt.xlabel("date")
-    plt.ylabel("value")
+    ax.set_title("Market reference trends")
+    ax.set_xlabel("date")
+    ax.set_ylabel("value")
+
+    ax.xaxis.set_major_formatter(mdates.DateFormatter("%Y-%m-%d"))
     plt.xticks(rotation=45, ha="right")
+
     plt.legend()
     plt.tight_layout()
-
     plt.savefig(PLOT_PATH, dpi=150)
     plt.close()
 
