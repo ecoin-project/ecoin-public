@@ -1,0 +1,584 @@
+{
+  "report_type": "provisional_alignment_report",
+  "source_file": "combined_normalized_trends.csv",
+  "market_columns": [
+    "BTC",
+    "GOLD",
+    "USDJPY",
+    "VIX",
+    "SP500"
+  ],
+  "discourse_columns": [
+    "fear_intensity",
+    "delegated_agency_intensity",
+    "exploration_score",
+    "fixation_score"
+  ],
+  "pairs": [
+    {
+      "left": "fear_intensity",
+      "right": "BTC",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "fear_intensity",
+      "right": "GOLD",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "fear_intensity",
+      "right": "USDJPY",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "fear_intensity",
+      "right": "VIX",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "fear_intensity",
+      "right": "SP500",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "delegated_agency_intensity",
+      "right": "BTC",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "delegated_agency_intensity",
+      "right": "GOLD",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "delegated_agency_intensity",
+      "right": "USDJPY",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "delegated_agency_intensity",
+      "right": "VIX",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "delegated_agency_intensity",
+      "right": "SP500",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "exploration_score",
+      "right": "BTC",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "exploration_score",
+      "right": "GOLD",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "exploration_score",
+      "right": "USDJPY",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "exploration_score",
+      "right": "VIX",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "exploration_score",
+      "right": "SP500",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "fixation_score",
+      "right": "BTC",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "fixation_score",
+      "right": "GOLD",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "fixation_score",
+      "right": "USDJPY",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "fixation_score",
+      "right": "VIX",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    },
+    {
+      "left": "fixation_score",
+      "right": "SP500",
+      "overlap_dates": [
+        "2026-03-21"
+      ],
+      "n_overlap_level_points": 1,
+      "level_correlation": null,
+      "same_week_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "lag_1_direction_match": {
+        "n_pairs": 0,
+        "match_ratio": null,
+        "matches": 0,
+        "mismatches": 0,
+        "flat_pairs": 0
+      },
+      "notes": [
+        "Not enough overlapping change points for same-week direction comparison.",
+        "Not enough overlapping change points for lag-1 direction comparison.",
+        "Not enough overlapping level points for level correlation."
+      ]
+    }
+  ],
+  "notes": [
+    "This report is exploratory and provisional.",
+    "Direction match is not evidence of causation.",
+    "Early-week counts can be too small for stable inference."
+  ]
+}
