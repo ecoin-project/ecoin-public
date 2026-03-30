@@ -1,25 +1,27 @@
 {
-  "batch_id": "20260330_f6a212",
+  "batch_id": "20260330_9ccb09",
   "time_window_assumed": "last_3_to_12_months",
   "n_files": 1,
   "n_items_total": 5,
-  "mean_fear_intensity": 66,
-  "mean_superiority_intensity": 62,
-  "mean_delegated_agency": 69,
-  "mean_polarization_risk": 50,
-  "mean_exploration": 70,
+  "mean_fear_intensity": 69,
+  "mean_superiority_intensity": 69,
+  "mean_delegated_agency": 70,
+  "mean_polarization_risk": 54,
+  "mean_exploration": 75,
   "mean_expansion": 50,
-  "mean_fixation_proxy": 60.25,
+  "mean_fixation_proxy": 61.95,
   "top_anxiety_labels": [
-    "Economic Instability and Job Insecurity",
-    "Digital Privacy and Surveillance",
-    "Social Isolation and Mental Health Stigma",
-    "Cultural Identity Erosion",
-    "Environmental Responsibility Fatigue"
+    "Economic Instability and Job Security",
+    "Social Media Misinformation and Identity Threat",
+    "Climate Change Impact on Daily Life",
+    "Interpersonal Communication Breakdown",
+    "Cultural Erosion and Heritage Loss"
   ],
   "top_solution_modes": [
+    "automation/monitoring",
     "identity signaling",
-    "offline/community"
+    "outsourced expertise",
+    "resilience planning"
   ],
   "source_files": [],
   "run_diagnostics": {
