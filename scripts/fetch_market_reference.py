@@ -123,45 +123,72 @@ def main():
     today = now_utc.date().isoformat()
     fetched_at_utc = now_utc.isoformat().replace("+00:00", "Z")
 
-    btc_price = fetch_btc_price()
-    append_row_if_new(
-        date_str=today,
-        asset="BTC",
-        value=btc_price,
-        unit="usd",
-        source_note="coingecko_demo_or_public",
-        fetched_at_utc=fetched_at_utc,
-    )
+    errors = []
+    success_count = 0
 
-    gold_price = fetch_gold_price()
-    append_row_if_new(
-        date_str=today,
-        asset="GOLD",
-        value=gold_price,
-        unit="usd_per_oz",
-        source_note="gold_api_free",
-        fetched_at_utc=fetched_at_utc,
-    )
+    try:
+        btc_price = fetch_btc_price()
+        append_row_if_new(
+            date_str=today,
+            asset="BTC",
+            value=btc_price,
+            unit="usd",
+            source_note="coingecko_demo_or_public",
+            fetched_at_utc=fetched_at_utc,
+        )
+        success_count += 1
+    except Exception as e:
+        errors.append(f"BTC fetch failed: {e}")
 
-    usdjpy = fetch_usdjpy()
-    append_row_if_new(
-        date_str=today,
-        asset="USDJPY",
-        value=usdjpy,
-        unit="jpy_per_usd",
-        source_note="frankfurter_public",
-        fetched_at_utc=fetched_at_utc,
-    )
+    try:
+        gold_price = fetch_gold_price()
+        append_row_if_new(
+            date_str=today,
+            asset="GOLD",
+            value=gold_price,
+            unit="usd_per_oz",
+            source_note="gold_api_free",
+            fetched_at_utc=fetched_at_utc,
+        )
+        success_count += 1
+    except Exception as e:
+        errors.append(f"GOLD fetch failed: {e}")
 
-    vix_date, vix_close = fetch_latest_vix_close()
-    append_row_if_new(
-        date_str=vix_date,
-        asset="VIX",
-        value=vix_close,
-        unit="index_close",
-        source_note="cboe_daily_close_csv",
-        fetched_at_utc=fetched_at_utc,
-    )
+    try:
+        usdjpy = fetch_usdjpy()
+        append_row_if_new(
+            date_str=today,
+            asset="USDJPY",
+            value=usdjpy,
+            unit="jpy_per_usd",
+            source_note="frankfurter_public",
+            fetched_at_utc=fetched_at_utc,
+        )
+        success_count += 1
+    except Exception as e:
+        errors.append(f"USDJPY fetch failed: {e}")
+
+    try:
+        vix_date, vix_close = fetch_latest_vix_close()
+        append_row_if_new(
+            date_str=vix_date,
+            asset="VIX",
+            value=vix_close,
+            unit="index_close",
+            source_note="cboe_daily_close_csv",
+            fetched_at_utc=fetched_at_utc,
+        )
+        success_count += 1
+    except Exception as e:
+        errors.append(f"VIX fetch failed: {e}")
+
+    if errors:
+        print("Market reference warnings:")
+        for err in errors:
+            print(err)
+
+    if success_count == 0:
+        raise RuntimeError("All market reference fetches failed.")
 
 
 if __name__ == "__main__":
