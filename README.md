@@ -9,39 +9,35 @@ This repository supports a weekly fixed-prompt observation workflow for analyzin
 - Runs a fixed prompt on a scheduled GitHub Actions workflow
 - Saves raw outputs and lightweight text/CSV summaries
 - Builds a weekly summary JSON from collected outputs
-- Supports a manual sample fallback for testing the aggregation pipeline without live API success
+- Preserves manual sample batches for aggregation and scoring validation
 - Maintains external market-reference lanes as contextual comparison series
 - Generates normalized comparison artifacts across discourse and market-reference lanes
 
 ## Current status
 
 - Workflow structure is operational
+- Live API-backed weekly generation is operational
 - Summary generation is operational
-- Manual sample aggregation has been validated
+- Manual batch validation has been preserved as a separate validation reference
 - Market-reference lane generation is operational
 - Derived comparison artifacts are operational
-- Live API generation is currently limited by billing/quota availability
 
 ## Manual batch validation
 
-The manual sample pipeline has been validated across three manual batches:
+The manual sample pipeline was validated across three manual batches:
 
 - `manual_batch_001`
 - `manual_batch_002`
 - `manual_batch_003`
 
-Each batch currently contains 10 sample JSON files, yielding 50 item-level observations per batch after aggregation.
+Each batch contains 10 sample JSON files, yielding 50 item-level observations per batch after aggregation.
 
-To switch the active manual batch in GitHub Actions, update:
-
-```yaml
-MANUAL_BATCH_ID: "manual_batch_001"
-```
-in .github/workflows/weekly_observation.yml.
+These manual batches are retained as validation references and should be treated separately from live weekly runs.
 
 ## Output artifacts
 
-Typical outputs include:
+Typical live outputs include:
+
 - `outputs/raw_YYYYMMDD_xxxxxx.jsonl`
 - `outputs/summary_YYYYMMDD_xxxxxx.txt`
 - `outputs/summary_YYYYMMDD_xxxxxx.csv`
@@ -49,6 +45,7 @@ Typical outputs include:
 - `outputs/latest_output.csv`
 - `outputs/weekly_summary_<batch_id>.json`
 - `outputs/latest_summary.json`
+- `outputs/master_summary.csv`
 - `outputs/summary_trends.png`
 - `outputs/market_reference_trends.png`
 - `outputs/market_reference_normalized_trends.png`
@@ -56,7 +53,12 @@ Typical outputs include:
 - `outputs/combined_normalized_trends.csv`
 - `outputs/alignment_report.json`
 
-This repository currently includes manual sample outputs and a validated aggregation step for generating weekly summary JSON files before live API use.
+Retained manual validation outputs may include:
+
+- `outputs/weekly_summary_manual_batch_001.json`
+- `outputs/weekly_summary_manual_batch_002.json`
+- `outputs/weekly_summary_manual_batch_003.json`
+- `outputs/master_summary_manual_validation.csv`
 
 External reference series such as BTC price may be stored separately from the discourse batches and treated as contextual comparison lanes rather than direct explanatory variables.
 
@@ -75,11 +77,12 @@ This repository is intended for structural observation and hypothesis generation
 The repository may generate derived comparison artifacts that align external market-reference lanes with discourse-sidecar measurements.
 
 Examples include:
+
 - `outputs/combined_normalized_trends.png`
 - `outputs/combined_normalized_trends.csv`
 - `outputs/alignment_report.json`
 
-These derived artifacts are exploratory comparison tools.
+These derived artifacts are exploratory comparison tools.  
 They are intended for provisional cross-lane reading, not as evidence of causation.
 
 See also:
