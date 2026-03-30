@@ -14,7 +14,9 @@ VS_CURRENCY = "usd"
 GOLD_API_URL = "https://api.gold-api.com/price/XAU"
 FRANKFURTER_URL = "https://api.frankfurter.dev/v1/latest"
 VIX_HISTORY_URL = "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv"
-SP500_FRED_CSV_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500"
+FRED_API_KEY = os.getenv("FRED_API_KEY")
+FRED_SERIES_OBS_URL = "https://api.stlouisfed.org/fred/series/observations"
+SP500_SERIES_ID = "SP500"
 
 
 def ensure_csv_exists():
@@ -102,31 +104,37 @@ def fetch_latest_vix_close():
 
 
 def fetch_latest_sp500_close():
-    response = requests.get(SP500_FRED_CSV_URL, timeout=20)
+    if not FRED_API_KEY:
+        raise ValueError("FRED_API_KEY is not set")
+
+    response = requests.get(
+        FRED_SERIES_OBS_URL,
+        params={
+            "series_id": SP500_SERIES_ID,
+            "api_key": FRED_API_KEY,
+            "file_type": "json",
+            "sort_order": "desc",
+            "limit": 10,
+        },
+        timeout=20,
+    )
     response.raise_for_status()
+    data = response.json()
 
-    text = response.text
-    reader = csv.DictReader(io.StringIO(text))
+    observations = data.get("observations", [])
+    if not observations:
+        raise ValueError("No observations found in FRED API response")
 
-    rows = list(reader)
-    if not rows:
-        raise ValueError("No rows found in SP500 FRED CSV")
+    for obs in observations:
+        date_str = (obs.get("date") or "").strip()
+        value_str = (obs.get("value") or "").strip()
 
-    valid_rows = []
-    for row in rows:
-        date_str = (row.get("DATE") or "").strip()
-        value_str = (row.get("SP500") or "").strip()
-
-        # FRED sometimes uses "." for missing observations
         if not date_str or not value_str or value_str == ".":
             continue
 
-        valid_rows.append((date_str, float(value_str)))
+        return date_str, float(value_str)
 
-    if not valid_rows:
-        raise ValueError("No valid SP500 rows found in FRED CSV")
-
-    return valid_rows[-1]
+    raise ValueError("No valid SP500 observations found in FRED API response")
 
 
 def append_row_if_new(date_str: str, asset: str, value: float, unit: str, source_note: str, fetched_at_utc: str):
