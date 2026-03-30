@@ -14,6 +14,7 @@ VS_CURRENCY = "usd"
 GOLD_API_URL = "https://api.gold-api.com/price/XAU"
 FRANKFURTER_URL = "https://api.frankfurter.dev/v1/latest"
 VIX_HISTORY_URL = "https://cdn.cboe.com/api/global/us_indices/daily_prices/VIX_History.csv"
+SP500_FRED_CSV_URL = "https://fred.stlouisfed.org/graph/fredgraph.csv?id=SP500"
 
 
 def ensure_csv_exists():
@@ -93,13 +94,39 @@ def fetch_latest_vix_close():
         raise ValueError("No rows found in VIX history CSV")
 
     last = rows[-1]
-
     raw_date = last["DATE"].strip()
     value = float(last["CLOSE"])
-
     date_str = datetime.strptime(raw_date, "%m/%d/%Y").date().isoformat()
 
     return date_str, value
+
+
+def fetch_latest_sp500_close():
+    response = requests.get(SP500_FRED_CSV_URL, timeout=20)
+    response.raise_for_status()
+
+    text = response.text
+    reader = csv.DictReader(io.StringIO(text))
+
+    rows = list(reader)
+    if not rows:
+        raise ValueError("No rows found in SP500 FRED CSV")
+
+    valid_rows = []
+    for row in rows:
+        date_str = (row.get("DATE") or "").strip()
+        value_str = (row.get("SP500") or "").strip()
+
+        # FRED sometimes uses "." for missing observations
+        if not date_str or not value_str or value_str == ".":
+            continue
+
+        valid_rows.append((date_str, float(value_str)))
+
+    if not valid_rows:
+        raise ValueError("No valid SP500 rows found in FRED CSV")
+
+    return valid_rows[-1]
 
 
 def append_row_if_new(date_str: str, asset: str, value: float, unit: str, source_note: str, fetched_at_utc: str):
@@ -181,6 +208,20 @@ def main():
         success_count += 1
     except Exception as e:
         errors.append(f"VIX fetch failed: {e}")
+
+    try:
+        sp500_date, sp500_close = fetch_latest_sp500_close()
+        append_row_if_new(
+            date_str=sp500_date,
+            asset="SP500",
+            value=sp500_close,
+            unit="index_close",
+            source_note="fred_sp500_csv",
+            fetched_at_utc=fetched_at_utc,
+        )
+        success_count += 1
+    except Exception as e:
+        errors.append(f"SP500 fetch failed: {e}")
 
     if errors:
         print("Market reference warnings:")
