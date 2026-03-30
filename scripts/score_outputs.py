@@ -309,37 +309,37 @@ def main():
     batch_id = rows[0]["batch_id"] if rows and rows[0].get("batch_id") else "unknown_batch"
 
     summary = {
-        "batch_id": batch_id,
-        "time_window_assumed": "last_3_to_12_months",
-        "n_files": len([r for r in rows if r.get("source_file")]) if USE_MANUAL_SAMPLE else len(rows),
-        "n_items_total": len(all_items),
-        "mean_fear_intensity": fear_mean,
-        "mean_superiority_intensity": superiority_mean,
-        "mean_delegated_agency": delegated_mean,
-        "mean_polarization_risk": polarization_mean,
-        "mean_exploration": exploration_mean,
-        "mean_expansion": expansion_mean,
-        "mean_fixation_proxy": fixation_proxy,
-        "top_anxiety_labels": [label for label, _ in anxiety_counter.most_common(5)],
-        "top_solution_modes": [label for label, _ in solution_mode_counter.most_common(5)],
-        "source_files": [r["source_file"] for r in rows if r.get("source_file")],
-        "run_diagnostics": {
-            "n_runs_total": len(rows),
-            "n_runs_success": len(success_rows),
-            "n_runs_error": len(error_rows),
-            "error_types": dict(error_counter),
-            "dominant_mode": dominant_mode,
-            "notes": phase_notes,
-        },
-        "method_notes": (
-            ["Summary unavailable because all runs failed."]
-            if all_failed else
-            [
-                "Counts are derived from model-generated observations.",
-                "This is not a direct corpus frequency measurement."
-            ]
-        ),
-    }
+    "batch_id": batch_id,
+    "time_window_assumed": "last_3_to_12_months",
+    "n_files": len(rows),
+    "n_items_total": len(all_items),
+    "mean_fear_intensity": fear_mean,
+    "mean_superiority_intensity": superiority_mean,
+    "mean_delegated_agency": delegated_mean,
+    "mean_polarization_risk": polarization_mean,
+    "mean_exploration": exploration_mean,
+    "mean_expansion": expansion_mean,
+    "mean_fixation_proxy": fixation_proxy,
+    "top_anxiety_labels": [label for label, _ in anxiety_counter.most_common(5)],
+    "top_solution_modes": [label for label, _ in solution_mode_counter.most_common(5)],
+    "source_files": [r["source_file"] for r in rows if r.get("source_file")],
+    "run_diagnostics": {
+        "n_runs_total": len(rows),
+        "n_runs_success": len(success_rows),
+        "n_runs_error": len(error_rows),
+        "error_types": dict(error_counter),
+        "dominant_mode": dominant_mode,
+        "notes": phase_notes,
+    },
+    "method_notes": (
+        ["Summary unavailable because all runs failed."]
+        if all_failed else
+        [
+            "Counts are derived from model-generated observations.",
+            "This is not a direct corpus frequency measurement."
+        ]
+    ),
+}
 
     summary_path = os.path.join(OUT_DIR, f"weekly_summary_{batch_id}.json")
     latest_summary_path = os.path.join(OUT_DIR, "latest_summary.json")
