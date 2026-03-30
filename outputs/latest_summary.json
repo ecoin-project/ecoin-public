@@ -1,24 +1,23 @@
 {
-  "batch_id": "20260330_cb3895",
+  "batch_id": "20260330_f6a212",
   "time_window_assumed": "last_3_to_12_months",
   "n_files": 1,
   "n_items_total": 5,
-  "mean_fear_intensity": 74,
-  "mean_superiority_intensity": 74,
-  "mean_delegated_agency": 70,
-  "mean_polarization_risk": 59,
+  "mean_fear_intensity": 66,
+  "mean_superiority_intensity": 62,
+  "mean_delegated_agency": 69,
+  "mean_polarization_risk": 50,
   "mean_exploration": 70,
-  "mean_expansion": 60,
-  "mean_fixation_proxy": 65.2,
+  "mean_expansion": 50,
+  "mean_fixation_proxy": 60.25,
   "top_anxiety_labels": [
     "Economic Instability and Job Insecurity",
-    "Digital Privacy Erosion",
-    "Social Isolation and Declining Interpersonal Connection",
-    "Cultural Identity and Representation Anxiety",
-    "Environmental Degradation and Climate Anxiety"
+    "Digital Privacy and Surveillance",
+    "Social Isolation and Mental Health Stigma",
+    "Cultural Identity Erosion",
+    "Environmental Responsibility Fatigue"
   ],
   "top_solution_modes": [
-    "outsourced expertise",
     "identity signaling",
     "offline/community"
   ],
@@ -30,7 +29,6 @@
     "error_types": {},
     "dominant_mode": "fixation leaning",
     "notes": [
-      "Fear exceeds exploration.",
       "Delegated agency remains elevated."
     ]
   },
