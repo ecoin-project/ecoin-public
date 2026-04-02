@@ -425,6 +425,7 @@ This scoring system is designed for:
 
 It is **not yet a validated psychometric instrument**.
 
+When the emotion-mechanism sidecar is enabled, the scoring system should still be read as a structured observational heuristic rather than a direct measurement of internal human emotion. In this mode, the system estimates functional pressure signatures visible in discourse and how those pressures shape solution preference, delegation, and closure patterns.
 
 ---
 ## Methodological bridge
