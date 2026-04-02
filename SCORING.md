@@ -180,7 +180,6 @@ Degree to which the discourse narrows possibility space and pushes closure, rigi
 
 ---
 
-* * *
 ### 9. preference_pressure_score
 
 Definition:
