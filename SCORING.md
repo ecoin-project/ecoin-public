@@ -180,6 +180,171 @@ Degree to which the discourse narrows possibility space and pushes closure, rigi
 
 ---
 
+* * *
+### 9. preference_pressure_score
+
+Definition:
+Strength of pressure pushing discourse toward lower-friction, higher-certainty, more externally guided solutions.
+
+High when:
+
+  * the discourse shifts from reflection to ready-made solutions
+  * immediate relief or certainty is preferred over slower understanding
+  * external frameworks, experts, or templates become more attractive under pressure
+
+Low when:
+
+  * the discourse preserves self-judgment and tolerance for ambiguity
+  * solution preference does not noticeably narrow under emotional pressure
+
+Examples of cues:
+
+  * "I just need the answer now"
+  * "give me the exact system"
+  * "I do not want to think through all the options"
+  * "I need something that tells me what to do"
+
+* * *
+### 10. shortcut_risk_score
+
+Definition:
+Likelihood that the discourse legitimizes interpretive shortcuts, evidence-skipping, or compressed causal closure under pressure.
+
+High when:
+
+  * a single explanatory frame is accepted too quickly
+  * urgency overrides evidence standards
+  * automation, gurus, or strong narratives are trusted beyond what the evidence supports
+  * enemies or causes are simplified too aggressively
+
+Low when:
+
+  * competing explanations remain visible
+  * uncertainty and verification are retained
+  * shortcuts are resisted rather than normalized
+
+Examples of cues:
+
+  * "this explains everything"
+  * "you do not need to overthink it"
+  * "the system already knows"
+  * "obviously this is the real cause"
+
+* * *
+### 11. emotional_delegation_score
+
+Definition:
+Degree to which emotional burden regulation is outsourced alongside judgment, interpretation, or action.
+
+High when:
+
+  * the solution is attractive partly because it removes the need to tolerate fear, confusion, shame, or overload
+  * discourse invites emotional surrender to a system, expert, ritual, community, or template
+  * reassurance and decision outsourcing are fused
+
+Low when:
+
+  * tools support the user without absorbing emotional responsibility
+  * emotional regulation remains primarily human-held
+
+Examples of cues:
+
+  * "let it handle the stress for you"
+  * "trust the process and stop worrying"
+  * "you do not have to carry this alone because the system decides"
+
+* * *
+### 12. pressure_gradient_score
+
+Definition:
+Degree to which escalating threat or instability language changes what kinds of solutions become acceptable or desirable.
+
+High when:
+
+  * mild concern escalates into stronger closure or stronger intervention demands
+  * rising pressure clearly shifts the discourse toward dependence, rigidity, or salvation promises
+  * later-stage framing makes stronger measures feel newly justified
+
+Low when:
+
+  * escalation is weak or absent
+  * solution type remains relatively stable across pressure levels
+
+Examples of cues:
+
+  * "at first it was inconvenient, now it feels existential"
+  * "what seemed optional is now framed as necessary"
+  * "the discourse moves from advice to rescue"
+
+* * *
+## Additional run-level sidecar mode scores
+
+These are optional higher-level scores applied to the full output when the emotion-mechanism sidecar is enabled.
+
+### 3. pressure_activation
+
+Definition:
+Degree to which the full output captures discourse as pressure-driven rather than merely topic-driven.
+
+High when:
+
+  * multiple items are organized by emotional escalation dynamics
+  * functional emotional pressure is repeatedly visible across domains
+  * solution-seeking changes track pressure rather than only topic content
+
+Low when:
+
+  * items remain mainly descriptive and topical
+  * pressure dynamics are weak or inconsistent
+
+* * *
+### 4. closure_pressure
+
+Definition:
+Degree to which the output shows emotional pressure converting open uncertainty into narrowed interpretive closure.
+
+High when:
+
+  * ambiguity collapses into single-path solutions across multiple items
+  * pressure, urgency, or threat repeatedly compresses interpretive space
+
+Low when:
+
+  * uncertainty remains open
+  * pressure does not consistently generate closure
+
+* * *
+### 5. emotional_offloading
+
+Definition:
+Degree to which the output shows discourse patterns that offload not only cognition but also emotional regulation onto external systems.
+
+High when:
+
+  * reassurance, decision transfer, and relief promises repeatedly co-occur
+  * emotional burden transfer is part of solution appeal across multiple items
+
+Low when:
+
+  * external support appears without strong emotional outsourcing
+
+* * *
+### 6. shortcut_normalization
+
+Definition:
+Degree to which the output shows shortcut reasoning becoming normal, attractive, or socially reinforced under pressure.
+
+High when:
+
+  * evidence-skipping, oversimplification, or pseudo-certainty appears across multiple items
+  * shortcut logic is framed as efficient, realistic, or necessary
+
+Low when:
+
+  * shortcuts remain marginal
+  * verification and complexity remain visible
+
+
 ## Run-level mode scores
 
 These are higher-level scores applied to the full output, not just one item.
