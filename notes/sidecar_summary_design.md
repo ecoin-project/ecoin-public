@@ -48,7 +48,6 @@ This is a structured observational heuristic, not a direct psychological measure
 
 ---
 
-* * *
 ## Scope Extension: Value and Response-Style Sidecars
 
 In addition to pressure-oriented sidecar fields, the sidecar layer may also host two further experimental observational modules:
