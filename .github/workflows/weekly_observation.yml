@@ -28,7 +28,8 @@ jobs:
       - name: Run weekly batch
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          N_RUNS: "10"
+          N_RUNS: "3"
+          PROMPT_FILE: "fixed_prompt_v2.json"
         run: python scripts/run_weekly.py
 
       - name: Score outputs
