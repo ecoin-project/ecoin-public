@@ -91,6 +91,14 @@ Potential future directions include:
 - connection to ECOIN value-state indicators
 - connection to external weekly indicators or market data
 
+Additional experimental sidecar interpretation modules may be attached between the measurement layer and the connection layer.
+Current candidates include:
+- `value_phase_summary`, which tracks phase-sensitive value stabilization signals
+- `response_value_summary`, which tracks demand for reassurance, validation, challenge, optimization, and plural-audit response styles
+
+These modules should be treated as non-breaking sidecar extensions.
+They are intended to support interpretation and trend comparison without altering the stable weekly observation core.
+
 ---
 
 ### External reference lane
