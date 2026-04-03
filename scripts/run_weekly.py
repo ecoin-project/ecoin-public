@@ -11,13 +11,16 @@ MODEL = os.getenv("MODEL", "gpt-4.1-mini")
 TEMPERATURE = float(os.getenv("TEMPERATURE", "0.2"))
 
 ROOT = os.path.dirname(os.path.dirname(__file__))
-PROMPT_PATH = os.path.join(ROOT, "prompts", "fixed_prompt.json")
+PROMPT_FILE = os.getenv("PROMPT_FILE", "fixed_prompt.json")
+PROMPT_PATH = os.path.join(ROOT, "prompts", PROMPT_FILE)
 OUT_DIR = os.path.join(ROOT, "outputs")
 
 def utc_now():
     return datetime.now(timezone.utc).isoformat()
 
 def load_prompt():
+    if not os.path.exists(PROMPT_PATH):
+        raise FileNotFoundError(f"Prompt file not found: {PROMPT_PATH}")
     with open(PROMPT_PATH, "r", encoding="utf-8") as f:
         return json.load(f)
 
@@ -39,6 +42,7 @@ def write_txt(path, rows):
             f.write(f"model: {r.get('model', '')}\n")
             f.write(f"temperature: {r.get('temperature', '')}\n")
             f.write(f"latency_sec: {r.get('latency_sec', '')}\n")
+            f.write(f"prompt_file: {r.get('prompt_file', '')}\n")
 
             if "error" in r:
                 f.write("error:\n")
@@ -57,6 +61,7 @@ def write_csv(path, rows):
         "model",
         "temperature",
         "latency_sec",
+        "prompt_file",
         "output_text",
         "error",
     ]
@@ -72,6 +77,7 @@ def write_csv(path, rows):
                 "model": r.get("model", ""),
                 "temperature": r.get("temperature", ""),
                 "latency_sec": r.get("latency_sec", ""),
+                "prompt_file": r.get("prompt_file", ""),
                 "output_text": r.get("output_text", ""),
                 "error": r.get("error", ""),
             })
@@ -115,6 +121,7 @@ def main():
                 "model": MODEL,
                 "temperature": TEMPERATURE,
                 "latency_sec": latency,
+                "prompt_file": PROMPT_FILE,
                 "output_text": output_text,
             })
 
@@ -129,6 +136,7 @@ def main():
                 "model": MODEL,
                 "temperature": TEMPERATURE,
                 "latency_sec": latency,
+                "prompt_file": PROMPT_FILE,
                 "error": err_text,
             })
 
@@ -144,6 +152,7 @@ def main():
     write_csv(csv_path, rows)
     write_csv(latest_csv_path, rows)
 
+    print(f"Prompt file: {PROMPT_FILE}")
     print(f"Total records: {len(rows)}")
     print(f"Wrote: {jsonl_path}")
     print(f"Wrote: {txt_path}")
