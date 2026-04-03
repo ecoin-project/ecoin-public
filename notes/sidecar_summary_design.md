@@ -48,66 +48,6 @@ This is a structured observational heuristic, not a direct psychological measure
 
 ---
 
-## Scope Extension: Value and Response-Style Sidecars
-
-In addition to pressure-oriented sidecar fields, the sidecar layer may also host two further experimental observational modules:
-
-1. `value_phase_summary`
-2. `response_value_summary`
-
-These are not intended to replace the current observation core.
-They are sidecar-level extensions meant to track how value and response preference become stabilized around observed discourse patterns.
-
-### A. `value_phase_summary`
-
-This module tracks whether observed solutions, actors, narratives, or platforms appear to gain or lose perceived value through:
-
-- narrative intensity
-- attention concentration
-- institutional support
-- closure pressure
-- phase direction
-
-Its purpose is not to assign intrinsic value scores.
-Instead, it tracks whether value appears to be:
-- story-led
-- institution-led
-- under-recognized
-- over-amplified
-- lock-in prone
-- freeze prone
-
-This should be treated as a phase-sensitive interpretive sidecar, not as a direct valuation model.
-
-### B. `response_value_summary`
-
-This module tracks which response styles appear to be treated as valuable within the observed discourse environment.
-
-Examples include:
-- reassurance
-- validation
-- challenge
-- optimization
-- plural-audit
-
-This module also tracks whether the dominant demand appears to lean toward:
-- stabilization
-- update
-- mixed orientation
-
-The aim is not to diagnose users psychologically, but to observe which response forms are repeatedly sought, rewarded, delegated to, and normalized.
-
-### Design rule
-
-Both modules should remain:
-- non-breaking
-- optional
-- explicitly experimental
-- separable from the current core
-- promotable only after repeated weekly stability is demonstrated
-
----
-
 ## Where This Design Applies
 
 This design is intended for three output artifacts:
@@ -480,3 +420,14 @@ The sidecar layer should be treated as:
 - lightweight in latest_summary.json
 - flat in master_summary.csv
 - experimental until proven stable
+
+---
+
+## Appendix A. Candidate Future Sidecar Extensions
+
+The current v2 design targets the pressure-oriented sidecar only.
+
+Possible future extensions, documented separately, include:
+- value-phase observation
+- response-style value observation
+- broader methodological notes on public measurement, language-pattern observation, and LLM-based reconstruction
