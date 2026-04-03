@@ -72,6 +72,53 @@ These derived artifacts should be treated as provisional and hypothesis-generati
 
 This repository is intended for structural observation and hypothesis generation, not direct corpus measurement or performance benchmarking.
 
+## Documentation map
+
+This repository is organized into four practical layers:
+
+### 1. Observation core
+The stable weekly observation workflow lives in the fixed-prompt pipeline and its summary artifacts.
+This layer is intended for repeated structural observation of anxiety, solution-seeking, delegated agency, and fear/superiority framing.
+
+Primary references:
+- `README.md`
+- `ARCHITECTURE.md`
+- `prompts/fixed_prompt.json`
+
+### 2. Measurement and scoring
+Explicit rubrics and sidecar measurement tables live under `measurements/`.
+These files translate observed discourse structure into repeatable score dimensions and lightweight comparison fields.
+
+Primary references:
+- `SCORING.md`
+- `measurements/scoring_rubric.md`
+- `measurements/discourse_sidecar.csv`
+- `measurements/value_rubric.md`
+- `measurements/value_sidecar.csv`
+
+### 3. Experimental sidecar extensions
+Non-breaking extensions to the weekly summary schema are designed and documented in `notes/`.
+These additions remain sidecar-level until they prove stable across repeated runs.
+
+Primary references:
+- `notes/sidecar_summary_design.md`
+
+### 4. Higher-level interpretation and connection
+Longer-range conceptual connections, value-state interpretation, and external comparison lanes belong to the broader architecture and reference documents.
+These should be treated as exploratory and hypothesis-generating rather than as direct causal explanation.
+
+Primary references:
+- `ARCHITECTURE.md`
+- `MARKET_REFERENCE.md`
+- `BATCH_COMPARISON.md`
+
+### Current extension direction
+The current extension direction adds two experimental sidecar families:
+- `value_phase_summary`: tracks value stabilization signals such as narrative intensity, attention concentration, institutional support, closure pressure, and phase direction
+- `response_value_summary`: tracks which response styles are being valued, sought, delegated to, and reinforced
+
+These extensions are intended to remain compatible with the current weekly observation core.
+
 ## Additional derived comparison artifacts
 
 The repository may generate derived comparison artifacts that align external market-reference lanes with discourse-sidecar measurements.
