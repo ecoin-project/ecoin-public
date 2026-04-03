@@ -420,11 +420,18 @@ The sidecar layer should be treated as:
 
 ---
 
-## Appendix A. Candidate Future Sidecar Extensions
+## Appendix A. Future-facing sidecar candidates
 
-The current v2 design targets the pressure-oriented sidecar only.
+This document defines the current pressure-oriented v2 sidecar schema used for the active weekly observation core.
 
-Possible future extensions, documented separately, include:
-- value-phase observation
-- response-style value observation
-- broader methodological notes on public measurement, language-pattern observation, and LLM-based reconstruction
+The following modules are **not** part of the active weekly base schema at this stage:
+- `value_phase_summary`
+- `response_value_summary`
+
+These remain future-facing candidates.
+They may later be introduced as optional non-breaking extensions after repeated weekly stability is demonstrated.
+
+Until then:
+- the live weekly base schema should remain pressure-oriented
+- future candidate modules should remain in notes and method documents
+- lightweight outputs such as `latest_summary.json` and `master_summary.csv` should continue to expose only stable pressure-sidecar fields
