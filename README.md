@@ -74,18 +74,37 @@ This repository is intended for structural observation and hypothesis generation
 
 ## Documentation map
 
-This repository is organized into four practical layers:
+This repository is organized into four practical lanes:
 
-### 1. Observation core
-The stable weekly observation workflow lives in the fixed-prompt pipeline and its summary artifacts.
-This layer is intended for repeated structural observation of anxiety, solution-seeking, delegated agency, and fear/superiority framing.
+### 1. Live observation core
+The active weekly workflow lives in the fixed-prompt pipeline and its summary artifacts.
+
+This lane is intended for repeated live observation of:
+- anxiety patterns
+- solution-seeking
+- delegated agency
+- fear / superiority framing
+- pressure-oriented sidecar signals
 
 Primary references:
 - `README.md`
 - `ARCHITECTURE.md`
-- `prompts/fixed_prompt.json`
+- `prompts/fixed_prompt_v2.json`
+- `scripts/run_weekly.py`
+- `scripts/score_outputs.py`
 
-### 2. Measurement and scoring
+### 2. Validation and retained legacy references
+Manual sample batches and older reference outputs are preserved as validation materials.
+They should be treated separately from live weekly runs.
+
+Primary references:
+- `samples/`
+- `outputs/weekly_summary_manual_batch_001.json`
+- `outputs/weekly_summary_manual_batch_002.json`
+- `outputs/weekly_summary_manual_batch_003.json`
+- `outputs/master_summary_manual_validation.csv`
+
+### 3. Measurement and scoring
 Explicit rubrics and sidecar measurement tables live under `measurements/`.
 These files translate observed discourse structure into repeatable score dimensions and lightweight comparison fields.
 
@@ -96,28 +115,32 @@ Primary references:
 - `measurements/value_rubric.md`
 - `measurements/value_sidecar.csv`
 
-### 3. Experimental sidecar extensions
-Non-breaking extensions to the weekly summary schema are designed and documented in `notes/`.
-These additions remain sidecar-level until they prove stable across repeated runs.
+### 4. Method notes and future extensions
+Longer-form methodological notes, conceptual interpretation, and future sidecar candidates live under `notes/`.
+
+This lane should include:
+- methodological notes about LLM-based observation
+- raw longform captures and theory memos
+- future sidecar candidates that are not yet part of the active weekly base schema
 
 Primary references:
 - `notes/sidecar_summary_design.md`
-
-### 4. Higher-level interpretation and connection
-Longer-range conceptual connections, value-state interpretation, and external comparison lanes belong to the broader architecture and reference documents.
-These should be treated as exploratory and hypothesis-generating rather than as direct causal explanation.
-
-Primary references:
+- `notes/method_note_llm_observation.md`
+- `notes/future_sidecar_candidates.md`
 - `ARCHITECTURE.md`
-- `MARKET_REFERENCE.md`
-- `BATCH_COMPARISON.md`
 
-### Current extension direction
-The current extension direction adds two experimental sidecar families:
-- `value_phase_summary`: tracks value stabilization signals such as narrative intensity, attention concentration, institutional support, closure pressure, and phase direction
-- `response_value_summary`: tracks which response styles are being valued, sought, delegated to, and reinforced
+### Current live schema status
 
-These extensions are intended to remain compatible with the current weekly observation core.
+The current live weekly schema is the pressure-oriented v2 observation core.
+
+It includes:
+- the fixed prompt workflow
+- weekly summary generation
+- sidecar pressure aggregation
+- lightweight trend-ready summary outputs
+
+It does **not** yet treat `value_phase_summary` or `response_value_summary` as active weekly base modules.
+Those remain future-facing candidates until they prove stable across repeated runs.
 
 ## Additional derived comparison artifacts
 
