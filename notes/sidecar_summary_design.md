@@ -318,30 +318,27 @@ If sidecar fields are missing, exclude them from sidecar averages and set `sidec
 
 To avoid overloading the stable summary layer:
 
-#### Keep at top level
+#### Keep inside `sidecar_summary` in `weekly_summary_<batch_id>.json`
 
-Only stable summary-level averages such as:
-- `mean_preference_pressure_score`
-- `mean_shortcut_risk_score`
-- `mean_emotional_delegation_score`
-- `mean_pressure_gradient_score`
-- `mean_pressure_activation`
-- `mean_closure_pressure`
-- `mean_emotional_offloading`
-- `mean_shortcut_normalization`
-- `dominant_pressure_mode`
-
-#### Keep inside `sidecar_summary`
-
-More detailed or experimental structures such as:
+Keep all sidecar-specific structures inside `sidecar_summary`, including:
+- sidecar mean scores
 - proxy counts
 - delegated mode counts
 - shortcut risk counts
 - pressure notes
 - any future exploratory labels
 
-This keeps the core stable while allowing richer experimentation.
+This keeps the weekly core stable while allowing richer experimentation inside a dedicated sidecar block.
 
+#### Flatten selectively only in lightweight outputs
+
+For `latest_summary.json` and `master_summary.csv`, expose only a minimal subset of sidecar information when needed for trend tracking.
+
+Recommended candidates for lightweight exposure include:
+- stable sidecar mean scores
+- top proxy labels
+- dominant pressure mode
+  
 ---
 
 ### Implementation Guidance
