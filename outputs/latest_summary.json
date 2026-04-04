@@ -1,37 +1,37 @@
 {
-  "batch_id": "20260403_7e0a52",
+  "batch_id": "20260404_0f52a8",
   "time_window_assumed": "last_3_to_12_months",
   "n_files": 3,
   "n_items_total": 15,
-  "mean_fear_intensity": 73.33,
-  "mean_superiority_intensity": 67.67,
-  "mean_delegated_agency": 73.67,
-  "mean_polarization_risk": 52.67,
-  "mean_exploration": 61.67,
+  "mean_fear_intensity": 72,
+  "mean_superiority_intensity": 65,
+  "mean_delegated_agency": 77,
+  "mean_polarization_risk": 50.67,
+  "mean_exploration": 60,
   "mean_expansion": 70,
-  "mean_fixation_proxy": 65.82,
-  "mean_preference_pressure_score": 66,
-  "mean_shortcut_risk_score": 61.67,
-  "mean_emotional_delegation_score": 66,
-  "mean_pressure_gradient_score": 71.33,
+  "mean_fixation_proxy": 66.28,
+  "mean_preference_pressure_score": 68,
+  "mean_shortcut_risk_score": 61.33,
+  "mean_emotional_delegation_score": 71,
+  "mean_pressure_gradient_score": 69.33,
   "mean_pressure_activation": 75,
-  "mean_closure_pressure": 68.33,
+  "mean_closure_pressure": 66.67,
   "mean_emotional_offloading": 68.33,
-  "mean_shortcut_normalization": 61.67,
+  "mean_shortcut_normalization": 60,
   "top_anxiety_labels": [
     "Economic Instability and Job Insecurity",
-    "Social Media Misinformation and Identity Polarization",
-    "Digital Privacy and Surveillance Concerns"
+    "Digital Privacy and Surveillance",
+    "Social Isolation and Loneliness"
   ],
   "top_solution_modes": [
+    "outsourced expertise",
     "identity signaling",
-    "automation/monitoring",
-    "outsourced expertise"
+    "automation/monitoring"
   ],
   "top_functional_emotion_proxies": [
-    "control_loss",
-    "uncertainty_intolerance",
-    "identity_dislocation"
+    "identity_dislocation",
+    "moral_injury_pressure",
+    "control_loss"
   ],
   "dominant_mode": "fixation leaning",
   "dominant_pressure_mode": "pressure-driven and closure-leaning",
