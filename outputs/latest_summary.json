@@ -1,37 +1,37 @@
 {
-  "batch_id": "20260411_07047f",
+  "batch_id": "20260418_ed5b10",
   "time_window_assumed": "last_3_to_12_months",
   "n_files": 3,
   "n_items_total": 15,
-  "mean_fear_intensity": 72.33,
+  "mean_fear_intensity": 71.67,
   "mean_superiority_intensity": 65.67,
   "mean_delegated_agency": 75,
-  "mean_polarization_risk": 49.33,
+  "mean_polarization_risk": 51.33,
   "mean_exploration": 60,
   "mean_expansion": 71.67,
-  "mean_fixation_proxy": 65.43,
-  "mean_preference_pressure_score": 68,
+  "mean_fixation_proxy": 65.6,
+  "mean_preference_pressure_score": 66.33,
   "mean_shortcut_risk_score": 61.67,
-  "mean_emotional_delegation_score": 69,
-  "mean_pressure_gradient_score": 72.67,
+  "mean_emotional_delegation_score": 72,
+  "mean_pressure_gradient_score": 73,
   "mean_pressure_activation": 76.67,
-  "mean_closure_pressure": 66.67,
-  "mean_emotional_offloading": 71.67,
-  "mean_shortcut_normalization": 61.67,
+  "mean_closure_pressure": 68.33,
+  "mean_emotional_offloading": 75,
+  "mean_shortcut_normalization": 63.33,
   "top_anxiety_labels": [
     "Economic Instability and Job Insecurity",
-    "Social Media Identity and Validation Pressure",
-    "Digital Privacy and Surveillance Concerns"
+    "Digital Privacy and Surveillance",
+    "Interpersonal Social Isolation and Loneliness"
   ],
   "top_solution_modes": [
-    "automation/monitoring",
     "identity signaling",
-    "offline/community"
+    "outsourced expertise",
+    "automation/monitoring"
   ],
   "top_functional_emotion_proxies": [
-    "identity_dislocation",
     "control_loss",
-    "abandonment_pressure"
+    "identity_dislocation",
+    "moral_injury_pressure"
   ],
   "dominant_mode": "fixation leaning",
   "dominant_pressure_mode": "pressure-driven and closure-leaning",
