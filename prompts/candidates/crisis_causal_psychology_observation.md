@@ -25,6 +25,53 @@ Separate:
 
 Output format:
 
+## Background Formation Layer
+
+Observe the historical, educational, symbolic, and cultural background that may shape how the crisis is interpreted.
+
+Do not claim that background factors mechanically cause the crisis.
+Do not reduce current actors to historical stereotypes.
+Do not assign collective guilt to nations, religions, ethnicities, or populations.
+
+Separate:
+
+### Historical Memory
+What past conflicts, sanctions, invasions, betrayals, humiliations, occupations, revolutions, or unresolved grievances appear relevant to how the crisis is interpreted?
+
+### Educational Narrative
+What learned narratives may shape perception?
+Examples:
+- national history education
+- patriotic narratives
+- victimhood narratives
+- civilizational conflict narratives
+- “we were betrayed” narratives
+- “we must never be weak again” narratives
+
+### Media Image Layer
+What repeated images or scenes shape emotional interpretation?
+Examples:
+- bombing images
+- hostages
+- refugees
+- flags
+- leaders
+- maps
+- missiles
+- oil routes
+- religious sites
+- suffering children
+- destroyed cities
+
+### Symbolic Enemy Image
+Is the crisis being interpreted through a pre-existing image of an enemy, traitor, invader, terrorist, oppressor, puppet, or savior?
+
+### Intergenerational / Collective Residue
+Are older fears or grievances being reactivated in the present discourse?
+
+### Background-to-Action Bridge
+How do these background layers appear to translate into present fear, anger, policy support, market behavior, or social division?
+
 ## 1. Causal Scope Boundary
 
 State what can and cannot be inferred from the provided material.
