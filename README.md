@@ -163,3 +163,25 @@ See also:
 - [BATCH_COMPARISON.md](BATCH_COMPARISON.md)
 - [MARKET_REFERENCE.md](MARKET_REFERENCE.md)
 - [API_LAUNCH_CHECKLIST.md](API_LAUNCH_CHECKLIST.md)
+
+---
+
+## Experimental Observation Prompt Candidates
+
+This repository includes experimental observation-only prompt candidates under `prompts/candidates/`.
+
+These prompts are not part of the active weekly workflow. They are retained for future validation as possible sidecar modules for observing discourse pressure, self–environment mismatch, affect routing, meaning capture, autonomy, recovery, and lock-in patterns.
+
+These prompts must not be used for diagnosis, ranking, behavioral instruction, settlement decisions, investment advice, or evaluation of individuals.
+
+Current candidate areas include:
+
+- Autonomy / Recovery / Lock-in observation
+- Self–Environment Mapping
+- Affect Routing
+- Meaning Capture Loop detection
+- Trust Conversion Mapping
+- Value Claim Extraction
+- Observation-to-Settlement Boundary Audit
+
+All outputs should be treated as provisional state observations, not judgments or recommendations.
