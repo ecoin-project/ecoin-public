@@ -1,37 +1,37 @@
 {
-  "batch_id": "20260418_ed5b10",
+  "batch_id": "20260425_9e82e8",
   "time_window_assumed": "last_3_to_12_months",
   "n_files": 3,
   "n_items_total": 15,
-  "mean_fear_intensity": 71.67,
-  "mean_superiority_intensity": 65.67,
-  "mean_delegated_agency": 75,
+  "mean_fear_intensity": 72,
+  "mean_superiority_intensity": 65.33,
+  "mean_delegated_agency": 77.33,
   "mean_polarization_risk": 51.33,
   "mean_exploration": 60,
   "mean_expansion": 71.67,
-  "mean_fixation_proxy": 65.6,
-  "mean_preference_pressure_score": 66.33,
-  "mean_shortcut_risk_score": 61.67,
-  "mean_emotional_delegation_score": 72,
-  "mean_pressure_gradient_score": 73,
+  "mean_fixation_proxy": 66.53,
+  "mean_preference_pressure_score": 70.33,
+  "mean_shortcut_risk_score": 64.67,
+  "mean_emotional_delegation_score": 71.67,
+  "mean_pressure_gradient_score": 72,
   "mean_pressure_activation": 76.67,
   "mean_closure_pressure": 68.33,
-  "mean_emotional_offloading": 75,
+  "mean_emotional_offloading": 73.33,
   "mean_shortcut_normalization": 63.33,
   "top_anxiety_labels": [
     "Economic Instability and Job Insecurity",
-    "Digital Privacy and Surveillance",
-    "Interpersonal Social Isolation and Loneliness"
+    "Social Media Identity and Validation Pressure",
+    "Climate Change and Environmental Collapse"
   ],
   "top_solution_modes": [
-    "identity signaling",
+    "automation/monitoring",
     "outsourced expertise",
-    "automation/monitoring"
+    "identity signaling"
   ],
   "top_functional_emotion_proxies": [
     "control_loss",
-    "identity_dislocation",
-    "moral_injury_pressure"
+    "uncertainty_intolerance",
+    "identity_dislocation"
   ],
   "dominant_mode": "fixation leaning",
   "dominant_pressure_mode": "pressure-driven and closure-leaning",
