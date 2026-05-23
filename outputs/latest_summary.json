@@ -1,27 +1,27 @@
 {
-  "batch_id": "20260516_9cfbc3",
+  "batch_id": "20260523_af87e0",
   "time_window_assumed": "last_3_to_12_months",
   "n_files": 3,
   "n_items_total": 15,
-  "mean_fear_intensity": 75.33,
-  "mean_superiority_intensity": 69.67,
-  "mean_delegated_agency": 77,
-  "mean_polarization_risk": 50.67,
-  "mean_exploration": 60,
-  "mean_expansion": 71.67,
-  "mean_fixation_proxy": 67.45,
-  "mean_preference_pressure_score": 73.33,
-  "mean_shortcut_risk_score": 64,
+  "mean_fear_intensity": 71.67,
+  "mean_superiority_intensity": 66.67,
+  "mean_delegated_agency": 75.67,
+  "mean_polarization_risk": 55.33,
+  "mean_exploration": 61.67,
+  "mean_expansion": 73.33,
+  "mean_fixation_proxy": 66.47,
+  "mean_preference_pressure_score": 68.33,
+  "mean_shortcut_risk_score": 63,
   "mean_emotional_delegation_score": 71,
-  "mean_pressure_gradient_score": 74.33,
-  "mean_pressure_activation": 76.67,
-  "mean_closure_pressure": 66.67,
-  "mean_emotional_offloading": 71.67,
+  "mean_pressure_gradient_score": 75,
+  "mean_pressure_activation": 78.33,
+  "mean_closure_pressure": 70,
+  "mean_emotional_offloading": 73.33,
   "mean_shortcut_normalization": 65,
   "top_anxiety_labels": [
     "Economic Instability and Job Insecurity",
-    "Social Media Misinformation and Identity Polarization",
-    "Environmental Degradation and Climate Change Impact"
+    "Digital Privacy and Surveillance",
+    "Cultural Identity and Belonging Uncertainty"
   ],
   "top_solution_modes": [
     "identity signaling",
@@ -29,9 +29,9 @@
     "outsourced expertise"
   ],
   "top_functional_emotion_proxies": [
-    "control_loss",
     "identity_dislocation",
-    "uncertainty_intolerance"
+    "control_loss",
+    "moral_injury_pressure"
   ],
   "dominant_mode": "fixation leaning",
   "dominant_pressure_mode": "pressure-driven and closure-leaning",
