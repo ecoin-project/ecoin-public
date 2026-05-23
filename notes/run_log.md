@@ -68,3 +68,47 @@
 - Prior mixed-schema history remains preserved in master_summary_legacy.csv.
 - Alignment output remains provisional and is still not interpretable because overlap remains limited to a single date.
 - GitHub Actions warning, if present, was non-fatal.
+
+---
+
+## 2026-05-09
+- Seventh v2 scheduled run completed successfully.
+- Trigger type: scheduled weekly workflow
+- Batch ID: 20260509_aa6aaf
+- Config: PROMPT_FILE=fixed_prompt_v2.json, N_RUNS=3
+- Outputs generated successfully, including weekly_summary, latest_summary, master_summary, trend plots, combined normalized trends, and provisional alignment output.
+- master_summary.csv now contains the seventh v2 longitudinal row.
+- Prior mixed-schema history remains preserved in master_summary_legacy.csv.
+- Alignment output remains provisional and still not interpretable because overlap remains limited to a single date.
+- GitHub Actions warning, if present, was non-fatal.
+
+---
+
+## 2026-05-16
+- Eighth v2 scheduled run completed successfully.
+- Trigger type: scheduled weekly workflow
+- Batch ID: 20260516_9cfbc3
+- Config: PROMPT_FILE=fixed_prompt_v2.json, N_RUNS=3
+- Outputs generated successfully, including weekly_summary, latest_summary, master_summary, trend plots, combined normalized trends, and provisional alignment output.
+- master_summary.csv now contains the eighth v2 longitudinal row.
+- Prior mixed-schema history remains preserved in master_summary_legacy.csv.
+- Alignment output remains provisional and still not interpretable because overlap remains limited to a single date.
+- GitHub Actions warning, if present, was non-fatal.
+
+---
+
+## 2026-05-23
+- Ninth v2 scheduled run completed successfully.
+- Trigger type: scheduled weekly workflow
+- Batch ID: 20260523_af87e0
+- Config: PROMPT_FILE=fixed_prompt_v2.json, N_RUNS=3
+- Outputs generated successfully, including weekly_summary, latest_summary, master_summary, trend plots, combined normalized trends, and provisional alignment output.
+- master_summary.csv now contains the ninth v2 longitudinal row.
+- Alignment output remains provisional and still not interpretable because overlap remains limited to a single date.
+- GitHub Actions warning, if present, was non-fatal.
+
+---
+
+
+
+
