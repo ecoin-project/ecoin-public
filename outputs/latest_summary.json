@@ -1,37 +1,37 @@
 {
-  "batch_id": "20260523_af87e0",
+  "batch_id": "20260530_564e49",
   "time_window_assumed": "last_3_to_12_months",
   "n_files": 3,
   "n_items_total": 15,
-  "mean_fear_intensity": 71.67,
+  "mean_fear_intensity": 74.33,
   "mean_superiority_intensity": 66.67,
-  "mean_delegated_agency": 75.67,
-  "mean_polarization_risk": 55.33,
-  "mean_exploration": 61.67,
-  "mean_expansion": 73.33,
-  "mean_fixation_proxy": 66.47,
-  "mean_preference_pressure_score": 68.33,
-  "mean_shortcut_risk_score": 63,
-  "mean_emotional_delegation_score": 71,
-  "mean_pressure_gradient_score": 75,
-  "mean_pressure_activation": 78.33,
-  "mean_closure_pressure": 70,
-  "mean_emotional_offloading": 73.33,
-  "mean_shortcut_normalization": 65,
+  "mean_delegated_agency": 75,
+  "mean_polarization_risk": 47,
+  "mean_exploration": 60,
+  "mean_expansion": 70,
+  "mean_fixation_proxy": 65.67,
+  "mean_preference_pressure_score": 66,
+  "mean_shortcut_risk_score": 58,
+  "mean_emotional_delegation_score": 69.67,
+  "mean_pressure_gradient_score": 72,
+  "mean_pressure_activation": 75,
+  "mean_closure_pressure": 68.33,
+  "mean_emotional_offloading": 68.33,
+  "mean_shortcut_normalization": 60,
   "top_anxiety_labels": [
     "Economic Instability and Job Insecurity",
     "Digital Privacy and Surveillance",
-    "Cultural Identity and Belonging Uncertainty"
+    "Interpersonal Social Isolation"
   ],
   "top_solution_modes": [
-    "identity signaling",
     "automation/monitoring",
-    "outsourced expertise"
+    "identity signaling",
+    "offline/community"
   ],
   "top_functional_emotion_proxies": [
-    "identity_dislocation",
     "control_loss",
-    "moral_injury_pressure"
+    "identity_dislocation",
+    "scarcity_pressure"
   ],
   "dominant_mode": "fixation leaning",
   "dominant_pressure_mode": "pressure-driven and closure-leaning",
