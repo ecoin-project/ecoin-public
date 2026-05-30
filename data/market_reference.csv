@@ -86,3 +86,8 @@ date,asset,value,unit,source_note,fetched_at_utc
 2026-05-23,USDJPY,159.15,jpy_per_usd,frankfurter_public,2026-05-23T04:36:49Z
 2026-05-22,VIX,16.7,index_close,cboe_daily_close_csv,2026-05-23T04:36:49Z
 2026-05-22,SP500,7473.47,index_close,fred_sp500_csv,2026-05-23T04:36:49Z
+2026-05-30,BTC,73234.0,usd,coingecko_demo_or_public,2026-05-30T04:49:37Z
+2026-05-30,GOLD,4540.299805,usd_per_oz,gold_api_free,2026-05-30T04:49:37Z
+2026-05-30,USDJPY,159.27,jpy_per_usd,frankfurter_public,2026-05-30T04:49:37Z
+2026-05-29,VIX,15.32,index_close,cboe_daily_close_csv,2026-05-30T04:49:37Z
+2026-05-28,SP500,7563.63,index_close,fred_sp500_csv,2026-05-30T04:49:37Z
