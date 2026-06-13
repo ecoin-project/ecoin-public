@@ -1,36 +1,36 @@
 {
-  "batch_id": "20260606_a56a12",
+  "batch_id": "20260613_460654",
   "time_window_assumed": "last_3_to_12_months",
   "n_files": 3,
   "n_items_total": 15,
-  "mean_fear_intensity": 71.33,
-  "mean_superiority_intensity": 66.33,
-  "mean_delegated_agency": 73,
-  "mean_polarization_risk": 55,
-  "mean_exploration": 60,
+  "mean_fear_intensity": 68.67,
+  "mean_superiority_intensity": 64,
+  "mean_delegated_agency": 76,
+  "mean_polarization_risk": 49.67,
+  "mean_exploration": 61.67,
   "mean_expansion": 70,
-  "mean_fixation_proxy": 65.52,
-  "mean_preference_pressure_score": 67.67,
-  "mean_shortcut_risk_score": 61.33,
-  "mean_emotional_delegation_score": 69.67,
-  "mean_pressure_gradient_score": 73.33,
+  "mean_fixation_proxy": 64.4,
+  "mean_preference_pressure_score": 63.33,
+  "mean_shortcut_risk_score": 58.33,
+  "mean_emotional_delegation_score": 71,
+  "mean_pressure_gradient_score": 70.67,
   "mean_pressure_activation": 75,
   "mean_closure_pressure": 68.33,
-  "mean_emotional_offloading": 70,
-  "mean_shortcut_normalization": 63.33,
+  "mean_emotional_offloading": 75,
+  "mean_shortcut_normalization": 61.67,
   "top_anxiety_labels": [
     "Economic Instability and Job Insecurity",
     "Digital Privacy and Surveillance",
-    "Interpersonal Social Isolation"
+    "Interpersonal Social Skills Decline"
   ],
   "top_solution_modes": [
+    "outsourced expertise",
     "identity signaling",
-    "automation/monitoring",
-    "offline/community"
+    "automation/monitoring"
   ],
   "top_functional_emotion_proxies": [
     "identity_dislocation",
-    "uncertainty_intolerance",
+    "control_loss",
     "moral_injury_pressure"
   ],
   "dominant_mode": "fixation leaning",
