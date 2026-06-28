@@ -1,0 +1,140 @@
+{
+  "schema_name": "ECOIN Observation",
+  "observation_schema_version": "0.2",
+  "compatibility": {
+    "v0_1_core_fields_preserved": true,
+    "sidecar_fields_optional": true,
+    "validation_mode": "warn_and_continue",
+    "historical_data_must_not_be_rewritten": true
+  },
+  "required_top_level_fields": [
+    "observation_schema_version",
+    "question_id",
+    "time_window_assumed",
+    "observation_scope",
+    "items",
+    "mode_scores",
+    "sidecar_mode_scores",
+    "notes"
+  ],
+  "observation_scope": {
+    "unit": "model_generated_discourse_observation",
+    "source_basis": "online_discourse_patterns_inferred_by_model",
+    "not_direct_corpus_measurement": true,
+    "not_diagnostic_or_personality_measurement": true
+  },
+  "item_fields": {
+    "stable_core": [
+      "anxiety_label",
+      "anxiety_description",
+      "signals_observed",
+      "solutions_sought",
+      "delegated_agency_hooks",
+      "fear_superiority_marketing",
+      "scores"
+    ],
+    "pressure_sidecar": [
+      "emotion_mechanism_sidecar"
+    ],
+    "transition_indicators": [
+      "pause_capacity",
+      "counterfactual_tolerance",
+      "integration_score",
+      "meaning_concentration",
+      "recovery_potential"
+    ],
+    "optional_process_map": [
+      "functional_process_map"
+    ]
+  },
+  "score_fields": {
+    "stable_core": [
+      "delegated_agency",
+      "fear_intensity",
+      "superiority_intensity",
+      "polarization_risk",
+      "urgency_score",
+      "optimization_promise_score",
+      "salvation_promise_score",
+      "fixation_score"
+    ],
+    "pressure_sidecar": [
+      "preference_pressure_score",
+      "shortcut_risk_score",
+      "emotional_delegation_score",
+      "pressure_gradient_score"
+    ],
+    "transition_indicators": [
+      "pause_capacity",
+      "counterfactual_tolerance",
+      "integration_score",
+      "meaning_concentration",
+      "recovery_potential"
+    ]
+  },
+  "mode_score_fields": [
+    "exploration",
+    "expansion"
+  ],
+  "sidecar_mode_score_fields": [
+    "pressure_activation",
+    "closure_pressure",
+    "emotional_offloading",
+    "shortcut_normalization"
+  ],
+  "functional_emotion_proxy_vocabulary": [
+    "panic_escape",
+    "status_threat",
+    "abandonment_pressure",
+    "cognitive_overload_escape",
+    "contamination_fear",
+    "scarcity_pressure",
+    "uncertainty_intolerance",
+    "control_loss",
+    "identity_dislocation",
+    "moral_injury_pressure"
+  ],
+  "delegated_agency_mode_vocabulary": [
+    "diagnostic",
+    "interpretive",
+    "moral",
+    "protective",
+    "automated",
+    "status_borrowing",
+    "procedural",
+    "social_proof"
+  ],
+  "shortcut_risk_vocabulary": [
+    "evidence_skipping",
+    "automation_overtrust",
+    "enemy_simplification",
+    "single_cause_closure",
+    "overgeneralization",
+    "pseudo_certainty",
+    "urgency_override"
+  ],
+  "functional_process_map_terms": [
+    "divergence",
+    "convergence",
+    "structuring",
+    "implementation",
+    "memory_reference",
+    "field_response",
+    "social_binding",
+    "value_charge"
+  ],
+  "prohibited_direct_measured_fields": [
+    "MBTI",
+    "Big Five",
+    "tarot",
+    "sephirot"
+  ],
+  "prohibited_direct_measurement_note": "MBTI, Big Five, tarot, and sephirot must not be used as direct measured fields, diagnostic labels, scoring targets, or required output dimensions. They may be mentioned only in documentation as optional interpretive translation layers.",
+  "score_rule": {
+    "scale": "0-100",
+    "0": "absent_or_negligible",
+    "50": "moderate_or_mixed_presence",
+    "100": "maximally_dominant",
+    "uncertainty_rule": "prefer_moderate_scores_over_extreme_scores_when_uncertainty_is_high"
+  }
+}
