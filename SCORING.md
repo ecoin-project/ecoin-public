@@ -474,3 +474,45 @@ These should only be added when their definitions can be stated clearly enough f
 
 See also:
 - [HOOK_MAP.md](HOOK_MAP.md)
+
+---
+
+## ECOIN Observation v0.2 transition indicators
+
+The following v0.2 indicators are optional item-level transition indicators. They use the same 0-100 scale as other ECOIN observation scores, but they should be interpreted as structural discourse indicators rather than diagnostic, personality, or psychometric measurements.
+
+### pause_capacity
+
+Degree to which discourse preserves reflective delay before interpretive closure, emotional escalation, or immediate action.
+
+High when uncertainty can be held without rushing into a single solution. Low when the discourse rapidly converts discomfort into urgency, closure, or delegation.
+
+### counterfactual_tolerance
+
+Degree to which alternative explanations, competing possibilities, or reversible interpretations remain visible.
+
+High when multiple explanations can coexist. Low when a single explanation becomes mandatory or insulated from challenge.
+
+### integration_score
+
+Degree to which the discourse can hold conflicting signals together without fragmentation or forced simplification.
+
+High when tension is metabolized into a broader view. Low when signals split into rigid binaries or unresolved contradiction.
+
+### meaning_concentration
+
+Degree to which meaning concentrates around a narrow symbol, story, identity, object, or explanatory claim.
+
+High when one frame absorbs many otherwise distinct concerns. Low when meaning remains distributed across several interpretations.
+
+### recovery_potential
+
+Degree to which discourse retains repair, re-opening, revision, or reversible pathways.
+
+High when the discourse leaves room for correction, relationship repair, learning, or reframing. Low when it implies irreversible lock-in, collapse, or permanent exclusion.
+
+### Optional functional_process_map
+
+The optional `functional_process_map` is descriptive rather than directly scored. It may use the neutral terms `divergence`, `convergence`, `structuring`, `implementation`, `memory_reference`, `field_response`, `social_binding`, and `value_charge` to describe process roles visible in the discourse.
+
+These process terms must not be converted into MBTI, Big Five, tarot, sephirot, clinical, or diagnostic measurements. Such frameworks may be discussed only as optional interpretive translation layers in documentation, never as direct measured fields or scoring targets.

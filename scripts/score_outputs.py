@@ -12,6 +12,25 @@ SAMPLES_DIR = os.path.join(ROOT, "samples")
 USE_MANUAL_SAMPLE = os.getenv("USE_MANUAL_SAMPLE", "0") == "1"
 MANUAL_BATCH_ID = os.getenv("MANUAL_BATCH_ID", "manual_batch_001")
 MASTER_SUMMARY_PATH = os.path.join(OUT_DIR, "master_summary.csv")
+SUMMARY_SCHEMA_VERSION = "0.2"
+LEGACY_SCHEMA_VERSION = "legacy_unversioned"
+V02_TRANSITION_INDICATORS = [
+    "pause_capacity",
+    "counterfactual_tolerance",
+    "integration_score",
+    "meaning_concentration",
+    "recovery_potential",
+]
+V02_FUNCTIONAL_PROCESS_TERMS = [
+    "divergence",
+    "convergence",
+    "structuring",
+    "implementation",
+    "memory_reference",
+    "field_response",
+    "social_binding",
+    "value_charge",
+]
 
 
 def latest_raw_file():
@@ -49,6 +68,119 @@ def classify_error(err_text):
         return "timeout"
     return "other"
 
+
+
+def score_range_warning(path, value):
+    if not isinstance(value, (int, float)):
+        return f"{path} is not numeric"
+    if value < 0 or value > 100:
+        return f"{path} is outside 0-100"
+    return None
+
+
+def validate_observation(obj):
+    """Return warning-only schema diagnostics for a parsed observation object."""
+    warnings = []
+    schema_version = obj.get("observation_schema_version", LEGACY_SCHEMA_VERSION)
+
+    if schema_version == "0.2":
+        for field in [
+            "question_id",
+            "time_window_assumed",
+            "observation_scope",
+            "items",
+            "mode_scores",
+            "sidecar_mode_scores",
+            "notes",
+        ]:
+            if field not in obj:
+                warnings.append(f"missing top-level field: {field}")
+    elif "observation_schema_version" not in obj:
+        warnings.append("legacy observation without observation_schema_version")
+
+    items = obj.get("items", [])
+    if not isinstance(items, list):
+        warnings.append("items is not a list")
+        items = []
+
+    sidecar_items_present = 0
+    transition_items_present = 0
+    process_map_items_present = 0
+    score_range_warning_count = 0
+
+    for item_index, item in enumerate(items, start=1):
+        if not isinstance(item, dict):
+            warnings.append(f"item {item_index} is not an object")
+            continue
+
+        for field in [
+            "anxiety_label",
+            "anxiety_description",
+            "signals_observed",
+            "solutions_sought",
+            "delegated_agency_hooks",
+            "fear_superiority_marketing",
+            "scores",
+        ]:
+            if field not in item:
+                warnings.append(f"item {item_index} missing core field: {field}")
+
+        if isinstance(item.get("emotion_mechanism_sidecar"), dict):
+            sidecar_items_present += 1
+
+        transition = item.get("transition_indicators")
+        if isinstance(transition, dict):
+            transition_items_present += 1
+            for field in V02_TRANSITION_INDICATORS:
+                if field not in transition:
+                    warnings.append(f"item {item_index} missing transition indicator: {field}")
+                else:
+                    warning = score_range_warning(
+                        f"item {item_index} transition_indicators.{field}", transition[field]
+                    )
+                    if warning:
+                        warnings.append(warning)
+                        score_range_warning_count += 1
+        elif schema_version == "0.2":
+            warnings.append(f"item {item_index} missing transition_indicators")
+
+        process_map = item.get("functional_process_map")
+        if isinstance(process_map, dict):
+            process_map_items_present += 1
+            for key in process_map:
+                if key not in V02_FUNCTIONAL_PROCESS_TERMS:
+                    warnings.append(f"item {item_index} unexpected functional_process_map term: {key}")
+
+        scores = item.get("scores", {})
+        if isinstance(scores, dict):
+            for key, value in scores.items():
+                warning = score_range_warning(f"item {item_index} scores.{key}", value)
+                if warning:
+                    warnings.append(warning)
+                    score_range_warning_count += 1
+
+    for score_group_name, score_group in [
+        ("mode_scores", obj.get("mode_scores", {})),
+        ("sidecar_mode_scores", obj.get("sidecar_mode_scores", {})),
+    ]:
+        if isinstance(score_group, dict):
+            for key, value in score_group.items():
+                warning = score_range_warning(f"{score_group_name}.{key}", value)
+                if warning:
+                    warnings.append(warning)
+                    score_range_warning_count += 1
+
+    item_count = len(items)
+    return {
+        "schema_version": schema_version,
+        "item_count": item_count,
+        "warning_count": len(warnings),
+        "score_range_warning_count": score_range_warning_count,
+        "warnings": warnings[:25],
+        "sidecar_completion_rate": round(sidecar_items_present / item_count, 4) if item_count else None,
+        "transition_indicator_completion_rate": round(transition_items_present / item_count, 4) if item_count else None,
+        "functional_process_map_completion_rate": round(process_map_items_present / item_count, 4) if item_count else None,
+    }
 
 def load_manual_samples_as_rows():
     batch_samples_dir = os.path.join(SAMPLES_DIR, MANUAL_BATCH_ID)
@@ -258,6 +390,7 @@ def main():
     emotional_offloading_scores = []
     shortcut_normalization_scores = []
     parse_error_count = 0
+    validation_diagnostics = []
 
     for r in success_rows:
         output_text = r.get("output_text")
@@ -270,6 +403,10 @@ def main():
         except Exception:
             parse_error_count += 1
             continue
+
+        diagnostic = validate_observation(obj)
+        diagnostic["run_id"] = r.get("run_id", "")
+        validation_diagnostics.append(diagnostic)
 
         items = obj.get("items", [])
         all_items.extend(items)
@@ -476,8 +613,52 @@ def main():
     all_failed = len(success_rows) == 0
     batch_id = rows[0]["batch_id"] if rows and rows[0].get("batch_id") else "unknown_batch"
 
+    schema_versions_seen = sorted({
+        d.get("schema_version", LEGACY_SCHEMA_VERSION) for d in validation_diagnostics
+    })
+    schema_warning_count = sum(d.get("warning_count", 0) for d in validation_diagnostics)
+    score_range_warning_count = sum(
+        d.get("score_range_warning_count", 0) for d in validation_diagnostics
+    )
+    transition_rates = [
+        d.get("transition_indicator_completion_rate")
+        for d in validation_diagnostics
+        if d.get("transition_indicator_completion_rate") is not None
+    ]
+    process_map_rates = [
+        d.get("functional_process_map_completion_rate")
+        for d in validation_diagnostics
+        if d.get("functional_process_map_completion_rate") is not None
+    ]
+    sidecar_rates = [
+        d.get("sidecar_completion_rate")
+        for d in validation_diagnostics
+        if d.get("sidecar_completion_rate") is not None
+    ]
+
+    validation_summary = {
+        "mode": "warn_and_continue",
+        "observation_schema_versions_seen": schema_versions_seen,
+        "n_parse_errors": parse_error_count,
+        "n_schema_warnings": schema_warning_count,
+        "n_score_range_warnings": score_range_warning_count,
+        "sidecar_completion_rate": safe_mean(sidecar_rates),
+        "transition_indicator_completion_rate": safe_mean(transition_rates),
+        "functional_process_map_completion_rate": safe_mean(process_map_rates),
+        "run_warnings": validation_diagnostics,
+    }
+
     weekly_summary = {
         "batch_id": batch_id,
+        "summary_schema_version": SUMMARY_SCHEMA_VERSION,
+        "observation_schema_versions_seen": schema_versions_seen,
+        "legacy_compatibility": {
+            "v0_1_core_fields_preserved": True,
+            "sidecar_fields_optional": True,
+            "missing_sidecar_fields_allowed": True,
+            "validation_mode": "warn_and_continue",
+        },
+        "validation_diagnostics": validation_summary,
         "time_window_assumed": "last_3_to_12_months",
         "n_files": len(rows),
         "n_items_total": len(all_items),
@@ -512,6 +693,17 @@ def main():
 
     latest_summary = {
         "batch_id": batch_id,
+        "summary_schema_version": SUMMARY_SCHEMA_VERSION,
+        "observation_schema_versions_seen": schema_versions_seen,
+        "validation_diagnostics": {
+            "mode": "warn_and_continue",
+            "n_parse_errors": parse_error_count,
+            "n_schema_warnings": schema_warning_count,
+            "n_score_range_warnings": score_range_warning_count,
+            "sidecar_completion_rate": validation_summary["sidecar_completion_rate"],
+            "transition_indicator_completion_rate": validation_summary["transition_indicator_completion_rate"],
+            "functional_process_map_completion_rate": validation_summary["functional_process_map_completion_rate"],
+        },
         "time_window_assumed": "last_3_to_12_months",
         "n_files": len(rows),
         "n_items_total": len(all_items),

@@ -163,3 +163,59 @@ Recommended path:
 3. develop provisional sidecar measurements
 4. collect lexical and framing candidates
 5. promote only stable dimensions into the formal framework
+
+---
+
+## ECOIN Observation v0.2 Architecture
+
+ECOIN Observation v0.2 formalizes the existing weekly observation system as a versioned, non-breaking extension of the current observation core.
+
+### v0.2 contracts
+
+1. **Observation contract**: model outputs may declare `observation_schema_version: "0.2"`, preserve all existing v2 fields, and add explicit scope metadata clarifying that outputs are model-generated discourse observations rather than direct corpus, diagnostic, or personality measurements.
+2. **Measurement contract**: scoring remains warning-tolerant. Validation diagnostics should identify missing or malformed fields, score-range issues, and sidecar completeness, but should not fail scheduled runs.
+3. **Artifact contract**: weekly summaries may declare `summary_schema_version: "0.2"` and include compatibility metadata while preserving existing top-level summary fields and historical trend columns.
+
+### v0.2 transition indicators
+
+The v0.2 observation layer may include the following item-level transition indicators, each scored on the existing 0-100 observational scale:
+
+- `pause_capacity`: degree to which discourse preserves reflective delay before closure or action.
+- `counterfactual_tolerance`: degree to which alternative explanations remain available.
+- `integration_score`: degree to which competing signals can be held together without collapse into a single frame.
+- `meaning_concentration`: degree to which meaning becomes concentrated around a narrow symbol, story, identity, or claim.
+- `recovery_potential`: degree to which discourse retains reversible, repairable, or re-opening pathways.
+
+These are transition indicators, not diagnostic measures.
+
+### Optional functional process map
+
+The v0.2 schema may include an optional `functional_process_map` using only neutral process terms:
+
+- `divergence`
+- `convergence`
+- `structuring`
+- `implementation`
+- `memory_reference`
+- `field_response`
+- `social_binding`
+- `value_charge`
+
+These terms describe observable process roles in discourse. They are not personality types, clinical categories, metaphysical claims, or score targets by themselves.
+
+### Prohibited direct measured fields
+
+MBTI, Big Five, tarot, and sephirot must not be used as direct measured fields, diagnostic labels, scoring targets, or required output dimensions in the observation schema or weekly scoring pipeline.
+
+They may be mentioned only in documentation as optional interpretive translation layers, and only with clear caveats that they are not measurements produced by the ECOIN observation system.
+
+### Migration stance
+
+v0.2 is additive:
+
+- Existing prompt fields remain unchanged.
+- Historical output data remains unchanged.
+- Existing `master_summary.csv` columns remain compatible.
+- Sidecar fields remain optional and provisional.
+- Validation warns and continues rather than failing scheduled runs.
+- The scheduled GitHub Actions workflow should remain on the current prompt until an explicit activation request switches it to `fixed_prompt_v0_2.json`.

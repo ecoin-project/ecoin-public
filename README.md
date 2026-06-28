@@ -185,3 +185,33 @@ Current candidate areas include:
 - Observation-to-Settlement Boundary Audit
 
 All outputs should be treated as provisional state observations, not judgments or recommendations.
+
+---
+
+## ECOIN Observation v0.2 transition plan
+
+ECOIN Observation v0.2 is an approved additive architecture for the weekly observation system, but it is not yet activated in the scheduled GitHub Actions workflow.
+
+The v0.2 plan keeps all existing fields unchanged, preserves historical data, and treats validation as warning-only so scheduled runs can continue even when optional sidecar fields are absent.
+
+New v0.2 materials include:
+
+- `schemas/observation_v0_2.json`
+- `prompts/fixed_prompt_v0_2.json`
+- warning-only schema diagnostics in `scripts/score_outputs.py`
+- optional run metadata support in `scripts/run_weekly.py`
+- `notes/observation_v0_2_migration.md`
+
+The scheduled workflow remains on `fixed_prompt_v2.json` until an explicit later activation request changes it.
+
+v0.2 adds optional transition indicators:
+
+- `pause_capacity`
+- `counterfactual_tolerance`
+- `integration_score`
+- `meaning_concentration`
+- `recovery_potential`
+
+It also adds an optional neutral `functional_process_map` using the terms `divergence`, `convergence`, `structuring`, `implementation`, `memory_reference`, `field_response`, `social_binding`, and `value_charge`.
+
+MBTI, Big Five, tarot, and sephirot are not direct measured fields, diagnostic labels, or scoring targets in this repository. They may be mentioned only in documentation as optional interpretive translation layers with appropriate caveats.

@@ -9,6 +9,7 @@ from openai import OpenAI
 N_RUNS = int(os.getenv("N_RUNS", "20"))
 MODEL = os.getenv("MODEL", "gpt-4.1-mini")
 TEMPERATURE = float(os.getenv("TEMPERATURE", "0.2"))
+OBSERVATION_SCHEMA_VERSION = os.getenv("OBSERVATION_SCHEMA_VERSION", "legacy_unversioned")
 
 ROOT = os.path.dirname(os.path.dirname(__file__))
 PROMPT_FILE = os.getenv("PROMPT_FILE", "fixed_prompt.json")
@@ -122,6 +123,14 @@ def main():
                 "temperature": TEMPERATURE,
                 "latency_sec": latency,
                 "prompt_file": PROMPT_FILE,
+                "observation_schema_version": OBSERVATION_SCHEMA_VERSION,
+                "run_config": {
+                    "n_runs": N_RUNS,
+                    "model": MODEL,
+                    "temperature": TEMPERATURE,
+                    "prompt_file": PROMPT_FILE,
+                    "observation_schema_version": OBSERVATION_SCHEMA_VERSION,
+                },
                 "output_text": output_text,
             })
 
@@ -137,6 +146,14 @@ def main():
                 "temperature": TEMPERATURE,
                 "latency_sec": latency,
                 "prompt_file": PROMPT_FILE,
+                "observation_schema_version": OBSERVATION_SCHEMA_VERSION,
+                "run_config": {
+                    "n_runs": N_RUNS,
+                    "model": MODEL,
+                    "temperature": TEMPERATURE,
+                    "prompt_file": PROMPT_FILE,
+                    "observation_schema_version": OBSERVATION_SCHEMA_VERSION,
+                },
                 "error": err_text,
             })
 
