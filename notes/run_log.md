@@ -152,6 +152,22 @@
 
 ---
 
+## 2026-06-20
+
+* v2 scheduled weekly run completed successfully.
+* Trigger type: scheduled weekly workflow.
+* Batch ID: 20260620_224896
+* Config: PROMPT_FILE=fixed_prompt_v2.json, N_RUNS=3
+* Outputs generated successfully, including weekly summary, trend plots, combined normalized trends, and provisional alignment report.
+* master_summary.csv now contains the latest v2 longitudinal row.
+* Alignment output remains provisional and still not statistically usable because exact-date overlap is limited.
+* Compared with 20260613_460654, fear, delegated agency, polarization risk, fixation proxy, emotional delegation, pressure activation, and emotional offloading increased.
+* Exploration remained stable.
+* The week appears to shift from managed outsourcing toward renewed pressure accumulation.
+* GitHub Actions warning, if present, was non-fatal.
+
+---
+
 
 
 
