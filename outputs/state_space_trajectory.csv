@@ -1,0 +1,15 @@
+batch_id,date,pressure_state,adaptive_state,fixation_exploration_balance,delegation_exploration_balance,dominant_mode,dominant_pressure_mode
+20260403_7e0a52,2026-04-03,68.26,65.835,4.15,12.0,fixation leaning,pressure-driven and closure-leaning
+20260404_0f52a8,2026-04-04,69.2771,65.0,6.28,17.0,fixation leaning,pressure-driven and closure-leaning
+20260411_07047f,2026-04-11,69.1571,65.835,5.43,15.0,fixation leaning,pressure-driven and closure-leaning
+20260418_ed5b10,2026-04-18,69.3243,65.835,5.6,15.0,fixation leaning,pressure-driven and closure-leaning
+20260425_9e82e8,2026-04-25,70.6471,65.835,6.53,17.33,fixation leaning,pressure-driven and closure-leaning
+20260502_0fecb9,2026-05-02,68.8071,65.0,6.65,14.67,fixation leaning,pressure-driven and closure-leaning
+20260509_aa6aaf,2026-05-09,70.6286,67.5,6.73,16.67,fixation leaning,pressure-driven and closure-leaning
+20260516_9cfbc3,2026-05-16,71.7771,65.835,7.45,17.0,fixation leaning,pressure-driven and closure-leaning
+20260523_af87e0,2026-05-23,70.1629,67.5,4.8,14.0,fixation leaning,pressure-driven and closure-leaning
+20260530_564e49,2026-05-30,68.6671,65.0,5.67,15.0,fixation leaning,pressure-driven and closure-leaning
+20260606_a56a12,2026-06-06,68.8357,65.0,5.52,13.0,fixation leaning,pressure-driven and closure-leaning
+20260613_460654,2026-06-13,67.4857,65.835,2.73,14.33,fixation leaning,pressure-driven and closure-leaning
+20260620_224896,2026-06-20,70.22,66.67,5.87,16.0,fixation leaning,pressure-driven and closure-leaning
+20260627_5d10f3,2026-06-27,71.36,65.0,7.18,19.33,fixation leaning,pressure-driven and closure-leaning

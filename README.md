@@ -12,6 +12,7 @@ This repository supports a weekly fixed-prompt observation workflow for analyzin
 - Preserves manual sample batches for aggregation and scoring validation
 - Maintains external market-reference lanes as contextual comparison series
 - Generates normalized comparison artifacts across discourse and market-reference lanes
+- Generates an ECOIN state-space trajectory that connects weekly observations through transition space
 
 ## Current status
 
@@ -51,6 +52,8 @@ Typical live outputs include:
 - `outputs/market_reference_normalized_trends.png`
 - `outputs/combined_normalized_trends.png`
 - `outputs/combined_normalized_trends.csv`
+- `outputs/state_space_trajectory.png`
+- `outputs/state_space_trajectory.csv`
 - `outputs/alignment_report.json`
 
 Retained manual validation outputs may include:
@@ -63,6 +66,8 @@ Retained manual validation outputs may include:
 External reference series such as BTC price may be stored separately from the discourse batches and treated as contextual comparison lanes rather than direct explanatory variables.
 
 External market-reference plots should generally remain separate from discourse-core trend plots in order to preserve scale and interpretive clarity.
+
+The ECOIN state-space trajectory is an additive discourse-core view that preserves existing score and trend artifacts. It positions each weekly observation by current summary indicators, using adaptive/exploratory state on one axis and pressure/delegated state on the other, then connects weeks chronologically to show transitions rather than isolated scores.
 
 At the same time, derived comparison artifacts such as combined normalized overlays and alignment reports may be generated as exploratory cross-lane tools.
 
@@ -150,6 +155,8 @@ Examples include:
 
 - `outputs/combined_normalized_trends.png`
 - `outputs/combined_normalized_trends.csv`
+- `outputs/state_space_trajectory.png`
+- `outputs/state_space_trajectory.csv`
 - `outputs/alignment_report.json`
 
 These derived artifacts are exploratory comparison tools.  
