@@ -1,8 +1,9 @@
-"""Generate ECOIN Visualization Pack v0.3 artifacts.
+"""Generate ECOIN data artifacts from existing weekly summary/trend data.
 
 This script is intentionally downstream of observation and scoring. It reads the
-existing CSV outputs, stores complete weekly observation vectors first, and then
-renders visualization-specific projections from those stored vectors.
+existing CSV outputs, writes complete weekly observation vectors first, and then
+writes derived state-space trajectory coordinates from those stored vectors.
+No prompt, scoring-schema, workflow, or chart-image artifacts are changed here.
 """
 
 import argparse
@@ -11,8 +12,6 @@ import json
 import os
 from datetime import datetime
 from typing import Dict, Iterable, List, Optional
-
-import matplotlib.pyplot as plt
 
 ROOT = os.path.dirname(os.path.dirname(__file__))
 DEFAULT_INPUT = os.path.join(ROOT, "outputs", "master_summary.csv")
@@ -53,6 +52,14 @@ PRESSURE_COLUMNS = [
     "mean_shortcut_risk_score",
     "mean_emotional_delegation_score",
     "mean_pressure_gradient_score",
+]
+SUPPORTED_DOWNSTREAM_VISUALIZATIONS = [
+    "2d_projection",
+    "pca",
+    "umap",
+    "radar_chart",
+    "trajectory_plot",
+    "clustering",
 ]
 
 
@@ -96,6 +103,12 @@ def observation_vector(row: Dict[str, str]) -> Dict[str, float]:
     return vector
 
 
+def difference(vector: Dict[str, float], left_column: str, right_column: str) -> Optional[float]:
+    if left_column not in vector or right_column not in vector:
+        return None
+    return vector[left_column] - vector[right_column]
+
+
 def build_vector_rows(rows: List[Dict[str, str]]) -> List[Dict[str, object]]:
     vector_rows = []
     for source_order, row in enumerate(rows):
@@ -115,6 +128,8 @@ def build_vector_rows(rows: List[Dict[str, str]]) -> List[Dict[str, object]]:
                 "observation_dimensions": list(vector.keys()),
                 "adaptive_state": adaptive_state,
                 "pressure_state": pressure_state,
+                "fixation_exploration_balance": difference(vector, "mean_fixation_proxy", "mean_exploration"),
+                "delegation_exploration_balance": difference(vector, "mean_delegated_agency", "mean_exploration"),
                 "dominant_mode": row.get("dominant_mode", ""),
                 "dominant_pressure_mode": row.get("dominant_pressure_mode", ""),
                 "top_anxiety_label_1": row.get("top_anxiety_label_1", ""),
@@ -124,77 +139,50 @@ def build_vector_rows(rows: List[Dict[str, str]]) -> List[Dict[str, object]]:
     return sorted(vector_rows, key=lambda r: (r["date"] == "", r["date"], r["source_order"]))
 
 
+def rounded(value: object) -> object:
+    return "" if value is None else round(float(value), 4)
+
+
 def write_observation_vectors(vector_rows: List[Dict[str, object]], path: str) -> None:
-    fieldnames = [
-        "batch_id",
-        "date",
-        "observation_vector_json",
-        "observation_dimensions",
-        "adaptive_state",
-        "pressure_state",
-        "dominant_mode",
-        "dominant_pressure_mode",
-    ]
+    fieldnames = ["batch_id", "date", *OBSERVATION_VECTOR_COLUMNS, "observation_vector_json", "observation_dimensions", "dominant_mode", "dominant_pressure_mode"]
     with open(path, "w", encoding="utf-8", newline="") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for row in vector_rows:
-            writer.writerow(
-                {
-                    "batch_id": row["batch_id"],
-                    "date": row["date"],
-                    "observation_vector_json": json.dumps(row["observation_vector"], sort_keys=True),
-                    "observation_dimensions": ";".join(row["observation_dimensions"]),
-                    "adaptive_state": "" if row["adaptive_state"] is None else round(row["adaptive_state"], 4),
-                    "pressure_state": "" if row["pressure_state"] is None else round(row["pressure_state"], 4),
-                    "dominant_mode": row["dominant_mode"],
-                    "dominant_pressure_mode": row["dominant_pressure_mode"],
-                }
-            )
+            vector = row["observation_vector"]
+            writer.writerow({
+                "batch_id": row["batch_id"],
+                "date": row["date"],
+                **{column: rounded(vector.get(column)) for column in OBSERVATION_VECTOR_COLUMNS},
+                "observation_vector_json": json.dumps(vector, sort_keys=True),
+                "observation_dimensions": ";".join(row["observation_dimensions"]),
+                "dominant_mode": row["dominant_mode"],
+                "dominant_pressure_mode": row["dominant_pressure_mode"],
+            })
 
 
-def plot_indicator_trends(vector_rows: List[Dict[str, object]], path: str) -> None:
-    x = list(range(len(vector_rows)))
-    labels = [str(row["date"] or row["batch_id"]) for row in vector_rows]
-    plt.figure(figsize=(12, 6))
-    for column, label in TREND_COLUMNS:
-        values = [row["observation_vector"].get(column) for row in vector_rows]
-        plt.plot(x, values, marker="o", linewidth=2, label=label)
-    plt.xticks(x, labels, rotation=35, ha="right")
-    plt.ylim(0, 100)
-    plt.xlabel("week")
-    plt.ylabel("score")
-    plt.title("ECOIN weekly indicator trends")
-    plt.legend(loc="best")
-    plt.tight_layout()
-    plt.savefig(path, dpi=150)
-    plt.close()
-
-
-def plot_state_space(vector_rows: List[Dict[str, object]], path: str) -> None:
-    points = [row for row in vector_rows if row["adaptive_state"] is not None and row["pressure_state"] is not None]
-    if len(points) < 2:
-        raise ValueError("Need at least two projected observations for state-space trajectory.")
-    x = [row["adaptive_state"] for row in points]
-    y = [row["pressure_state"] for row in points]
-    labels = [str(row["date"] or row["batch_id"]) for row in points]
-    plt.figure(figsize=(10, 7))
-    ax = plt.gca()
-    ax.plot(x, y, color="#1f77b4", linewidth=2, marker="o")
-    for idx in range(len(points) - 1):
-        ax.annotate("", xy=(x[idx + 1], y[idx + 1]), xytext=(x[idx], y[idx]), arrowprops={"arrowstyle": "->", "color": "#1f77b4", "lw": 1.4})
-    for idx, label in enumerate(labels):
-        ax.annotate(label, (x[idx], y[idx]), textcoords="offset points", xytext=(5, 5), fontsize=8)
-    ax.scatter([x[0]], [y[0]], s=90, color="#2ca02c", zorder=3, label="start")
-    ax.scatter([x[-1]], [y[-1]], s=90, color="#d62728", zorder=3, label="latest")
-    ax.set_title("ECOIN state-space trajectory (v0.3 projection)")
-    ax.set_xlabel("adaptive / exploratory state")
-    ax.set_ylabel("pressure / delegated state")
-    ax.grid(True, alpha=0.25)
-    ax.legend(loc="best")
-    plt.tight_layout()
-    plt.savefig(path, dpi=150)
-    plt.close()
+def write_state_space_trajectory(vector_rows: List[Dict[str, object]], path: str) -> None:
+    fieldnames = ["batch_id", "date", "observation_vector_json", "observation_dimensions", "supported_downstream_visualizations", "projection_name", "adaptive_state", "pressure_state", "fixation_exploration_balance", "delegation_exploration_balance", "dominant_mode", "dominant_pressure_mode"]
+    with open(path, "w", encoding="utf-8", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
+        writer.writeheader()
+        for row in vector_rows:
+            if row["adaptive_state"] is None or row["pressure_state"] is None:
+                continue
+            writer.writerow({
+                "batch_id": row["batch_id"],
+                "date": row["date"],
+                "observation_vector_json": json.dumps(row["observation_vector"], sort_keys=True),
+                "observation_dimensions": ";".join(row["observation_dimensions"]),
+                "supported_downstream_visualizations": ";".join(SUPPORTED_DOWNSTREAM_VISUALIZATIONS),
+                "projection_name": "legacy_adaptive_pressure_2d",
+                "adaptive_state": rounded(row["adaptive_state"]),
+                "pressure_state": rounded(row["pressure_state"]),
+                "fixation_exploration_balance": rounded(row["fixation_exploration_balance"]),
+                "delegation_exploration_balance": rounded(row["delegation_exploration_balance"]),
+                "dominant_mode": row["dominant_mode"],
+                "dominant_pressure_mode": row["dominant_pressure_mode"],
+            })
 
 
 def write_dashboard(vector_rows: List[Dict[str, object]], path: str) -> None:
@@ -224,9 +212,9 @@ def write_dashboard(vector_rows: List[Dict[str, object]], path: str) -> None:
         lines.append(f"| {label} | {latest_value:.2f} | {'n/a' if delta is None else f'{delta:+.2f}'} |")
     lines.extend([
         "",
-        "## Projection note",
+        "## Data artifact note",
         "",
-        "The dashboard is generated after the complete multidimensional observation vector is written. The adaptive and pressure coordinates are visualization projections only, not changes to the observation schema or scoring logic.",
+        "This dashboard is generated after the complete multidimensional observation vector CSV is written. The adaptive and pressure coordinates are downstream state-space projections only; this does not change the observation schema, scoring logic, fixed prompts, or scheduled OpenAI workflow.",
         "",
     ])
     with open(path, "w", encoding="utf-8") as f:
@@ -234,9 +222,9 @@ def write_dashboard(vector_rows: List[Dict[str, object]], path: str) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Generate ECOIN Visualization Pack v0.3 artifacts.")
+    parser = argparse.ArgumentParser(description="Generate ECOIN data artifacts from existing weekly summary/trend data.")
     parser.add_argument("--input", default=DEFAULT_INPUT, help="Existing master summary CSV to read.")
-    parser.add_argument("--out-dir", default=DEFAULT_OUT_DIR, help="Directory for generated visualization artifacts.")
+    parser.add_argument("--out-dir", default=DEFAULT_OUT_DIR, help="Directory for generated data artifacts.")
     args = parser.parse_args()
 
     os.makedirs(args.out_dir, exist_ok=True)
@@ -246,18 +234,15 @@ def main() -> None:
         raise ValueError("No valid observation vectors found in input CSV.")
 
     vector_path = os.path.join(args.out_dir, "observation_vectors_v0_3.csv")
-    trend_path = os.path.join(args.out_dir, "weekly_indicator_trends_v0_3.png")
-    trajectory_path = os.path.join(args.out_dir, "state_space_trajectory_v0_3.png")
+    trajectory_path = os.path.join(args.out_dir, "state_space_trajectory_v0_3.csv")
     dashboard_path = os.path.join(args.out_dir, "latest_weekly_dashboard_summary.md")
 
     write_observation_vectors(vector_rows, vector_path)
-    plot_indicator_trends(vector_rows, trend_path)
-    plot_state_space(vector_rows, trajectory_path)
+    write_state_space_trajectory(vector_rows, trajectory_path)
     write_dashboard(vector_rows, dashboard_path)
 
     print(f"Wrote observation vectors: {vector_path}")
-    print(f"Wrote weekly indicator trend chart: {trend_path}")
-    print(f"Wrote state-space trajectory chart: {trajectory_path}")
+    print(f"Wrote state-space trajectory CSV: {trajectory_path}")
     print(f"Wrote latest dashboard summary: {dashboard_path}")
 
 

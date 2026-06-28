@@ -153,9 +153,9 @@ Those remain future-facing candidates until they prove stable across repeated ru
 
 ## ECOIN Visualization Pack v0.3
 
-The v0.3 visualization pack is an additive, reproducible visualization layer for existing weekly CSV outputs. It does not change the observation schema, scoring rubric, fixed prompts, or scheduled OpenAI workflow. The pack reads `outputs/master_summary.csv`, writes complete multidimensional observation vectors first, and then renders charts from those downstream vector records.
+The v0.3 data artifact pack is an additive, reproducible data layer for existing weekly CSV outputs. It does not change the observation schema, scoring rubric, fixed prompts, or scheduled OpenAI workflow. The pack reads `outputs/master_summary.csv`, writes complete multidimensional observation vectors first, and then writes downstream state-space trajectory records from those vectors.
 
-Generate the full pack locally or in CI with:
+Generate the data artifacts locally or in CI with:
 
 ```bash
 python scripts/generate_visualization_pack.py
@@ -163,18 +163,17 @@ python scripts/generate_visualization_pack.py
 
 By default the command writes:
 
-- `outputs/observation_vectors_v0_3.csv` — complete weekly multidimensional vectors serialized before charting
-- `outputs/weekly_indicator_trends_v0_3.png` — weekly indicator trend chart
-- `outputs/state_space_trajectory_v0_3.png` — state-space trajectory chart using an explicit downstream 2D projection
+- `outputs/observation_vectors_v0_3.csv` — complete weekly multidimensional vectors with existing indicator fields preserved as columns and serialized JSON
+- `outputs/state_space_trajectory_v0_3.csv` — state-space trajectory CSV using an explicit downstream 2D projection from the vector records
 - `outputs/latest_weekly_dashboard_summary.md` — latest weekly dashboard summary
 
-The generated PNG charts are ignored by git via `outputs/*.png` and should not be committed by default. To keep local or CI runs isolated, pass a separate output directory:
+This data-artifact-first command does not write PNG/chart images. To keep local or CI runs isolated, pass a separate output directory:
 
 ```bash
 python scripts/generate_visualization_pack.py --out-dir /tmp/ecoin-viz
 ```
 
-The visualization pack is intentionally independent from observation and scoring. Re-run the scoring pipeline first if you need to refresh `outputs/master_summary.csv`; otherwise this script only consumes the existing summary CSV and produces reproducible visualization artifacts from it.
+The data artifact pack is intentionally independent from observation and scoring. Re-run the scoring pipeline first if you need to refresh `outputs/master_summary.csv`; otherwise this script only consumes the existing summary CSV and produces reproducible data artifacts from it.
 
 ## Additional derived comparison artifacts
 
