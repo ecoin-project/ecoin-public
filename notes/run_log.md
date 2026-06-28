@@ -168,6 +168,19 @@
 
 ---
 
+## 2026-06-27
 
+* v2 scheduled weekly run completed successfully.
+* Trigger type: scheduled weekly workflow.
+* Batch ID: 20260627_5d10f3
+* Config: PROMPT_FILE=fixed_prompt_v2.json, N_RUNS=3
+* Outputs generated successfully, including weekly summary, trend plots, combined normalized trends, and provisional alignment report.
+* master_summary.csv now contains the latest v2 longitudinal row.
+* Alignment output remains provisional and still not statistically usable because exact-date overlap is limited.
+* Compared with 20260620_224896, fear decreased slightly, while delegated agency, preference pressure, shortcut risk, pressure gradient, and shortcut normalization increased.
+* Exploration and expansion decreased slightly.
+* The week appears to shift from broad pressure accumulation toward proceduralized or interpretive closure.
+* Note: the pasted Run 2 text contains a formatting issue around the scores object, though the aggregate summary appears to have been generated successfully.
+* GitHub Actions warning, if present, was non-fatal.
 
 
