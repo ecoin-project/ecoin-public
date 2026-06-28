@@ -12,7 +12,8 @@ This repository supports a weekly fixed-prompt observation workflow for analyzin
 - Preserves manual sample batches for aggregation and scoring validation
 - Maintains external market-reference lanes as contextual comparison series
 - Generates normalized comparison artifacts across discourse and market-reference lanes
-- Generates an ECOIN state-space trajectory that connects weekly observations through transition space
+- Stores each ECOIN state-space observation as a complete multidimensional vector before any visualization-specific projection
+- Generates an ECOIN state-space trajectory that connects weekly observations through transition space as one optional 2D projection
 
 ## Current status
 
@@ -56,6 +57,8 @@ Typical live outputs include:
 - `outputs/state_space_trajectory.csv`
 - `outputs/alignment_report.json`
 
+`outputs/state_space_trajectory.csv` stores `observation_vector_json` and `observation_dimensions` before visualization-specific fields. The `adaptive_state` and `pressure_state` columns are retained as the legacy 2D projection only; they should not be treated as the complete state-space model.
+
 Retained manual validation outputs may include:
 
 - `outputs/weekly_summary_manual_batch_001.json`
@@ -67,7 +70,7 @@ External reference series such as BTC price may be stored separately from the di
 
 External market-reference plots should generally remain separate from discourse-core trend plots in order to preserve scale and interpretive clarity.
 
-The ECOIN state-space trajectory is an additive discourse-core view that preserves existing score and trend artifacts. It positions each weekly observation by current summary indicators, using adaptive/exploratory state on one axis and pressure/delegated state on the other, then connects weeks chronologically to show transitions rather than isolated scores.
+The ECOIN state-space trajectory is an additive discourse-core view that preserves existing score and trend artifacts. The observation layer stores each weekly state first as a complete multidimensional score vector. Visualization choices are downstream projections of that vector rather than the canonical data model. The current 2D trajectory remains available as the legacy adaptive/exploratory versus pressure/delegated projection, connecting weeks chronologically to show transitions rather than isolated scores. The same vector can support later downstream views such as 2D projection, PCA, UMAP, radar charts, trajectory plots, and clustering without changing the observation layer.
 
 At the same time, derived comparison artifacts such as combined normalized overlays and alignment reports may be generated as exploratory cross-lane tools.
 
@@ -158,6 +161,8 @@ Examples include:
 - `outputs/state_space_trajectory.png`
 - `outputs/state_space_trajectory.csv`
 - `outputs/alignment_report.json`
+
+`outputs/state_space_trajectory.csv` stores `observation_vector_json` and `observation_dimensions` before visualization-specific fields. The `adaptive_state` and `pressure_state` columns are retained as the legacy 2D projection only; they should not be treated as the complete state-space model.
 
 These derived artifacts are exploratory comparison tools.  
 They are intended for provisional cross-lane reading, not as evidence of causation.
