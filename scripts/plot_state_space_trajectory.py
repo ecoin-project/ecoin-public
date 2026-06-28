@@ -1,4 +1,5 @@
 import csv
+import json
 import os
 from datetime import datetime
 
@@ -10,19 +11,58 @@ MASTER_SUMMARY_PATH = os.path.join(OUT_DIR, "master_summary.csv")
 PLOT_PATH = os.path.join(OUT_DIR, "state_space_trajectory.png")
 CSV_PATH = os.path.join(OUT_DIR, "state_space_trajectory.csv")
 
-PRESSURE_COLUMNS = [
+# The observation layer is intentionally multidimensional. These columns are
+# stored as the canonical state vector before any visualization chooses a
+# projection. Do not collapse this list into a fixed two-axis data model.
+OBSERVATION_VECTOR_COLUMNS = [
     "mean_fear_intensity",
+    "mean_superiority_intensity",
     "mean_delegated_agency",
+    "mean_polarization_risk",
+    "mean_exploration",
+    "mean_expansion",
     "mean_fixation_proxy",
     "mean_preference_pressure_score",
     "mean_shortcut_risk_score",
     "mean_emotional_delegation_score",
     "mean_pressure_gradient_score",
+    "mean_pressure_activation",
+    "mean_closure_pressure",
+    "mean_emotional_offloading",
+    "mean_shortcut_normalization",
 ]
 
-ADAPTIVE_COLUMNS = [
-    "mean_exploration",
-    "mean_expansion",
+# Visualization projections are downstream choices. The legacy 2D trajectory is
+# retained as one projection over the complete observation vector, not as the
+# canonical data model.
+LEGACY_2D_PROJECTION = {
+    "x_axis": {
+        "name": "adaptive_state",
+        "columns": ["mean_exploration", "mean_expansion"],
+        "label": "adaptive / exploratory state (mean exploration + expansion)",
+    },
+    "y_axis": {
+        "name": "pressure_state",
+        "columns": [
+            "mean_fear_intensity",
+            "mean_delegated_agency",
+            "mean_fixation_proxy",
+            "mean_preference_pressure_score",
+            "mean_shortcut_risk_score",
+            "mean_emotional_delegation_score",
+            "mean_pressure_gradient_score",
+        ],
+        "label": "pressure / delegated state (mean current pressure indicators)",
+    },
+}
+
+SUPPORTED_DOWNSTREAM_VISUALIZATIONS = [
+    "2d_projection",
+    "pca",
+    "umap",
+    "radar_chart",
+    "trajectory_plot",
+    "clustering",
 ]
 
 
@@ -57,6 +97,32 @@ def difference(row, left_column, right_column):
     return left - right
 
 
+def observation_vector(row):
+    """Return the complete numeric observation vector for one weekly row."""
+    vector = {}
+    for column in OBSERVATION_VECTOR_COLUMNS:
+        value = to_float(row.get(column))
+        if value is not None:
+            vector[column] = value
+    return vector
+
+
+def project_legacy_2d(vector):
+    """Project a multidimensional observation vector into the legacy 2D view."""
+    x_columns = LEGACY_2D_PROJECTION["x_axis"]["columns"]
+    y_columns = LEGACY_2D_PROJECTION["y_axis"]["columns"]
+
+    x_values = [vector[column] for column in x_columns if column in vector]
+    y_values = [vector[column] for column in y_columns if column in vector]
+    if not x_values or not y_values:
+        return None
+
+    return {
+        LEGACY_2D_PROJECTION["x_axis"]["name"]: sum(x_values) / len(x_values),
+        LEGACY_2D_PROJECTION["y_axis"]["name"]: sum(y_values) / len(y_values),
+    }
+
+
 def read_state_points():
     if not os.path.exists(MASTER_SUMMARY_PATH):
         print(f"master_summary.csv not found: {MASTER_SUMMARY_PATH}")
@@ -66,9 +132,9 @@ def read_state_points():
     with open(MASTER_SUMMARY_PATH, "r", encoding="utf-8", newline="") as f:
         reader = csv.DictReader(f)
         for index, row in enumerate(reader):
-            pressure = mean_available(row, PRESSURE_COLUMNS)
-            adaptive = mean_available(row, ADAPTIVE_COLUMNS)
-            if pressure is None or adaptive is None:
+            vector = observation_vector(row)
+            projection = project_legacy_2d(vector)
+            if projection is None:
                 continue
 
             batch_id = row.get("batch_id", "")
@@ -77,8 +143,10 @@ def read_state_points():
                     "batch_id": batch_id,
                     "date": batch_date(batch_id),
                     "source_order": index,
-                    "pressure_state": pressure,
-                    "adaptive_state": adaptive,
+                    "observation_vector": vector,
+                    "observation_dimensions": list(vector.keys()),
+                    "projection_name": "legacy_adaptive_pressure_2d",
+                    **projection,
                     "fixation_exploration_balance": difference(
                         row, "mean_fixation_proxy", "mean_exploration"
                     ),
@@ -97,23 +165,31 @@ def write_csv(points):
     fieldnames = [
         "batch_id",
         "date",
-        "pressure_state",
+        "observation_vector_json",
+        "observation_dimensions",
+        "supported_downstream_visualizations",
+        "projection_name",
         "adaptive_state",
+        "pressure_state",
         "fixation_exploration_balance",
         "delegation_exploration_balance",
         "dominant_mode",
         "dominant_pressure_mode",
     ]
     with open(CSV_PATH, "w", encoding="utf-8", newline="") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(f, fieldnames=fieldnames, lineterminator="\n")
         writer.writeheader()
         for point in points:
             writer.writerow(
                 {
                     "batch_id": point["batch_id"],
                     "date": "" if point["date"] is None else point["date"].date().isoformat(),
-                    "pressure_state": round(point["pressure_state"], 4),
+                    "observation_vector_json": json.dumps(point["observation_vector"], sort_keys=True),
+                    "observation_dimensions": ";".join(point["observation_dimensions"]),
+                    "supported_downstream_visualizations": ";".join(SUPPORTED_DOWNSTREAM_VISUALIZATIONS),
+                    "projection_name": point["projection_name"],
                     "adaptive_state": round(point["adaptive_state"], 4),
+                    "pressure_state": round(point["pressure_state"], 4),
                     "fixation_exploration_balance": ""
                     if point["fixation_exploration_balance"] is None
                     else round(point["fixation_exploration_balance"], 4),
@@ -128,8 +204,10 @@ def write_csv(points):
 
 
 def plot(points):
-    x = [point["adaptive_state"] for point in points]
-    y = [point["pressure_state"] for point in points]
+    x_name = LEGACY_2D_PROJECTION["x_axis"]["name"]
+    y_name = LEGACY_2D_PROJECTION["y_axis"]["name"]
+    x = [point[x_name] for point in points]
+    y = [point[y_name] for point in points]
     labels = [point["batch_id"].split("_", 1)[0] for point in points]
 
     plt.figure(figsize=(10, 7))
@@ -150,9 +228,9 @@ def plot(points):
     ax.scatter([x[0]], [y[0]], s=90, color="#2ca02c", zorder=3, label="start")
     ax.scatter([x[-1]], [y[-1]], s=90, color="#d62728", zorder=3, label="latest")
 
-    ax.set_title("ECOIN weekly state-space trajectory")
-    ax.set_xlabel("adaptive / exploratory state (mean exploration + expansion)")
-    ax.set_ylabel("pressure / delegated state (mean current pressure indicators)")
+    ax.set_title("ECOIN weekly state-space trajectory (legacy 2D projection)")
+    ax.set_xlabel(LEGACY_2D_PROJECTION["x_axis"]["label"])
+    ax.set_ylabel(LEGACY_2D_PROJECTION["y_axis"]["label"])
     ax.grid(True, alpha=0.25)
     ax.legend(loc="best")
     plt.tight_layout()
